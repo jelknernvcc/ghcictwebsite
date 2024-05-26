@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA CSC 215: Binary, Octal, and Hex</title>
+<style>
+@import url(../../css/goals.css);
+</style>
+<script src="../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CSC 215: Binary, Octal, and Hex</h1>
+</div>
+<div class="mobile">
+<h1>Bin Oct Hex</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<h2>Overview</h2>
+<p>
+Some of you have heard me say on more than one occassion, <q>it's all just
+bits.</q>  This semester we are going to dig deeply into that saying, and I'll
+start the discussion with this introduction to the
+<a href="https://en.wikipedia.org/wiki/Binary_number">binary</a>,
+<a href="https://en.wikipedia.org/wiki/Octal">octal</a>, and
+<a href="https://en.wikipedia.org/wiki/Hexadecimal">hexadecimal</a> number
+systems.  I'll discuss what they are, why we use them, and why we need to
+become very comfortable with them to program the Altair 8800.
+</p>
+
+<section>
+<h2>Number Systems</h2>
+<p>
+The Altair manual has a very brief section titled <q>Number Systems</q> which
+on careful reading reveals that what is being discussed is more properly
+referred to as a <a href="https://en.wikipedia.org/wiki/Numeral_system">numeral
+system</a>, and that what is really at issue is the Altair 8800's use of a
+<a href="https://en.wikipedia.org/wiki/Positional_notation">positional
+numeral system</a> in <b>base-2</b> (see
+<a href="https://en.wikipedia.org/wiki/Radix">radix</a> Wikipedia entry for
+more on that).
+</p><p>
+I only want to draw your attention here to the fact that positional number
+systems are not the only numbers systems humans have used.  Most of you are
+probably at least somewhat familiar with the
+<a href="https://en.wikipedia.org/wiki/Roman_numerals">Roman numeral
+system</a>, which is <i>not</i> a positional number system.</p>
+</section>
+
+<section>
+<h2>Bits and Binary Numbers</h2>
+<p>
+The word <a href="https://en.wikipedia.org/wiki/Bit">bit</a> is a portmanteau
+of <b>binary digit</b>. In information theory is it the smallest
+<a href="https://en.wikipedia.org/wiki/Units_of_information">unit of
+information</a>, since it holds one of only two possible values, usually
+represented by <b>0</b> and <b>1</b>, <b>on</b> and <b>off</b>, or
+<b>true</b> and <b>false</b>.
+</p><p>
+A <a href="https://en.wikipedia.org/wiki/Binary_number">binary number</a> is
+a number expressed in <b>base-2</b>, which means it can be represented
+physically by bits.
+</p><p>
+For both engineering and mathematical reasons, almost all the computers in
+common use today are <i>binary digital computers</i>, which means they store
+and electronically operate on bits.
+</p>
+
+<h3>Bits and Binary Numbers</h3>
+<p>
+In case you do not feel comfortable with <b>binary arithmetic</b>, here are
+a few resources to help you brush up:
+</p>
+<ul>
+<li><a href="https://ryanstutorials.net/binary-tutorial/binary-arithmetic.php">
+Binary Arithmetic!</a></li>
+
+<li><a href="https://cheever.domains.swarthmore.edu/Ref/BinaryMath/BinaryMath.html">
+Binary Arithmetic</a> (Swathmore College)</li>
+
+<li><a href="https://www.khanacademy.org/math/algebra-home/alg-intro-to-algebra/algebra-alternate-number-bases/v/number-systems-introduction">
+Introduction to number systems and binary</a> (Khan Academy)</li>
+</ul>
+</section>
+
+<section>
+<h2>Octal and Hexadecimal Numbers</h2>
+<p>
+While the Altair 8800 uses binary numbers, these numbers, while very practical
+for machines, are much less so for humans, animals which seem to process
+things that vary in their environments more effectively than things which are
+all the same.  We humans do not do well with long strings of <code>1</code>s
+and <code>0</code>s, go computer scientists early on started using numerical
+bases that represented <i>groups of bits</i>, thus providing more variety in
+the representation of numbers.
+</p><p>
+Any base which is a power of 2, such as 2<sup>3</sup>, or 8 (called
+<b>octal</b>), and 2<sup>4</sup>, or 16 (called <b>hexidecimal</b>), can map
+easily to the binary number system, since one digit in these two systems
+maps <i>directly</i> to 3 or 4 binary digits respectively.
+</p><p>
+After three years working with the Altair 8800, I am still not sure why the
+documentation uses octal, but I think it is because it maps most conveniently
+with the <a href="https://ubuntourist.codeberg.page/Altair-8800/appendix.html">
+instruction set</a> of the machine.  As you will soon see, the grouping of bits
+on the front panel of the computer is arranged in octal.
+</p><p>
+Since the Altair 8800 has an <i>8-bit processor</i> and a <i>16-bit memory
+address space</i>, however, we will often find it much more convenient to use
+hexadecimal numbers. Experience from the past few years showed that we will
+need to become very comfortable with both systems.
+</p><p>
+The good news is that you will leave this experience with a solid foundation
+in numberal systems used on computers. When life gives you lemons, <i>make
+lemonade!</i> ;-)
+</p>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

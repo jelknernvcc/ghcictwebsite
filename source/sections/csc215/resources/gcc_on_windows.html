@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Installing and Configuring GCC on Windows</title>
+<style>
+@import url(../../css/resources.css);
+</style>
+<script src="../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+
+</head>
+<body>
+<header>
+<a href="../index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CS/IT Resources</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<h2>Installing and Configuring GCC on Windows</h2>
+<ol>
+<li>Download the installer <code>codeblocks-20.03mingw-setup.exe</code> from
+<a href="https://www.codeblocks.org/downloads/binaries/">here</a>, then run
+the installer.</li>
+
+<li>Download <code>Git-2.43.0-64-bit.exe</code> from
+<a href="https://git-scm.com/download/win">here</a>, then run the installer.
+</li>
+
+<li>In your user directory, create a subdirectory named <code>GccLibs</code>.
+</li>
+
+<li>Use
+<a href="https://www.howtogeek.com/787217/how-to-edit-environment-variables-on-windows-10-or-11/">
+How to Edit Environment Variables on Windows 10 or 11</a> to set the following
+properties on the following environment variables:
+  <ul>
+  <li><code>PATH</code>: <kbd>C:\Program Files\CodeBlocks\MinGW\bin</kbd></li>
+  <li><code>CPATH</code>: <kbd>C:\Users\[your user]\GccLibs</kbd></li>
+  </ul>
+</li>
+</ol>
+<p>
+After restarting Windows, you should now be able to compile and run C programs
+from the GitBash shell.
+</p>
+
+<h3>Resources</h3>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/c-compiler-windows-gcc">
+Install C/GCC Compiler for Windows</a></li>
+
+<li><a href="https://www.howtogeek.com/787217/how-to-edit-environment-variables-on-windows-10-or-11/">
+How to Edit Environment Variables on Windows 10 or 11</a></li>
+</ul>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

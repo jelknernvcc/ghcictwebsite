@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA CSC 215 Week 18</title>
+<style>
+@import url(../../css/goals.css);
+.indent, pre {
+  margin-left: 2vw;
+}
+</style>
+<script src="../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CSC 215 Weekly Assignments: Week 18</h1>
+</div>
+<div class="mobile">
+<h1>CSC 215</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2024-01-02">Week of Tuesday, January 2, 2024</time>
+
+<h2>Overview</h2>
+<p>
+Happy New Year! This week we will take a deep dive into using
+<a href="https://en.wikipedia.org/wiki/String_(computer_science)">strings</a>
+in C.
+</p>
+
+<section>
+<h2>Thursday, January 4th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+We'll begin today by having you share your working example programs and
+responses to the review questions assigned on Tuesday. We will then
+continue to work our way through <i>Chapter 4: Strings</i>.
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Read from page 123, beginning with the <i>Reversing a String</i> section,
+through the end of section 4.2 on page 129. Make sure you have working versions
+of all the programs from this reading in your git repo before you come to
+class on Monday.
+</p><p>
+Complete <i>Programming Exercises</i> 2 to 5, 7 and 9. For each of these
+you should write a function that accepts an input string and returns the
+appropriate value (either a modified string or an integer).
+</p><p>
+Extra credit if you can use doctest to test your solution. Even better if
+write the doctests <i>before</i> you write your solution!
+</p>
+</div>
+</section>
+
+<section>
+<h2>Tuesday, January 2nd</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+I'll begin class today by sharing and discussing several small programs that
+illustrate the use of null terminated strings in C.
+</p><p>
+Strings in C are arrays of <code>char</code>s terminated by a <b>null</b>
+character (<code>'\0'</code>). That means a string of length 10 can hold only
+9 characters, since one element is occupied by the terminating null.
+</p><p class="indent">
+<a href="resources/c_progs/01_str_vs_char.c">01_str_vs_char.c</a>
+</p><p>
+The
+<a href="https://cplusplus.com/reference/cstring/">string.h</a> library
+provides several useful functions for copying and comparing strings, two of
+which, <code>strlen</code> and <code>strcmp</code>, are used here:
+</p><p class="indent">
+<a href="resources/c_progs/02_string_lib_experiments.c">
+02_string_lib_experiments.c</a>
+</p><p>
+</p>
+</div>
+
+<h3>Adaptations to Our Textbook Source</h3>
+<div>
+<p>
+We will need to make a few adaptations to the source code examples presented
+in our textbook since we do not have <code>conio.h</code> and since the
+<code>gets</code> function is deprecated.
+</p><p>
+We will replace calls to <code>gets</code> with calls to
+<a href="https://cplusplus.com/reference/cstdio/fgets/">fgets</a>.
+<code>fgets</code> requires two additional arguments, <code>num</code>, set to
+the maximum length of the string being read, and <code>stream</code>, and
+pointer to the file stream from which to read the string. Since we want this
+last value to be standard input, we will pass <code>stdin</code> for this
+last paramemter.
+</p><p>
+For an example of this adaptation, the call to:
+</p><pre>
+gets(str);
+</pre><p>
+in programming example 1 on page 119 of our text will be replaced with:
+</p><pre>
+fgets(str, 100, stdin);
+</pre><p>
+We also need a replacement for the function <code>getch</code>. I've updated
+<a href="https://codeberg.org/ACC/csc215/raw/branch/master/DataStructuresUsingC/resources/console_utils.h">
+console_utils.h</a> to add a <code>getch</code> function. We'll take a few
+minutes during class to confirm that you can compile and run the example
+programs on page 119 of our text using these adaptations.
+<p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Read <i>Chapter 4: Strings</i> from page 115 to page 123. You should adapt the
+5 progam examples from this section using the methods presented today in class,
+and confirm that you can compile and run them.
+</p><p>
+Complete <i>Review Questions</i> 1 to 5, 13, and 18 on page 135 of our text.
+</p>
+</div>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
