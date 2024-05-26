@@ -1,0 +1,56 @@
+The zone for (0, 2) is bounded by walls
+    1
+    2
+    3
+    4
+The zone for (0, 5) is bounded by walls
+    0
+    1
+    4
+    5
+The zone for (-6, 0) is bounded by walls
+    2
+    3
+    4
+    5
+The zone for (6, 0) is bounded by walls
+    0
+    1
+    2
+    3
+The zone for (-4, -2) is bounded by walls
+    0
+    1
+    2
+    3
+    4
+    5
+The zone for (4, -2) is bounded by walls
+    0
+    1
+    2
+    3
+    4
+    5
+The zone for (-8, -6) is bounded by walls
+    0
+    1
+    2
+    3
+    4
+    5
+The zone for (8, -6) is bounded by walls
+    0
+    1
+    2
+    3
+    4
+    5
+The zone for (20, -14) is bounded by walls
+    0
+    1
+    2
+The zone for (-20, -14) is bounded by walls
+    3
+    4
+    5

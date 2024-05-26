@@ -1,0 +1,11 @@
+
+Your Internet startup needs a domain name.  Your market research guru
+tells you that users tend to avoid sites with names that are hard to
+type.  Thus, you must pick a name that is easy to type.  For your
+research, you decide to use the idealized model of keyboards suggested
+by Figure~\ref{fig:kbd}.  Note that the keys are perfectly aligned
+both horizontally and vertically, unlike the skewed positioning of
+keys in typical keyboards.  You decide to assign a {\em typing cost\/}
+to each domain name (or any word, in general) based on the following
+rules. .
+

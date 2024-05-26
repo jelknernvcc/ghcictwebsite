@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSC 201: Computer Science I - Airline Meals</title>
+<style>
+@import url(../style.css);
+li {
+   margin-top: 0.5em;
+}
+table {
+    margin-left: 2em;
+}
+td, th {
+    padding: 0.2em;
+    border: 1px solid #888;
+}
+p.stringmethods img {
+    height: 260px;
+}
+pre.solution {
+    margin-left: 4em;
+}
+</style>
+</head>
+<body>
+<header>
+<a href="../index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>CSC 201: Computer Science I</h2>
+<h1>Airline Meals Lab</h1>
+</div>
+</header>
+<hr>
+<h2>Overview</h2>
+<p>
+Our class as a whole was stumped by Lab 6.2, so I thought this a good time
+to revisit our Java development environment lite and to encourage you to
+review the <b>String methods</b> you learned here:
+</p>
+<p class="stringmethods">
+<img src="JavaStringMethods.png" alt="String methods">
+</p>
+<p>
+Strings are important things.  I strongly recommend you become very familiar
+with these string methods and learn how to use them well. Lab 6.2 is aimed at
+getting you to do this very thing.
+</p>
+
+
+<h2>Activity 6.2</h2>
+
+<h3>Problem</h3>
+<p>
+A trial web site is developed on which passengers may specify their meal
+preferences prior to flying. They do so by entering a phrase that is converted
+to lower case and then stored in a String variable, request. Write code that
+stores in the int mealcode the value corresponding to the first of the
+following conditions that applies:
+</p>
+<table>
+<tr>
+  <th>Meal Code</th>
+  <th>Condition</th>
+</tr>
+<tr>
+  <td>1</td>
+  <td>request contains either "no beef" or "chicken" but not the word "child"
+  </td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>request contains the word "beef" but not the word "child"</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>request contains the word "vegetarian"</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>request contains the word "child" but not the word "vegetarian"</td>
+</tr>
+<tr>
+  <td>0</td>
+  <td>if none of the above conditions is met</td>
+</tr>
+</table>
+
+<h3>Solution</h3>
+<p>
+Here is a runnable solution to this problem:
+</p>
+<pre class="solution">
+public class Act6_2 {
+    public static void main(String[] args) {
+        String request = "child lo mein";
+        int mealcode;
+
+        if (request.indexOf("no beef") != -1 ||
+            request.indexOf("chicken") != -1 &amp;&amp;
+            request.indexOf("child") == -1)
+        {
+            mealcode = 1;
+        }
+        else if (request.indexOf("beef") != -1 &amp;&amp;
+                 request.indexOf("child") == -1)
+        {
+            mealcode = 2;
+        }
+        else if (request.indexOf("vegetarian") != -1)
+        {
+            mealcode = 3;
+        }
+        else if (request.indexOf("child") != -1 &amp;&amp;
+                 request.indexOf("vegetarian") == -1)
+        {
+            mealcode = 4;
+        }
+        else
+        {
+            mealcode = 0;
+        }
+
+        System.out.println(mealcode);
+    }
+}
+</pre>
+
+
+<h2>Activity 6.3</h2>
+
+<h3>Problem</h3>
+<p>
+An array meals contains five elements corresponding to the meal codes 0 through
+4 in Activity 6.2. For example, element <code>meals[1]</code> contains the
+number of <q>Chicken-based adult</q> meals requested, <code>meals[4]</code>
+contains the number of <q>Burger child</q> meals, and so on. Element
+<code>meals[0]</code> contains the number of requests in which none of the
+conditions for a particular meal type was met.
+</p>
+<p>
+Write code to store in the double cost the cost to the airline of providing the
+meals, where the cost for a meal of each type is specified in the table below.
+The number of meals in <code>meals[0]</code> should be split equally between
+<q>Chicken-based adult</q> and <q>Beef-based adult</q>. If this number is not
+an even number, then the number allocated to <q>Chicken-based adult</q> should
+be one more than the number allocated to <q>Beef-based adult</q>.
+</p>
+<table>
+<tr>
+  <th>Meal Code</th><th>Meal Cost</th>
+</tr>
+<tr>
+  <td>1</td><td>$1.75</td>
+</tr>
+<tr>
+  <td>2</td><td>$2.08</td>
+</tr>
+<tr>
+  <td>3</td><td>$2.14</td>
+</tr>
+<tr>
+  <td>4</td><td>$0.98</td>
+</tr>
+</table>
+
+<h3>Solution</h3>
+<p>
+Here is a runnable solution to this problem:
+</p>
+<pre class="solution">
+public class Act6_3 {
+    public static void main(String[] args) {
+        int meals[] = {0, 1, 1, 1, 1};
+        double cost;
+
+        if (meals[0] % 2 == 0)
+        {
+            cost = meals[0] * (1.75 + 2.08) / 2; 
+        }
+        else
+        {
+            cost = (meals[0] / 2 + 1) * 1.75 + (meals[0] / 2) * 2.08;      
+        }
+        cost += meals[1]*1.75 + meals[2]*2.08 + meals[3]*2.14 + meals[4]*0.98;
+
+        System.out.println(cost);
+    }
+}
+</pre>
+<p>
+Much like in the study of mathematics, learning computer science is a
+<i>cumulative process</i>. As long as you have a solid understanding of each
+new concept you learn, it doesn't really become more difficult.  Once you allow
+large holes to develop in your understanding however, the whole learning
+process quickly grinds to a halt. My impression is that you all had a hole in
+your understanding of <b>String methods</b>, which explains your trouble with
+exercise 6.2.
+</p>
+
+<footer>
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

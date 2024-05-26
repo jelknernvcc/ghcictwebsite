@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSC 201: Computer Science I - Lab 2</title>
+<style>
+@import url(../../style.css);
+li {
+   margin-top: 0.5em;
+}
+table {
+    margin-left: 2em;
+}
+td, th {
+    padding: 0.2em;
+    border: 1px solid #888;
+}
+p.stringmethods img {
+    height: 260px;
+}
+pre.solution {
+    margin-left: 4em;
+}
+</style>
+</head>
+<body>
+<header>
+<a href="../../index.html">
+<img src="../../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>CSC 201: Computer Science I</h2>
+<h1>Lab 2</h1>
+</div>
+</header>
+<hr>
+<h2>Problem</h2>
+<p>
+In this lab you are asked to create your first Java
+<a href="https://en.wikipedia.org/wiki/Object_(computer_science)">object</a>.
+Java requires a separate file for each type of object.  The name of the file
+has to match the name of the class. A single file will contain a
+<code>main</code> method, which most have modifiers <code>public static</code>.
+This means we will need at least two files, one containing the
+<code>APPoint</code> class, and one containing the <code>main</code> method.
+</p>
+<p>
+Let's take a look at how we can put this together to get started with Lab 2.
+Here is the source for the <code>APPoint</code> class:
+</p>
+<pre style="margin-left: 3em;">
+public class APPoint
+{
+    private double myX;
+    private double myY;
+
+    public APPoint( double x, double y )
+    {
+        myX = x;
+        myY = y;
+    }
+
+    public double getX() { return myX; }
+    public double getY() { return myY; }
+    public void setX( double x ) { myX = x; }
+    public void setY( double y ) { myY = y; }
+} 
+</pre>
+<p>
+You have to write this in a file named <a href="APPoint.java"
+download="APPoint.java">APPoint.java</a>.  Here is the other required file,
+which I am naming <a href="APPointRunner.java"
+download="APPointRunner.java">APPointRunner.java</a>:
+</p>
+<pre style="margin-left: 3em;">
+public class APPointRunner
+{
+    public static void main(String[] args)
+    {
+        APPoint myPoint = new APPoint(4, 5);
+        System.out.println("x is " + Double.toString(myPoint.getX()));
+    }
+} 
+</pre>
+<p>
+Now to get this to work from the Unix CLI, you run the following:
+</p>
+<pre style="margin-left: 3em;">
+$ javac APPointRunner.java
+</pre>
+<p>
+This will create <i>two</i> new files, <code>APPointRunner.class</code>
+<i>and</i> <code>APPoint.class</code>, since both files will be compiled. The
+Java compiler knows to compile <code>APPoint.java</code> because an
+<code>APPoint</code> instance is created on this line:
+</p>
+<pre style="margin-left: 3em;">
+APPoint myPoint = new APPoint(4, 5);
+</pre>
+<p>
+To run the program, type:
+</p>
+<pre style="margin-left: 3em;">
+$ java APPointRunner
+</pre>
+<p>
+and you will be greated on the terminal with the text:
+</p>
+<pre style="margin-left: 3em;">
+x is 4.0
+</pre>
+
+<footer>
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

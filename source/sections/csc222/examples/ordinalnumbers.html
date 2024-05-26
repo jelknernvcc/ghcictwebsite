@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSC 201: Computer Science I - Ordinal Numbers</title>
+<style>
+@import url(../style.css);
+li {
+   margin-top: 0.5em;
+}
+table {
+    margin-left: 2em;
+}
+td, th {
+    padding: 0.2em;
+    border: 1px solid #888;
+}
+p.stringmethods img {
+    height: 260px;
+}
+pre.solution, pre.data {
+    margin-left: 4em;
+}
+</style>
+</head>
+<body>
+<header>
+<a href="../index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>CSC 201: Computer Science I</h2>
+<h1>Ordinal Numbers</h1>
+</div>
+</header>
+<hr>
+
+<h2>Activity 10.1</h2>
+
+<h3>Problem</h3>
+<p>
+The int t contains an integer between 1 and 50 (inclusive). Write code that
+outputs the number in words and stores the result in the String inwords. For
+example, if t is 35 then inwords should contain "thirty five".</p>
+
+<h3>Solution</h3>
+<p>
+Here is a runnable solution to this problem:
+</p>
+<pre class="solution">
+public class Act10_1 {
+    public static void main(String[] args) {
+        int t = 29;
+        String inwords;
+        String[] smallnums = {"narf", "one", "two", "three", "four", "five",
+                              "six", "seven", "eight", "nine", "ten",
+                              "eleven", "twelve", "thirteen", "fourteen",
+                              "fifteen", "sixteen", "seventeen", "eighteen",
+                              "nineteen"};
+        String[] tens = {"twenty", "thirty", "forty", "fifty"};
+
+        if (t &lt; 20)
+            inwords = smallnums[t];
+        else if (t % 10 == 0)
+            inwords = tens[(t / 10) - 2];
+        else
+            inwords = tens[(t / 10) - 2] + " " + smallnums[t % 10];
+
+        System.out.println(inwords);
+    }
+}
+</pre>
+
+
+<h2>Activity 10.2</h2>
+
+<h3>Problem</h3>
+<p>
+The array s of ints contain integers each of which is between 1 and 1000
+(inclusive). Write code that stores in the variable ordinals the array of
+Strings consisting of each number followed by its ordinal number abbreviation,
+"st", "nd", "rd", or "th". For example if s is the array
+</p>
+<pre class="data">
+{ 1, 2, 3, 4, 5, 10, 11, 12, 13, 21, 22, 973, 1000 }
+</pre>
+<p>
+then your code should set ordinals to the array
+</p>
+<pre class="data">
+{ "1st", "2nd", "3rd", "4th", "5th", "10th", "11th", "12th", "13th", "21st", "22nd", "973rd", "1000th" }.
+</pre>
+
+<h3>Solution</h3>
+<p>
+Given the solution in 10.1 above, you should be able to craft your own solution
+to this problem, though the following may help you get over the type
+conversion obstacle:
+</p>
+<pre class="solution">
+public class Act10_2 {
+    public static void main(String[] args) {
+        int[] s = {21, 22, 973, 1000};
+        String[] ordinals = new String[s.length];
+
+        for (int i = 0; i &lt; s.length; i++)
+            ordinals[i] = Integer.toString(s[i]);
+
+        for (String ordval: ordinals)
+            System.out.println(ordval);
+    }
+}
+</pre>
+<p>
+The task now is to append the proper ordinal suffix to each string, which you
+should be able to do on your own.
+</p>
+
+<footer>
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

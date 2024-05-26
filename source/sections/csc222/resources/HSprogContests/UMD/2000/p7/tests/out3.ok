@@ -1,0 +1,9 @@
+From node 0
+  to node 1: Prob.(Success) = 0.58, Path: 0 -> 6 -> 4 -> 3 -> 1
+  to node 2: Prob.(Success) = 0.50, Path: 0 -> 2
+  to node 3: Prob.(Success) = 0.65, Path: 0 -> 6 -> 4 -> 3
+  to node 4: Prob.(Success) = 0.81, Path: 0 -> 6 -> 4
+  to node 5: Prob.(Success) = 0.45, Path: 0 -> 6 -> 5
+  to node 6: Prob.(Success) = 0.90, Path: 0 -> 6
+  to node 7: Prob.(Success) = 0.39, Path: 0 -> 6 -> 4 -> 3 -> 7
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA CSC 222 Week 15</title>
+<style>
+@import url(../../css/goals.css);
+pre {
+    margin-left: 3vw;
+}
+</style>
+<script src="../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CSC 222 Weekly Assignments: Week 15</h1>
+</div>
+<div class="mobile">
+<h1>CSC 222</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2023-12-04">Week of Monday, December 4, 2023</time>
+
+<h2>Overview</h2>
+<p>
+This week we will dive deeper into operator overloading and get more practice
+writing classes in C++.
+</p>
+
+<section>
+<h2>Friday, December 8th</h2>
+
+<h3>Classwork / Homework</h3>
+<div>
+<p>
+We will have a catch up day for some of you, while others will have very little
+work needed to complete today's task, but it will hopefully leave us all on the
+same page.
+</p><p>
+Your task is to download a copy of
+<a href="https://codeberg.org/ACC/csc222/raw/branch/master/thinkcs/exercises/ch15/test_points.cpp">
+test_points.cpp</a>, and create <code>Point.h</code> and <code>Point.cpp</code>
+files that will pass all these tests without modification.
+</p><p style="color: red;">
+This assignment is due by 11:59 pm on Saturday, December 9th and will not be
+accepted late. It will be the first part of your <i>Weeks 16 and 17</i> grade.
+</p><p>
+I will evaluate your work by running:
+</p><pre>
+$ g++ test_points.cpp Point.cpp
+</pre><p>
+and then running the <code>a.out</code> file generated. If it passes all the
+tests, you earn an A. If it doesn't, I'll need to dig into your source to
+figure out what partial credit you deserve.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Wednesday, December 6th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+Once again, José Ejemplo has provided us with
+<a href="https://codeberg.org/ACC/csc222/src/branch/master/thinkcs/exercises/ch15">an
+example solution</a> to our last homework assignment. Please try it out and
+make sure you can make it work during class today.
+</p><p>
+For an additional example of <code>&lt;&lt;</code> overloading, take a look at
+<a href="https://learn.microsoft.com/en-us/cpp/standard-library/overloading-the-output-operator-for-your-own-classes?view=msvc-170">
+Overloading the &lt;&lt; Operator for Your Own Classes</a>.
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Complete problem 5 from
+<a href="https://openbookproject.net/thinkcs/cpp/exercises/ch15/ch15s01.html">
+Chapter 15 Excercise Set 1</a>.  Be sure to divide your <code>Point</code>
+into three files: <code>Point.h</code>, <code>Point.cpp</code>, and
+<code>test_point.cpp</code>.
+</p><p style="color: red;">
+This assignment is due by 2:59 pm on Thurday, December 7th and will not be
+accepted late.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Monday, December 4th</h2>
+
+<h3>Reflection on Chapter 15 Exercise Set 1 Part 1</h3>
+<div>
+<p>
+Going forward, don't put your <code>main</code> function inside your
+<code>MyClass.cpp</code> file. Instead, create a separate file named
+<code>test_myclass.cpp</code> and either import <code>doctest.h</code>
+(preferred) or instantiate and test your class <q>by hand</q> in your own
+<code>main</code> function.
+</p><p>
+For our last homework assignment, our good friend José Ejemplo has provided
+us with
+
+<a href="https://codeberg.org/ACC/csc222/src/branch/master/thinkcs/exercises/ch15">an
+example solution</a> he was kindly willing to share.
+</p>
+</div>
+
+<h3>Classwork / Homework</h3>
+<div>
+<p>
+Complete problem 4 from
+<a href="https://openbookproject.net/thinkcs/cpp/exercises/ch15/ch15s01.html">
+Chapter 15 Excercise Set 1</a>.  Be sure to divide your <code>Complex</code>
+class into three files: <code>Complex.h</code>, <code>Complex.cpp</code>, and
+<code>test_complex.cpp</code>.
+</p><p style="color: red;">
+This assignment is due by 11:59 pm on Tuesday, December 5th and will not be
+accepted late.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

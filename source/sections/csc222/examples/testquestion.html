@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSC 201: Computer Science I - Test Question</title>
+<style>
+@import url(../style.css);
+li {
+   margin-top: 0.5em;
+}
+table {
+    margin-left: 2em;
+}
+td, th {
+    padding: 0.2em;
+    border: 1px solid #888;
+}
+p.stringmethods img {
+    height: 260px;
+}
+pre.solution {
+    margin-left: 4em;
+}
+</style>
+</head>
+<body>
+<header>
+<a href="../index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>CSC 201: Computer Science I</h2>
+<h1>Test Question</h1>
+</div>
+</header>
+<hr>
+<h2>Problem</h2>
+<p>
+Recall that, if s and t are Strings, then s.indexOf( t ) returns -1 if t is not
+a substring of s. However, if t is a substring of s, then s.indexOf( t )
+returns the index in s of the first character of the first appearance within s
+of t. For example,
+</p>
+<pre style="margin-left: 3em;">
+"abcbcdcde".indexOf( "cd" ) returns 4
+"abcbcdcde".indexOf( "dcb" ) returns -1.
+</pre>
+<p>
+Assuming that s and t are Strings, which of the following code fragments are
+such that the value returned by s.indexOf( t ) before the code is executed is
+equal to the value of the int n after the code is executed?
+</p>
+<ol type="I">
+<li><pre>
+int n = -1;
+int tSize = t.length();
+boolean found = false;
+while ( !found &amp;&amp; tSize &lt;= s.length() )
+{
+    n++;
+    if ( t.equals( s.substring( 0, tSize ) ) )
+        found = true;
+    else
+        s = s.substring( 1 );
+}
+if ( !found )
+    n = -1;    
+</pre></li>
+<li><pre>
+int n = -1;
+int sSize = s.length();
+int tSize = t.length();
+boolean found = false;
+while ( !found &amp;&amp; n + tSize + 1 &lt;= sSize )
+{
+    n++;
+    if ( t.equals( s.substring( n, n + tSize ) ) )
+    found = true;
+}
+if ( !found )
+    n = -1;     
+</pre></li>
+<li><pre>
+int n = 0;
+int sSize = s.length();
+int tSize = t.length();
+boolean found = false;
+while ( !found &amp;&amp; n + tSize &lt;= sSize )
+{
+    if ( t.equals( s.substring( n, n + tSize ) ) )
+        found = true;
+
+    n++;
+}
+if ( found )
+    n--;
+else
+    n = -1; 
+</pre></li>
+</ol>
+
+<ol type="A">
+  <li>I only</li>
+  <li>II only</li>
+  <li>III only</li>
+  <li>I and II only</li>
+  <li>I, II and III</li>
+</ol>
+
+
+<h2>Solution</h2>
+<p>
+</p>
+
+<footer>
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
