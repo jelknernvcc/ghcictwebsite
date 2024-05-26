@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+import turtle
+import random
+
+
+def get_random_color():
+    return (random.random(), random.random(), random.random())
+
+
+canvas = turtle.Screen()
+canvas.setup(400, 400)
+
+leo = turtle.Turtle()
+leo.penup()
+leo.goto(-50, 50)
+leo.pendown()
+
+for i in range(4):
+    leo.color(get_random_color())
+    leo.forward(100)
+    leo.right(90)
+
+canvas.exitonclick()

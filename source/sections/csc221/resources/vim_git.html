@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Using Git in Vim</title>
+<style>
+@import url(../style.css);
+ol > li > p > img {
+    height: 300px;
+}
+span {
+    color: #F00;
+}
+li {
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<header>
+<a href="../index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>Introduction to Computer Science</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<h2>Using Git from within Vim</h2>
+<p>
+The following process will add the <i>fu<span>git</span>ive</i> plugin to vim,
+making it possible to easily use git from within vim (<i>note</i> These
+instructions where kindly created by Marco Sirabella):
+</p>
+<ol>
+  <li>Create an account for yourself on
+  <a href="https://github.com/">GitHub</a> and add your ssh public key to it. I
+  would recommend using the same username and email as you did on GitLab, so
+  that your one global git configuration will work for both.</li>
+
+  <li>Run the following command at the bash prompt from your home directory:
+  <pre>
+  $ mkdir -p .vim/pack/plugins/start
+  $ cd .vim/pack/plugins/start
+  $ git clone git@github.com:tpope/vim-fugitive.git 
+  </pre></li>
+
+  <li>The fugitive plugin is now installed. Take a look at
+  <a href="https://indico.cern.ch/event/383445/contributions/1811364/attachments/764826/1049218/fugitive.pdf">
+  Fugitive - vim plugin for git</a> to get an idea how to use it.
+</ol>
+<p>
+We will practice the new 
+<a href="://en.wikipedia.org/wiki/Workflow">workflow</a> together in
+class.
+</p>
+</article>
+
+<footer>
+<hr>
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

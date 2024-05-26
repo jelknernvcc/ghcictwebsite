@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA CSC 200: TDD with Python Questions</title>
+<style>
+@import url(../../style.css);
+li {
+    margin-top: 10px;
+}
+section#TOC {
+    font-size: small;
+}
+section#TOC > h2 {
+    text-align: center;
+}
+section#TOC > ul {
+    list-style-type: none;
+}
+section#TOC > ul > li{
+    margin-top: 0;
+}
+</style>
+</head>
+<body>
+<header>
+<a href="../index.html">
+<img src="../../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>Intro to Computer Science: TDD with Python Questions</h1>
+</div>
+</header>
+<hr>
+
+<section id="TOC">
+<h2>TOC</h2>
+<ul>
+  <li><a href="#ch1n2">Chapter 1 and 2</a>: Getting Django Set Up Using a
+  Functional Test and Extending Our Functional Test Using the unnittest
+  Module</li>
+  <li><a href="#ch3">Chapter 3</a>: Testing a Simple Home Page with Unit Tests
+  </li>
+  <li><a href="#ch4">Chapter 4</a>: What Are We Doing with All These Tests?
+  (And, Refactoring)</li> 
+  <li><a href="#ch5">Chapter 5</a>: Saving User Input: Testing the Database
+  </li> 
+  <li><a href="#ch6">Chapter 6</a>: Improving Functional Tests: Ensuring
+  Isolation and Removing Voodoo Sleeps</li>
+  <li><a href="#ch7">Chapter 7</a>: Working Incrementally</li> 
+  <li><a href="#ch8">Chapter 8</a>: Prettification: Layout and Styling, and
+  What to Test About It</li> 
+  <li><a href="#ch9">Chapter 9</a>: Testing Deployment Using a Staging Site</li>
+  <li><a href="#ch10">Chapter 10</a>: Getting to a Production-Ready Deployment
+  </li>
+  <li><a href="#ch11">Chapter 11</a>: Automating Deployment with Fabric</li>
+  <li><a href="#ch12">Chapter 12</a>: Splitting Our Tests into Multiple Files,
+  and a Generic Wait Helper</li>
+  <li><a href="#ch13">Chapter 13</a>: Validation at the Database Layer</li>
+  <li><a href="#ch14">Chapter 14</a>: A Simple Form</li>
+  <li><a href="#ch15">Chapter 15</a>: More Advanced Forms</li>
+</ul>
+</section>
+
+<article id="ch1n2">
+<h2>Chapters 1 and 2 of <a href="https://www.obeythetestinggoat.com">
+Test-Driven Development with Python</a></h2>
+
+<p>Discuss the following questions:</p>
+<ol>
+<li>What is <b>TDD</b> and how does our author describe it's main principle
+and the mindset we should use as we try to master it?</li>
+
+<li>What is the mascot for TDD in the Python community? What about this
+mascot provides a metaphor for how we should approach TDD?</li>
+
+<li>What is a virtual environment and what benefits does it provide us as
+software developers? What is the process we used to setup our virtual
+environment?</li>
+
+<li>What is a version control system and what benefits does it provide us
+as software developers? Which version control system are we using and why do
+you think our author chose that system?</li>
+
+<li>Describe the process of excluding parts of our development environment from
+version control. Explain why we would want to do this.
+
+<li>What is a <i>functional test</i> and how is it used? Which software will
+we be using to run our functional tests?</li>
+
+<li>What does the author say he learned at work about comments?</li>
+
+<li>Which standard library Python module will be using for writing our
+tests?</li>
+
+<li>In which directory do you find the <code>tests.py</code> file?  What is 
+this file used for?</li>
+
+<li>In which directory do you find the <code>urls.py</code> file? What is
+it used for?</li>
+
+<li>In which directory do you find the <code>views.py</code> file? What is
+it used for?</li>
+</ol>
+</article>
+
+
+<article id="ch3">
+<h2>Chapter 3: <a
+href="https://www.obeythetestinggoat.com/book/chapter_unit_test_first_view.html">
+Testing a Simple Home Page with Unit Tests</a></h2>
+
+<p>Answer the following questions:</p>
+<ol>
+<li>What advice does our author give us in the <i>Warning: Things Are About
+to Get Real</i> section? What skills does the author say you will learn by
+<q>doing things the hard way</q>?</li>
+
+<li>Describe what running the following at the command line did to our project:
+<pre>
+$ python manage.py startapp lists
+</pre>
+</li>
+
+<li>What are <b>unit tests</b> and how does our author say they differ from
+<b>functional tests</b>?</li>
+
+<li>List the four steps in the TDD <b>workflow</b> as described in this
+chapter.</li>
+
+<li>What is the <b>MVC</b> pattern? Do a little research to find out more
+about this pattern and how it is implemented in Django.</li>
+
+<li>Read
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview">An
+overview of HTTP</a> and discuss how our Django application uses this
+protocol.</li>
+
+<li>List the steps the author says you should use in reading through
+<b>tracebacks</b> for relevant clues.</li>
+</ol>
+
+<p>Read <a
+href="https://medium.freecodecamp.org/simplified-explanation-to-mvc-5d307796df30">
+What is MVC, and how is it like a sandwich shop?</a>.  Look for other sources
+of information on MVC and come to class prepared for a brief quiz on the MVC
+pattern.</p>
+</article>
+
+
+<article id="ch4">
+<h2>Chapter 4: <a
+href="https://www.obeythetestinggoat.com/book/chapter_philosophy_and_refactoring.html">
+What Are We Doing with All These Tests? (And, Refactoring)</a></h2>
+
+<p>Answer the following questions:</p>
+<ol>
+<li>How would you summarize the author's <q>seething frustration</q> questions
+at the beginning of chapter 4?</li>
+
+<li>How is <q>programming like pulling a bucket of water up from a
+well</q>?</li>
+
+<li>What is the <i>boiled frog</i> argument the author makes regarding the
+discipline of doing TDD?</li>
+
+<li>In a single sentence, state what you think the author is asking us to
+accept as we proceed on this learning journey.</li>
+
+<li>Unit test are about testing ________, ________, and ________, they should
+not be used to test ________.</li>
+
+<li>What is <b>refactoring</b>?  When should you do it?</li>
+</ol>
+
+<p>Read
+<a href="https://medium.com/shecodeafrica/understanding-the-mvc-pattern-in-django-edda05b9f43f">Understanding the MVC pattern in Django</a>.
+</p>
+</article>
+
+
+<article id="ch5">
+<h2>Chapter 5: <a
+href="https://www.obeythetestinggoat.com/book/chapter_post_and_database.html">
+Saving User Input: Testing the Database</a></h2>
+
+<p>Answer the following questions</p>
+<ol>
+<li>Which four things does the author list as tools for debugging
+unexpected failures in functional tests?</li>
+
+<li>What is a CSRF? How did we protect against it in the application we
+are building?</li>
+
+<li>What is a <b>POST request</b>? How are we using it in our application?</li>
+
+<li>What is a <b>regression</b>? What regression did we encounter in this
+chapter and how did our tests help us uncover it?</li>
+
+<li>What specific example of <b>triangulation</b> do we use in this chapter?
+Why does the author say he prefers this to the <i>eliminate duplication</i>
+methodology as an approach to <b>Red/Green/Refactor</b>?</li>
+
+<li>What is a <b>code smell</b>? Use web resources to help you come up with a
+definition <i>in your own words</i>.</li>
+
+<li>What is an <b>ORM</b>? Use web resources to help you come up with a
+definition <i>in your own words</i>. Which new file do we modify for the first
+time as we begin to work with our ORM?</li>
+
+<li>According to our author, what is the charge of the <b>migrations</b>
+system? How does this relate to / differ from the job of the ORM? Which new
+Django command do we use to activate the migrations system?</li> 
+
+<li>Looking at the new unit test class, <code>ItemModelText</code>, what can
+you say about the <i>type</i> of <code>saved_items</code>? Explain your
+reasoning.</li>
+
+<li>Our author says that classes that inherit from <code>models.Model</code>
+are mapped to what? Relate your answer to the first two questions you answered
+above.</li>
+
+<li>In the section <i>Saving the POST to the Database</i>, we add modify the
+<code>test_can_save_a_POST_request</code> method.  Answer the following
+questions about that method:
+<ol>
+  <li>What type is the <code>data</code> parameter passed to the
+  <code>self.client.post</code> method?</li>
+
+  <li>To understand what is going on here, it is helpful to look at
+  <code>'item_text'</code> to see what it is doing. Run the following
+  command at the bash prompt inside your <code>python-tdd-book</code>
+  directory:
+  <pre>
+  $ egrep -R item_text *</pre>
+  In which files does the string <code>item_text</code> occur?</li>
+
+  <li>What can you say about what <code>item_text</code> is doing in our
+  program?</li>
+</ol>
+</li>
+
+<li>Explain the difference between <code>makemigrations</code> and
+<code>migrate</code>.  What do they each do?  When should you run them?</li>
+
+<li>Describe how Django templates allow you to dynamically create web pages by
+combining presentation syntax written in HTML with programming logic.</li>
+
+<li>What is the purpose of running the following?<pre>
+  $ rm db.sqlite3
+  $ python manage.py migrate --noinput</pre>
+Explain in detail what is happening with each command here.</li>
+</ol>
+</article>
+
+
+<article id="ch6">
+<h2>Chapter 6: <a
+href="https://www.obeythetestinggoat.com/book/chapter_explicit_waits_1.html">
+Improving Functional Tests: Ensuring Isolation and Removing Voodoo Sleeps</a>
+</h2>
+
+<p>Answer the following questions:</p>
+<ol>
+<li>What does the author mean by <i>isolation</i> between tests? Students in
+our database class have been introduced the the term <i>idempotent</i> (a nice
+mathematical term). Can you relate this term to what we are doing here?  Look
+up <i>idempotency</i> as it relates to <i>REST API</i>s to help with your
+answer here.</li>
+
+<li>What does <code>LiveServerTestCase</code> give us that we didn't have
+before?  What <i>is</i> <code>LiveServerTestCase</code> anyway? Explain how you
+know.</li>
+
+<li>Describe <i>in detail</i> what these three commands are doing:<pre>
+  $ mkdir functional_tests
+  $ touch functional_tests/__init__.py
+  $ git mv functional_tests.py functional_tests/tests.py
+</pre></li>
+
+<li>Discuss the difference between <i>implicit</i> and <i>explicit</i> waits.
+What does the author say are some of the problems with each approach?</li>
+
+<li>Read Martin Fowler's <a
+href="https://martinfowler.com/articles/nonDeterminism.html"> Eradicating
+Non-Determinism in Tests</a>. According to the article, what is a
+  <i>non-deterministic test</i>? What are the two problems Martin ascribes to
+them? What is the first piece of advice Martin gives as to how to handle
+non-deterministic tests?</li>
+
+<li>Summarize each of the following concept's from Martin Fowler's article in
+your own words (Good summaries should be short and clear):
+<ul class="vocablist">
+  <li>lack of isolation</li>
+  <li>asynchronous behavior</li>
+  <li>remote services</li>
+  <li>time</li>
+  <li>resource leaks</li>
+</ul></li>
+
+<li>Explain <i>in detail</i> what caused each of the two functional test errors
+we intentially caused at the end of this chapter. Why do you think the author
+asked you to make them?</li>
+</ol>
+</article>
+
+
+<article id="ch7">
+<h2>Chapter 7: <a
+href="https://www.obeythetestinggoat.com/book/chapter_working_incrementally.html">
+Working Incrementally</a></h2>
+
+<p>Answer the following questions:</p>
+<ol>
+<li>What does the author mean by <i>Big Design Up Front</i> and how is the
+agile movement a reaction against this? Instead of a long up-front design
+phase, what does the agile philosophy strive to achieve early in the
+development process and why?</li>
+
+<li>Explain the YAGNI tenent. What it means and why it is a principle of agile
+software development.</li>
+
+<li>Expand upon what the author says in the <i>REST (ish)</i> section. Which of
+the three parts of our MVC architecture does he say we already understand? Does
+this make sense to you? That leaves the other two parts. How does the author go
+about approaching these?</li>
+
+<li>Describe the relationship between <b>URLs</b> and building Django
+application <b>UIs</b>.  Break down in explicit detail the URL design the
+author proposes for our ToDo list application, and how this is <q>RESTish</q>.
+Describe how we use the <code>assertRegex</code> method from the
+<code>unittest</code> module to enforce this.</li>
+
+<li>Discuss in detail the items in the chapter 7 <i>scratchpad</i> the author
+presents at the end of the <b>REST (ish)</b> section. Where will these URLs be
+added? Describe the process.</li>
+
+<li>Explain how our author approaches the problem of ensuring we have a
+regression test and what this means in the context of our application.</li>
+
+<li>Lay out the author's approach to using TDD to implement a new design.
+Explain it in your own words and relate it to the flowchart presented (which
+now adorns the wall in our classroom as well).</li>
+
+<li>In the section <i>Iterating Towards the New Design</i>, our author states:
+<blockquote>
+Another way of thinking about it is as a problem-solving technique: our new URL
+design is currently not implemented, so it works for 0 items. Ultimately, we
+want to solve for n items, but solving for 1 item is a good step along the way.
+</blockquote>
+Since integration with our math curriculum is one of the educational goals of
+this course, relate this statement to perhaps the most powerful tool in the
+mathematian's toolbox for proving statements about the natural numbers,
+<b>the principle of mathematical induction</b>.</li>
+
+<li>This chapter contains the first time we handle a new URL (other than '/').
+Describe in detail the full process we use for doing that. Which files need to
+be changed?  How?</li>
+
+<li>Describe in detail the process of getting our new URL,
+<code>/lists/the-only-list-in-the-world/</code> to pass our original functional
+test. Why does it pass the original one but not the new one?</li>
+
+<li>The rest of the chapter is spent iterating toward a design that supports
+seperate lists for seperate list items. Summarize the steps involved in this
+process. Pay particular attention to the step in which we adjust our models to
+reflect our new design.</li>
+</ol>
+</article>
+
+
+<article id="ch8">
+<h2>Chapter 8: <a
+href="https://www.obeythetestinggoat.com/book/chapter_prettification.html">
+Prettification: Layout and Styling, and What to Test About It</a></h2>
+
+<p>Answer the following questions:</p>
+<ol>
+<li>Discuss how the author says we should approach testing the appearance of
+our application. How does he say we can use TDD to test our aesthetics?
+(see <a href="https://docs.google.com/presentation/d/e/2PACX-1vRb066DjOav6bZ3D0M8cnNDqyMS_GydYGPI6LsbJWdH0Q9sqKYKdTb4KptodW-glWme6vR03wD7BZFt/pub?start=false&loop=false&delayms=3000&slide=id.p1">
+Prettification: Layout and Styling</a>
+by Bryan Lizama).
+</li>
+
+<li>What is a <b>CSS framework</b>? Do a bit of research on the one the
+author has chosen for us here, and list some popular alternatives.</li>
+
+<li>What is <b>template inheritance</b>? Describe the specific steps we use
+in this chapter to apply it to our home and list templates.
+(see <a href="https://docs.google.com/presentation/d/e/2PACX-1vRG-eiu6MoftmxTBnYHHgcUS3wQWEBP-f6hZ_8D_YfkmN2Wx_urQKbfM_-K8REy_kpSpKSz3EZqws41/pub?start=false&loop=false&delayms=3000&slide=id.p1">Template Inheritance</a>
+by Amy Tramontozzi).
+</li>
+
+<li>What are <b>static files</b> in the context of our web application and how
+do we setup Django to use them?</li>
+</ol>
+</article>
+
+<article id="ch9">
+<h2>Chapter 9: <a
+href="https://www.obeythetestinggoat.com/book/chapter_manual_deployment.html">
+Testing Deployment Using a Staging Site</a></h2>
+
+<p>Answer the following questions:</p>
+<ol>
+<li>What are the <i>danger areas</i> our author warns us about as we enter
+this chapter on deploying to a live server?</li>
+
+<li>What are the corresponding <i>solutions</i> to each of the dangers the
+author lists immediately following his presentation of the danger list?</li>
+
+<li>Summarize the <q>Deployment Chapters Overview</q> in your own words to
+help you get a clearer picture of where we are going on this journey to a
+production site.</li>
+
+<li>Our author makes a point of distinguishing between running tests
+<i>against</i> our staging server as opposed to running them <i>on</i> our
+staging server.  Why do you think this distinction is important?</li>
+
+<li>When I run: <code>$ python manage.py test functional_tests</code> my
+functional tests all pass, but when I run <code>$
+STAGING_SERVER=todo-staging.elkner.net python manage.py test functional_tests
+</code> all my functional tests fail.  Explain in detail why and what is
+happening.</li> 
+
+<li>What are the two tasks into which our author subdivides the
+<i>deployment</i> task? Describe each of them.</li>
+
+<li>What is <b>DNS</b>? What does our author tell us about how to set it up?
+</li>
+
+<li>Explain in detail what is happening when I ran the following on my
+Django development server:
+<pre>
+$ export SITENAME=todo-staging.elkner.net
+$ git clone git@gitlab.com:jelkner/tddbook3.git ~/sites/$SITENAME
+</pre>
+What will be installed where?
+</li>
+
+<li>Describe what is happening with this command:
+<pre>
+jelkner@testinggoat:~/sites/todo-staging.elkner.net$ ./venv/bin/pip install -r requirements.txt
+</pre>
+</li>
+</ol>
+</article>
+
+<article id="ch10">
+<h2>Chapter 10: <a
+href="https://www.obeythetestinggoat.com/book/chapter_making_deployment_production_ready.html">
+Getting to a Production-Ready Deployment</a></h2>
+
+<p>Answer the following questions:</p>
+<ol>
+<li>What things does our author tell us are wrong with our <q>hacky
+deployment</q>?</li>
+
+<li>What are the most common open source <i>web servers</i> in use today?
+Find information on the advantages and disadvantages of each of them and use
+this information to evaluate our author's choice of web servers. Do you agree
+that our choice will make us part of the <q>cool kids</q> of web development?
+</li>
+
+<li>What is <b>WSGI</b>?  Why are we using two web servers in combination
+and how do they relate to each other?</li>
+
+<li>What is <b>systemd</b> and how does it fit into our deployment plans?</li>
+
+<li>What is the idea behind the <code>sites-available</code> and
+<code>sites-enabled</code> directories?  How is this idea implemented?
+Provide details.</li>
+
+<li>List the tips our author gives us for debugging Nginx.</li>
+
+<li>What is a <b>Unix sockets</b> and how are we using one in our server
+setup?</li>
+
+<li>Describe how we use <b>environment variables</b> to adjust settings on
+our production server.</li>
+
+<li>List the new debugging techniques our author provides in the <i>More
+Debugging Tips and Commands</i> box.  Try each one and report on what you
+experience.</li>
+
+<li>List the provisioning and deployment steps listed in the <i>Thinking About
+Automating</i> section and describe the approach used to saving system
+configuration.</li>
+</ol>
+</article>
+
+<article id="ch11">
+<h2>Chapter 11: <a
+href="https://www.obeythetestinggoat.com/book/chapter_automate_deployment_with_fabric.html">
+Automating Deployment with Fabric</a></h2>
+
+<p>Answer the following questions:</p>
+<ol>
+<li>What is <b>fabric</b>? Do a bit of Internet research to find out more about
+its history and usage.</li>
+
+<li>Describe in detail what the <code>deploy</code> function does. Do you think
+it helps make the deployment process more understandable in addition to
+automating it? How does this relate to the theme of <i>abstraction</i> we have
+been talking about all year?</li>
+
+<li>Run the <code>git log ...</code> command you see inside the
+<code>_get_latest_source</code> function and make note of the result. How might
+this be useful to us in other ways?</li>
+
+<li>Take a closer look at the <code>git reset --hard ...</code> command at the
+end of the <code>_get_latest_source</code> function. Is this just what we have
+been looking for to resolve some of the git conflicts we have been having?</li>
+</ol>
+</article>
+
+<article id="ch12">
+<h2>Chapter 12: <a
+href="https://www.obeythetestinggoat.com/book/chapter_organising_test_files.html">
+Splitting Our Tests into Multiple Files, and a Generic Wait Helper</a></h2>
+
+<p>Answer the following questions:</p>
+<ol>
+<li>Before beginning a refactor of the functional tests, our author mentions
+two possible approaches to organizing them. List these two approaches and
+describe how the arrangement of tests would differ in each. Which approach is
+most appealing to you?</li>
+
+<li>The aside titled <i>Don't Forget the <q>Refactor</q> in <q>Red, Green,
+Refactor</q></i> mentions
+<a href="https://martinfowler.com/bliki/TechnicalDebt.html">technical debt</a>.
+Read Martin Fowler's post describing what this is and summarize how our
+author pushes back against the claim sometimes made that TDD leads to poorly
+designed code.</li>
+
+<li>What is the <q>side bonus</q> we get from splitting our functional tests
+into separate files?</li>
+
+<li>Do some web research to find out more about <b>lambda functions</b> in
+Python, and provide a few examples of their use. Explain how is it being used in
+our application to make a flexible <code>wait_for</code> methond.</li>
+
+<li>Our author states that, <q>We're into the realm of functional programming
+now</q>.  What is <b>functional programming</b>? Do some web research and come
+up with a definition. Include three or four examples of <i>functional
+programming languages</i>.</li>
+
+<li>What is the reason our author gives for waiting until now to create a
+subdirectory for unit tests? Do you think this was a good decision? Justify
+your response.</li>
+</ol>
+</article>
+
+<article id="ch13">
+<h2>Chapter 13: <a
+href="https://www.obeythetestinggoat.com/book/chapter_database_layer_validation.html">
+Validation at the Database Layer</a></h2>
+
+<p>Answer the following questions:</p>
+<ol>
+<li>Discuss the <q>big goal</q> of this chapter. What are we trying to
+achieve?</li>
+
+<li>Read the link provided for an explaination of the <code>with</code>
+statement and summarize its use in your own words.</li>
+
+<li>Discuss the different layers we need to touch to achieve out goal in this
+chapter and the approach our author uses for testing step-by-step each of
+these layers.</li>
+
+<li>Explain why the functional tests are still not passing at the end of
+the <i>Checking That Invalid Input Isn't Saved to the Database</i> section.
+</li>
+
+<li>What does our author mean when he says that <q>this doesn’t fit the
+REST-ful URL model quite as well</q> in the introduction to the <i>Django
+Pattern: Processing POST Requests in the Same View as Renders the Form</i>
+section?</li>
+
+<li>Discuss the benefits of adding a <code>get_absolute_url</code> function to
+our models and describe how to use it.</li>
+</ol>
+</article>
+
+<article id="ch14">
+<h2>Chapter 14: <a
+href="https://www.obeythetestinggoat.com/book/chapter_simple_form.html">
+A Simple Form</a></h2>
+
+<p>Answer the following questions:</p>
+<ol>
+<li>At the beginning of the chapter, our author states that <q>Django
+encourages you to use <b>form classes</b> to do the work of validating user
+input, and choosing what error messages to display.</q> Poke around the
+Django documentation and see what information you can find on <i>form
+classes</i>.</li>
+
+<li>List the three <q>superpowers</q> our author ascribes to Django forms and
+describe each of them in detail.</li>
+
+<li>React to the question, <q>Does this feel a bit like development-driven
+tests?</q> What does our text have to say about this approach? When is it
+<q>OK</q> to use it?</li>
+
+<li>Take a look at the documentation for <b>ModelForm</b>. List several of the
+<i>field types</i> in <code>ModelForm</code>s and how they correspond to
+<b>Model</b> field types.</li> 
+
+<li>Discuss what our author means by his maxim, <q>merge code as early as
+possible</q>, which he says is a sort of corollary to <q>deploy as early as
+possible</q>.</li>
+</ol>
+</article>
+
+<article id="ch15">
+<h2>Chapter 15: <a
+href="https://www.obeythetestinggoat.com/book/chapter_advanced_forms.html">
+More Advanced Forms</a></h2>
+
+<p>Answer the following questions:</p>
+<ol>
+<li>Our author gives us the option of skipping this chapter. Why?  Whom does
+he encourage to read it?  On which learning area will it focus?</li>
+
+<li>Discuss the <q>judgement call</q> presented as to whether to:
+  <ol>
+    <li>add a new test method to an existing test class.</li>
+    <li>extend an existing test method.</li>
+    <li>add a new test class.</li>
+  </ol>
+</li>
+
+<li>What does this chapter say about when to test for developer stupidity?</li>
+</ol>
+</article>
+
+<footer>
+<hr>
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

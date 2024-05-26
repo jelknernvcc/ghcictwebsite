@@ -1,0 +1,48 @@
+import turtle
+import random
+
+def draw_circles(t, size, decrease):
+    for i in range(10):
+        t.circle(size)
+        size = size - decrease 
+
+def draw_special(t, size, repeat, decrease):
+    for i in range(repeat):
+        draw_circles(t, size, decrease)
+        t.right(360 / repeat)
+
+canvas = turtle.Screen()
+canvas.setup(500, 500)
+canvas.bgcolor('black')
+
+Albert = turtle.Turtle()
+Albert.speed(0)
+Albert.color('white')
+rotate = int(360)
+draw_special(Albert, 100, 10, 4)
+
+Steve = turtle.Turtle()
+Steve.speed(0)
+Steve.color('yellow')
+rotate = int(90)
+draw_special(Steve, 100, 10, 10)
+
+Barry = turtle.Turtle()
+Barry.speed(0)
+Barry.color('blue')
+rotate = int(80)
+draw_special(Barry, 100, 10, 5)
+
+Terry = turtle.Turtle()
+Terry.speed(0)
+Terry.color('orange')
+rotate = int(90)
+draw_special(Terry, 100, 10, 19)
+
+Will = turtle.Turtle()
+Will.speed(0)
+Will.color('pink')
+rotate = int(90)
+draw_special(Will, 100, 10, 20)
+
+canvas.exitonclick()

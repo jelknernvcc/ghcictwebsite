@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ITP 100 Project: Sorting Fruits</title>
+<style>
+@import url(../style.css);
+</style>
+</head>
+<body>
+<header>
+<a href="../index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>ITP 100: Software Design (Python)</h2>
+<h1>Project: Sorting Fruits</h1>
+</div>
+</header>
+<hr>
+<h2>Due Date</h2>
+<p>
+Monday, February 27, 2012
+</p>
+
+<h2>What to do:</h2>
+<ol>
+<li>
+Choose a partner.  This is a
+<a href="http://en.wikipedia.org/wiki/Pair_programming">pair programming</a>
+assignment.  Two programmers will work together on one computer and submit
+one program.
+</li>
+<li>
+<p>
+Write a Python program named <code>get_fruites.py</code> that asks the user for
+the name of a fruit that they like.  Then ask them for nine more.  Store these
+fruits, one per line, in a text file named <code>fruit_list.txt</code>.</p>
+<p>
+A sample session might look something like this:
+</p>
+<pre>
+$ python3 get_fruits.py 
+Please enter the name of a fruit you like to eat: cherries
+Please enter the name of another fruit you like to eat: blueberries
+Please enter the name of another fruit you like to eat: bananas
+Please enter the name of another fruit you like to eat: oranges
+Please enter the name of another fruit you like to eat: peaches
+Please enter the name of another fruit you like to eat: apples
+Please enter the name of another fruit you like to eat: strawberries
+Please enter the name of another fruit you like to eat: mangos
+Please enter the name of another fruit you like to eat: kiwis
+Please enter the name of another fruit you like to eat: rasberries
+$
+</pre>
+<p>
+After which, the <code>fruit_list.txt</code> file should exist and contain
+the following:
+</p>
+<pre>
+cherries
+blueberries
+bananas
+oranges
+peaches
+apples
+strawberries
+mangos
+kiwis
+rasberries
+</pre>
+</li>
+
+<li>
+Write a program named <code>show_fruits.py</code> that displays an 
+introductory sentence and then the list of fruits in
+<code>fruit_list.txt</code> enumerated.  A sample run of the program with the
+fruits entered in the previous example might look like this:
+<pre>
+$ show_fruits.py
+Here is a list of the fruits you said you like to eat:
+
+  1. cherries
+  2. blueberries
+  3. bananas
+  4. oranges
+  5. peaches
+  6. apples
+  7. strawberries
+  8. mangos
+  9. kiwis
+  10. rasberries
+</pre>
+</li>
+
+<li>
+Write a program named <code>show_sorted_fruits.py</code> that displays an 
+introductory sentence and then the list of fruits in
+<code>fruit_list.txt</code> enumerated in alphabetical order.  A sample run of
+the program with the fruits entered in the preceding example might look like
+this:
+<pre>
+$ show_sorted_fruits.py
+Here is a list of the fruits you said you like to eat:
+
+  1. apples
+  2. bananas
+  3. blueberries
+  4. cherries
+  5. kiwis
+  6. mangos
+  7. oranges
+  8. peaches
+  9. rasberries
+  10. strawberries
+</pre>
+</li>
+
+</ol>
+
+<h2>Evaluation</h2>
+<p>
+You will receive a rubric score between 4 and 0 on this assignment.
+</p>
+
+<footer>
+<hr>
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ITP 100 Project: Contact List</title>
+<style>
+@import url(../style.css);
+</style>
+</head>
+<body>
+<header>
+<a href="../index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>ITP 100: Software Design (Python)</h2>
+<h1>Project: Contact List</h1>
+</div>
+</header>
+<hr>
+<h2>Due Date</h2>
+<p>
+Wednesday, February 29, 2012
+</p>
+
+<h2>What to do:</h2>
+<ol>
+<li>
+As with last week, choose a partner.  This is a
+<a href="http://en.wikipedia.org/wiki/Pair_programming">pair programming</a>
+assignment.  Two programmers will work together on one computer and submit
+one program.  You can work with the same partner you did last time, but
+keep in mind that once we become familiar with this process we will begin
+mixing things up.
+</li>
+<li>
+<p>
+Write a Python program named <code>add_contact.py</code> that asks the user for
+the following information about a contact:
+</p>
+<ol>
+  <li>first name</li>
+  <li>last name</li>
+  <li>phone number</li>
+  <li>email</li>
+</ol>
+<p>
+The information should be <i>appended</i> to a data file named
+<code>contact_list.dat</code>.
+<p>
+A sample session might look something like this:
+</p>
+<pre>
+$ python3 add_contact.py 
+Please enter your first name: Jeff 
+Please enter your last name: Elkner 
+Please enter your phone number: 703-228-5771
+Please enter your email: jeff@elkner.net
+$
+</pre>
+<p>
+After which, assuming this is the first run of the program, the
+<code>contact_list.dat</code> file should exist and contain the following:
+</p>
+<pre>
+['Jeff', 'Elkner', '703-228-5771', 'jeff@elkner.net']
+</pre>
+<p>
+After running it again and entering new information, the file would look
+something like this:
+</p>
+<pre>
+['Jeff', 'Elkner', '703-228-5771', 'jeff@elkner.net']
+['Whitney', 'Singer', '000-000-0000', 'whitneysings@fakemail.com']
+</pre>
+</li>
+
+<li>
+Write a program named <code>show_contacts.py</code> that displays an
+introductory sentence and then the list of contacts in
+<code>contact_list.dat</code>, one per line.  A sample run of the program with
+the contacts entered in the previous example might look like this:
+<pre>
+$ show_contacts.py
+Contacts:
+
+  Jeffrey Elkner 703-228-5771 jeff@elkner.net
+  Whitney Singer 000-000-0000 whitneysings@fakemail.com
+</pre>
+</li>
+
+</ol>
+
+<h2>Evaluation</h2>
+<p>
+You will receive a rubric score between 4 and 0 on this assignment.
+</p>
+
+<footer>
+<hr>
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
