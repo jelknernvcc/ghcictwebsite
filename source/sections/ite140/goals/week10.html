@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 10</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 10</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2022-10-31">Week of Monday, October 31, 2022</time>
+
+<h2>Overview</h2>
+<p>
+This week we will begin using
+<a href="https://www.postgresql.org/">PostgreSQL</a> to create and query
+tables.
+</p>
+
+<h2>Goals for Week 10</h2>
+<div>
+<p>
+This week we will:
+</p>
+<ul>
+<li>share our presentations on the vocubularly from the
+<i>Lift Off</i> chapter assigned <a href="week09.html">last week</a>.</li>
+
+<li>access our shared database server and begin experimenting with postgres.
+</li>
+
+<li>begin working our way through the <i>Transit</i> chapter in our text.</li>
+</ul>
+<p>
+I'll ask for links to your vocabularly presentations, and then use those as
+resources to develop a vocabulary quiz.  This vocabularly is important for
+to us to develop a broad understanding of the database landscape.
+</p>
+</div>
+
+<h2>Accessing Our Database Servers</h2>
+<div>
+<p>
+As I've mentioned many a time this year, we are pioneers, explores in a new
+course at ACC, navigating uncharted curricular territory.  I'm not sure the
+best way to provide us with database access, so we will start out with two
+database servers, one inside our classroom and one online, to which you will
+have different access.
+</p><p>
+We will connect to both of these servers during class this week.
+</p>
+</div>
+
+<h2>Reading the Transit Chapter with a Goal Toward Learning</h2>
+<div>
+<p>
+Using our text effectively requires an approach with which many of us may not
+be familiar.  The book is really strong on context, but equally sparse on
+details. Filling in those details is left to us.
+</p><p>
+On Friday we will talk about how to do this and follow an example experiment
+I developed in <a href="https://gitlab.com/jelkner/itd256/-/tree/master/CuriousMoon/Notes/Transit">my git repo notes for this chapter</a>.
+</p>
+</div>
+
+<h2>Homework</h2>
+<p>
+Our homework this week will be to read the next chapter, <i>Transit</i> from
+our book, taking notes as we go. Please read (and take notes) with the
+following goals in mind:
+</p>
+<ul>
+<li>Write down any new vocabulary with which you are unfamiliar.</li>
+<li>Note any skills and concepts (practice and theory) which may require
+additional investigation.</li>
+</ul>
+
+<h2>Presentation Links</h2>
+<ul>
+<li><a href="https://codeberg.org/AntonioAbela/ite140/src/branch/master/curiousmoon/chap1.md">Ahmad
+and Antonio</a></li>
+<li><a href="https://codeberg.org/Jamethiel/Ite140/src/branch/main/vocab/1chap_vocab.md">Jamethiel
+and Marin</a></li>
+<li><a href="https://codeberg.org/Hpsbsp/ite140/src/branch/main/Vocab-RAID%2CSQLServer%2CSSD.md">Kaleb and Vaughan</a></li>
+<li><a href="https://codeberg.org/OkGalaxy/ITE_140/src/branch/main/Vocab.md">Christopher
+and Telmuun</a></li>
+<li><a href="https://codeberg.org/JulianMolina/ite40/src/branch/master/definitionsChap1.md">Julian
+and Jack</a></li>
+<li><a href="https://codeberg.org/thehedgeh0g/ite140/src/branch/main/vocab.md">Aaron</a></li>
+</ul>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

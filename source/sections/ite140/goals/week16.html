@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 16</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 16</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2023-01-09">Week of Monday, January 9, 2023</time>
+
+<h2>Overview</h2>
+<p>
+Since we got bogged down last week in infrastructure, our goals for this
+week are the same ones we had last week. You should all have an account
+now on our <code>cdevlin</code> database server, with the ability to run
+commands as the <code>postgres</code> user.  We will start the week getting
+oriented to that.
+</p>
+
+<h2>Goals for Week 16</h2>
+<div>
+<ul>
+<li>Create a <code>.pgsetup</code> file with Environment variables for
+connecting to our remote database server.</li>
+<li>Modify our <code>Makefile</code> for the <i>Transit</i> chapter to
+support connecting to our remote database server.</li>
+<li>Complete the <i>In Orbit</i> chapter using this set up.</li>
+</ul>
+</div>
+
+<h2>Shout Outs</h2>
+<div>
+<p>
+Shout out to Jamethiel for both her initiative and dedication in getting our
+classroom database server setup for us!
+</p>
+</div>
+
+
+<h2>Wednesday, January 11th</h2>
+<div>
+<p>
+Now that we have our classroom database server up and running, and everyone
+has the privileges they need to administer databases, let's move forward.
+</p><p>
+I've saying I want you to document what you are learning in your git repos.
+To both model this and to help you take the next step on the server, I added
+<a href="https://gitlab.com/jelkner/itd256/-/blob/master/BeginningPostgres/GettingStarted.md">Getting Started on Our Classroom Database Server</a>, which you
+should read <i>thoughtfully</i>, making sure you understand the information
+presented and then use that knowledge to create your own database.
+</p>
+</div>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

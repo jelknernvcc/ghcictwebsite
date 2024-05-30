@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 6</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 6</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2022-10-03">Week of Monday, October 3, 2022</time>
+
+<h2>Overview</h2>
+<p>
+This week we will further explore our chosen data sets and continue moving
+through <i>Chapter 5: Data Analysis with pandas</i>.
+</p><p>
+We will read the section, <i>Combining DataFrames</i>, but since we lack the
+needed experience to make much practical use of it at present, we will move
+on to the last three sections of the chapter, <i>Descriptive Statistics and
+Data Aggregation</i>, <i>Plotting</i>, and <i>Importing and Explorting
+DataFrames</i>.
+</p><p>
+Finally, as soon as he gives us the word that he is ready, Aaron will
+introduce us to our in-house <a href="https://jupyter.org/">JupyterLab</a>
+server.
+</p>
+
+<h2>Goals for Week 6</h2>
+<div>
+<p>
+This week we will:
+</p>
+<ul>
+<li>present our homework given <a href="week05.html">last Thursday</a>.</li>
+<li>create our first JupyterLab notebooks.</li>
+</ul>
+</div>
+
+<h2>Homework</h2>
+
+<h3>Monday, October 3rd</h3>
+<ol>
+<li>Read all three sub-sections, <i>Descriptive Statistics</i>,
+<i>Grouping</i>, and <i>Pivoting and Melting</i> in the <i>Descriptive
+Statistics and Data Aggregation</i> section of Chapter 5.</li>
+
+<li>Apply each of the demonstrated techniques to your own data set. Come to
+class on Thursday prepared share what you did.</li>
+
+<li>Read
+<a href="https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576">
+Create a PivotTable to analyze worksheet data</a> and create a PivotTable in
+excel.</li>
+</ol>
+
+<!--
+<h2>Shout Outs</h2>
+<div>
+<p>
+</p>
+</div>
+-->
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

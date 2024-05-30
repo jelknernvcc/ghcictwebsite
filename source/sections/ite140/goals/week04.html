@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 4</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 4</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2022-09-19">Week of Monday, September 19, 2022</time>
+
+<h2>Overview</h2>
+<p>
+With our <a href="week03.html">weekend task</a> completed, we will
+continue reading <i>Chapter 5: Data Analysis with pandas</i> with an eye
+towards understanding what the 
+<a href="https://en.wikipedia.org/wiki/Pandas_(software)">pandas</a> library
+contains and how to use the <b>DataFrame</b> objects within it.
+</p>
+
+<h2>Goals for Week 4</h2>
+<div>
+<p>
+This week we will:
+</p>
+<ul>
+<li>start class on Tuesday by sharing presentations on the vocabulary
+from the first two paragraphs of chapter 5.  We will hear about
+<b>Jupyter notebooks</b> from Aaron, <b>pandas</b> from Christopher,
+<b>interfaces</b> from Julian, <b>data sets</b> from Marin, <b>statistics</b>
+from Ahmad, <b>vectorization</b> and <b>data alignment</b> from Jamethiel,
+<b>visualization</b> from Kaleb, <b>cleaning data</b> from Jeff, and <b>time
+series</b>, <b>aggregation</b> and <b>descriptive statistics</b> from Antonio.
+
+<li>learn to use <b>pandas</b> to load <b>DataFrames</b> from
+<b>xlsx</b> files and to access the data within them.</li>
+
+<li>begin to explore <b>open datasets</b>, including where to find them and
+how to access their data.</li>
+</ul>
+</div>
+
+<h3>Homework</h3>
+
+<h4>Thursday, September 22nd</h4>
+<p>
+Begin reading <i>Chapter 5: Data Analysis with pandas</i>, trying each of the
+examples on your local computer and <i>committing them to your git repo</i>.
+We will start class next Tuesday by checking-in on how far we got in our
+90 minutes of homework time.
+</p>
+
+<h4>Tuesday, September 20th</h4>
+<p>
+Do a web search for <q>open datasets</q> and investigate what you find. Come
+to class on Thursday prepared to share your favorite dataset with your
+classmates.
+</p>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

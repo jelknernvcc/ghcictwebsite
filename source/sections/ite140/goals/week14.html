@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 14</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 14</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2022-12-12">Week of Monday, December 12, 2022</time>
+
+<h2>Overview</h2>
+<p>
+We meet only twice this week during a week with a lot of holiday goings on,
+so let's use the time to finish things up and prepare for a strong start in
+2023.
+</p>
+
+<h2>Goals for Week 14</h2>
+<div>
+<ul>
+<li>If you are working on a infrastructure project (database server, reveal.js
+server), try to finish setting it up this week.</li>
+
+<li>Antonio, please make a mad rush toward becomming as familiar as you can
+with <a href="https://www.ushahidi.com/">Ushahidi</a> and its
+<a href="https://github.com/ushahidi">source code</a> as you can in preparation
+for our meeting this Thursday. I've already set up
+<a href="https://infrastructuremap.ushahidi.io/views/map">an instance</a> for
+us.  How can I give you management rights?</li>
+
+<li>If you are not working on a deliverable project, you should complete
+the <i>In Orbit</i> chapter this week. Your evaluation grade will be based on
+the commits you make to your git repo during the week.</li>
+</ul>
+</div>
+
+<h2>Shout Outs</h2>
+<div>
+<p>
+Huge shout out to Jamethiel, who showed up day after day at all kinds of
+times last week to get her database server set up.  We will all benefit from
+her effort. <i>Thanks, Jamethiel!</i>
+</p>
+</div>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

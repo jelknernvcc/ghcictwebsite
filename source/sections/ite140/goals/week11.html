@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 11</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+#no_space>li {
+    margin-top: 0;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 11</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2022-11-14">Week of Monday, November 14, 2022</time>
+
+<div style="color: red;">
+<h2>Tuesday, November 22nd</h2>
+<p>
+I went home not feeling well yesterday afternoon, and tested positive for
+COVID, so I won't be in school today. Any of you who had close contact with
+me yesterday are encouraged to take appropriate measures.
+</p><p>
+I will look in your git repos for evidence of your PostgreSQL investigation.
+Please me sure there is something there for me to see.
+</p>
+</div>
+
+<h2>Overview</h2>
+<p>
+Welcome to Quarter 2! During this <i>long week</i> to start the quarter, we
+will meet five times, Wednesday, November 9, Monday, Wednesday, and Friday,
+November 14, 16, and 18, and Tuesday, November 22.
+</p><p>
+We will use this time to complete a beginners tutorial on PostgreSQL.
+</p>
+
+<h2>Goals for Week 11</h2>
+<div>
+<p>
+Between now and our Thanksgiving break, we will:
+</p>
+<ul>
+<li><a href="https://www.guru99.com/postgresql-tutorial.html">PostgreSQL
+Tutorial for Beginners: Learn Basic PSQL in 3 Days</a></li>
+
+<li>Prepare presentations on the history of PostgreSQL, a biography of its
+original creator, <a href="https://en.wikipedia.org/wiki/Michael_Stonebraker">
+Michael Stonebraker</a>, and the place of Postgres within the database
+landscape.</li>
+
+<li>Work in pairs to create a mini database project applying what we learned
+from the tutorial. Pairs are:
+  <ul id="no_space">
+    <li style="margin-top: 5px;">Jamethiel and Marin</li>
+    <li>Kaleb and Telmuun</li>
+    <li>Christopher and Jack</li>
+    <li>Julian and Ahmad</li>
+    <li>Vaughan and Justo</li>
+    <li>Aaron and Antonio</li>
+  </ul>
+</li>
+</ul>
+<p>
+
+</p>
+</div>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 3</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 3</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2022-09-12">Week of Monday, September 12, 2022</time>
+
+<h2>Overview</h2>
+<p>
+This week we begin <i>Part II. Introduction to pandas</i> in our text.
+We will be introduced to
+<a href="https://en.wikipedia.org/wiki/NumPy">NumPy</a> and
+<a href="https://en.wikipedia.org/wiki/Pandas_(software)">pandas</a>.
+</p>
+
+<h2>Weekend Tasks</h2>
+<div>
+<p>
+Next week we begin working through the programming examples in
+<i>Chapter 5: Data Analysis with pandas</i>. The first page of the chapter
+(page 85) starts with two paragraphs filled with vocabulary which I imagine is
+not familiar to you (it wasn't to me), so our first task will be to develop a
+definition list containing detailed definitions of the unfamiliar terms.
+</p><p>
+We will begin class with a discussion on how we should organize our git
+repos, and then we'll all make our repos conform to the agreed upon
+organization.
+</p><p>
+We'll then create a new Markdown file (name and location to be determined in
+discussion above) for the following vocabulary:
+</p>
+<ul>
+<li>Jupyter notebooks</li>
+<li>pandas</li>
+<li>interface</li>
+<li>data sets</li>
+<li>statistics</li>
+<li>time series</li>
+<li>vectorization</li>
+<li>data alignment</li>
+<li>cleaning data</li>
+<li>aggregation</li>
+<li>descriptive statistics</li>
+<li>visualization</li>
+</ul>
+<p>
+You'll have the last hour of class and your 90 minutes of homework time to
+research and write good definitions for the above terms ready to be shared
+when we come to class on Tuesday.
+</p>
+</div>
+
+<h2>Tasks for Week 3</h2>
+<div>
+<ol>
+<li>Share our <code>datetime</code> programs.</li>
+<li>Install and test NumPy and pandas on our computers.</li>
+<li>Discuss managing our git repos, including adding a <code>.gitignore</code>
+file and using <code>git mv</code> and <code>git rm</code>.</li>
+<li>Practice the git workflow we will begin using this week.</li>
+<li>Make a <code>Python4Excel</code> directory inside your git repo.</li>
+<li>Make a <code>Notes</code> directory inside the <code>Python4Excel</code>
+directory.</li>
+<li>Add a file named named <code>NumPyNotes.md</code> inside the
+<code>Notes</code> directory.</li>
+<li>Read <code>Chapter 4: NumPy Foundation</code> in our text, do two things
+as you do:
+  <ol>
+    <li>Take notes using
+    <a href="https://www.markdownguide.org/cheat-sheet/">Markdown</a> in
+    your <code>NumPyNotes.md</code> file, commiting your changes at
+    regular intervals as you go.</li>
+
+    <li>Write the examples from the chapter as python programs and add them
+    to a <code>ch04</code> subdirectory of <code>Python4Excel</code>.
+  </ol>
+</li>
+</ol>
+</div>
+
+<h2>Evaluation</h2>
+<div>
+<p>
+Your grade this week will be equally derived from two things:
+</p>
+<ol>
+<li>Your presentation of you <code>datetime</code> program.</li>
+<li>Your regular and frequent commits in your git repo of the example programs
+and notes from our textbook. I'll give you a grade each time class meets
+based on your git commits and average them for your weekly grade.</li>
+</ol>
+</div>
+
+<h2>Shout Outs</h2>
+<div>
+<p>
+Big shout outs to
+<a href="https://codeberg.org/Marin_McCormack/ite140">Marin</a> and
+<a href="https://codeberg.org/AntonioAbela/ite140">Antonio</a> for exemplifying
+the kind of engagement we will need to make this class a success!
+</p><p>
+Check out <a href="https://codeberg.org/Jamethiel/Ite140/src/branch/main/Python4Excel/chap4notes/NumPyNotes.md">Jamethiel's fancy notes</a> to see what can
+be done with Markdown.
+</p>
+</div>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

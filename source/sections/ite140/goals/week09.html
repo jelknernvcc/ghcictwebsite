@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 9</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 9</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2022-10-25">Week of Tuesday, October 25, 2022</time>
+
+<h2>Overview</h2>
+<p>
+This week we will set up our development environments for
+<a href="https://en.wikipedia.org/wiki/PostgreSQL">PostgreSQL</a>, and
+begin <a href="https://bigmachine.io/products/a-curious-moon/">A Curious
+Moon</a>.
+</p>
+
+<h2>Goals for Week 9</h2>
+<div>
+<p>
+We meet twice this week (Tuesday and Thursday), during which times we will:
+</p>
+<ol>
+<li>present the case study code from <i>Chapter 7: Excel File Manipulation with
+pandas</i>.</li>
+
+<li>install <a href="https://www.postgresql.org/">PostgreSQL</a> on our
+laptops.</li>
+
+<li>distribute <i>A Curious Moon</i>.</li>
+
+<li>read the first chapter, <i>Lift Off</i>, which introduces our protagonist,
+Dee, and sets the stage for her adventure.</li>
+
+<li>select a pair to present a summary of the chapter to the class.</li>
+</ol>
+<p>
+Ahmad and Antonio were chosen to present a summary of the first chapter,
+<i>Lift Off</i>, of <i>A Curious Moon</i>.
+</p><p>
+<b>Everyone</b> is responsible for reading the chapter, and a short quiz at
+the beginning of class on Thursday with questions based on the reading is
+fair game.
+</p>
+</div>
+
+<h2>Liftoff Vocabulary Presentions</h2>
+<div>
+<p>
+The following pairs were assigned the following vocabulary words to present to
+class on Monday, October 31st:
+<p>
+<ul>
+<li>Jamethiel and Marin: PostgreSQL and Amazon snowball</li>
+<li>Kaleb and Vaughan: RAID, SSD, and SQL Server</li>
+<li>Christopher and Telmuun: Python/ML, Google BigTable, and Amazon S3</li>
+<li>Julian and Jack: SQLAlchemy, ORM, Devops, AWS</li>
+<li>Aaron: heartbeat pings, deadman switch, permissions, cron job, who -a</li>
+</ul>
+<p>
+In your presentations, don't just provide a definition, but provide context:
+history, current impact, etc. 
+</p>
+</div>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

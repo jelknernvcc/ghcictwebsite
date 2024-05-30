@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 1</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 1</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2024-08-26">Week of Monday, August 26, 2024</time>
+
+<h2>Overview</h2>
+<div>
+<p>
+Welcome to Database Design and Management!  This is the first year we are
+offering this course, so you will you be in some ways pioneers in uncharted
+territory.  The big goal will be to learn a collection of useful skills and
+explore ideas related to <a href="https://en.wikipedia.org/wiki/Data_science">
+data science</a>.
+</p><p>
+During the Fall semester this year long dual-enrolled course will be
+dual-enrolled with
+<a href="https://courses.vccs.edu/courses/ITE140-Spreadsheet%20Software">ITE
+140: Spreadsheet Software</a>. If you took that course on campus at NVCC, you
+would find it a course about how to use
+<a href="https://en.wikipedia.org/wiki/Microsoft_Excel">Microsoft Excel</a>.
+</p><p>
+What we will do here will be very different.  Excel won't even be required,
+since we will be using
+<a href="https://en.wikipedia.org/wiki/Python_(programming_language)">
+Python</a> to process data stored in <code>xlsx</code> files. The book we will
+use for the class is
+<a href="https://www.oreilly.com/library/view/python-for-excel/9781492080992/">
+Python for Excel: A Modern Environment for Automation and Data Analysis</a>,
+which you can access through the
+<a href="https://learning-oreilly-com.eznvcc.vccs.edu/home/">O'Reilly for
+Higher Education</a> account that NVCC provides you.
+</p>
+</div>
+
+<h2>Goals for Week 1</h2>
+<div>
+<p>
+Our main tasks for this week will be to gain access to to the educational
+resources we will need, setup our development environments, and to begin
+learning the Python we will need for the course.
+</p>
+</div>
+
+<section>
+<h2>Wednesday, August 28th</h2>
+<div>
+<p>
+Today we will setup our
+<a href="https://en.wikipedia.org/wiki/Deployment_environment">development
+environment</a> for the
+<a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python
+</a> programming we will be doing in this class.
+</p><p>
+Specifically, we need to:
+</p>
+<ol>
+<li>install the <a href="https://en.wikipedia.org/wiki/Xcode">Xcode
+command-line tools</a>.</li>
+
+<li>intall the
+<a href="https://en.wikipedia.org/wiki/Homebrew_(package_manager)">Homebrew
+package manager</a> customized by our own Aaron Rabach (thanks, Aaron!) to
+install packages in our home directories.  Use Aaron's instructions
+<a href="https://github.com/ModdedGamers/brew-easy-install">here</a>.</li>
+
+<li>confirm access to our textbook, <i>Python for Excel</i>, through
+<a href="https://www-oreilly-com.eznvcc.vccs.edu/library-access/">O'Reilly
+for Higher Ed</a>.</li>
+
+<li>work with Aaron to test installation of
+<a href="https://en.wikipedia.org/wiki/NumPy">NumPy</a> and
+<a href="https://en.wikipedia.org/wiki/Pandas_(software)">pandas</a>.</li>
+
+<li>Aaron should work on configuring our big dual-xeon server to be
+serve <a href="https://en.wikipedia.org/wiki/Project_Jupyter#Jupyter_Notebook">
+Jupyter notebooks</a>.</li>
+
+<li>if you don't yet have one, create and account for yourself on
+<a href="https://codeberg.org/">Codeberg</a>.  Then create a new respository
+named <code>ite140</code>.</li>
+</ol>
+</div>
+</section>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 15</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 15</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2023-01-03">Week of Tuesday, January 3, 2023</time>
+
+<h2>Overview</h2>
+<p>
+This week we will complete the <i>In Orbit</i> chapter of <i>A Curious Moon</i>.
+Along the way, we will learn more about
+<a href="https://opensource.com/article/18/8/what-how-makefile">Make</a> files
+and
+<a href="https://en.wikipedia.org/wiki/Environment_variable">Environment
+variables</a>.
+</p>
+
+<h2>Goals for Week 15</h2>
+<div>
+<ul>
+<li>Create a <code>.pgsetup</code> file with Environment variables for
+connecting to our remote database server.</li>
+<li>Modify our <code>Makefile</code> for the <i>Transit</i> chapter to
+support connecting to our remote database server.</li>
+<li>Complete the <i>In Orbit</i> chapter using this set up.</li>
+</ul>
+</div>
+
+<h2>Tuesday, January 3rd</h2>
+<div>
+<p>
+I'm ready today to share the environment configuration that I talked about
+on Tuesday.  Hopefully with Aaron's and Jamethiel's help, we can refine the
+process to create a <code>Makefile</code> that will support running database
+commands on our remote server.
+</p><p>
+This <a href="https://www.postgresqltutorial.com/postgresql-cheat-sheet/">
+psql cheat sheet</a> will also come in handy.
+</p><p>
+Our first task is to complete the
+<a href="http://nova.mce.cc/">NVCC Course Evaluation</a>.
+</p><p>
+After that, we will work together in class today to set Environment variables
+in a <code>.pgsetup</code> file which will be included in your
+<code>.zshrc</code> script so that you can modify your <code>Makefile</code>
+to be able to run local SQL scripts on our remote database.
+</p><p>
+I was able to make this all work during our Winter break, so I can guide you
+through it, but I am hoping Aaron will be able to improve on my shell scripts
+and Makefile, which I admit are more than a little janky at present :-(
+</p><p>
+Be sure that before you leave class today:
+</p>
+<ol>
+<li>the link to your repo from the
+<a href="https://ict.gctaa.net/sections/itd256/students.html">ITD 256 Students
+page</a> works.</li>
+<li>you have moved all work related to our PostgreSQL study into this repo.</li>
+</ol>
+</div>
+
+<h2>Shout Outs</h2>
+<div>
+<p>
+Shout outs to
+<a href="https://codeberg.org/OkGalaxy/ITE_140/src/branch/main/curious_moon/chapter_notes2/">Christopher</a> and
+<a href="https://codeberg.org/Hpsbsp/itd256">Vaughn</a> for completing the
+<code>Makefile</code> and the <code>normalize.sql</code> from the
+<i>Transit</i> chapter.
+</p>
+</div>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

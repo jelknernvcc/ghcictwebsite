@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 5</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 5</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2022-09-27">Week of Tuesday, September 27, 2022</time>
+
+<h2>Overview</h2>
+<div>
+<p>
+This week we will develop our facility with the 
+<a href="https://en.wikipedia.org/wiki/Pandas_(software)">pandas</a> library
+and practice using <b>DataFrames</b> to store and manipulate data.
+</p><p>
+We will begin class this week with each of you sharing what you did for
+homework exploring pandas.
+</p>
+</div>
+
+<h2>Goals for Week 5</h2>
+<div>
+<p>
+Using <i>Chapter 5: Data Analysis with pandas</i> as a resource, we will be
+able to:
+</p>
+<ul>
+<li>describe how data is stored in a pandas
+<a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html">
+DataFrame</a>.</li>
+
+<li>use the <code>loc</code> method to access parts of a DataFrame.</li>
+
+<li>select data from a DataFrame using <b>boolean indexing</b>.</li>
+
+<li>set data by replacing values and adding new columns.</li>
+
+<li>understand pandas use of <code>NaN</code> and <code>NaT</code> for missing
+data.</li>
+
+<li>use the <code>drop_duplicates</code> method to remove duplicate data.</li>
+
+<li>understand the difference between a <b>view</b> and a <b>copy</b> and
+how to work effectively with each.</li>
+</ul>
+</div>
+
+<h2>Homework</h2>
+
+<h3>Thursday, September 29th</h3>
+<p>
+We will keep with the same partners and do the following with the data sets
+we shared in class:
+</p>
+<ol>
+<li>Apply the methods and techniques presented in <i>Chapter 5: Data Anaylsis
+with pandas</i> to our own data.</li>
+
+<li>Do additional investigation on your data set to see if you can find out
+more about it, answering some of the questions we discussed in class:
+<ul>
+<li>Where did the data come from?</li>
+<li>How was it gathered? Why?</li>
+<li>Who owns the data? With what usage rights is it being made available?</li>
+</ul>
+</li>
+</ol>
+
+<h3>Tuesday, September 27th</h3>
+<p>
+We will work in pairs for this assignment, with Ahmad and Julian, Jamethiel
+and Marin, Kaleb and Telmuun, and Christopher and Jack working together.
+Do the following during our second half of class and during your 90 minutes
+of homework:
+</p>
+<ol>
+<li>Search the web for an <i>open dataset</i> that the two of you find
+interesting in a format that can be loaded into a pandas DataFrame.</li>
+
+<li>Load your data set into a DataFrame.</li>
+
+<li>Adapt the examples from <i>Chapter 5: Data Anaylsis with pandas</i> to
+your DataFrame.</li>
+</ol>
+
+<h2>Shout Outs</h2>
+<div>
+<p>
+Shout outs to Marin and Jamethiel for leading our investigation into
+pandas DataFrames.
+</p>
+</div>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

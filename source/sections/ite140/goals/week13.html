@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 13</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 13</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2022-12-05">Week of Monday, December 5, 2022</time>
+
+<h2>Overview</h2>
+<p>
+This week we will complete the <i>Transit</i> chapter and continue on to the
+<i>In Orbit</i> chapter of <i>A Curious Moon</i>
+</p>
+
+<h2>Wednesday, December 7th</h2>
+<div>
+<p>
+Ms. Lange will be stopping by to talk to us about a spreadsheet project for
+which she might require our assistance.  Sounds like an opportunity for
+interdisciplinary, project-based learning! ;-)
+</p>
+</div>
+
+<h2>Monday, December 5th</h2>
+<div>
+<p>
+We will start the week with a summary by Kaleb and Telmuun of the
+<i>Transit</i> chapter, followed by a presentation by Aaron discussing
+<a href="https://en.wikipedia.org/wiki/Make_(software)">GNU Make</a>.
+</p><p>
+Jeff will then share the virtual machine set up he worked on over the weekend
+which has a <code>deedle</code> user and the <b>idempotent</b> Make script
+for building the <code>master_plan</code> table from the csv file.
+</p><p>
+After that it's on to <i>In Orbit</i>.
+</p>
+</div>
+
+<h2>Shout Outs</h2>
+<div>
+<p>
+Huge shout out to all of the presenters in class last Thursday. As I mentioned
+several times, I could not possibily have planned that any better than you all
+did. You collaborated amazingly well to piece together a detailed group
+presentation of the important ideas from the week's study and presented them
+in a logical, well organized way.  Nice work!
+</p>
+</div>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

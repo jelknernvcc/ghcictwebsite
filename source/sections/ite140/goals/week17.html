@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 17</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 17</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2023-01-17">Week of Tuesday, January 17, 2023</time>
+
+<h2>Overview</h2>
+<p>
+By now you should have completed the <i>In Orbit</i> chapter. On Wednesday
+day will will share our progress, and then form pairs to begin the next
+chapter, <i>Flyby</i>.
+</p>
+
+<h2>Goals for Week 17</h2>
+<div>
+<p>
+This week we will:
+</p>
+<ul>
+<li>Share our completed <i>In Orbit</i> scripts on <code>cdevlin</code> with
+the class.</li>
+
+<li>Form pairs to begin working through the <i>Flyby</i> chapter.</li>
+
+<li>Complete as much of <i>Flyby</i> as we can.</li>
+</ul>
+</div>
+
+<!--
+<h2>Shout Outs</h2>
+<div>
+<p>
+</p>
+</div>
+-->
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

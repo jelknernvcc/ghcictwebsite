@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITE 140 Week 2</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITE 140: Week 2</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2024-09-03">Week of Tuesday, September 3, 2024</time>
+
+<h2>Overview</h2>
+<p>
+Last week, everyone successfully set up their development environment and
+created and linked their git repositories, so this week we are ready to
+start learning Python.
+</p>
+
+<h2>Goals for Week 2</h2>
+<div>
+<p>
+This week we want to:
+</p>
+<ol>
+<li>pair up people with more experience with Python with those with less
+(or no) experience with Python. The pairs are: Jamethiel and Marin, Fallon
+and Christopher, Kaleb and Antonio, Ahmad and Julian, and Aaron and
+Telmuun.</li>
+
+<li>finish setting up our development environment.  We need to:
+  <ul>
+    <li>Download <a href="../../apcsp/goals/resources/dot_vimrc.txt"
+    download="dot_vimrc.txt"> dot_vimrc.txt</a> and rename it to
+    <code>.vimrc</code> in your home directory.</li>
+  </ul>
+</li>
+
+<li>read through <code>Chapter 3: Getting Started with Python</code> in our
+text, <i>Python for Excel</i>, you should try out each of the examples
+from the text, putting them in small python programs and <i>committing them
+to one of your git repos</i>.</li>
+
+<li>have each pair work on a program of their own design for homework using the
+<code>datetime</code> module to be presented in class at the beginning of
+next week.</li>
+</ol>
+</div>
+
+<h2>Shout Outs</h2>
+<div>
+<p>
+The shout out for week 1 goes to each and everyone of you for working
+collaboratively to get all of us setup to begin our Python for Excel study this
+week!
+</p>
+</div>
+
+<section>
+<h2>Thursday, September 8th</h2>
+<div>
+<p>
+At the beginning of class we need to form the pairs that will work on the
+<code>datetime</code> program to be presented in class on Monday, September
+12th.
+</p>
+
+<h3>Classwork / Homework</h3>
+<p>
+Use both class time and homework time to read <code>Chapter 3: Getting Started
+with Python</code>, and to work on the program you and your partner will
+present in class on Monday making use of the <code>datetime</code> module.
+</p>
+</div>
+</section>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>
