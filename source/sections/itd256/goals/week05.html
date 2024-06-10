@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITD 256 Week 5</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITD 256: Week 5</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2023-03-06">Week of Monday, March 6, 2023</time>
+
+<h2>Overview</h2>
+<p>
+This week we will complete our pair projects to implement and present a
+simple version of the SQL joins that we discussed
+<a href="week04.html">last week</a>.
+</p>
+
+<h2>Thursday, March 9th</h2>
+<div>
+<p>
+We will be working today on a workflow for reveal.js presentations, but
+<i>at the beginning of class</i>, I want everyone to do the following:
+</p><p>
+Edit the <code>README.md</code> file in your git repo to turn it into a
+<i>portal page</i> for your work in our class. I want this to be a
+<q>one stop shop</q> where a visitor can easily locate everything they are
+looking for.
+</p>
+</div>
+
+<h2>Goals for Week 5</h2>
+<div>
+<p>
+This week we will:
+</p>
+<ol>
+<li>Find an online tutorial showing the <b>join</b> statements that Dee
+discusses in <i>In Orbit</i> and which Kaleb shared in his presentation.</li>
+
+<li>Create a database on <code>dbserver</code> and create the tables in this
+database needed to illustrate your joins. Both of these should be in
+SQL scripts in your git repo. I suggest the names
+<code>create_tables.sql</code> and <code>insert_data.sql</code> respectively.
+</li>
+
+<li><p>Write another script named <code>show_joins.sql</code> that runs each
+of the following joins:</p>
+  <ul>
+    <li>INNER JOIN</li>
+    <li>LEFT JOIN</li>
+    <li>RIGHT JOIN</li>
+    <li>FULL OUTER JOIN</li>
+    <li>CROSS JOIN</li>
+  </ul>
+<p>Feel free to include other joins as well, but you must include these.</p>
+</li>
+
+<li>Create a <a href="https://revealjs.com/">reveal.js</a> presentation of
+your work on our <code>vineland.local</code> server.</li>
+</ol>
+<p>
+I modelled the first 3 goals for you in class last Friday, so use the
+example I showed you to help guide your work.
+</p><p>
+Pairs for this project are: Marin and Jamethiel, Kaleb and Telmuun, Christopher
+and Jack, Antonio, Vaughan and Edward, Julian and Ahmad.
+</p>
+</div>
+
+<h2>Evaluation</h2>
+<p>
+Your grade for this week will be based on your database scripts in your git
+repo, which is <span style="color: red;">due before the beginning of class on
+Thursday, March 8th.</span>
+</p><p>
+You will have class time Thursday to work on your presentations, which will be
+due the following Monday.
+</p>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

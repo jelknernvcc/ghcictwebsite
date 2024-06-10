@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITD 256 Week 12</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITD 256: Week 12</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2023-05-01">Week of Monday, May 1, 2023</time>
+
+<h2>Overview</h2>
+<p>
+This week will complete a project based on the 3rd unit of Dr. Chuck's
+<a href="https://www.pg4e.com/">PostgreSQL course</a>, involving several
+SQL techniques for selecting and formatting query results.
+</p>
+
+<h2>Goals for Week 12</h2>
+<div>
+<p>
+Since Dr. Chuck describes this lesson as a <q>grab bag</q> of topics, we will
+make our presentations <i>before</i> we take the quiz on this lesson.
+</p><p>
+The following pairs will present the following topics:
+</p>
+<ul>
+<li><b>ALTER TABLE</b>: Christopher and Vaughn</li>
+<li><b>DISTINCT &amp; GROUP BY</b>: Jamethiel and Marin</li>
+<li><b>Sub Queries</b>: Kaleb and Edward</li>
+<li><b>Stored Proceedures</b>: Antonio and Aaron</li>
+<li><b>Reading and Parsing Files</b>: Ahmad and Julian</li>
+<li><b>Demonstrations</b>: Telmuun and Jack</li>
+</ul>
+<p>
+On Thurday we will share our presentations and then take the unit 3 quiz. You
+can use <i>paper notes</i>, so be sure to write down anything you think would
+be helpful.
+</p>
+</div>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

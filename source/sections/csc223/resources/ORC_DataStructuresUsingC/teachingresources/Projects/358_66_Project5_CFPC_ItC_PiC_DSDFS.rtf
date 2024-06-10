@@ -1,0 +1,465 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}{\f1\fnil\fcharset0 Calibri;}}
+{\*\generator Msftedit 5.41.21.2509;}\viewkind4\uc1\pard\f0\fs22 /* **********************************************************\par
+\par
+PROGRAM NAME : QUIZ PROGRAM\par
+\par
+AUTHOR REEMA THAREJA\par
+\par
+PROGRAM USAGE : TO PRESENT A QYUIZ ON FIVE DIFFERENT SUBJECTS AND\par
+\par
+CALCULATE THE SCORE.\par
+\par
+***************************************************************/\par
+\par
+\par
+#include<stdio.h>\par
+#include<conio.h>\par
+main()\par
+\{\par
+\tab int subject;\par
+\tab char quest[5][100];\par
+\tab int ans[5], answer, correct = 0;\par
+\tab float marks;\par
+\tab clrscr();\par
+\tab printf("\\n\\n\\n\\n\\ *******************************");\par
+\tab printf("\\n\\n\\n WELCOME TO THE QUIZ PROGRAM");\par
+\tab printf("\\n\\n\\n\\n\\ *******************************");\par
+\tab getche();\par
+\par
+\tab clrscr();\par
+\tab printf("\\n\\n\\n\\n\\n\\n GENERAL INSTRUCTIONS");\par
+\tab printf("\\n\\n\\n\\n\\ *******************************");\par
+\tab printf("\\n\\n\\n\\n\\n\\n ENTER THE RIGHT OPTION NUMBERS");\par
+\tab getche();\par
+\par
+\tab clrscr();\par
+\tab printf("\\n\\n\\n Enter the subject : ");\par
+\tab printf("\\n\\n 1. MATHS");\par
+\tab printf("\\n\\n 2. SCIENCE");\par
+\tab printf("\\n\\n 3. COMPUTERS");\par
+\tab printf("\\n\\n 4. HISTORY");\par
+\tab printf("\\n\\n 5. GENERAL KNOWLEDGE");\par
+\tab printf("\\n\\n\\n");\par
+\tab fflush(stdin);\par
+\tab scanf("%d", &subject);\par
+\par
+\tab switch(subject)\par
+\tab\{\par
+\par
+\tab\tab case 1:\par
+\par
+\tab\tab\tab strcpy(quest[0], "Is 139 divisible by 3 ?");\par
+\tab\tab\tab strcpy(quest[1], "What is x, if 3x + 5 = 32 ?");\par
+\tab\tab\tab strcpy(quest[2], "What is the next term in the given series : 2 4 7 11 16 22 29 ____");\par
+\tab\tab\tab strcpy(quest[3], "How many sides does an octagon has");\par
+\tab\tab\tab strcpy(quest[4], "How many coins of 50p are needed to make Rs 10?");\par
+\par
+\tab\tab\tab ans[0] = 2;\par
+\tab\tab\tab ans[1] = 3;\par
+\tab\tab\tab ans[2] = 1;\par
+\tab\tab\tab ans[3] = 4;\par
+\tab\tab\tab ans[4] = 2;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n\\n **************************************");\par
+\tab\tab\tab printf("\\n\\n\\n WELCOME TO MATHS QUIZ");\par
+\tab\tab\tab printf("\\n\\n\\n\\n **************************************");\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n");\par
+\tab\tab\tab puts(quest[0]);\par
+\tab\tab\tab printf("\\n\\n 1. Yes");\par
+\tab\tab\tab printf("\\n\\n 2. No");\par
+\tab\tab\tab printf("\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[0])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[1]);\par
+\tab\tab\tab printf("\\n\\n 1. 7");\par
+\tab\tab\tab printf("\\n\\n 2. 8");\par
+\tab\tab\tab printf("\\n\\n 3. 9");\par
+\tab\tab\tab printf("\\n\\n 4. 10");\par
+\tab\tab\tab printf("\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[1])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[2]);\par
+\tab\tab\tab printf("\\n\\n 1. 37");\par
+\tab\tab\tab printf("\\n\\n 2. 36");\par
+\tab\tab\tab printf("\\n\\n 3. 39");\par
+\tab\tab\tab printf("\\n\\n 4. 40");\par
+\tab\tab\tab printf("\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[2])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[3]);\par
+\tab\tab\tab printf("\\n\\n 1. 5");\par
+\tab\tab\tab printf("\\n\\n 2. 4");\par
+\tab\tab\tab printf("\\n\\n 3. 6");\par
+\tab\tab\tab printf("\\n\\n 4. 8");\par
+\tab\tab\tab printf("\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[3])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[4]);\par
+\tab\tab\tab printf("\\n\\n 1. 10");\par
+\tab\tab\tab printf("\\n\\n 2. 20");\par
+\tab\tab\tab printf("\\n\\n 3. 5");\par
+\tab\tab\tab printf("\\n\\n 4. 25");\par
+\tab\tab\tab printf("\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[4])\par
+\tab\tab\tab\tab correct += 1;\par
+\tab\tab\tab break;\par
+\par
+\tab case 2:\par
+\tab\tab\tab strcpy(quest[0], "Light Year is related to ?");\par
+\tab\tab\tab strcpy(quest[1], "Which instrument is used to measure pressur of gases ?");\par
+\tab\tab\tab strcpy(quest[2], "Joule is the unit of ?");\par
+\tab\tab\tab strcpy(quest[3], "Centigrade and Fahrenheit scales give same reading at ?");\par
+\tab\tab\tab strcpy(quest[4], "The scientist who discovered that earth revolves round the sun was ?");\par
+\par
+\tab\tab\tab ans[0] = 3;\par
+\tab\tab\tab ans[1] = 2;\par
+\tab\tab\tab ans[2] = 4;\par
+\tab\tab\tab ans[3] = 1;\par
+\tab\tab\tab ans[4] = 2;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n");\par
+\tab\tab\tab puts(quest[0]);\par
+\tab\tab\tab printf("\\n\\n 1. Speed");\par
+\tab\tab\tab printf("\\n\\n 2. Energy");\par
+\tab\tab\tab printf("\\n\\n 3. Distance");\par
+\tab\tab\tab printf("\\n\\n 4. Intensity");\par
+\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[0])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[1]);\par
+\tab\tab\tab printf("\\n\\n 1. Barometer");\par
+\tab\tab\tab printf("\\n\\n 2. Manometer");\par
+\tab\tab\tab printf("\\n\\n 3. Ammeter");\par
+\tab\tab\tab printf("\\n\\n 4. None of these");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[1])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[2]);\par
+\tab\tab\tab printf("\\n\\n 1. Energy");\par
+\tab\tab\tab printf("\\n\\n 2. Temperature");\par
+\tab\tab\tab printf("\\n\\n 3. Air Pressure");\par
+\tab\tab\tab printf("\\n\\n 4. Heat");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[2])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[3]);\par
+\tab\tab\tab printf("\\n\\n 1. -40");\par
+\tab\tab\tab printf("\\n\\n 2. 40");\par
+\tab\tab\tab printf("\\n\\n 3. 273");\par
+\tab\tab\tab printf("\\n\\n 4. -273");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[3])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[4]);\par
+\tab\tab\tab printf("\\n\\n 1. Newton");\par
+\tab\tab\tab printf("\\n\\n 2. Copernicus");\par
+\tab\tab\tab printf("\\n\\n 3. Einstein");\par
+\tab\tab\tab printf("\\n\\n 4. Grahm Bell");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[4])\par
+\tab\tab\tab\tab correct += 1;\par
+\tab\tab\tab break;\par
+case 3:\par
+\tab\tab\tab strcpy(quest[0], "Brain of the computer is ?");\par
+\tab\tab\tab strcpy(quest[1], "Which computer language is used for artificial intelligence ?");\par
+\tab\tab\tab strcpy(quest[2], "One's complement of 10 is ?");\par
+\tab\tab\tab strcpy(quest[3], "A software that converts any computer language into binary language is ?");\par
+\tab\tab\tab strcpy(quest[4], "Which computer is smallest in size ?");\par
+\par
+\tab\tab\tab ans[0] = 3;\par
+\tab\tab\tab ans[1] = 2;\par
+\tab\tab\tab ans[2] = 4;\par
+\tab\tab\tab ans[3] = 1;\par
+\tab\tab\tab ans[4] = 2;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n");\par
+\tab\tab\tab puts(quest[0]);\par
+\tab\tab\tab printf("\\n\\n 1. ALU");\par
+\tab\tab\tab printf("\\n\\n 2. CU");\par
+\tab\tab\tab printf("\\n\\n 3. CPU");\par
+\tab\tab\tab printf("\\n\\n 4. Memory");\par
+\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[0])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[1]);\par
+\tab\tab\tab printf("\\n\\n 1. C");\par
+\tab\tab\tab printf("\\n\\n 2. Prolog");\par
+\tab\tab\tab printf("\\n\\n 3. C++");\par
+\tab\tab\tab printf("\\n\\n 4. SQL");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[1])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[2]);\par
+\tab\tab\tab printf("\\n\\n 1. 10");\par
+\tab\tab\tab printf("\\n\\n 2. 00");\par
+\tab\tab\tab printf("\\n\\n 3. 11");\par
+\tab\tab\tab printf("\\n\\n 4. 01");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[2])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[3]);\par
+\tab\tab\tab printf("\\n\\n 1. translator");\par
+\tab\tab\tab printf("\\n\\n 2. assmebler");\par
+\tab\tab\tab printf("\\n\\n 3. compiler");\par
+\tab\tab\tab printf("\\n\\n 4. interpretter");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[3])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[4]);\par
+\tab\tab\tab printf("\\n\\n 1. Super computer");\par
+\tab\tab\tab printf("\\n\\n 2. Micro computer");\par
+\tab\tab\tab printf("\\n\\n 3. Mini computer");\par
+\tab\tab\tab printf("\\n\\n 4. Mainframes");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[4])\par
+\tab\tab\tab\tab correct += 1;\par
+\tab\tab\tab break;\par
+\tab case 4:\par
+\tab\tab\tab strcpy(quest[0], "Battle of Plassey was fought in which year ?");\par
+\tab\tab\tab strcpy(quest[1], "Tripitakas are sacred books of ?");\par
+\tab\tab\tab strcpy(quest[2], "The theory of economic drain during British imperialism was given by ?");\par
+\tab\tab\tab strcpy(quest[3], "The treaty of Srirangapatna was signed between Tipu Sultan and ?");\par
+\tab\tab\tab strcpy(quest[4], "To conquer and annex Peshawar and Punjab, Mahmud of Ghazni defeated ?");\par
+\par
+\tab\tab\tab ans[0] = 3;\par
+\tab\tab\tab ans[1] = 2;\par
+\tab\tab\tab ans[2] = 4;\par
+\tab\tab\tab ans[3] = 1;\par
+\tab\tab\tab ans[4] = 2;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n");\par
+\tab\tab\tab puts(quest[0]);\par
+\tab\tab\tab printf("\\n\\n 1. 1752");\par
+\tab\tab\tab printf("\\n\\n 2. 1748");\par
+\tab\tab\tab printf("\\n\\n 3. 1757");\par
+\tab\tab\tab printf("\\n\\n 4. 1857");\par
+\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[0])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[1]);\par
+\tab\tab\tab printf("\\n\\n 1. Jains");\par
+\tab\tab\tab printf("\\n\\n 2. Buddhists");\par
+\tab\tab\tab printf("\\n\\n 3. Hindus");\par
+\tab\tab\tab printf("\\n\\n 4. Sikhs");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[1])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[2]);\par
+\tab\tab\tab printf("\\n\\n 1. Sarojini Naidu");\par
+\tab\tab\tab printf("\\n\\n 2. Mahatama Gandhi");\par
+\tab\tab\tab printf("\\n\\n 3. Jawahar Lal Nehru");\par
+\tab\tab\tab printf("\\n\\n 4. Dadabhai Naoroji");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[2])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[3]);\par
+\tab\tab\tab printf("\\n\\n 1. Cornwallis");\par
+\tab\tab\tab printf("\\n\\n 2. Dalhousie");\par
+\tab\tab\tab printf("\\n\\n 3. Warren Hastings");\par
+\tab\tab\tab printf("\\n\\n 4. Robert Clive");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[3])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[4]);\par
+\tab\tab\tab printf("\\n\\n 1. Ghurids");\par
+\tab\tab\tab printf("\\n\\n 2. Hindushahis");\par
+\tab\tab\tab printf("\\n\\n 3. Arabs");\par
+\tab\tab\tab printf("\\n\\n 4. Karkotakas");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[4])\par
+\tab\tab\tab\tab correct += 1;\par
+\tab\tab\tab break;\par
+\tab case 5:\par
+\tab\tab\tab strcpy(quest[0], "Entomology is the science that studies ?");\par
+\tab\tab\tab strcpy(quest[1], "Garampani sanctuary is located at ?");\par
+\tab\tab\tab strcpy(quest[2], "Hitler party which came into power in 1933 is known as ?");\par
+\tab\tab\tab strcpy(quest[3], "Golf player Vijay Singh belongs to which country ?");\par
+\tab\tab\tab strcpy(quest[4], "Film and TV institute of India is located at ?");\par
+\par
+\tab\tab\tab ans[0] = 3;\par
+\tab\tab\tab ans[1] = 2;\par
+\tab\tab\tab ans[2] = 4;\par
+\tab\tab\tab ans[3] = 1;\par
+\tab\tab\tab ans[4] = 2;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n");\par
+\tab\tab\tab puts(quest[0]);\par
+\tab\tab\tab printf("\\n\\n 1. Human Behaviour");\par
+\tab\tab\tab printf("\\n\\n 2. Formation of Rocks");\par
+\tab\tab\tab printf("\\n\\n 3. Origin of technical terms");\par
+\tab\tab\tab printf("\\n\\n 4. 1857");\par
+\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[0])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[1]);\par
+\tab\tab\tab printf("\\n\\n 1. Nagaland");\par
+\tab\tab\tab printf("\\n\\n 2. Assam");\par
+\tab\tab\tab printf("\\n\\n 3. Sikkim");\par
+\tab\tab\tab printf("\\n\\n 4. Gujarat");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[1])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[2]);\par
+\tab\tab\tab printf("\\n\\n 1. People's Party");\par
+\tab\tab\tab printf("\\n\\n 2. Democratic Party");\par
+\tab\tab\tab printf("\\n\\n 3. Labour Party");\par
+\tab\tab\tab printf("\\n\\n 4. Nazi Party");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[2])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[3]);\par
+\tab\tab\tab printf("\\n\\n 1. Fiji");\par
+\tab\tab\tab printf("\\n\\n 2. India");\par
+\tab\tab\tab printf("\\n\\n 3. Pakistan");\par
+\tab\tab\tab printf("\\n\\n 4. Sri Lanka");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[3])\par
+\tab\tab\tab\tab correct += 1;\par
+\par
+\tab\tab\tab clrscr();\par
+\tab\tab\tab printf("\\n\\n\\n ");\par
+\tab\tab\tab puts(quest[4]);\par
+\tab\tab\tab printf("\\n\\n 1. New Delhi");\par
+\tab\tab\tab printf("\\n\\n 2. Pune");\par
+\tab\tab\tab printf("\\n\\n 3. Perambur");\par
+\tab\tab\tab printf("\\n\\n 4. Rajkot");\par
+\tab\tab\tab printf("\\n\\n\\n\\n");\par
+\tab\tab\tab fflush(stdin);\par
+\tab\tab\tab scanf("%d", &answer);\par
+\tab\tab\tab if(answer == ans[4])\par
+\tab\tab\tab\tab correct += 1;\par
+\tab\tab\tab break;\par
+\par
+\tab\}\par
+\par
+\tab marks = (float) ((correct * 100)/5);\par
+\tab clrscr();\par
+\tab printf("\\n\\n\\n ********************************************");\par
+\tab printf("\\n\\n\\n\\t\\t TOTAL SCORE");\par
+\tab printf("\\n\\n\\n\\t\\t %.2f%", marks);\par
+\tab printf("\\n\\n\\n ********************************************");\par
+\tab getche();\par
+\tab return 0;\par
+\}\par
+\par
+\par
+\par
+\pard\sa200\sl276\slmult1\lang9\f1\par
+}
+ 

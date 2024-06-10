@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITD 256 Week 10</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITD 256: Week 10</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2023-04-17">Week of Monday, April 17, 2023</time>
+
+<h2>Overview</h2>
+<p>
+This week will complete the next unit of Dr. Chuck's
+<a href="https://www.pg4e.com/">PostgreSQL course</a>.
+</p>
+
+<h2>Goals for Week 10</h2>
+<div>
+<p>
+Complete each of the following:
+</p>
+<ul>
+<li>Watch all the videos in
+<a href="https://www.pg4e.com/lessons/week2">Data Relationships</a>.</li>
+
+<li>Take notes. We will have a quiz on this unit when you arrive in class
+on Monday. You will be permitted to use <i>paper notes</i> while taking
+this quiz.</li>
+</ul>
+</div>
+
+<h2>A Look at Real World Database Schema</h2>
+<div>
+<p>
+After finishing watching all of Dr. Chuck's unit 2 videos yesterday, I started
+thinking about the project I want to do next week involving <a
+href="https://en.wikipedia.org/wiki/Many-to-many_(data_model)">many-to-many</a>
+relationships.
+</p><p>
+I want to create a database for
+<a href="https://en.wikipedia.org/wiki/List_of_songs_recorded_by_the_Beatles">
+Beatles's songs</a>. I did a web search on <q>song track database fields</q>,
+which lead me to
+<a href="https://musicbrainz.org/doc/MusicBrainz_Database/Schema">MusicBrainz
+Database / Schema</a>. Poke around in here to get a feel for what a real world
+database schema looks like.
+</p>
+</div>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

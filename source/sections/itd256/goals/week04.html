@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITD 256 Week 4</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITD 256: Week 4</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2023-02-27">Week of Monday, Februay 27, 2023</time>
+
+<h2>Overview</h2>
+<p>
+This week we will share our presentations from the <i>In Orbit</i> chapter,
+and then take a deeper dive into the SQL developed therein.
+</p>
+
+<h2>Goals for Week 4</h2>
+<div>
+<p>
+This week we will:
+</p>
+<ul>
+<li>share the presentations assigned <a href="week03.html">last week</a>.</li>
+<li>watch a short video about life in the deep ocean vents.</li>
+<li>learn (with the help of Ahmad, Julian, and Aaron) how to create
+markdown presentions for <a href="https://revealjs.com/">reveal.js</a>, and
+host them on our <code>vineland</code> classroom server.</li>
+<li>take a deep dive into each of the <b>join</b> statements that Dee discusses
+in the chapter.</li>
+</ul>
+<p>
+To learn more about join statements, do a web search on each of the different
+types of joins that Kaleb shared with us.
+</p>
+</div>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

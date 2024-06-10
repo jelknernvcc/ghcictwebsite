@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hello MathML!</title>
+<link rel="icon" type="image/x-icon" href="../../../images/favicon.ico">
+<!--
+<link rel="stylesheet"
+      href="https://fred-wang.github.io/MathFonts/LatinModern/mathfonts.css">
+-->
+<style>
+h1, footer {
+    text-align: center;
+}
+footer>a, footer>a:visited {
+    text-decoration: none;
+    color: #555;
+}
+main {
+    margin: 2vw;
+    padding: 2vw;
+    border: 1px dotted #777;
+}
+a, a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: #DA9100;
+}
+math {
+    display: inline;
+    padding: 0.2vw;
+    color: #A86000;
+}
+math.block {
+    display: block;
+    padding: 3vw;
+    width: 50%;
+    text-align: right;
+}
+</style>
+<script src="js/validation.js"></script>
+<script>
+function init() {
+  setValidationLinks();
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<h1>Hello MathML!</h1>
+<main>
+<p>
+This mathematical formula with a big summation and the number pi:
+</p>
+<math class="block">
+  <mrow>
+    <munderover>
+      <mo>∑</mo>
+      <mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow>
+      <mrow><mo>+</mo><mn>∞</mn></mrow>
+    </munderover>
+    <mfrac>
+      <mn>1</mn>
+      <msup><mi>n</mi><mn>2</mn></msup>
+    </mfrac>
+  </mrow>
+  <mo>=</mo>
+  <mfrac>
+    <msup><mi>π</mi><mn>2</mn></msup>
+    <mn>6</mn>
+  </mfrac>
+</math>
+</p>
+is easy to prove. And was easy to markup. I just stole the MathML directly
+from the <a href="https://w3c.github.io/mathml-core/">MathML Core</a>
+documentation.
+</p><p>
+The fraction <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math> is not a decimal
+number (I got this example from
+<a href="https://developer.mozilla.org/en-US/docs/Learn/MathML/First_steps/Getting_started">Getting
+started with MathML</a> and styled it using CSS).
+</p><p>
+I made this one:
+<math>
+  <mfrac>
+    <mrow>
+      <mfrac>
+      <mn>1</mn>
+      <mn>4</mn>
+      </mfrac>
+    </mrow>
+    <mrow>
+      <mn>2</mn>
+      <mo>+</mo>
+      <mn>3</mn>
+    </mrow>
+  </mfrac>
+</math>
+as a solution to the last exercise on this same page.
+</p><p>
+I'm going to need a lot of Unicode characters for this math markup, and I'll
+use
+<a href="https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode">Mathematical
+operators and symbols in Unicode</a> and
+<a href="https://en.wikipedia.org/wiki/List_of_logic_symbols">List of logic
+symbols</a> as primary resources (<i>thanks Wikipedia!</i>)
+</p><p>
+P ∧ Q, P ∨ Q, P → Q, P ↔ Q, ¬P → ¬Q
+</p>
+</main>
+
+<footer>
+<a id="vLink1"><strong> HTML </strong> Valid! </a> |
+<a id="vLink2"><strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>

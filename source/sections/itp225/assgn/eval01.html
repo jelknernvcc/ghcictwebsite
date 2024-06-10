@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ITE 170 Performance Evaluation 1</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 0.8em;
+}
+table {
+    margin-right: 0;
+    margin-left: 2em;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    border: 1px solid black;
+    white-space: nowrap;
+}
+th, td {
+    padding-left: 0.6em;
+}
+td {
+    border-top: 1px solid black;
+}
+table.filesystems {
+    width: 24em;
+}
+table.machinenames {
+    width: 16em;
+}
+</style>
+</head>
+<body>
+<header>
+<a href="../index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>ITE 170: Linux System Administration</h2>
+<h1>Performance Evaluation 1: Base Installation</h1>
+</div>
+</header>
+<hr>
+<h2>Due Date</h2>
+<p>
+Friday, April 15, 2016 at the end of class.
+</p>
+
+<h2>Competencies</h2>
+<p>
+Be able to install a Centos 7 system from DVD with specified parameters and
+options.
+</p>
+
+<h2>Evaluation</h2>
+<p>
+Given a laptop and a Centos 7 DVD, do a Server GUI install of  Centos on the
+laptop with the following specifications:
+</p>
+<ol>
+<li>System should have a 500 MiB standard partition which mounts
+<code>/boot</code> and a 1 GiB swap partition.</li>
+
+<li>System should have LVM partitions of the following sizes, mounts and
+file systems:
+<table class="filesystems">
+<tr>
+<th>Size</th><th>Mount</th><th>File System</th>
+</tr>
+<tr>
+<td>30 GiB</td><td><code>/</code></td><td>xfs</td>
+</tr>
+<tr>
+<td>10 GiB</td><td><code>/home</code></td><td>ext4</td>
+</tr>
+<tr>
+<td>remaining space</td><td><code>/var</code></td><td>ext4</td>
+</tr>
+</table>
+</li>
+
+<li>Networking should be enabled using DHCP with each student setting the
+hostname of their machine as indicated in the following table:
+<table class="machinenames">
+<tr>
+<th>Student</th><th>Machine Name</th>
+</tr>
+<tr>
+<td>Graham</td><td>laptop1</td>
+</tr>
+<tr>
+<td>Jonathan</td><td>laptop2</td>
+</tr>
+<tr>
+<td>Marco</td><td>laptop3</td>
+</tr>
+<tr>
+<td>Martin</td><td>laptop4</td>
+</tr>
+<tr>
+<td>Tripp</td><td>laptop5</td>
+</tr>
+</table>
+
+</li>
+
+<li>The root password should be set to <code>password</code>.</li>
+
+<li>There should be a regular (without admin privileges) user named
+<code>user</code> with password <code>password</code>.</li>
+
+<li>Packages needed for KVM installation should be installed.</li>
+</ol>
+
+<footer>
+<hr>
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

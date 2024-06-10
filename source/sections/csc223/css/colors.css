@@ -1,0 +1,47 @@
+body {
+  background-color: #FFF;
+}
+h1 {
+  color: #250;
+}
+h2 {
+  color: #DA1;
+}
+h3 {
+  color: #960;
+}
+h4 {
+  color: #530;
+}
+a, a:visited {
+  color: #360;
+}
+dt {
+  color: #960;
+}
+time {
+    color: #250;
+}
+li.opt {
+    color: #884;
+}
+footer p {
+    background-color: #DDD;
+    border-color: #960;
+}
+footer a {
+    color: #222;
+    background-color: #DDD;
+}
+footer a strong {
+    color: #FFF;
+    background-color: #140;
+}
+footer a:hover {
+    color: #FFF;
+    background-color: #140;
+}
+footer a:hover strong {
+    color: #222;
+    background-color: #DDD;
+}

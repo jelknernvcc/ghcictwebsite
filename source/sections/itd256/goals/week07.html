@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITD 256 Week 7</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITD 256: Week 7</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2023-03-20">Week of Monday, March 20, 2023</time>
+
+<h2>Overview</h2>
+<p>
+This week we will return to <i>A Curious Moon</i>, picking up where we left
+off by reading the <i>Flyby</i> chapter.
+</p>
+
+<h2>Goals for Week 7</h2>
+<div>
+<p>
+Start Tuesday by arranging yourselves into pairs for the study of the
+<i>Flyby</i> chapter.  I will present what I did with the first several pages,
+and you will divide the rest of the chapter so that each pair presents part of
+it in class next Monday, March 27th.
+</p>
+<ul>
+<li><b>Jamethiel and Fallon</b>: Page 75</li>
+<li><b>Christopher and Vaughn</b>: Page 77</li>
+<li><b>Edward, Ahmad, and Telmuun</b>: Top of page 78</li>
+<li><b>Antonio and Julian</b>: Bottom of page 78</li>
+<li><b>Marin and Kaleb</b>: TBD</li>
+</ul>
+</div>
+
+<h2>Thursday, March 23rd</h2>
+<div>
+<p>
+I know I keep saying over and over how much I like our book, well, I'm doing
+it again!  Jamethiel and Fallon are assigned the presentation of the
+<code>SELECT</code> statement on page 75, but when I looked at it, I realized
+it leads us down another rabbit hole, into
+<a href="https://en.wikipedia.org/wiki/Regular_expression">regular
+expressions</a>. This is a rabbit hole down which we want to go, so let's
+take another pause in our journey through <i>Curious Moon</i> to explore it.
+</p><p>
+Your classwork and homework today is to teach yourself basic <b>regular
+expression</b> syntax. We will have a short quiz at the start of class on
+Monday to verify you've done this.
+</p><p>
+We will use
+<a href="https://regexone.com/">RegexOne: Learn Regular Expressions with,
+simple, interactive exercises</a> as our resource, and all quiz questions will
+be based on the examples presented in this tutorial.
+</p><p>
+The article
+<a href="https://towardsdatascience.com/pattern-matching-and-regular-expressions-in-postgresql-cd1fa76e5f3f">Pattern
+Matching and Regular Expressions in PostgreSQL</a> is a good read for us, but
+it won't teach us the skill.
+</p>
+</div>
+
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

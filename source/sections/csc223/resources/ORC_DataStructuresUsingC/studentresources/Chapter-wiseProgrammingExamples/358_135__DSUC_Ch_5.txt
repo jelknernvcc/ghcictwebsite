@@ -1,0 +1,428 @@
+
+TITLE - Data Structures Using C, 2/e
+
+AUTHOR - Reema Thareja
+
+
+CHAPTER 5 - STRUCTURES AND UNIONS
+****************************************************************************************************
+
+1. Write a program using structures to read and display the information about a student.
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+struct student
+{
+int roll_no;
+char name[80];
+float fees;
+char DOB[80];
+};
+struct student stud1;
+clrscr();
+printf("\n Enter the roll number : ");
+scanf("%d", &stud1.roll_no);
+printf("\n Enter the name : ");
+scanf("%s", stud1.name);
+printf("\n Enter the fees : ");
+scanf("%f", &stud1.fees);
+printf("\n Enter the DOB : ");
+scanf("%s", stud1.DOB);
+printf("\n ********STUDENT'S DETAILS *******");
+printf("\n ROLL No. = %d", stud1.roll_no);
+printf("\n NAME = %s", stud1.name);
+printf("\n FEES = %f", stud1.fees);
+printf("\n DOB = %s", stud1.DOB);
+getch();
+return 0;
+}
+
+
+**************************************************************************************************
+
+2. Write a program to read, display, add, and subtract two complex numbers.
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+typedef struct complex
+{
+int real;
+int imag;
+}COMPLEX;
+COMPLEX c1, c2, sum_c, sub_c;
+int option;
+clrscr();
+do
+{
+printf("\n ******** MAIN MENU *********");
+printf("\n 1. Read the complex numbers");
+printf("\n 2. Display the complex numbers");
+printf("\n 3. Add the complex numbers");
+printf("\n 4. Subtract the complex numbers");
+printf("\n 5. EXIT");
+printf("\n Enter your option : ");
+scanf("%d", &option);
+switch(option)
+{
+case 1:
+printf("\n Enter the real and imaginary parts of the
+first complex number : ");
+scanf("%d %d", &c1.real, &c1.imag);
+printf("\n Enter the real and imaginary parts of the
+second complex number : ");
+scanf("%d %d", &c2.real, &c2.imag);
+break;
+case 2:
+printf("\n The first complex number is : %d+%di",
+c1.real,c1.imag);
+printf("\n The second complex number is : %d+%di",
+c2.real,c2.imag);
+break;
+case 3:
+sum_c.real = c1.real + c2.real;
+sum_c.imag = c1.imag + c2.imag;
+printf("\n The sum of two complex numbers is :
+%d+%di",sum_c.real, sum_c.imag);
+break;
+case 4:
+sub_c.real = c1.real – c2.real;
+sub_c.imag = c1.imag – c2.imag;
+printf("\n The difference between two complex numbers
+is :%d+%di", sub_c.real, sub_c.imag);
+break;
+}
+}while(option != 5);
+getch();
+return 0;
+}
+
+
+*************************************************************************************************
+
+3. Write a program to read and display the information of a student using a nested structure.
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+struct DOB
+{
+int day;
+int month;
+int year;
+};
+struct student
+{
+int roll_no;
+char name[100];
+float fees;
+struct DOB date;
+};
+struct student stud1;
+clrscr();
+printf("\n Enter the roll number : ");
+scanf("%d", &stud1.roll_no);
+printf("\n Enter the name : ");
+scanf("%s", stud1.name);
+printf("\n Enter the fees : ");
+scanf("%f", &stud1.fees);
+printf("\n Enter the DOB : ");
+scanf("%d %d %d", &stud1.date.day, &stud1.date.month, &stud1.date.year);
+printf("\n ********STUDENT'S DETAILS *******");
+printf("\n ROLL No. = %d", stud1.roll_no);
+printf("\n NAME = %s", stud1.name);
+printf("\n FEES = %f", stud1.fees);
+printf("\n DOB = %d – %d – %d", stud1.date.day, stud1.date.month, stud1.date.year);
+getch();
+return 0;
+}
+
+
+***********************************************************************************************
+
+4. Write a program to read and display the information of all the students in a class. Then
+edit the details of the ith student and redisplay the entire information.
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+int main()
+{
+struct student
+{
+int roll_no;
+char name[80];
+int fees;
+char DOB[80];
+};
+struct student stud[50];
+int n, i, num, new_rolno;
+int new_fees;
+char new_DOB[80], new_name[80];
+clrscr();
+printf("\n Enter the number of students : ");
+scanf("%d", &n);
+for(i=0;i<n;i++)
+{
+printf("\n Enter the roll number : ");
+scanf("%d", &stud[i].roll_no);
+printf("\n Enter the name : ");
+gets(stud[i].name);
+printf("\n Enter the fees : ");
+scanf("%d",&stud[i].fees);
+printf("\n Enter the DOB : ");
+gets(stud[i].DOB);
+}
+for(i=0;i<n;i++)
+{
+printf("\n ********DETAILS OF STUDENT %d*******", i+1);
+printf("\n ROLL No. = %d", stud[i].roll_no);
+printf("\n NAME = %s", stud[i].name);
+printf("\n FEES = %d", stud[i].fees);
+printf("\n DOB = %s", stud[i].DOB);
+}
+printf("\n Enter the student number whose record has to be edited : ");
+scanf("%d", &num);
+num= num–1;
+printf("\n Enter the new roll number : ");
+scanf("%d", &new_rolno);
+printf("\n Enter the new name : "):
+gets(new_name);
+printf("\n Enter the new fees : ");
+scanf("%d", &new_fees);
+printf("\n Enter the new DOB : ");
+gets(new_DOB);
+stud[num].roll_no = new_rolno;
+strcpy(stud[num].name, new_name);
+stud[num].fees = new_fees;
+strcpy (stud[num].DOB, new_DOB);
+for(i=0;i<n;i++)
+{
+printf("\n ********DETAILS OF STUDENT %d*******", i+1);
+printf("\n ROLL No. = %d", stud[i].roll_no);
+printf("\n NAME = %s", stud[i].name);
+printf("\n FEES = %d", stud[i].fees);
+printf("\n DOB = %s", stud[i].DOB);
+}
+getch();
+return 0;
+}
+
+************************************************************************************************
+
+5. Write a program to read, display, add, and subtract two distances. Distance must be defined
+using kms and meters.
+#include <stdio.h>
+#include <conio.h>
+typedef struct distance
+{
+int kms;
+int meters;
+}DISTANCE;
+DISTANCE add_distance (DISTANCE, DISTANCE);
+DISTANCE subtract_distance (DISTANCE, DISTANCE);
+DISTANCE d1, d2, d3, d4;
+int main()
+{
+int option;
+clrscr();
+do
+{
+printf("\n ******** MAIN MENU *********");
+printf("\n 1. Read the distances ");
+printf("\n 2. Display the distances");
+printf("\n 3. Add the distances");
+printf("\n 4. Subtract the distances");
+printf("\n 5. EXIT");
+printf("\n Enter your option : ");
+scanf("%d", &option);
+switch(option)
+{
+case 1:
+printf("\n Enter the first distance in kms and meters: ");
+scanf("%d %d", &d1.kms, &d1.meters);
+printf("\n Enter the second distance in kms and meters: ");
+scanf("%d %d", &d2.kms, &d2.meters);
+break;
+case 2:
+printf("\n The first distance is : %d kms %d meters",
+d1.kms, d1.meters);
+printf("\n The second distance is : %d kms %d meters",
+d2.kms, d2.meters);
+break;
+case 3:
+d3 = add_distance(d1, d2);
+printf("\n The sum of two distances is : %d kms %d
+meters", d3.kms, d3.meters);
+break;
+case 4:
+d4 = subtract_distance(d1, d2);
+printf("\n The difference between two distances is : %d
+kms %d meters", d4.kms, d4.meters);
+break;
+}
+}while(option != 5);
+getch();
+return 0;
+}
+DISTANCE add_distance(DISTANCE d1, DISTANCE d2)
+{
+DISTANCE sum;
+sum.meters = d1.meters + d2.meters;
+sum.kms = d1.kms + d2.kms;
+while (sum.meters >= 1000)
+{
+sum.meters = sum.meters % 1000;
+sum.kms += 1;
+}
+return sum;
+}
+DISTANCE subtract_distance(DISTANCE d1, DISTANCE d2)
+{
+DISTANCE sub;
+if(d1.kms > d2.kms)
+{
+sub.meters = d1.meters – d2.meters;
+sub.kms = d1.kms – d2.kms;
+}
+else
+{
+sub.meters = d2.meters – d1.meters;
+sub.kms = d2.kms – d1.kms;
+}
+if(sub.meters < 0)
+{
+sub.kms = sum.kms – 1;
+sub.meters = sum.meters + 1000;
+}
+return sub;
+}
+
+
+************************************************************************************************
+
+6. Write a program to initialize the members of a structure by using a pointer to the structure.
+#include <stdio.h>
+#include <conio.h>
+struct student
+{
+int r_no;
+char name[20];
+char course[20];
+int fees;
+};
+int main()
+{
+struct student stud1, *ptr_stud1;
+clrscr();
+ptr_stud1 = &stud1;
+printf("\n Enter the details of the student :");
+printf("\n Enter the Roll Number =");
+scanf("%d", &ptr_stud1 -> r_no);
+printf("\n Enter the Name = );
+gets(ptr_stud1 -> name);
+printf("\n Enter the Course = ");
+gets(ptr_stud1 -> course);
+printf("\n Enter the Fees = ");
+scanf("%d", &ptr_stud1 -> fees);
+printf("\n DETAILS OF THE STUDENT");
+printf("\n ROLL NUMBER = %d", ptr_stud1 –> r_no);
+printf("\n NAME = %s", ptr_stud1 –> name);
+printf("\n COURSE = %s", ptr_stud1 –> course);
+printf("\n FEES = %d", ptr_stud1 –> fees);
+return 0;
+}
+
+
+*************************************************************************************************
+
+7. Write a program, using an array of pointers to a structure, to read and display the data of
+students.
+#include <stdio.h>
+#include <conio.h>
+#include <alloc.h>
+struct student
+{
+int r_no;
+char name[20];
+char course[20];
+int fees;
+};
+struct student *ptr_stud[10];
+int main()
+{
+int i, n;
+printf("\n Enter the number of students : ");
+scanf("%d", &n);
+for(i=0;i<n;i++)
+{
+ptr_stud[i] = (struct student *)malloc(sizeof(struct student));
+printf("\n Enter the data for student %d ", i+1);
+printf("\n ROLL NO.: ");
+scanf("%d", &ptr_stud[i]–>r_no);
+printf("\n NAME: ");
+gets(ptr_stud[i]–>name);
+printf("\n COURSE: ");
+gets(ptr_stud[i]–>course);
+printf("\n FEES: ");
+scanf("%d", &ptr_stud[i]–>fees);
+}
+printf("\n DETAILS OF STUDENTS");
+for(i=0;i<n;i++)
+{
+printf("\n ROLL NO. = %d", ptr_stud[i]–>r_no);
+printf("\n NAME = %s", ptr_stud[i]–>name);
+printf("\n COURSE = %s", ptr_stud[i]–>course);
+printf("\n FEES = %d", ptr_stud[i]–>fees);
+}
+return 0;
+}
+
+
+*************************************************************************************************
+
+8. Write a program that passes a pointer to a structure to a function.
+#include <stdio.h>
+#include <conio.h>
+#include <alloc.h>
+struct student
+{
+int r_no;
+char name[20];
+char course[20];
+int fees;
+};
+void display (struct student *);
+int main()
+{
+struct student *ptr;
+ptr = (struct student *)malloc(sizeof(struct student));
+printf("\n Enter the data for the student ");
+printf("\n ROLL NO.: ");
+scanf("%d", &ptr–>r_no);
+printf("\n NAME: ");
+gets(ptr–>name);
+printf("\n COURSE: ");
+gets(ptr–>course);
+printf("\n FEES: ");
+scanf("%d", &ptr–>fees);
+display(ptr);
+getch();
+return 0;
+}
+void display(struct student *ptr)
+{
+printf("\n DETAILS OF STUDENT");
+printf("\n ROLL NO. = %d", ptr–>r_no);
+printf("\n NAME = %s", ptr–>name);
+printf("\n COURSE = %s ", ptr–>course);
+printf("\n FEES = %d", ptr–>fees);
+}
+
+
+**************************************************************************************************
+
+
+
+
+

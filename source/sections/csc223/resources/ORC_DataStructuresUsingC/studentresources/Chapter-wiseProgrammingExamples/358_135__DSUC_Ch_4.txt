@@ -1,0 +1,494 @@
+
+TITLE - Data Structures Using C, 2/e
+
+AUTHOR - Reema Thareja
+
+
+CHAPTER 4 - STRINGS
+
+*********************************************************************************************
+
+1. Write a program to find the length of a string.
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+char str[100], i = 0, length;
+clrscr();
+printf("\n Enter the string : ");
+gets(str)
+while(str[i] != '\0')
+i++;
+length = i;
+printf("\n The length of the string is : %d", length);
+getch()
+return 0;
+}
+
+
+**********************************************************************************************
+
+2. Write a program to convert the lower case characters of a string into upper case.
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+char str[100], upper_str[100];
+int i=0;
+clrscr();
+printf("\n Enter the string :");
+gets(str);
+while(str[i] != '\0')
+{
+if(str[i]>='a' && str[i]<='z')
+upper_str[i] = str[i] – 32;
+else
+upper_str[i] = str[i];
+i++;
+}
+upper_str[i] = '\0';
+printf("\n The string converted into upper case is : ");
+puts(upper_str);
+return 0;
+}
+
+***********************************************************************************************
+
+3. Write a program to append a string to another string.
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+char Dest_Str[100], Source_Str[50];
+int i=0, j=0;
+clrscr();
+printf("\n Enter the source string : ");
+gets(Source_Str);
+printf("\n Enter the destination string : ");
+gets(Dest_Str);
+while(Dest_Str[i] != '\0')
+i++;
+while(Source_Str[j] != '\0')
+{
+Dest_Str[i] = Source_Str[j];
+i++;
+j++;
+}
+Dest_Str[i] = '\0';
+printf("\n After appending, the destination string is : ");
+puts(Dest_Str);
+getch();
+return 0;
+}
+
+
+************************************************************************************************
+
+4. Write a program to compare two strings.
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+int main()
+{
+char str1[50], str2[50];
+int i=0, len1=0, len2=0, same=0;
+clrscr();
+printf("\n Enter the first string : ");
+gets(str1);
+printf("\n Enter the second string : ");
+gets(str2);
+len1 = strlen(str1);
+len2 = strlen(str2);
+if(len1 == len2)
+{
+while(i<len1)
+{
+if(str1[i] == str2[i])
+i++;
+else break;
+}
+if(i==len1)
+{
+same=1;
+printf("\n The two strings are equal");
+}
+}
+if(len1!=len2)
+printf("\n The two strings are not equal");
+if(same == 0)
+{
+if(str1[i]>str2[i])
+printf("\n String 1 is greater than string 2");
+else if(str1[i]<str2[i])
+printf("\n String 2 is greater than string 1");
+}
+getch();
+return 0;
+}
+
+
+**************************************************************************************************
+
+5. Write a program to reverse a given string.
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+int main()
+{
+char str[100], reverse_str[100], temp;
+int i=0, j=0;
+clrscr();
+printf("\n Enter the string : ");
+gets(str);
+j = strlen(str)–1;
+while(i < j)
+{
+temp = str[j];
+str[j] = str[i];
+str[i] = temp;
+i++;
+j––;
+}
+printf("\n The reversed string is : ");
+puts(str);
+getch();
+return 0;
+}
+
+
+**************************************************************************************************
+
+6. Write a program to extract a substring from the middle of a given string.
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+char str[100], substr[100];
+int i=0, j=0, n, m;
+clrscr();
+printf("\n Enter the main string : ");
+gets(str);
+printf("\n Enter the position from which to start the substring: ");
+scanf("%d", &m);
+printf("\n Enter the length of the substring: ");
+scanf("%d", &n);
+i=m;
+while(str[i] != '\0' && n>0)
+{
+substr[j] = str[i];
+i++;
+j++;
+n––;
+}
+substr[j] = '\0';
+printf("\n The substring is : ");
+puts(substr);
+getch();
+return 0;
+}
+
+
+***************************************************************************************************
+
+7. Write a program to insert a string in the main text.
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+char text[100], str[20], ins_text[100];
+int i=0, j=0, k=0,pos;
+clrscr();
+printf("\n Enter the main text : ");
+gets(text);
+printf("\n Enter the string to be inserted : ");
+gets(str);
+printf("\n Enter the position at which the string has to be inserted: ");
+scanf("%d", &pos);
+while(text[i]! = '\0')
+{
+if(i==pos)
+{
+while(str[k] != '\0')
+{
+ins_text[j] = str[k];
+j++;
+k++;
+}
+}
+else
+{
+ins_text[j] = text[i];
+j++;
+}
+i++;
+}
+ins_text[j] = '\0';
+printf("\n The new string is : ");
+puts(ins_text);
+getch();
+return0;
+}
+
+**************************************************************************************************
+
+8. Write a program to delete a substring from a text.
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+char text[200], str[20], new_text[200];
+int i=0, j=0, found=0, k, n=0, copy_loop=0;
+clrscr();
+printf("\n Enter the main text : ");
+gets(text);
+printf("\n Enter the string to be deleted : ");
+gets(str);
+while(text[i]!='\0')
+{
+j=0, found=0, k=i;
+while(text[k]==str[j] && str[j]!='\0')
+{
+k++;
+j++;
+}
+if(str[j]=='\0')
+copy_loop=k;
+new_text[n] = text[copy_loop];
+i++;
+copy_loop++;
+n++;
+}
+new_str[n]='\0';
+printf("\n The new string is : ");
+puts(new_str);
+getch();
+return 0;
+}
+
+
+************************************************************************************************
+
+9. Write a program to replace a pattern with another pattern in the text.
+#include <stdio.h>
+#include <conio.h>
+main()
+{
+char str[200], pat[20], new_str[200], rep_pat[100];
+int i=0, j=0, k, n=0, copy_loop=0, rep_index=0;
+clrscr();
+printf("\n Enter the string : ");
+gets(str);
+printf("\n Enter the pattern to be replaced: ");
+gets(pat);
+printf("\n Enter the replacing pattern: ");
+gets(rep_pat);
+while(str[i]!='\0')
+{
+j=0,k=i;
+while(str[k]==pat[j] && pat[j]!='\0')
+{
+k++;
+j++;
+}
+if(pat[j]=='\0')
+{
+copy_loop=k;
+while(rep_pat[rep_index] !='\0')
+{
+new_str[n] = rep_pat[rep_index];
+rep_index++;
+n++;
+}
+}
+new_str[n] = str[copy_loop];
+i++;
+copy_loop++;
+n++;
+}
+new_str[n]='\0';
+printf("\n The new string is : ");
+puts(new_str);
+getch();
+return 0;
+}
+
+
+********************************************************************************************
+
+10. Write a program to sort the names of students.
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+int main()
+{
+char names[5][10], temp[10];
+int i, n, j;
+clrscr();
+printf("\n Enter the number of students : ");
+scanf("%d", &n);
+for(i=0;i<n;i++)
+{
+printf("\n Enter the name of student %d : ", i+1);
+gets(names[i]);
+}
+for(i=0;i<n;i++)
+{
+for(j=0;j<n–i–1;j++)
+{
+if(strcmp(names[j], names[j+1])>0)
+{
+strcpy(temp, names[j]);
+strcpy(names[j], names[j+1]);
+strcpy(names[j+1], temp);
+}
+}
+}
+printf("\n Names of the students in alphabetical order are : ");
+for(i=0;i<n;i++)
+puts(names[i]);
+getch();
+return 0;
+}
+
+
+*********************************************************************************************
+
+11. Write a program to read multiple lines of text and then count the number of characters,
+words, and lines in the text.
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+char str[1000];
+int i=0, word_count = 1, line_count =1, char_count = 1;
+clrscr();
+printf("\n Enter a ‘*’ to end");
+printf("\n **************");
+printf("\n Enter the text : ");
+scanf("%c", &str[i]);
+while(str[i] != '*')
+{
+i++;
+scanf("%c", &str[i]);
+}
+str[i] = '\0';
+i=0;
+while(str[i] != '\0')
+{
+if(str[i] == '\n' || i==79)
+line_count++;
+if(str[i] == ' ' &&str[i+1] != ' ')
+word_count++;
+char_count++;
+i++;
+}
+printf("\n The total count of words is : %d", word_count);
+printf("\n The total count of lines is : %d", line_count);
+printf("\n The total count of characters is : %d", char_count);
+return 0;
+}
+
+
+*********************************************************************************************
+
+12. Write a program to find whether a string is a palindrome or not.
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+char str[100];
+int i = 0, j, length = 0;
+clrscr();
+printf("\n Enter the string : ");
+gets(str);
+while(str[i] != '\0')
+{
+length++ ;
+i++ ;
+}
+i=0;
+j = length – 1;
+while(i <= length/2)
+{
+if(str[i] == str[j])
+{
+i++;
+j––;
+}
+else
+break;
+}
+if(i>=j)
+printf("\n PALINDROME");
+else
+printf("\n NOT A PALINDROME");
+return 0;
+}
+
+*******************************************************************************************
+
+13. Write a program to copy a string into another string.
+#include <stdio.h>
+int main()
+{
+char str[100], copy_str[100];
+char *pstr, *pcopy_str;
+pstr = str;
+pcopy_str = copy_str;
+printf("\n Enter the string : ");
+gets(str);
+while(*pstr != '\0')
+{
+*pcopy_str = *pstr;
+pstr++, pcopy_str++;
+}
+*pcopy_str = '\0';
+printf("\n The copied text is : ");
+while(*pcopy_str != '\0')
+{
+printf("%c", *pcopy_str);
+pcopy_str++;
+}
+return 0;
+}
+
+
+*******************************************************************************************
+
+14. Write a program to concatenate two strings.
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+char str1[100], str2[100], copy_str[200];
+char *pstr1, *pstr2, *pcopy_str;
+clrscr();
+pstr1 = str1;
+pstr2 = str2;
+pcopy_str = copy_str;
+printf("\n Enter the first string : ");
+gets(str1);
+printf("\n Enter the second string : ");
+gets(str2);
+while(*pstr1 != '\0')
+{
+*pcopy_str = *pstr1;
+pcopy_str++, pstr1++;
+}
+while(*pstr2 != '\0')
+{
+*pcopy_str = *pstr2;
+pcopy_str++, pstr2++;
+}
+*pcopy_str = '\0';
+printf("\n The concatenated text is : ");
+while(*pcopy_str != '\0')
+{
+printf("%c", *pcopy_str);
+pcopy_str++;
+}
+return 0;
+}
+
+*********************************************************************************************
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITD 256 Week 8</title>
+<style>
+@import url(../style.css);
+li {
+    margin-top: 10px;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<a href="index.html">
+<img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career &amp; Technical Academy Arlington</h2>
+<h1>ITD 256: Week 8</h1>
+</div>
+</header>
+<hr>
+
+<article>
+<time datetime="2023-03-27">Week of Monday, March 27, 2023</time>
+
+<h2>Overview</h2>
+<p>
+This week we will work our way through the <i>Flyby</i> chapter, sharing
+our presentations.
+</p>
+
+<h2>Goals for Week 8</h2>
+<div>
+<p>
+We will begin with the promised quiz on the first five mini-lessons of
+<a href="https://regexone.com/">RegexOne: Learn Regular Expressions with,
+simple, interactive exercises</a>. I will evaluate your quiz solutions
+using <a href="https://regex101.com/">regular expressions 101</a>.
+</p><p>
+After that, we will share presentations of the 
+<a href="https://en.wikipedia.org/wiki/Select_(SQL)">SELECT statements</a> 
+from our <i>Flyby</i> chapter determined last week:
+</p>
+<ul>
+<li><b>Jamethiel and Fallon</b>: Page 75</li>
+<li><b>Christopher and Vaughn</b>: Page 77</li>
+<li><b>Edward, Ahmad, and Telmuun</b>: Top of page 78</li>
+<li><b>Antonio and Julian</b>: Bottom of page 78</li>
+<li><b>Marin and Kaleb</b>: Pages 79 and 80</li>
+</ul>
+<p>
+Since quiz grades were mixed, you can make up all but 2 of the 8 points on
+the quiz by including a markdown file in your git repo named
+<code>RegExNotes.md</code> with detailed notes about the quiz questions.
+</p>
+</div>
+</article>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

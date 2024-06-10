@@ -1,0 +1,965 @@
+
+TITLE - Data Structures Using C, 2/e
+
+AUTHOR - Reema Thareja
+
+
+CHAPTER 7 - STACKS
+
+******************************************************************************************************
+
+1. Write a program to perform Push, Pop, and Peek operations on a stack.
+#include <stdio.h>
+#include <conio.h>
+#define MAX 10
+int st[MAX], top=–1;
+void push(int st[], int val);
+int pop(int st[]);
+int peek(int st[]);
+void display(int st[]);
+int main()
+{
+int val, option;
+clrscr();
+do
+{
+printf("\n *****MAIN MENU*****");
+printf("\n 1. PUSH");
+printf("\n 2. POP");
+printf("\n 3. PEEK");
+printf("\n 4. DISPLAY");
+printf("\n 5. EXIT");
+printf("\n Enter your option : ");
+scanf("%d", &option);
+switch(option)
+{
+case 1:
+printf("\n Enter the number to be pushed on stack : ");
+scanf("%d", &val);
+push(st, val);
+break;
+case 2:
+val = pop(st);
+if(val! = –1)
+printf("\n The value deleted from stack is : %d", val);
+break;
+case 3:
+val = peek(st);
+if(val! = –1)
+printf("\n The value stored at top of stack is : %d", val);
+break;
+case 4:
+display(st);
+break;
+}
+}while(option != 5);
+getch();
+return 0;
+}
+void push(int st[], int val)
+{
+if(top == MAX–1)
+{
+printf("\n STACK OVERFLOW");
+}
+else
+{
+top++;
+st[top] = val;
+}
+}
+int pop(int st[])
+{
+int val;
+if(top == –1)
+{
+printf("\n STACK UNDERFLOW");
+return –1;
+}
+else
+{
+val = st[top];
+top––;
+return val;
+}
+}
+void display(int st[])
+{
+int i;
+if(top == –1)
+printf("\n STACK IS EMPTY");
+else
+{
+for(i=top;i>=0;i––)
+printf("\n%d",st[i]);
+}
+}
+int peek(int st[])
+{
+if(top == –1)
+{
+printf("\n STACK IS EMPTY");
+return –1;
+}
+else
+return (st[top]);
+}
+
+***********************************************************************************************************************************************
+
+2. Write a program to implement a linked stack.
+#include <stdio.h>
+#include <conio.h>
+#include <malloc.h>
+struct stack
+{
+int data;
+struct stack *next;
+};
+struct stack *top = NULL;
+struct stack *push(struct stack *, int);
+struct stack *display(struct stack *);
+struct stack *pop(struct stack *);
+int peek(struct stack *);
+int main()
+{
+int val, option;
+clrscr();
+do
+{
+printf("\n *****MAIN MENU*****");
+printf("\n 1. PUSH");
+printf("\n 2. POP");
+printf("\n 3. PEEK");
+printf("\n 4. DISPLAY");
+printf("\n 5. EXIT");
+printf("\n Enter your option : ");
+scanf("%d", &option);
+switch(option)
+{
+case 1:
+printf("\n Enter the number to be pushed on stack :");
+scanf("%d", &val);
+top = push(top, val);
+break;
+case 2:
+top = pop(top);
+break;
+case 3:
+val = peek(top);
+if (val! = –1)
+printf("\n The value at the top of stack is : %d", val);
+else
+printf("\n STACK IS EMPTY");
+break;
+case 4:
+top = display(top);
+break;
+}
+}while(option != 5);
+getch();
+return 0;
+}
+struct stack *push(struct stack *top, int val)
+{
+struct stack *ptr;
+ptr = (struct stack*)malloc(sizeof(struct stack));
+ptr -> data = val;
+if(top == NULL)
+{
+ptr -> next = NULL;
+top = ptr;
+}
+else
+{
+ptr -> next = top;
+top = ptr;
+}
+return top;
+}
+struct stack *display(struct stack *top)
+{
+struct stack *ptr;
+ptr = top;
+if(top == NULL)
+printf("\n STACK IS EMPTY");
+else
+{
+while(ptr != NULL)
+{
+printf("\n%d", ptr -> data);
+ptr = ptr -> next;
+}
+}
+return top;
+}
+struct stack *pop(struct stack *top)
+{
+struct stack *ptr;
+ptr = top;
+if(top == NULL)
+printf("\n STACK UNDERFLOW");
+else
+{
+top = top -> next;
+printf("\n The value being deleted is : %d", ptr -> data);
+free(ptr);
+}
+return top;
+}
+int peek(struct stack *top)
+{
+if(top==NULL)
+return –1;
+else
+return top–>data;
+}
+
+**************************************************************************************************************************************************
+
+3. Write a program to implement multiple stacks.
+#include <stdio.h>
+#include <conio.h>
+#define MAX 10
+int stack[MAX],topA=–1,topB=MAX;
+void pushA(int val)
+{
+if(topA==topB–1)
+printf("\n OVERFLOW");
+else
+{
+topA+= 1;
+stack[topA] = val;
+}
+}
+int popA()
+{
+int val;
+if(topA==–1)
+{
+printf("\n UNDERFLOW");
+val = –999;
+}
+else
+{
+val = stack[topA];
+topA––;
+}
+return val;
+}
+void display_stackA()
+{
+int i;
+if(topA==–1)
+printf("\n Stack A is Empty");
+else
+{
+for(i=topA;i>=0;i––)
+printf("\t %d",stack[i]);
+}
+}
+void pushB(int val)
+{
+if(topB–1==topA)
+printf("\n OVERFLOW");
+else
+{
+topB –= 1;
+stack[topB] = val;
+}
+}
+int popB()
+{
+int val;
+if(topB==MAX)
+{
+printf("\n UNDERFLOW");
+val = –999;
+}
+else
+{
+val = stack[topB];
+topB++;
+}
+}
+void display_stackB()
+{
+int i;
+if(topB==MAX)
+printf("\n Stack B is Empty");
+else
+{
+for(i=topB;i<MAX;i++)
+printf("\t %d",stack[i]);
+}
+}
+void main()
+{
+int option, val;
+clrscr();
+do
+{
+printf("\n *****MENU*****");
+printf("\n 1. PUSH IN STACK A");
+printf("\n 2. PUSH IN STACK B");
+printf("\n 3. POP FROM STACK A");
+printf("\n 4. POP FROM STACK B");
+printf("\n 5. DISPLAY STACK A");
+printf("\n 6. DISPLAY STACK B");
+printf("\n 7. EXIT");
+printf("\n Enter your choice");
+scanf("%d",&option);
+switch(option)
+{
+case 1: printf("\n Enter the value to push on Stack A : ");
+scanf("%d",&val);
+pushA(val);
+break;
+case 2: printf("\n Enter the value to push on Stack B : ");
+scanf("%d",&val);
+pushB(val);
+break;
+case 3: val=popA();
+if(val!=–999)
+printf("\n The value popped from Stack A = %d",val);
+break;
+case 4: val=popB();
+if(val!=–999)
+printf("\n The value popped from Stack B = %d",val);
+break;
+case 5: printf("\n The contents of Stack A are : \n");
+display_stackA();
+break;
+case 6: printf("\n The contents of Stack B are : \n");
+display_stackB();
+break;
+}
+}while(option!=7);
+getch();
+}
+
+
+***********************************************************************************************************************************************
+
+4. Write a program to reverse a list of given numbers.
+#include <stdio.h>
+#include <conio.h>
+int stk[10];
+int top=–1;
+int pop();
+void push(int);
+int main()
+{
+int val, n, i,
+arr[10];
+clrscr();
+printf("\n Enter the number of elements in the array : ");
+scanf("%d", &n);
+printf("\n Enter the elements of the array : ");
+for(i=0;i<n;i++)
+scanf("%d", &arr[i]);
+for(i=0;i<n;i++)
+push(arr[i]);
+for(i=0;i<n;i++)
+{
+val = pop();
+arr[i] = val;
+}
+printf("\n The reversed array is : ");
+for(i=0;i<n;i++)
+printf("\n %d", arr[i]);
+getche"();
+return 0;
+}
+void push(int val)
+{
+stk[++top] = val;
+}
+int pop()
+{
+return(stk[top––]);
+}
+
+************************************************************************************************************************************************
+
+5. Write a program to check nesting of parentheses using a stack.
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+#define MAX 10
+int top = –1;
+int stk[MAX];
+void push(char);
+char pop();
+void main()
+{
+char exp[MAX],temp;
+int i, flag=1;
+clrscr();
+printf("Enter an expression : ");
+gets(exp);
+for(i=0;i<strlen(exp);i++)
+{
+if(exp[i]=='(' || exp[i]=='{' || exp[i]=='[')
+push(exp[i]);
+if(exp[i]==’)’ || exp[i]==’}’ || exp[i]==’]’)
+if(top == –1)
+flag=0;
+else
+{
+temp=pop();
+if(exp[i]==')' && (temp=='{' || temp=='['))
+flag=0;
+if(exp[i]=='}' && (temp=='(' || temp=='['))
+flag=0;
+if(exp[i]==']' && (temp=='(' || temp=='{'))
+flag=0;
+}
+}
+if(top>=0)
+flag=0;
+if(flag==1)
+printf("\n Valid expression");
+else
+printf("\n Invalid expression");
+}
+void push(char c)
+{
+if(top == (MAX–1))
+printf("Stack Overflow\n");
+else
+{
+top=top+1;
+stk[top] = c;
+}
+}
+char pop()
+{
+if(top == –1)
+printf("\n Stack Underflow");
+else
+return(stk[top––]);
+}
+
+**********************************************************************************************************************************************
+
+6. Write a program to convert an infix
+expression into its equivalent postfix
+notation.
+#include <stdio.h>
+#include <conio.h>
+#include <ctype.h>
+#include <string.h>
+#define MAX 100
+char st[MAX];
+int top=–1;
+void push(char st[], char);
+char pop(char st[]);
+void InfixtoPostfix(char source[], char target[]);
+int getPriority(char);
+int main()
+{
+char infix[100], postfix[100];
+clrscr();
+printf("\n Enter any infix expression : ");
+gets(infix);
+strcpy(postfix, "");
+InfixtoPostfix(infix, postfix);
+printf("\n The corresponding postfix expression is : ");
+puts(postfix);
+getch();
+return 0;
+}
+void InfixtoPostfix(char source[], char target[])
+{
+int i=0, j=0;
+char temp;
+strcpy(target, "");
+while(source[i]!='\0')
+{
+if(source[i]=='(')
+{
+push(st, source[i]);
+i++;
+}
+else if(source[i] == ')')
+{
+while((top!=–1) && (st[top]!='('))
+{
+target[j] = pop(st);
+j++;
+}
+if(top==–1)
+{
+printf("\n INCORRECT EXPRESSION");
+exit(1);
+}
+temp = pop(st);//remove left parenthesis
+i++;
+}
+else if(isdigit(source[i]) || isalpha(source[i]))
+{
+target[j] = source[i];
+j++;
+i++;
+}
+else if (source[i] == '+' || source[i] == '–' || source[i] == '*' ||
+source[i] == '/' || source[i] == '%')
+{
+while( (top!=–1) && (st[top]!= '(') && (getPriority(st[top])
+> getPriority(source[i])))
+{
+target[j] = pop(st);
+j++;
+}
+push(st, source[i]);
+i++;
+}
+else
+{
+printf("\n INCORRECT ELEMENT IN EXPRESSION");
+exit(1);
+}
+}
+while((top!=–1) && (st[top]!='('))
+{
+target[j] = pop(st);
+j++;
+}
+target[j]='\0';
+}
+int getPriority(char op)
+{
+if(op=='/' || op == '*' || op=='%')
+return 1;
+else if(op=='+' || op=='–')
+return 0;
+}
+void push(char st[], char val)
+{
+if(top==MAX–1)
+printf("\n STACK OVERFLOW");
+else
+{
+top++;
+st[top]=val;
+}
+}
+char pop(char st[])
+{
+char val=' ';
+if(top==–1)
+printf("\n STACK UNDERFLOW");
+else
+{
+val=st[top];
+top––;
+}
+return val;
+}
+
+**************************************************************************************************************************************************
+
+7. Write a program to evaluate a postfix expression.
+#include <stdio.h>
+#include <conio.h>
+#include <ctype.h>
+#define MAX 100
+float st[MAX];
+int top=–1;
+void push(float st[], float val);
+float pop(float st[]);
+float evaluatePostfixExp(char exp[]);
+int main()
+{
+float val;
+char exp[100];
+clrscr();
+printf("\n Enter any postfix expression : ");
+gets(exp);
+val = evaluatePostfixExp(exp);
+printf("\n Value of the postfix expression = %.2f", val);
+getch();
+return 0;
+}
+float evaluatePostfixExp(char exp[])
+{
+int i=0;
+float op1, op2, value;
+while(exp[i] != '\0')
+{
+if(isdigit(exp[i]))
+Table 7.1 Evaluation of a postfix expression
+Character Scanned Stack
+9 9
+3 9, 3
+4 9, 3, 4
+* 9, 12
+8 9, 12, 8
++ 9, 20
+4 9, 20, 4
+/ 9, 5
+– 4
+push(st, (float)(exp[i]–'0'));
+else
+{
+op2 = pop(st);
+op1 = pop(st);
+switch(exp[i])
+{
+case '+':
+value = op1 + op2;
+break;
+case '–':
+value = op1 – op2;
+break;
+case '/':
+value = op1 / op2;
+break;
+case '*':
+value = op1 * op2;
+break;
+case '%':
+value = (int)op1 % (int)op2;
+break;
+}
+push(st, value);
+}
+i++;
+}
+return(pop(st));
+}
+void push(float st[], float val)
+{
+if(top==MAX–1)
+printf("\n STACK OVERFLOW");
+else
+{
+top++;
+st[top]=val;
+}
+}
+float pop(float st[])
+{
+float val=–1;
+if(top==–1)
+printf("\n STACK UNDERFLOW");
+else
+{
+val=st[top];
+top––;
+}
+return val;
+}
+
+************************************************************************************************************************************************
+
+8. Write a program to convert an infix expression to a prefix expression.
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+#include <ctype.h>
+#define MAX 100
+char st[MAX];
+int top=–1;
+void reverse(char str[]);
+void push(char st[], char);
+char pop(char st[]);
+void InfixtoPostfix(char source[], char target[]);
+int getPriority(char);
+char infix[100], postfix[100], temp[100];
+int main()
+{
+clrscr();
+printf("\\n Enter any infix expression : ");
+gets(infix);
+reverse(infix);
+strcpy(postfix, "");
+InfixtoPostfix(temp, postfix);
+printf("\n The corresponding postfix expression is : ");
+puts(postfix);
+strcpy(temp,"");
+reverse(postfix);
+printf("\n The prefix expression is : \n");
+puts(temp);
+getch();
+return 0;
+}
+void reverse(char str[])
+{
+int len, i=0, j=0;
+len=strlen(str);
+j=len–1;
+while(j>= 0)
+{
+if (str[j] == '(')
+temp[i] = ')';
+else if ( str[j] == ')')
+temp[i] = '(';
+else
+temp[i] = str[j];
+i++, j––;
+}
+temp[i] = '\0';
+}
+void InfixtoPostfix(char source[], char target[])
+{
+int i=0, j=0;
+char temp;
+strcpy(target, "");
+while(source[i]!= '\0')
+{
+if(source[i]=='(')
+{
+push(st, source[i]);
+i++;
+}
+else if(source[i] == ')')
+{
+while((top!=–1) && (st[top]!='('))
+{
+target[j] = pop(st);
+j++;
+}
+if(top==–1)
+{
+printf("\n INCORRECT EXPRESSION");
+exit(1);
+}
+temp = pop(st); //remove left parentheses
+i++;
+}
+else if(isdigit(source[i]) || isalpha(source[i]))
+{
+target[j] = source[i];
+j++;
+i++;
+}
+else if( source[i] == '+' || source[i] == '–' || source[i] == '*' ||
+source[i] == '/' || source[i] == '%')
+{
+while( (top!=–1) && (st[top]!= '(') && (getPriority(st[top])
+> getPriority(source[i])))
+{
+target[j] = pop(st);
+j++;
+}
+push(st, source[i]);
+i++;
+}
+else
+{
+printf("\n INCORRECT ELEMENT IN EXPRESSION");
+exit(1);
+}
+}
+while((top!=–1) && (st[top]!='('))
+{
+target[j] = pop(st);
+j++;
+}
+target[j]='\0';
+}
+int getPriority( char op)
+{
+if(op=='/' || op == '*' || op=='%')
+return 1;
+else if(op=='+' || op=='–')
+return 0;
+}
+void push(char st[], char val)
+{
+if(top==MAX–1)
+printf("\n STACK OVERFLOW");
+else
+{
+top++;
+st[top] = val;
+}
+}
+char pop(char st[])
+{
+char val=' ';
+if(top==–1)
+printf("\n STACK UNDERFLOW");
+else
+{
+val=st[top];
+top––;
+}
+return val;
+}
+
+
+
+**********************************************************************************************************************************************
+
+9. Write a program to evaluate a prefix expression.
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+int stk[10];
+int top=–1;
+int pop();
+void push(int);
+int main()
+{
+char prefix[10];
+int len, val, i, opr1, opr2, res;
+clrscr();
+printf("\n Enter the prefix expression : ");
+gets(prefix);
+len = strlen(prefix);
+for(i=len–1;i>=0;i––)
+{
+switch(get_type(prefix[i]))
+{
+case 0:
+val = prefix[i] – '0';
+push(val);
+break;
+case 1:
+opr1 = pop();
+opr2 = pop();
+switch(prefix[i])
+{
+case '+':
+res = opr1 + opr2;
+break;
+case '–':
+res = opr1 – opr2;
+break;
+case '*':
+res = opr1 * opr2;
+break;
+case '/':
+res = opr1 / opr2;
+break;
+}
+push(res);
+}
+}
+printf("\n RESULT = %d", stk[0]);
+getche();
+return 0;
+}
+void push(int val)
+{
+stk[++top] = val;
+}
+int pop()
+{
+return(stk[top––]);
+}
+int get_type(char c)
+{
+if(c == '+' || c == '–' || c == '*' || c == '/')
+return 1;
+else return 0;
+}
+
+
+************************************************************************************************************************************************
+
+10. Write a program to calculate the factorial of a given number.
+#include <stdio.h>
+int Fact(int); // FUNCTION DECLARATION
+int main()
+{
+int num, val;
+printf("\n Enter the number: ");
+scanf("%d", &num);
+val = Fact(num);
+printf("\n Factorial of %d = %d", num, val);
+return 0;
+}
+int Fact(int n)
+{
+if(n==1)
+return 1;
+else
+return (n * Fact(n–1));
+}
+
+
+***********************************************************************************************************************************************
+
+11. Write a program to calculate the GCD of two numbers using recursive functions.
+#include <stdio.h>
+int GCD(int, int);
+int main()
+{
+int num1, num2, res;
+printf("\n Enter the two numbers: ");
+scanf("%d %d", &num1, &num2);
+res = GCD(num1, num2);
+printf("\n GCD of %d and %d = %d", num1, num2, res);
+return 0;
+}
+int GCD(int x, int y)
+{
+int rem;
+rem = x%y;
+if(rem==0)
+return y;
+else
+return (GCD(y, rem));
+}
+
+***********************************************************************************************************************************************
+
+12. Write a program to calculate exp(x,y) using recursive functions.
+#include <stdio.h>
+int exp_rec(int, int);
+int main()
+{
+int num1, num2, res;
+printf("\n Enter the two numbers: ");
+scanf("%d %d", &num1, &num2);
+res = exp_rec(num1, num2);
+printf ("\n RESULT = %d", res);
+return 0;
+}
+int exp_rec(int x, int y)
+{
+if(y==0)
+return 1;
+else
+return (x * exp_rec(x, y–1));
+}
+
+************************************************************************************************************************************************
+
+13. Write a program to print the Fibonacci series using recursion.
+#include <stdio.h>
+int Fibonacci(int);
+int main()
+{
+int n, i = 0, res;
+printf("Enter the number of terms\n");
+scanf("%d",&n);
+printf("Fibonacci series\n");
+for(i = 0; i < n; i++ )
+{
+res = Fibonacci(i);
+printf("%d\t",res);
+}
+return 0;
+}
+int Fibonacci(int n)
+{
+if ( n == 0 )
+return 0;
+else if ( n == 1 )
+return 1;
+else
+return ( Fibonacci(n–1) + Fibonacci(n–2) );
+}
+
+
+**********************************************************************************************************************************************
+
+
+
+
+
