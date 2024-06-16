@@ -2,27 +2,30 @@
 <html lang="en" >
 <head>
 <meta charset="UTF-8">
-<title>CSC 215 Planning Calendar Fall 2024</title>
+<title>CSC 221 Planning Calendar Fall 2024</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/init.js"></script>
 <script>
-window.onload = init;
+window.onload = setUp;
+console.log("got passed window.onload")
 </script>
 </head>
 <body>
 <header>
-<h1>CSC 215 Planning Calendar Fall 2024</h1>
+<h1>CSC 221 Planning Calendar Fall 2024</h1>
 <h2>Lesson Key</h2>
 <table id="key">
 <tr>
-<td class="altair8800"></td>
-<td class="assembly"></td>
-<td class="cpm"></td>
-<td class="c"></td>
-<td class="review"></td>
-<td class="exam"></td>
+<td class="chap1"></td>
+<td class="chap2"></td>
+<td class="chap3"></td>
+<td class="chap4"></td>
+<td class="chap5"></td>
+<td class="chap6"></td>
+<td class="chap7"></td>
+<td class="chap8"></td>
 </tr>
 </table>
 </header>
@@ -42,10 +45,10 @@ window.onload = init;
   <tr>
     <th class="rotated"><p>August</p></th>
     <td class="end"></td>
-    <td class="end altair8800">26</td>
-    <td class="end altair8800">27 A</td>
-    <td class="end altair8800">28 B</td>
-    <td class="end altair8800">29 A</td>
+    <td class="end chap1">26</td>
+    <td class="end chap1">27 A</td>
+    <td class="end chap1">28 B</td>
+    <td class="end chap1">29 A</td>
     <td class="end">30</td>
     <td class="end">31</td>
   </tr>
@@ -54,83 +57,83 @@ window.onload = init;
     <th rowspan="5"><p>September</p></th>
     <td>1</td>
     <td>2</td>
-    <td class="altair8800">3 B</td>
-    <td class="altair8800">4 A</td>
-    <td class="altair8800">5 B</td>
-    <td class="altair8800">6 A</td>
+    <td class="chap1">3 B</td>
+    <td class="chap1">4 A</td>
+    <td class="chap1">5 B</td>
+    <td class="chap1">6 A</td>
     <td>7</td>
   </tr>
   <tr>
     <td>8</td>
-    <td class="altair8800">9 B</td>
-    <td class="altair8800">10 A</td>
-    <td class="altair8800">11 B</td>
-    <td class="altair8800">12 A</td>
-    <td class="altair8800">13 B</td>
+    <td class="chap1">9 B</td>
+    <td class="chap1">10 A</td>
+    <td class="chap1">11 B</td>
+    <td class="chap1">12 A</td>
+    <td class="chap1">13 B</td>
     <td>14</td>
   </tr>
   <tr>
     <td>15</td>
-    <td class="altair8800">16 A</td>
-    <td class="altair8800">17 B</td>
-    <td class="altair8800">18 A</td>
-    <td class="altair8800">19 B</td>
-    <td class="altair8800">20 A</td>
+    <td class="chap1">16 A</td>
+    <td class="chap1">17 B</td>
+    <td class="chap1">18 A</td>
+    <td class="chap1">19 B</td>
+    <td class="chap1">20 A</td>
     <td>21</td>
   </tr>
   <tr>
     <td>22</td>
-    <td class="altair8800">23 B</td>
-    <td class="altair8800">24 A</td>
-    <td class="altair8800">25 B</td>
-    <td class="altair8800">26 A</td>
-    <td class="altair8800">27 B</td>
+    <td class="chap1">23 B</td>
+    <td class="chap1">24 A</td>
+    <td class="chap1">25 B</td>
+    <td class="chap1">26 A</td>
+    <td class="chap1">27 B</td>
     <td>28</td>
   </tr>
   <!-- October 2024 -->
   <tr>
     <td class="end">29</td>
-    <td class="last altair8800">30 A</td>
-    <td class="start altair8800">1 B</td>
-    <td class="start altair8800">2 A</td>
+    <td class="last chap1">30 A</td>
+    <td class="start chap1">1 B</td>
+    <td class="start chap1">2 A</td>
     <td class="start">3</td>
-    <td class="start altair8800">4 B</td>
+    <td class="start chap1">4 B</td>
     <td class="start">5</td>
   </tr>
   <tr>
     <th rowspan="4"><p>October</p></th>
     <td>6</td>
-    <td class="assembly">7 A</td>
-    <td class="assembly">8 B</td>
+    <td class="chap2">7 A</td>
+    <td class="chap2">8 B</td>
     <td>9</td>
-    <td class="assembly">10 A</td>
+    <td class="chap2">10 A</td>
     <td>11</td>
     <td>12</td>
   </tr>
   <tr>
     <td>13</td>
     <td>14</td>
-    <td class="assembly">15 B</td>
-    <td class="assembly">16 A</td>
-    <td class="assembly">17 B</td>
-    <td class="assembly">18 A</td>
+    <td class="chap2">15 B</td>
+    <td class="chap2">16 A</td>
+    <td class="chap2">17 B</td>
+    <td class="chap2">18 A</td>
     <td>19</td>
   </tr>
   <tr>
     <td>20</td>
-    <td class="assembly">21 B</td>
-    <td class="assembly">22 A</td>
-    <td class="assembly">23 B</td>
-    <td class="assembly">24 A</td>
-    <td class="assembly">25 B</td>
+    <td class="chap2">21 B</td>
+    <td class="chap2">22 A</td>
+    <td class="chap2">23 B</td>
+    <td class="chap2">24 A</td>
+    <td class="chap2">25 B</td>
     <td>26</td>
   </tr>
   <tr>
     <td class="end">27</td>
-    <td class="end cpm">28 A</td>
-    <td class="end cpm">29 B</td>
-    <td class="end cpm">30 A</td>
-    <td class="last cpm">31 B</td>
+    <td class="end chap3">28 A</td>
+    <td class="end chap3">29 B</td>
+    <td class="end chap3">30 A</td>
+    <td class="last chap3">31 B</td>
     <td class="start">1</td>
     <td class="start">2</td>
   </tr>
@@ -138,35 +141,35 @@ window.onload = init;
   <tr>
     <th rowspan="4"><p>November</p></th>
     <td>3</td>
-    <td class="cpm">4 A</td>
+    <td class="chap3">4 A</td>
     <td>5</td>
-    <td class="cpm">6 B</td>
-    <td class="cpm">7 A</td>
-    <td class="cpm">8 B</td>
+    <td class="chap3">6 B</td>
+    <td class="chap3">7 A</td>
+    <td class="chap3">8 B</td>
     <td>9</td>
   </tr>
   <tr>
     <td>10</td>
     <td>11</td>
-    <td class="cpm">12 A</td>
-    <td class="cpm">13 B</td>
-    <td class="cpm">14 A</td>
-    <td class="cpm">15 B</td>
+    <td class="chap3">12 A</td>
+    <td class="chap3">13 B</td>
+    <td class="chap3">14 A</td>
+    <td class="chap3">15 B</td>
     <td>16</td>
   </tr>
   <tr>
     <td>17</td>
-    <td class="cpm">18 A</td>
-    <td class="cpm">19 B</td>
-    <td class="cpm">20 A</td>
-    <td class="cpm">21 B</td>
-    <td class="cpm">22 A</td>
+    <td class="chap3">18 A</td>
+    <td class="chap3">19 B</td>
+    <td class="chap3">20 A</td>
+    <td class="chap3">21 B</td>
+    <td class="chap3">22 A</td>
     <td>23</td>
   </tr>
   <tr>
     <td class="end">24</td>
-    <td class="end cpm">25 B</td>
-    <td class="end cpm">26 A</td>
+    <td class="end chap3">25 B</td>
+    <td class="end chap3">26 A</td>
     <td class="end">27</td>
     <td class="end">28</td>
     <td class="end">29</td>
@@ -176,29 +179,29 @@ window.onload = init;
   <tr>
     <th rowspan="5"><p>December</p></th>
     <td>1</td>
-    <td class="cpm">2 B</td>
-    <td class="cpm">3 A</td>
-    <td class="cpm">4 B</td>
-    <td class="cpm">5 A</td>
-    <td class="cpm">6 B</td>
+    <td class="chap3">2 B</td>
+    <td class="chap3">3 A</td>
+    <td class="chap3">4 B</td>
+    <td class="chap3">5 A</td>
+    <td class="chap3">6 B</td>
     <td>7</td>
   </tr>
   <tr>
     <td>8</td>
-    <td class="cpm">9 A</td>
-    <td class="cpm">10 B</td>
-    <td class="c">11 A</td>
-    <td class="c">12 B</td>
-    <td class="c">13 A</td>
+    <td class="chap3">9 A</td>
+    <td class="chap3">10 B</td>
+    <td class="chap4">11 A</td>
+    <td class="chap4">12 B</td>
+    <td class="chap4">13 A</td>
     <td>14</td>
   </tr>
   <tr>
     <td>15</td>
-    <td class="c">16 B</td>
-    <td class="c">17 A</td>
-    <td class="c">18 B</td>
-    <td class="c">19 A</td>
-    <td class="c">20 B</td>
+    <td class="chap4">16 B</td>
+    <td class="chap4">17 A</td>
+    <td class="chap4">18 B</td>
+    <td class="chap4">19 A</td>
+    <td class="chap4">20 B</td>
     <td>21</td>
   </tr>
   <tr>
@@ -223,27 +226,27 @@ window.onload = init;
   <tr>
     <th rowspan="4"><p>January</p></th>
     <td>5</td>
-    <td class="c">6 A</td>
-    <td class="c">7 B</td>
-    <td class="c">8 A</td>
-    <td class="c">9 B</td>
-    <td class="c">10 A</td>
+    <td class="chap4">6 A</td>
+    <td class="chap4">7 B</td>
+    <td class="chap4">8 A</td>
+    <td class="chap4">9 B</td>
+    <td class="chap4">10 A</td>
     <td>11</td>
   </tr>
   <tr>
     <td>12</td>
-    <td class="c">13 B</td>
-    <td class="c">14 A</td>
-    <td class="c">15 B</td>
-    <td class="c">16 A</td>
-    <td class="c">17 B</td>
+    <td class="chap4">13 B</td>
+    <td class="chap4">14 A</td>
+    <td class="chap4">15 B</td>
+    <td class="chap4">16 A</td>
+    <td class="chap4">17 B</td>
     <td>18</td>
   </tr>
   <tr>
     <td>19</td>
     <td>20</td>
-    <td class="c">21 A</td>
-    <td class="c">22 B</td>
+    <td class="chap4">21 A</td>
+    <td class="chap4">22 B</td>
     <td class="review">23 A</td>
     <td class="review">24 B</td>
     <td>25</td>

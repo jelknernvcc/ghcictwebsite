@@ -99,23 +99,41 @@ table#cal td span {
   border-radius: 3vw;
   opacity: 0.5;
 }
-.altair8800 {
+.chap1 {
   background-color: Gold;
 }
-.assembly {
+.chap2 {
   background-color: Tomato;
 }
-.cpm {
+.chap3 {
   background-color: LimeGreen;
 }
-.c {
+.chap4 {
   background-color: Chocolate;
 }
-.review {
+.chap5 {
   background-color: Aqua;
 }
-.exam {
+.chap6 {
   background-color: Yellow;
+}
+.chap7 {
+  background-color: DarkOrchid;
+}
+.chap8 {
+  background-color: RoyalBlue;
+}
+.chap9 {
+  background-color: HotPink;
+}
+.chap10 {
+  background-color: Red;
+}
+.chap11 {
+  background-color: Green;
+}
+.chap12 {
+  background-color: Orange;
 }
 footer {
   font-size: 1.6vw;
