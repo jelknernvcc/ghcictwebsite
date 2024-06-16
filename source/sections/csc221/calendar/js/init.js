@@ -28,7 +28,7 @@ function setUp() {
     addChapterDays(i);
     console.log("addChapterDays(" + i + " called");
   }
-/*
+
   const reviewDays = document.getElementsByClassName("review");
   for (let i = 0; i < reviewDays.length; i++) {
     addElement(reviewDays[i], "span", "Review");
@@ -38,5 +38,4 @@ function setUp() {
   for (let i = 0; i < examDays.length; i++) {
     addElement(examDays[i], "span", "EXAM");
   }
-*/
 }

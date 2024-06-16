@@ -135,6 +135,12 @@ table#cal td span {
 .chap12 {
   background-color: Orange;
 }
+.review {
+  background-color: SkyBlue;
+}
+.exam {
+  background-color: Silver;
+}
 footer {
   font-size: 1.6vw;
   background: #DDD;
