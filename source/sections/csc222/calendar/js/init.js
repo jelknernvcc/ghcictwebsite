@@ -5,7 +5,18 @@ function addElement(parentElem, childTag, childText) {
    parentElem.appendChild(childElem);
 }
 
-function init() {
+function addChapterDays(dayNum) {
+    const className = "chap" + dayNum.toString();
+    const label = "Chapter " + dayNum.toString(); 
+    const chapterDays = document.getElementsByClassName(className);
+    console.log(chapterDays);
+    for (let i = 0; i < chapterDays.length; i++) {
+      addElement(chapterDays[i], "span", label);
+    }
+}
+
+function setUp() {
+  console.log("setUp called");
   var loc = window.location.href;
   var HTMLvalidLinkStr = 'https://validator.w3.org/check?uri=' + loc;
   var CSSvalidLinkStr = 'https://jigsaw.w3.org/css-validator/validator?uri=' +
@@ -13,26 +24,10 @@ function init() {
   document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
   document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
 
-  const altairDays = document.getElementsByClassName("altair8800");
-  for (let i = 0; i < altairDays.length; i++) {
-    addElement(altairDays[i], "span", "Altair 8800");
+  for (let i = 1; i < 11; i++) {
+    addChapterDays(i);
+    console.log("addChapterDays(" + i + " called");
   }
-
-  const assemblyDays = document.getElementsByClassName("assembly");
-  for (let i = 0; i < assemblyDays.length; i++) {
-    addElement(assemblyDays[i], "span", "Assembly");
-  }
-
-  const cpmDays = document.getElementsByClassName("cpm");
-  for (let i = 0; i < cpmDays.length; i++) {
-    addElement(cpmDays[i], "span", "CP/M");
-  }
-
-  const cDays = document.getElementsByClassName("c");
-  for (let i = 0; i < cDays.length; i++) {
-    addElement(cDays[i], "span", "C");
-  }
-
 
   const reviewDays = document.getElementsByClassName("review");
   for (let i = 0; i < reviewDays.length; i++) {
