@@ -127,19 +127,19 @@ table#cal td span {
   background-color: HotPink;
 }
 .chap10 {
-  background-color: Red;
+  background-color: Orange;
 }
 .chap11 {
-  background-color: Green;
-}
-.chap12 {
-  background-color: Orange;
+  background-color: Red;
 }
 .review {
   background-color: SkyBlue;
 }
 .exam {
   background-color: Silver;
+}
+.project {
+  background-color: Green;
 }
 footer {
   font-size: 1.6vw;

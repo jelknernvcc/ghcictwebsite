@@ -9,7 +9,6 @@ function addChapterDays(dayNum) {
     const className = "chap" + dayNum.toString();
     const label = "Chapter " + dayNum.toString(); 
     const chapterDays = document.getElementsByClassName(className);
-    console.log(chapterDays);
     for (let i = 0; i < chapterDays.length; i++) {
       addElement(chapterDays[i], "span", label);
     }
@@ -24,9 +23,8 @@ function setUp() {
   document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
   document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
 
-  for (let i = 1; i < 11; i++) {
+  for (let i = 1; i < 12; i++) {
     addChapterDays(i);
-    console.log("addChapterDays(" + i + " called");
   }
 
   const reviewDays = document.getElementsByClassName("review");
@@ -37,5 +35,12 @@ function setUp() {
   const examDays = document.getElementsByClassName("exam");
   for (let i = 0; i < examDays.length; i++) {
     addElement(examDays[i], "span", "EXAM");
+  }
+
+  const projectDays = document.getElementsByClassName("project");
+  console.log("found " + projectDays.length + " projectDays");
+  for (let i = 0; i < projectDays.length; i++) {
+    addElement(projectDays[i], "span", "Project");
+    console.log("add projectDay called");
   }
 }
