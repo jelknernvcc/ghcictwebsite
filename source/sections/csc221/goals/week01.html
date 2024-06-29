@@ -33,37 +33,10 @@ window.onload = init;
 <p class="standout"> 
 Welcome to Computer Science 221!
 </p><p>
-We'll start this week by discussing the goals and objectives this course,
-and how they fit in with the broader goals and objectives for our computer
-science sequence.
-</p><p>
-We'll then begin to get oriented to our learning environment, and to establish
-the processes we will use to learn together. Specifically, we need:
+We'll start this week by discussing the goals and expectations for this course,
+and how they fit in with the broader objectives of our computer science
+sequence. After that will dive right in to learning Python.
 </p>
-<ol class="details">
-<li><b>Communication tools and protocols.</b> How do we meet communicate,
-share information, and work together? Our goal is to find ways of communicating
-that are as unobtrusive and effective possible, so that we can focus on
-learning to program, the raison d'etre of our being here. As an NVCC college
-student, the expectation is that you will use your VCCS email address to
-communicate. You will certainly do that with me, but I know that you will
-often want to use other channels to communicate with each other for pair and
-group work. That's fine.
-</li>
-
-<li><b>Skills and tools for software development.</b> In order to develop
-software, it is first necessary to learn to manage your computer using
-the computer's <a href="https://en.wikipedia.org/wiki/Command-line_interface">
-command-line interface</a> (CLI), including learning to use a
-<a href="https://en.wikipedia.org/wiki/Virtual_console">console</a> based
-text editor, which for us will be
-<a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a>.</li>
-
-<li><b>Revision control.</b> We will use
-<a href="https://en.wikipedia.org/wiki/Git">git</a> as both a software
-development tool and a commuications tool. You will <q>submit</q> all of your
-work for evaluation through your git repository.</li>
-</ol>
 
 <!--
 <section>
@@ -74,95 +47,117 @@ work for evaluation through your git repository.</li>
 <p>
 Today in class we will work toward the following goals:
 </p>
-<ol>
-<li>Use <a href="https://en.wikipedia.org/wiki/Ssh-keygen">ssh-keygen</a> to
-create an <a href="https://en.wikipedia.org/wiki/Secure_Shell">ssh</a> public
-and private key pair, upload the public key to your git host, and then clone
-the git repository you made last class to your local computer.</li>
-
-<li>Introduce you to
-<a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> and walk you
-through the git <i>add - commit - push</i> cycle using your
-<code>README.md</code> to practice with.</li>
-
-<li>Discuss the Unix
-<a href="https://en.wikipedia.org/wiki/Command-line_interface">CLI</a> commands
-you will need to learn and prepare you for your homework.</li>
-</ol>
-</div>
-
-<h3>Homework</h3>
-<div>
-<p>
-Read lessons
-<a href="https://www.openbookproject.net/tutorials/getdown/unix/lesson1.html">
-1</a>,
-<a href="https://www.openbookproject.net/tutorials/getdown/unix/lesson2.html">
-2</a>, and
-<a href="https://www.openbookproject.net/tutorials/getdown/unix/lesson4.html">
-4</a>,
-from
-<a href="https://www.openbookproject.net/tutorials/getdown/unix/">Getting Down
-with the Unix CLI</a>. Practice each of the commands introduced, until you feel
-you are ready to use <code>ls</code> (with options), <code>pwd</code>,
-<code>cd</code>, <code>mkdir</code>, <code>rmdir</code>, <code>rm</code>,
-<code>cp</code>, and <code>mv</code> to manage files in the file system.
-</p>
 </div>
 
 <h3>Evaluation</h3>
 <div>
 <p>
-We will use the random student picker to choose some of you to lead the class
-in completing exercises similar to those at the end of
-<a href="https://www.openbookproject.net/tutorials/getdown/unix/lesson4.html">
-Lesson 4</a> when we come to class on Wednesday.
 </p>
 </div>
 </section>
 -->
 
-<!--
 <section>
 <h2>Tuesday, August 27th</h2>
+<p>
+Today we will discuss course objectives and class expectations.
+</p>
 
-<h3>Classwork</h3>
+<h3>Communication Tools and Protocols</h3>
 <div>
 <p>
-During class today you will install 
-<a href="https://en.wikipedia.org/wiki/Git">git</a> along with the other
-software tools you will need for this class, and begin learning about the
-Unix <a href="https://en.wikipedia.org/wiki/Command-line_interface">CLI</a>.
+How do we meet communicate, share information, and work together? Our goal is
+to find ways of communicating that are as unobtrusive and effective possible,
+so that we can focus on learning to program, the raison d'etre of our being
+here. As an NVCC college student, the expectation is that you will use your
+VCCS email address to communicate. You will certainly do that with me, but I
+know that you will often want to use other channels to communicate with each
+other for pair and group work. That's fine.
 </p><p>
-You will also create a <a href="https://en.wikipedia.org/wiki/Git">git</a>
-repository and share its URL.
+Your first homework assignment will require you to send me an email
+<i>from your VCSS email</i> answering a set of questions about your previous
+programming background and the goals and expectations you have for taking
+this course.
+</p>
+</div>
+
+<h3>Skills and Tools for Python Software Development</h3> 
+<div>
+<p>
+We are going to be moving fast is in this course to get you ready to pass
+the <a href="https://pythoninstitute.org/pcep">PCEP</a> certification exam by
+the end of the first quarter. Almost your entire grade this first quarter
+(excluding the credit you earn for the first homework assignment) will come
+from the test scores from the frequent practice tests you will take
+throughout the quarter.
+</p><p>
+It is assumed that you already have the <a href="prerequisits">prerequisit
+skills</a> which you should have aquired in the previous course, including
+comfort using a Unix
+<a href="https://en.wikipedia.org/wiki/Command-line_interface">command-line
+interface</a> (CLI), a
+<a href="https://en.wikipedia.org/wiki/Virtual_console">console</a> based
+text editor (<a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a>
+in particular), and using <a href="https://en.wikipedia.org/wiki/Git">git</a>
+and a
+<a href="https://en.wikipedia.org/wiki/Comparison_of_source-code-hosting_facilities">
+git host</a>
+as both a software development and commuications tool. I will be using these
+tools during presentations in class. If you do not know how to use them, I can
+make time to work with you <i>outside of class</i> during my frequent <i>office
+hours</i> to help you learn them, but we will not have time to learn them in
+class.
 </p>
 </div>
 
 <h3>Homework</h3>
 <div>
 <p>
-Read
+<i>Using your VCCS email account</i>, send me an email to my VCCS email
+address: <code>jde232@email.vccs.edu</code> introducing yourself to me by
+answering the following questions:
+</p>
+<ol>
+<li>What is your past experience with with the Unix CLI, console based text
+editors like Vim, and revision control using git?</li>
+
+<li>What is your previous programming experience? Which programming languages,
+if any, do you know?  How well do you feel you know them? With which programming
+environments do you have experience?</li>
+
+<li>What motivated you to sign up for this course, and what are you hoping
+to get out of it? Please be as specific as you can.</li>
+
+<li>Understanding that this will be a rigerous, challenging course, do you
+feel you are interested in and dedicated to it enough to put in the time you
+will need to be successful?</li>
+</ol>
+
+<p style="color: red;">
+<b>Due:</b> Email this assignment to me by 4 pm on Wednesday so that I have
+time to reply before our class on Thursday.
+</p><p>
+<b>Evaluation</b>: This first assignment will be worth roughly half a the
+normal test grades that will make up your grade during first quarter. An
+<b>A</b> will be earned for specific, detailed, and thoughful answers to my
+questions. <b>B</b> will be earned if all questions are answered, but specific
+details are lacking.  <b>C</b> will be earned for at least answering each
+question, and <b>D</b> will be earned for sending me an email.
 </p>
 </div>
 </section>
--->
+
 <section>
 <h2>Monday, August 26th</h2>
 
-<h3>Classwork</h3>
+<h3>Classwork / Homework</h3>
 <div>
 <p>
-</p>
-</div>
-
-<h3>Homework</h3>
-<div>
-<p>
+Not everyone will be here today, so for those of you who are, I'll let
+you get started on the homework that will be assigned in class tomorrow.
 </p>
 </div>
 </section>
-
 </main>
 
 <footer class="desktop">
