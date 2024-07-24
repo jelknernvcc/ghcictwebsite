@@ -24,7 +24,7 @@ function setUp() {
   document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
   document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
 
-  for (let i = 1; i < 11; i++) {
+  for (let i = 1; i < 16; i++) {
     addChapterDays(i);
     console.log("addChapterDays(" + i + " called");
   }
@@ -37,5 +37,10 @@ function setUp() {
   const examDays = document.getElementsByClassName("exam");
   for (let i = 0; i < examDays.length; i++) {
     addElement(examDays[i], "span", "EXAM");
+  }
+
+  const projectDays = document.getElementsByClassName("project");
+  for (let i = 0; i < projectDays.length; i++) {
+    addElement(projectDays[i], "span", "Project");
   }
 }

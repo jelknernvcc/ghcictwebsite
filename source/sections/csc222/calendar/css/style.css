@@ -130,16 +130,28 @@ table#cal td span {
   background-color: Red;
 }
 .chap11 {
-  background-color: Green;
+  background-color: Chartreuse;
 }
 .chap12 {
   background-color: Orange;
+}
+.chap13 {
+  background-color: PaleGreen;
+}
+.chap14 {
+  background-color: Tan;
+}
+.chap15 {
+  background-color: Plum;
 }
 .review {
   background-color: SkyBlue;
 }
 .exam {
   background-color: Silver;
+}
+.project {
+  background-color: DodgerBlue;
 }
 footer {
   font-size: 1.6vw;
