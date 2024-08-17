@@ -32,15 +32,4 @@ function init() {
   for (let i = 0; i < cDays.length; i++) {
     addElement(cDays[i], "span", "C");
   }
-
-
-  const reviewDays = document.getElementsByClassName("review");
-  for (let i = 0; i < reviewDays.length; i++) {
-    addElement(reviewDays[i], "span", "Review");
-  }
-
-  const examDays = document.getElementsByClassName("exam");
-  for (let i = 0; i < examDays.length; i++) {
-    addElement(examDays[i], "span", "EXAM");
-  }
 }
