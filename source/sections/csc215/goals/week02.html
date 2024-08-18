@@ -18,7 +18,7 @@ td, th {
 table#program td:nth-child(2) {
   text-align: left;
 }
-table#steps td:nth-child(3) {
+table.steps td:nth-child(3) {
   text-align: left;
 }
 tr:nth-child(even) {
@@ -62,6 +62,8 @@ code</a>.
 <h2>Friday, September 6th</h2>
 <div>
 <p>
+Today we will work together in groups (two pairs in each) to write a new
+programs for our Altair 8800.
 </p>
 </div>
 </section>
@@ -86,11 +88,19 @@ We are going to perform a modified version of the adding two numbers
 program presented in
 <a href="https://ubuntourist.codeberg.page/Altair-8800/part-3.html#b-loading-a-sample-program">Part
 3: Operation of the Altair 8800 - B: Loading a Sample Program</a>. Our
-modification will be to replace the <code>JMP</code> instruction at step 11
+modifications will be to replace the <code>JMP</code> instruction at step 12
 with a
 <a href="https://ubuntourist.codeberg.page/Altair-8800/part-4.html#hlt">HLT</a>
-instruction. The version in the manual uses the <code>JMP</code> to put the
-program into an infinite loop.
+instruction, and to change the address locations of the two addends and the
+sum.
+</p><p>
+The version in the manual uses the <code>JMP</code> to put the program into an
+infinite loop so that the sum can been read on the panel display lights while
+it is running. Our simulator includes a view of our computer's memory, so we
+can read the result directly from there. To make this more visually appealing,
+the two addends are placed at addresses <code>0x30</code> and <code>0x40</code>
+respectively, and the sum is placed below them on the display at address
+<code>0x50</code>.
 </p><p>
 Here is the program as we will run it:
 </p>
@@ -102,213 +112,211 @@ Here is the program as we will run it:
   <th>HEX</th>
 </tr>
 <tr>
-  <td>0</td>
+  <td>1</td>
   <td>LDA</td>
   <td>00 111 010</td>
   <td>3A</td>
 </tr>
 <tr>
-  <td>1</td>
+  <td>2</td>
   <td>(address)</td>
-  <td>10 000 000</td>
-  <td>80</td>
+  <td>00 110 000</td>
+  <td>30</td>
 </tr>
 <tr>
-  <td>2</td>
+  <td>3</td>
   <td>(address)</td>
   <td>00 000 000</td>
   <td>00</td>
 </tr>
 <tr>
-  <td>3</td>
+  <td>4</td>
   <td>MOV (A→B)</td>
   <td>01 000 111</td>
   <td>47</td>
 </tr>
 <tr>
-  <td>4</td>
+  <td>5</td>
   <td>LDA</td>
   <td>00 111 010</td>
   <td>3A</td>
 </tr>
 <tr>
-  <td>5</td>
+  <td>6</td>
   <td>(address)</td>
-  <td>10 000 001</td>
-  <td>81</td>
+  <td>01 000 001</td>
+  <td>40</td>
 </tr>
 <tr>
-  <td>6</td>
+  <td>7</td>
   <td>(address)</td>
   <td>00 000 000</td>
   <td>00</td>
 </tr>
 <tr>
-  <td>7</td>
+  <td>8</td>
   <td>ADD (B+A)</td>
   <td>10 000 000</td>
   <td>80</td>
 </tr>
 <tr>
-  <td>8</td>
+  <td>9</td>
   <td>STA</td>
   <td>00 110 010</td>
   <td>32</td>
 </tr>
 <tr>
-  <td>9</td>
+  <td>10</td>
   <td>(address)</td>
-  <td>10 000 010</td>
-  <td>82</td>
+  <td>01 010 000</td>
+  <td>50</td>
 </tr>
 <tr>
-  <td>10</td>
+  <td>11</td>
   <td>(address)</td>
   <td>00 000 000</td>
   <td>00</td>
 </tr>
 <tr>
-  <td>11</td>
+  <td>12</td>
   <td>HLT</td>
   <td>01 110 110</td>
   <td>76</td>
 </tr>
 </table>
 <p>
-Here are the step-by-step instructions for loading it:
+Here are the step-by-step instructions.  First load the program:
 </p>
-<table id="steps">
+<table class="steps">
 <tr>
   <th>STEP</th>
   <th>SWITCHES 0-7</th>
   <th>CONTROL SWITCH</th>
 </tr>
 <tr>
-  <td></td>
+  <td>0</td>
   <td></td>
   <td>RESET</td>
 </tr>
 <tr>
-  <td>0</td>
+  <td>1</td>
   <td>00 111 010</td>
-  <td></td>
-</tr>
-<tr>
-  <td></td>
-  <td></td>
   <td>DEPOSIT</td>
 </tr>
 <tr>
-  <td>1</td>
-  <td>10 000 000</td>
-  <td></td>
-</tr>
-<tr>
-  <td></td>
-  <td></td>
-  <td>DEPOSIT NEXT</td>
-</tr>
-<tr>
   <td>2</td>
-  <td>00 000 000</td>
-  <td></td>
-</tr>
-<tr>
-  <td></td>
-  <td></td>
+  <td>00 110 000</td>
   <td>DEPOSIT NEXT</td>
 </tr>
 <tr>
   <td>3</td>
-  <td>01 000 111</td>
-  <td></td>
-</tr>
-<tr>
-  <td></td>
-  <td></td>
+  <td>00 000 000</td>
   <td>DEPOSIT NEXT</td>
 </tr>
 <tr>
   <td>4</td>
-  <td>00 111 010</td>
-  <td></td>
-</tr>
-<tr>
-  <td></td>
-  <td></td>
+  <td>01 000 111</td>
   <td>DEPOSIT NEXT</td>
 </tr>
 <tr>
   <td>5</td>
-  <td>10 000 001</td>
-  <td></td>
-</tr>
-<tr>
-  <td></td>
-  <td></td>
+  <td>00 111 010</td>
   <td>DEPOSIT NEXT</td>
 </tr>
 <tr>
   <td>6</td>
-  <td>00 000 000</td>
-  <td></td>
-</tr>
-<tr>
-  <td></td>
-  <td></td>
+  <td>01 000 000</td>
   <td>DEPOSIT NEXT</td>
 </tr>
 <tr>
   <td>7</td>
-  <td>10 000 000</td>
-  <td></td>
-</tr>
-<tr>
-  <td></td>
-  <td></td>
+  <td>00 000 000</td>
   <td>DEPOSIT NEXT</td>
 </tr>
 <tr>
   <td>8</td>
-  <td>00 110 010</td>
-  <td></td>
-</tr>
-<tr>
-  <td></td>
-  <td></td>
+  <td>10 000 000</td>
   <td>DEPOSIT NEXT</td>
 </tr>
 <tr>
   <td>9</td>
-  <td>10 000 010</td>
-  <td></td>
-</tr>
-<tr>
-  <td></td>
-  <td></td>
+  <td>00 110 010</td>
   <td>DEPOSIT NEXT</td>
 </tr>
 <tr>
   <td>10</td>
-  <td>00 000 000</td>
-  <td></td>
-</tr>
-<tr>
-  <td></td>
-  <td></td>
+  <td>01 010 000</td>
   <td>DEPOSIT NEXT</td>
 </tr>
 <tr>
   <td>11</td>
-  <td>01 110 110</td>
-  <td></td>
+  <td>00 000 000</td>
+  <td>DEPOSIT NEXT</td>
 </tr>
 <tr>
-  <td></td>
-  <td></td>
+  <td>12</td>
+  <td>01 110 110</td>
   <td>DEPOSIT NEXT</td>
 </tr>
 </table>
+<p>
+Now load the data to add 4 and 6 together and run the program:
+</p>
+<table class="steps">
+<tr>
+  <th>STEP</th>
+  <th>SWITCHES 0-15</th>
+  <th>CONTROL SWITCH</th>
+</tr>
+<tr>
+  <td>13</td>
+  <td>0 000 000 000 110 000</td>
+  <td>EXAMINE</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>0 000 000 000 000 100</td>
+  <td>DEPOSIT</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>0 000 000 001 000 000</td>
+  <td>EXAMINE</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>0 000 000 000 000 110</td>
+  <td>DEPOSIT</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td></td>
+  <td>RESET</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td></td>
+  <td>RUN</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td></td>
+  <td>STOP</td>
+</tr>
+</table>
+<p>
+You will know everything worked as intended if you see <code>0x0A</code> (10)
+at address <code>0x50</code>.
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Run this program several times until you feel confident you know how to do it.
+Change the values of the two addends and confirm that you get different
+results.  Move the locations of the addends and sum and run the program again.
+</p>
 </div>
 </section>
 </main>
