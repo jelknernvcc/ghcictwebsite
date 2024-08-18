@@ -62,7 +62,8 @@ program. Before we begin, download
 
 <h3>Process</h3>
 <div>
-<p>We are going to perform a modified version of the adding two numbers
+<p>
+We are going to perform a modified version of the adding two numbers
 program presented in
 <a href="https://ubuntourist.codeberg.page/Altair-8800/part-3.html#b-loading-a-sample-program">Part
 3: Operation of the Altair 8800 - B: Loading a Sample Program</a>. Our
@@ -71,6 +72,229 @@ with a
 <a href="https://ubuntourist.codeberg.page/Altair-8800/part-4.html#hlt">HLT</a>
 instruction. The version in the manual uses the <code>JMP</code> to put the
 program into an infinite loop.
+</p>
+<table>
+<thead>
+<tr>
+  <th>STEP</th>
+  <th>MNEMONIC</th>
+  <th>BIT PATTERN</th>
+  <th>OCTAL EQ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>0</td>
+  <td>LDA</td>
+  <td>00 111 010</td>
+  <td>072</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>(address)</td>
+  <td>10 000 000</td>
+  <td>200</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>(address)</td>
+  <td>00 000 000</td>
+  <td>000</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>MOV (A→B)</td>
+  <td>01 000 111</td>
+  <td>107</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>LDA</td>
+  <td>00 111 010</td>
+  <td>072</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>(address)</td>
+  <td>10 000 001</td>
+  <td>201</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>(address)</td>
+  <td>00 000 000</td>
+  <td>000</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>ADD (B+A)</td>
+  <td>10 000 000</td>
+  <td>200</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>STA</td>
+  <td>00 110 010</td>
+  <td>062</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td>(address)</td>
+  <td>10 000 010</td>
+  <td>202</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>(address)</td>
+  <td>00 000 000</td>
+  <td>000</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>HLT</td>
+  <td>01 110 110</td>
+  <td>106</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+  <th>STEP</th>
+  <th>SWITCHES 0-7</th>
+  <th>CONTROL SWITCH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td></td>
+  <td></td>
+  <td>RESET</td>
+</tr>
+<tr>
+  <td>0</td>
+  <td>00 111 010</td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>DEPOSIT</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>10 000 000</td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>DEPOSIT NEXT</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>00 000 000</td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>DEPOSIT NEXT</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>01 000 111</td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>DEPOSIT NEXT</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>00 111 010</td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>DEPOSIT NEXT</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>10 000 001</td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>DEPOSIT NEXT</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>00 000 000</td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>DEPOSIT NEXT</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>10 000 000</td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>DEPOSIT NEXT</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>00 110 010</td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>DEPOSIT NEXT</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td>10 000 010</td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>DEPOSIT NEXT</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>00 000 000</td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>DEPOSIT NEXT</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>01 110 110</td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>DEPOSIT NEXT</td>
+</tr>
+</tbody>
+</table>
 </div>
 </section>
 </main>
