@@ -3,7 +3,7 @@
   display: none;
 }
 body {
-  font: bitstream vera sans, arial, sans-serif;
+  font-family: "Bitstream Vera Sans", Arial, sans-serif;
   background: #FFF;
   margin: 0; padding: 0;
 }
