@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Web Development Planning Calendar Fall 2024</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/init.js"></script>
+<script>
+window.onload = setUp;
+</script>
+</head>
+<body>
+<header>
+<h1>ITD 110 Planning Calendar Fall 2024</h1>
+<p>Click on the session number on any date to find the lesson plan and homework for each day</p>
+<h2>Unit Key</h2>
+<table id="key">
+<tr>
+<td class="unit0"></td>
+<td class="unit1"></td>
+<td class="unit2"></td>
+<td class="unit3"></td>
+<td class="unit4"></td>
+<td class="unit5"></td>
+<td class="exam"></td>
+</tr>
+</table>
+</header>
+
+<table id="cal">
+  <tr id="colheadings">
+    <th id="blank" scope="col"> </th>
+    <th scope="col">Sunday</th>
+    <th scope="col">Monday</th>
+    <th scope="col">Tuesday</th>
+    <th scope="col">Wednesday</th>
+    <th scope="col">Thursday</th>
+    <th scope="col">Friday</th>
+    <th scope="col">Saturday</th>
+  </tr>
+  <!-- August 2024 -->
+  <tr>
+    <th class="rotated"><p>August</p></th>
+    <td class="end"></td>
+    <td class="end unit0">26</br><a href="../goals/session.html?num=00">Session 0</a></br><p class="topic">Welcome!</p></td>
+    <td class="end unit1">27 A</br><a href="../goals/session.html?num=01">Session 1</a></br><p class="topic">Orientation and Syllabus Review</p></td>
+    <td class="end unit1">28 B</br><a href="../goals/session.html?num=01">Session 1</a></br><p class="topic">Orientation and Syllabus Review</p></td>
+    <td class="end unit1">29 A</br><a href="../goals/session.html?num=02">Session 2</a></br><p class="topic">Introduction to the Internet and How It Works</p></td>
+    <td class="end">30</td>
+    <td class="end">31</td>
+  </tr>
+  <tr>
+  <!-- September 2024 -->
+    <th rowspan="5"><p>September</p></th>
+    <td class="">1</td>
+    <td class="">2</td>
+    <td class="unit1">3 B</br><a href="../goals/session.html?num=02">Session 2</a></br><p class="topic">Introduction to the Internet and How It Works</p></td>
+    <td class="unit1">4 A</br><a href="../goals/session.html?num=03">Session 3</a></br><p class="topic">Exploring the Unix Terminal</p></td>
+    <td class="unit1">5 B</br><a href="../goals/session.html?num=03">Session 3</a></br><p class="topic">Exploring the Unix Terminal</p></td>
+    <td class="unit1">6 A</br><a href="../goals/session.html?num=04">Session 4</a></br><p class="topic">Introduction to Vim</p></td>
+    <td class="">7</td>
+  </tr>
+  <tr>
+    <td class="">8</td>
+    <td class="unit1">9 B</br><a href="../goals/session.html?num=04">Session 4</a></br><p class="topic">Introduction to Vim</p></td>
+    <td class="unit1">10 A</br><a href="../goals/session.html?num=05">Session 5</a></br><p class="topic">TCP/IP - Internet Applications</p></td>
+    <td class="unit1">11 B</br><a href="../goals/session.html?num=05">Session 5</a></br><p class="topic">TCP/IP - Internet Applications</p></td>
+    <td class="unit1">12 A</br><a href="../goals/session.html?num=06">Session 6</a></br><p class="topic">TCP/IP - Transport and Internet Layers</p></td>
+    <td class="unit1">13 B</br><a href="../goals/session.html?num=06">Session 6</a></br><p class="topic">TCP/IP - Transport and Internet Layers</p></td>
+    <td class="">14</td>
+  </tr>
+  <tr>
+    <td class="">15</td>
+    <td class="unit1">16 A</br><a href="../goals/session.html?num=07">Session 7</a></br><p class="topic">TCP/IP - Network Access Layer, Binary, ASCII</p></td>
+    <td class="unit1">17 B</br><a href="../goals/session.html?num=07">Session 7</a></br><p class="topic">TCP/IP - Network Access Layer, Binary, ASCII</p></td>
+    <td class="unit1">18 A</br><a href="../goals/session.html?num=08">Session 8</a></br><p class="topic">Understanding SSH and Generating SSH Keys</p></td>
+    <td class="unit1">19 B</br><a href="../goals/session.html?num=08">Session 8</a></br><p class="topic">Understanding SSH and Generating SSH Keys</p></td>
+    <td class="unit1">20 A</br><a href="../goals/session.html?num=09">Session 9</a></br><p class="topic">Introduction to Version Control and Setting Up GitHub</p></td>
+    <td class="">21</td>
+  </tr>
+  <tr>
+    <td class="">22</td>
+    <td class="unit1">23 B</br><a href="../goals/session.html?num=09">Session 9</a></br><p class="topic">Introduction to Version Control and Setting Up GitHub</p></td>
+    <td class="unit2">24 A</br><a href="../goals/session.html?num=10">Session 10</a></br><p class="topic">Quiz on Unit 1 (first 30 minutes), Introduction to Markdown</p></td>
+    <td class="unit2">25 B</br><a href="../goals/session.html?num=10">Session 10</a></br><p class="topic">Quiz on Unit 1 (first 30 minutes), Introduction to Markdown</p></td>
+    <td class="unit2">26 A</br><a href="../goals/session.html?num=11">Session 11</a></br><p class="topic">Advanced Markdown Features</p></td>
+    <td class="unit2">27 B</br><a href="../goals/session.html?num=11">Session 11</a></br><p class="topic">Advanced Markdown Features</p></td>
+    <td class="">28</td>
+  </tr>
+  <!-- October 2024 -->
+  <tr>
+    <td class="end ">29</td>
+    <td class="last unit2">30 A</br><a href="../goals/session.html?num=12">Session 12</a></br><p class="topic">LaTeX for Web Content</p></td>
+    <td class="start unit2">1 B</br><a href="../goals/session.html?num=12">Session 12</a></br><p class="topic">LaTeX for Web Content</p></td>
+    <td class="start unit2">2 A</br><a href="../goals/session.html?num=13">Session 13</a></br><p class="topic">Using WordPress for Website Creation</p></td>
+    <td class="start ">3</td>
+    <td class="start unit2">4 B</br><a href="../goals/session.html?num=13">Session 13</a></br><p class="topic">Using WordPress for Website Creation</p></td>
+    <td class="start ">5</td>
+  </tr>
+  <tr>
+    <th rowspan="4"><p>October</p></th>
+    <td class="">6</td>
+    <td class="unit2">7 A</br><a href="../goals/session.html?num=14">Session 14</a></br><p class="topic">Mini-project - Make a WordPress Website</p></td>
+    <td class="unit2">8 B</br><a href="../goals/session.html?num=14">Session 14</a></br><p class="topic">Mini-project - Make a WordPress Website</p></td>
+    <td class="">9</td>
+    <td class="unit3">10 A</br><a href="../goals/session.html?num=15">Session 15</a></br><p class="topic">Quiz on Unit 2 (first 30 minutes), Introduction to HTML</p></td>
+    <td class="">11</td>
+    <td class="">12</td>
+  </tr>
+  <tr>
+    <td class="">13</td>
+    <td class="">14</td>
+    <td class="unit3">15 B</br><a href="../goals/session.html?num=15">Session 15</a></br><p class="topic">Quiz on Unit 2 (first 30 minutes), Introduction to HTML</p></td>
+    <td class="unit3">16 A</br><a href="../goals/session.html?num=16">Session 16</a></br><p class="topic">Hosting HTML on GitHub Pages, and HTML Validation</p></td>
+    <td class="unit3">17 B</br><a href="../goals/session.html?num=16">Session 16</a></br><p class="topic">Hosting HTML on GitHub Pages, and HTML Validation</p></td>
+    <td class="unit3">18 A</br><a href="../goals/session.html?num=17">Session 17</a></br><p class="topic">HTML Block vs In-line Elements</p></td>
+    <td class="">19</td>
+  </tr>
+  <tr>
+    <td class="">20</td>
+    <td class="unit3">21 B</br><a href="../goals/session.html?num=17">Session 17</a></br><p class="topic">HTML Block vs In-line Elements</p></td>
+    <td class="unit3">22 A</br><a href="../goals/session.html?num=18">Session 18</a></br><p class="topic">Understanding HTML Attributes</p></td>
+    <td class="unit3">23 B</br><a href="../goals/session.html?num=18">Session 18</a></br><p class="topic">Understanding HTML Attributes</p></td>
+    <td class="unit3">24 A</br><a href="../goals/session.html?num=19">Session 19</a></br><p class="topic">Creating Links and Lists</p></td>
+    <td class="unit3">25 B</br><a href="../goals/session.html?num=19">Session 19</a></br><p class="topic">Creating Links and Lists</p></td>
+    <td class="">26</td>
+  </tr>
+  <tr>
+    <td class="end ">27</td>
+    <td class="end unit3">28 A</br><a href="../goals/session.html?num=20">Session 20</a></br><p class="topic">Working with Images and Multimedia</p></td>
+    <td class="end unit3">29 B</br><a href="../goals/session.html?num=20">Session 20</a></br><p class="topic">Working with Images and Multimedia</p></td>
+    <td class="end unit3">30 A</br><a href="../goals/session.html?num=21">Session 21</a></br><p class="topic">Introduction to CSS Syntax Using In-Line Styles</p></td>
+    <td class="last unit3">31 B</br><a href="../goals/session.html?num=21">Session 21</a></br><p class="topic">Introduction to CSS Syntax Using In-Line Styles</p></td>
+    <td class="start ">1</td>
+    <td class="start ">2</td>
+  </tr>
+  <!-- November 2024 -->
+  <tr>
+    <th rowspan="4"><p>November</p></th>
+    <td class="">3</td>
+    <td class="">4</td>
+    <td class="">5</td>
+    <td class="unit3">6 A</br><a href="../goals/session.html?num=22">Session 22</a></br><p class="topic">Text Styling and Fonts with CSS</p></td>
+    <td class="unit3">7 B</br><a href="../goals/session.html?num=22">Session 22</a></br><p class="topic">Text Styling and Fonts with CSS</p></td>
+    <td class="unit3">8 A</br><a href="../goals/session.html?num=23">Session 23</a></br><p class="topic">HTML Project - Creating a Basic Web Page with In-Line Styles</p></td>
+    <td class="">9</td>
+  </tr>
+  <tr>
+    <td class="">10</td>
+    <td class="">11</td>
+    <td class="unit3">12 B</br><a href="../goals/session.html?num=23">Session 23</a></br><p class="topic">HTML Project - Creating a Basic Web Page with In-Line Styles</p></td>
+    <td class="unit3">13 A</br><a href="../goals/session.html?num=24">Session 24</a></br><p class="topic">Introduction to External CSS and Linking Stylesheets</p></td>
+    <td class="unit3">14 B</br><a href="../goals/session.html?num=24">Session 24</a></br><p class="topic">Introduction to External CSS and Linking Stylesheets</p></td>
+    <td class="unit4">15 A</br><a href="../goals/session.html?num=25">Session 25</a></br><p class="topic">Quiz on Unit 3 (first 30 minutes), HTML5 Semantic Elements</p></td>
+    <td class="">16</td>
+  </tr>
+  <tr>
+    <td class="">17</td>
+    <td class="unit4">18 B</br><a href="../goals/session.html?num=25">Session 25</a></br><p class="topic">Quiz on Unit 3 (first 30 minutes), HTML5 Semantic Elements</p></td>
+    <td class="unit4">19 A</br><a href="../goals/session.html?num=26">Session 26</a></br><p class="topic">Creating Tables in HTML</p></td>
+    <td class="unit4">20 B</br><a href="../goals/session.html?num=26">Session 26</a></br><p class="topic">Creating Tables in HTML</p></td>
+    <td class="unit4">21 A</br><a href="../goals/session.html?num=27">Session 27</a></br><p class="topic">Forms and Input in HTML</p></td>
+    <td class="unit4">22 B</br><a href="../goals/session.html?num=27">Session 27</a></br><p class="topic">Forms and Input in HTML</p></td>
+    <td class="">23</td>
+  </tr>
+  <tr>
+    <td class="end ">24</td>
+    <td class="end unit4">25 A</br><a href="../goals/session.html?num=28">Session 28</a></br><p class="topic">Box Model - Margins, Padding, and Borders</p></td>
+    <td class="end unit4">26 B</br><a href="../goals/session.html?num=28">Session 28</a></br><p class="topic">Box Model - Margins, Padding, and Borders</p></td>
+    <td class="end">27</td>
+    <td class="end">28</td>
+    <td class="end">29</td>
+    <td class="end">30</td>
+  </tr>
+  <!-- December 2024 -->
+  <tr>
+    <th rowspan="5"><p>December</p></th>
+    <td>1</td>
+    <td class="unit4">2 A</br><a href="../goals/session.html?num=29">Session 29</a></br><p class="topic">Layout Techniques - Display and Positioning</p></td>
+    <td class="unit4">3 B</br><a href="../goals/session.html?num=29">Session 29</a></br><p class="topic">Layout Techniques - Display and Positioning</p></td>
+    <td class="unit4">4 A</br><a href="../goals/session.html?num=30">Session 30</a></br><p class="topic">Flexbox Layout</p></td>
+    <td class="unit4">5 B</br><a href="../goals/session.html?num=30">Session 30</a></br><p class="topic">Flexbox Layout</p></td>
+    <td class="unit4">6 A</br><a href="../goals/session.html?num=31">Session 31</a></br><p class="topic">Responsive Design with Media Queries</p></td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td class="unit4">9 B</br><a href="../goals/session.html?num=31">Session 31</a></br><p class="topic">Responsive Design with Media Queries</p></td>
+    <td class="unit4">10 A</br><a href="../goals/session.html?num=32">Session 32</a></br><p class="topic">HTML and CSS Best Practices and Accessibility</p></td>
+    <td class="unit4">11 B</br><a href="../goals/session.html?num=32">Session 32</a></br><p class="topic">HTML and CSS Best Practices and Accessibility</p></td>
+    <td class="unit5">12 A</br><a href="../goals/session.html?num=33">Session 33</a></br><p class="topic">Quiz on Unit 4 (first 30 minutes), Project Planning and Proposal</p></td>
+    <td class="unit5">13 B</br><a href="../goals/session.html?num=33">Session 33</a></br><p class="topic">Quiz on Unit 4 (first 30 minutes), Project Planning and Proposal</p></td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td class="unit5">16 A</br><a href="../goals/session.html?num=34">Session 34</a></br><p class="topic">HTML and CSS Integration for the Final Project</p></td>
+    <td class="unit5">17 B</br><a href="../goals/session.html?num=34">Session 34</a></br><p class="topic">HTML and CSS Integration for the Final Project</p></td>
+    <td class="unit5">18 A</br><a href="../goals/session.html?num=35">Session 35</a></br><p class="topic">Work on Final Project</p></td>
+    <td class="unit5">19 B</br><a href="../goals/session.html?num=35">Session 35</a></br><p class="topic">Work on Final Project</p></td>
+    <td class="unit5">20 A</br><a href="../goals/session.html?num=36">Session 36</a></br><p class="topic">Work on Final Project</p></td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+  </tr>
+  <tr>
+    <td class="end">29</td>
+    <td class="end">30</td>
+    <td class="last">31</td>
+    <td class="start">1</td>
+    <td class="start">2</td>
+    <td class="start">3</td>
+    <td class="start">4</td>
+  </tr>
+  <!-- January 2025 -->
+  <tr>
+    <th rowspan="4"><p>January</p></th>
+    <td>5</td>
+    <td class="unit5">6 B</br><a href="../goals/session.html?num=36">Session 36</a></br><p class="topic">Work on Final Project</p></td>
+    <td class="unit5">7 A</br><a href="../goals/session.html?num=37">Session 37</a></br><p class="topic">Final Project Presentations</p></td>
+    <td class="unit5">8 B</br><a href="../goals/session.html?num=37">Session 37</a></br><p class="topic">Final Project Presentations</p></td>
+    <td class="unit5">9 A</br><a href="../goals/session.html?num=38">Session 38</a></br><p class="topic">Project Showcase and Peer Review</p></td>
+    <td class="unit5">10 B</br><a href="../goals/session.html?num=38">Session 38</a></br><p class="topic">Project Showcase and Peer Review</p></td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td class="unit5">13 A</br><a href="../goals/session.html?num=39">Session 39</a></br><p class="topic">Course Review and Reflection</p></td>
+    <td class="unit5">14 B</br><a href="../goals/session.html?num=39">Session 39</a></a></br><p class="topic">Course Review and Reflection</p></td>
+    <td class="exam">15 A</br><a href="../goals/session.html?num=40">Session 40</a></br><p class="topic">Final Exam</p></td>
+    <td class="exam">16 B</br><a href="../goals/session.html?num=40">Session 40</a></br><p class="topic">Final Exam</p></td>
+    <td class="">17 A</br></td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>20</td>
+    <td class="">21 B</br></td>
+    <td class="">22 A</br></td>
+    <td class="">23 B</br></td>
+    <td class="">24 A</br></td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td class="end">26</td>
+    <td class="end ">27 B</br></td>
+    <td class="end ">28 A</br></td>
+    <td class="end ">29 B</br></td>
+    <td class="end">30</td>
+    <td class="last">31</td>
+    <td class="start">1</td>
+  </tr>
+</table>
+
+<footer>
+<p>
+<a id="vLink1"><strong> HTML </strong> Valid! </a> |
+<a id="vLink2"><strong> CSS </strong> Valid! </a>
+</p>
+</footer>
+
+</body>
+</html>  
