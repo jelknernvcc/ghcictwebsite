@@ -2,7 +2,7 @@
 
 ## What We'll Do In Class
 
-Today we'll spend some time talking about how the internet works. I will also introduce the Unix Command Line (it has a lot of names that I'll use interchangeably, including terminal, console,  shell, and command prompt), which is a tool we will use very frequently in this class. We'll run a few simple terminal commands that help us explore how the internet works, including curl, traceroute, ping, ifconfig. We'll also spend some time making sure everyone can login to your VCCS email address.
+Today we'll spend some time talking about how the internet works, with a focus on the [client server model](https://www.geeksforgeeks.org/client-server-model/). I will also introduce the [Unix Command Line](https://en.wikipedia.org/wiki/Unix_shell) (it has a lot of names that I'll use interchangeably, including terminal, console,  shell, and command prompt), which is a tool we will use very frequently in this class. We'll run a few simple terminal commands that help us explore how the internet works, including [curl](https://curl.se/), [traceroute](https://www.fortinet.com/resources/cyberglossary/traceroutes), [ping](https://en.wikipedia.org/wiki/Ping_(networking_utility), [ifconfig](https://en.wikipedia.org/wiki/Ifconfig). We'll also spend some time making sure everyone can login to your VCCS email address.
 
 If you're interested in today's discussion about how people communicated before the internet, [I highly recommend this article](https://www.history.com/news/rise-fall-telephone-switchboard-operators") about the impact women had on the telephone operator role.
 
