@@ -1,5 +1,3 @@
-# Session 1
-
 ## What We'll Do In Class
 
 Today we will discuss course objectives and class expectations.

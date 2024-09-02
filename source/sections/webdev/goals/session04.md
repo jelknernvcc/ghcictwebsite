@@ -1,5 +1,3 @@
-# Session 4
-
 ## What We'll Do In Class
 
 Today, we'll dive into using [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)), a powerful command-line text editor that you'll find invaluable for many tasks in web development. Command-line text editors like Vim are essential because they allow you to edit files directly from the terminal, which is crucial when working on remote servers or in environments without a graphical interface. Unlike most text editors, Vim doesn't use a mouse—you'll rely entirely on the keyboard for navigation and editing, which can be challenging at first but is incredibly efficient once mastered.

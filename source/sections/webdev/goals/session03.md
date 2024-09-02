@@ -1,5 +1,3 @@
-# Session 3
-
 ## What We'll Do In Class
 
 Today, we'll take a break from learning about the internet and focus on developing skills with the [Unix Command Line](https://en.wikipedia.org/wiki/Unix_shell) and understanding the [Directory Tree](https://andysbrainbook.readthedocs.io/en/latest/unix/Unix_01_Navigation.html) using a tool called [Terminus](https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html), which is a web-based game that teaches how to use the command-line - I think it's really fun! Our focus will be on understanding the practicing essential commands to create, move, and manage files and directories.
