@@ -1,3 +1,28 @@
+
+function addHeader(jsonUrl) {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const num = urlParams.get('num');
+  fetch(jsonUrl)
+      .then(response => response.json())
+      .then(data => {
+          data.forEach(session => {
+            if (session.session == num){
+
+              
+              const headerToAdd = `Session ${session.session} | Unit ${session.unit}`
+              const topicToAdd = `${session.topic}`;
+
+              const titleh1 = document.getElementById('title');
+              titleh1.innerHTML=headerToAdd;
+
+              const topicp = document.getElementById('topic');
+              topicp.innerText = topicToAdd;
+            }
+          })
+      })
+    }
+
 function init() {
   var loc = window.location.href;
   var HTMLvalidLinkStr = 'https://validator.w3.org/check?uri=' + loc;
@@ -6,13 +31,15 @@ function init() {
   document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
   document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
 
-  var conv = new showdown.Converter();
-  var md_txt = document.getElementById('md_content').textContent;
-  console.log(md_txt);
-  var md_html = conv.makeHtml(md_txt);
-  console.log(md_html);
-  document.getElementById('md_to_html').innerHTML = md_html;
+  //var conv = new showdown.Converter();
+  //var md_txt = document.getElementById('md_content').textContent;
+  //console.log(md_txt);
+  //var md_html = conv.makeHtml(md_txt);
+  //console.log(md_html);
+  //document.getElementById('md_to_html').innerHTML = md_html;
   
+  addHeader("./session_topics.json");
+
 }
 
 function md_to_html(file){

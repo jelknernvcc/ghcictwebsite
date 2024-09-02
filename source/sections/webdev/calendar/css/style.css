@@ -7,7 +7,7 @@ header {
   text-align: center;
 }
 header>h1 {
-  color: OrangeRed;
+  color: #005E2C;
   font-size: 2.6vw;
 }
 header>h2 {
@@ -74,7 +74,7 @@ table#cal th#blank {
   margin: 0;
   padding: 0;
   width: 5vw;
-  background-color: OrangeRed;
+  background-color: #dda300;
 }
 [rowspan]>p, table#cal th.rotated>p {
   display: inline-block;
@@ -108,22 +108,22 @@ table#cal td span {
   opacity: 0.5;
 }
 .unit0 {
-  background-color: Red;
+  background-color: #c45335;
 }
 .unit1 {
-  background-color: Gold;
+  background-color: #cc7a3d;
 }
 .unit2 {
-  background-color: Tomato;
+  background-color: #dda300;
 }
 .unit3 {
-  background-color: LimeGreen;
+  background-color: #fbf2c4;
 }
 .unit4 {
-  background-color: Chocolate;
+  background-color: #74a892;
 }
 .unit5 {
-  background-color: Aqua;
+  background-color: #005E2C;
 }
 .unit6 {
   background-color: Yellow;
@@ -144,7 +144,7 @@ table#cal td span {
 .review {
   background-color: SkyBlue;
 }
-.exam {
+.unitexam {
   background-color: Silver;
 }
 .project {
