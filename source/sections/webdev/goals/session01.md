@@ -1,3 +1,6 @@
+## Today's Slides
+[Click Here](https://whscs.net/courses/Other/2024_first_day.html)
+
 ## What We'll Do In Class
 
 Today we will discuss course objectives and class expectations.
