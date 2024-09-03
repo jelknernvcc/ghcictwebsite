@@ -1,5 +1,3 @@
-# Session 2
-
 ## What We'll Do In Class
 
 Today we'll spend some time talking about how the internet works, with a focus on the [client server model](https://www.geeksforgeeks.org/client-server-model/). I will also introduce the [Unix Command Line](https://en.wikipedia.org/wiki/Unix_shell) (it has a lot of names that I'll use interchangeably, including terminal, console,  shell, and command prompt), which is a tool we will use very frequently in this class. We'll run a few simple terminal commands that help us explore how the internet works, including [curl](https://curl.se/), [traceroute](https://www.fortinet.com/resources/cyberglossary/traceroutes), [ping](https://en.wikipedia.org/wiki/Ping_(networking_utility), [ifconfig](https://en.wikipedia.org/wiki/Ifconfig). We'll also spend some time making sure everyone can login to your VCCS email address.

@@ -23,6 +23,7 @@ function loadSessionTopics(jsonUrl) {
       .then(response => response.json())
       .then(data => {
           data.forEach(session => {
+              /* This class only meets on B days
               // Find the list item corresponding to the session number
               const listItemA = document.getElementById(`session-${session.session}A`);
               if (listItemA) {
@@ -50,7 +51,7 @@ function loadSessionTopics(jsonUrl) {
                   listItemA.appendChild(a);
                   listItemA.appendChild(br2);
                   listItemA.appendChild(p);
-              };
+              };*/
               const listItemB = document.getElementById(`session-${session.session}B`);
               if (listItemB) {
                 listItemB.classList.add(`unit${session.unit}`)  
