@@ -24,7 +24,7 @@ If you're interested in today's discussion about how people communicated before 
 Also, download the [DE Expectations Contract](https://ict.gctaa.net/sections/webdev/info/acc_de_contract_ITD110.pdf) for this course. Review the contract and, if you agree, digitally sign it and attach it to your email. If you aren't sure how to do this, see [this guide](https://support.apple.com/guide/preview/fill-out-and-sign-pdf-forms-prvw35725/mac).
 
 
-**Due:** Email this assignment to me by 4 pm on our next school day so that I have time to reply before our next class. (If you are in my A day class that meets on Thursday, email me by 4 pm Tuesday. If you are in my B day class that meets on Tuesday, email me by 4 pm Wednesday).
+**Due:** Get this email to me ASAP. We're still waiting for some students to get their official NOVA email accounts, so I won't set a specific due date until I know that everyone can complete this assignment.
 
 **Evaluation**: This first assignment will count as a formative grade during the first quarter. An **A** will be earned for specific, detailed, and thoughtful answers to my questions with the photo and signed PDF attached. **B** will be earned if all questions are answered, but specific details are lacking or the photo or PDF is missing or not signed. **C** will be earned for at least answering each question, and **D** will be earned for sending me any email.
 

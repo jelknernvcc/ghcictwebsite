@@ -1,8 +1,15 @@
+## Reading Quiz
+
+As always, we'll start this class with a short, simple quiz. This one will be a bit different - instead of answering questions, I'll ask you to demonstrate your skills. Start by downloading [this file](./resources/cdls_quiz.zip) and extracting it on your desktop. I'll give the rest of the instructions in class.
+
 ## What We'll Do In Class
 
 Today, we'll take a break from learning about the internet and focus on developing skills with the [Unix Command Line](https://en.wikipedia.org/wiki/Unix_shell) and understanding the [Directory Tree](https://andysbrainbook.readthedocs.io/en/latest/unix/Unix_01_Navigation.html) using a tool called [Terminus](https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html), which is a web-based game that teaches how to use the command-line - I think it's really fun! Our focus will be on understanding the practicing essential commands to create, move, and manage files and directories.
 
 ## Homework
+
+### Send me an Email
+If you haven't yet, please continue checking the myNVCC website. As soon as you see a gmail account appear, open it and send me an email. Follow the specific instructions from [Session 2](./session.html?num=02)
 
 ### Part 1 - Practice with the Terminal
 
