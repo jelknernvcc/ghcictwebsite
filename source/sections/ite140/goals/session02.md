@@ -1,7 +1,7 @@
 ### What we'll do in class
 
 We'll approach today with an open mind. We will:
-- chat about how last class's exercises went (see my solution here: [Puppies!](./puppy_project.xlsx))
+- chat about how last class's exercises went (see my solution here: [Puppies!](./data/puppy_project.xlsx))
 - make sure we're all comfortable with basic Excel organization
 - Setup our github and NOVA email accounts
 - If we're comfortable with everything so far, we will:
@@ -16,7 +16,7 @@ When you registered for this class, you should have created a NOVA ID and passwo
 
 
 ### SuperStore Sales Assignment
-We'll play with some fictional transaction data, which you can download here:  [Super Store Sales](./SuperStoreUS-2015.xlsx)
+We'll play with some fictional transaction data, which you can download here:  [Super Store Sales](./data/SuperStoreUS-2015.xlsx)
 
 Pretend that you are a data analyst who needs to give a summary to your company's CEO about how their business is doing. This dataset contains a bunch of transaction data, and I'd like you to think about what kind of information the CEO might want to know.
 
