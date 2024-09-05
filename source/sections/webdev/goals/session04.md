@@ -1,26 +1,34 @@
+## Quiz
+
+We'll start class with a quiz that is very similar in format to the cd/ls quiz that we did last time. As before, I'll give specific instructions in class, and you'll save your terminal session to a text file for credit.
+
+Here is a list of terminal commands that I'll include on the quiz:
+- cd / ls
+- mkdir
+- rm
+- cp
+- mv
+- less
+- echo with > to create a text file
+
 ## What We'll Do In Class
 
-Today, we'll dive into using [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)), a powerful command-line text editor that you'll find invaluable for many tasks in web development. Command-line text editors like Vim are essential because they allow you to edit files directly from the terminal, which is crucial when working on remote servers or in environments without a graphical interface. Unlike most text editors, Vim doesn't use a mouse—you'll rely entirely on the keyboard for navigation and editing, which can be challenging at first but is incredibly efficient once mastered.
+Today, we’ll be setting up GitHub accounts and learning how to use Git and GitHub to manage code. We'll start by making sure git is installed on your computer. Then we'll generate SSH keys with [`ssh-keygen`](https://en.wikipedia.org/wiki/Ssh-keygen) to securely connect to GitHub. Then, we’ll cover essential Git concepts and commands including:
+- Repositories
+- Commits
+- `git add`
+- `git commit`
+- `git push`
 
-We'll be using [vimtutor](https://vimschool.netlify.app/introduction/vimtutor/) in class to practice the basics of Vim. This interactive tutorial will guide you through the essential commands and help you get comfortable with this tool.
-
-Vim requires dedicated practice. One of my favorite ways to practice is to install [Vimium](https://vimium.github.io/), a Chrome extension that lets you use vim keyboard commands while you are browsing the web. I highly recommend that you install Vimium and practice using it as much as possible!
-
-### Key Topics:
-- **Why use command-line text editors?** 
-- **Introduction to Vim's modes:** Normal, Insert, and Visual
-- **Basic navigation in Vim**
-- **Editing and saving files without a mouse**
+Finally, we’ll create a GitHub Pages site by uploading a simple text file as a landing page.
 
 ## Homework
 
-### Part 1 - Practice with Vim
+### Send me an Email
+If you haven't yet, please continue checking the myNVCC website. As soon as you see a gmail account appear, open it and send me an email. Follow the specific instructions from [Session 2](./session.html?num=02)
 
-Continue practicing with Vim on your own. You should be comfortable with:
-- Switching between modes (Normal, Insert, Visual)
-- Navigating through a file using the keyboard
-- Editing text, saving changes, and exiting Vim
+### Practice with git commits
 
-Please complete the entire vimtutor course, and practice using Vim on your own files.
+Practice adding new text to your github site. If you need a reminder of how to make a git commit, check out [this tutorial](https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/). For now, continue to use TextEdit to modify your text file. We'll learn how to modify text files at the command line next time.
 
-**Due:** Be prepared for a practical quiz in the next class, where you'll demonstrate your basic Vim skills.
+As before, we'll start the next class with a practical quiz demonstrating that you know how to do this.
