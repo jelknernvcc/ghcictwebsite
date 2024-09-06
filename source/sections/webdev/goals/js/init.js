@@ -72,6 +72,7 @@ function md_to_html(file){
     return response.text();
   })
   .then(mdContent => {
+  showdown.setOption('tables','true');
   var conv = new showdown.Converter();
   var md_html = conv.makeHtml(mdContent);
   document.getElementById('md_to_html').innerHTML = md_html;
