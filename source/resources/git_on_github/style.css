@@ -117,3 +117,17 @@ a:hover {
     content: "]]";
     color: #4A90E2;
 }
+
+footer {
+    font-size: 1.6vw;
+    background: #DDD;
+    text-align: center;
+  }
+  footer>p {
+    margin: 0;
+    padding: 0.8vw;
+  }
+  footer>p>a, footer>p>a:visited {
+    text-decoration: none;
+    color: purple;
+  }
