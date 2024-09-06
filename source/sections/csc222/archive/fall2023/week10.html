@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA CSC 222 Week 10</title>
+<style>
+@import url(../../css/goals.css);
+</style>
+<script src="../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CSC 222 Weekly Assignments: Week 10</h1>
+</div>
+<div class="mobile">
+<h1>CSC 222</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2023-10-30">Week of Monday, October 30, 2023</time>
+
+<h2>Overview</h2>
+<p>
+This is the last week of the 1st quarter, so we need to bring closure to
+any outstanding evaluations such as the pointers and arrays projects.
+</p>
+
+<section>
+<h2>Friday, November 3rd</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+Questions asked by some of you on Wednesday combined with
+<a href="https://codeberg.org/ACC/csc222/src/branch/master/PiviotOnZero">the
+pointers and arrays project submitted by Anfal and Anar</a> gave me the idea
+for our next project, which we will begin today.
+</p>
+</div>
+
+
+<h3>Project: Have a Little Class!</h3>
+<div>
+
+<h4>Motivation</h4>
+<p>
+The learning objectives of this project are:
+</p>
+<ol>
+<li>to gain practice separating C++ objects into their three parts: header
+file, source file, and testing program.</li>
+
+<li>to introduce you to the use of
+<a href="https://github.com/doctest/doctest">doctest</a> for the last of
+these parts.</li>
+</ol>
+
+<h4>Process</h4>
+<ol>
+<li>Meet your new partner. This is a paired project, and the psuedorandomly
+selected pairs for it are: Shangwen and Caleb, Jamethiel and Ivan, Marin and
+Ved, Fiker and Liam, Parker and Isaac, Akshay and Jackson, Luis and Anar, Cody
+and Johan, Dane and Anfal, James and Turner, and Trostin and Adonis.</li>
+
+<li>Come up with an idea for an object you could implement in C++. Think of
+the objects we've met thus far: <code>Point</code>, <code>Time</code>,
+<code>Card</code>, and <code>Fraction</code>, and use them for inspiration if
+nothing comes to you at first.  Keep your object simple for this project.</li>
+
+<li>Assuming your object is <code>MyObject</code>, create three files:
+<code>MyObject.h</code>, <code>MyObject.cpp</code>, and
+<code>test_myobject.cpp</code>.  The first of these will hold your object
+definition and member function prototypes, and the second the member function
+definitions.</li>
+
+<li>
+<p>In the third file, start out with this:</p>
+<pre>
+#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+#include &lt;doctest.h&gt;
+#include "MyObject.h"
+using namespace std;
+
+TEST_CASE("Test can create and render MyObject") {
+    MyObject myobj();
+    CHECK(myobj.to_string() == "This is MyObject");
+}
+</pre>
+<p>Fill in the header and source files so that this first test passes.</p>
+</li>
+</ol>
+<p>
+I leave it open ended where you take it from here. Keeping the learning goals
+in mind, add more tests and then more features to your object.
+</p><p style="color: red;">
+This project is due by the beginning of class on Monday, November 13th and will
+constitute your first grade for 2nd quarter.
+</p>
+</div>
+</section>
+
+
+<section>
+<h2>Wednesday, November 1st</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+We'll begin class today by looking at three submissions for the
+<code>Fraction</code> struct exercise, by
+<a href="https://codeberg.org/ACC/csc222/src/branch/master/Fractions/IvanHughes">
+Ivan</a>,
+<a href="https://codeberg.org/ACC/csc222/src/branch/master/Fractions/JamesOConnor">
+James</a>, and
+<a href="https://codeberg.org/ACC/csc222/src/branch/master/Fractions/TurnerHolloway">
+Turner</a>.
+</p><p>
+The rest of class time will be spent going through
+<a href="https://openbookproject.net/thinkcs/cpp/ch14.html">Chapter 14: Objects
+of vectors</a>, and adding to our <code>Card</code> objects and learning
+several new features of C++.
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Using your 90 minutes of allotted homework time, see how far you can get in
+<a href="https://openbookproject.net/thinkcs/cpp/exercises/ch14/ch14s01.html">
+Chapter 14: Exercise Set 1</a>.
+</p><p>
+Be sure to commit all your work to your git repo. I'll be looking for a commit
+history that shows evidence of the process you use to develop solutions to
+these problems.
+</p><p>
+This assignment is due before the start of class on Friday.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Monday, October 30th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+I am getting more and more excited about
+<a href="https://github.com/doctest/doctest">doctest</a>, which is just the
+kind of testing tool I was hoping to find for C++, having been spoiled by
+the <a href="https://en.wikipedia.org/wiki/Doctest">original doctest</a>
+developed by
+<a href="https://en.wikipedia.org/wiki/Tim_Peters_(software_engineer)">Tim
+Peters</a> for Python.
+</p><p>
+Today in class I will show you how to configure your local C/C++ development
+environment for easy use of this wonderful resource.
+</p>
+</div>
+
+<h3>Configuring <code>CPATH</code> for Local Libraries</h3>
+<div>
+<p>
+<a href="https://gcc.gnu.org/onlinedocs/gcc/Environment-Variables.html">CPATH
+</a> is an
+<a href="https://en.wikipedia.org/wiki/Environment_variable">environment
+variable</a> that specifies the <b>search path</b> that the
+<a href="https://en.wikipedia.org/wiki/C_preprocessor">preprocessor</a> uses
+for to look for <code>somelibrary.h</code> in a
+<code>#include &lt;somelibrary.h&gt;</code>
+<a href="https://cplusplus.com/doc/tutorial/preprocessor/">directive</a>.
+</p><p>
+To set our <code>CPATH</code>, we need to: 
+</p>
+<ol>
+  <li>create a directory where C/C++ libraries will be stored.</li>
+  <li>set the <code>CPATH</code> environment variable to the path to that
+  directory.</li>
+</ol>
+<p>
+On my GNU/Linux box, I did this by:
+</p>
+<ol>
+<li>running:
+<pre>
+$ mkdir -p ~/.local/lib/gcc/include
+</pre>
+</li>
+<li>add adding the line:
+<pre>
+export CPATH=$HOME/.local/lib/gcc/include/
+</pre>
+to my <code>.bashrc</code> file (<i>Note:</i> You MacOS users will have to
+add this to <code>.zshrc</code> instead).
+</ol>
+<p>
+After copying
+<a href="https://raw.githubusercontent.com/doctest/doctest/master/doctest/doctest.h">doctest.h</a> to <code>~/.local/lib/gcc/include</code>, I can now just
+add:
+</p>
+<pre>
+#include &lt;doctest.h&gt;
+</pre>
+<p>
+to any program in which I want to use doctest.
+</p>
+
+<h3>Shout Outs</h3>
+<div>
+<p>
+I keep telling you all how much I love this class. My rather ambitious plan
+to foster a <i>community of learning</i> environment is working out more
+spendidly than I could have hoped. We are learning from each other as we
+head into uncharted waters.
+</p><p>
+Today I'll share two projects,
+<a href="https://codeberg.org/ACC/csc222/src/branch/master/BlackJack">
+BlackJack</a>, by Trostin and Marin, and
+<a href="https://codeberg.org/ACC/csc222/src/branch/master/ImageMagic">
+ImageMagic</a>, inspired by Luis Garces's <code>flippixels</code> example.
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Complete the five exercises in
+<a href="https://openbookproject.net/thinkcs/cpp/exercises/ch13/ch13s01.html">
+Chapter 13 Exercise Set 1</a>.
+</p>
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>

@@ -24,7 +24,7 @@ function setUp() {
   document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
   document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
 
-  for (let i = 1; i < 16; i++) {
+  for (let i = 1; i < 18; i++) {
     addChapterDays(i);
     console.log("addChapterDays(" + i + " called");
   }
