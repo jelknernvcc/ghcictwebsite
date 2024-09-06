@@ -1,0 +1,19 @@
+" .vimrc
+"
+" Originally created by Jeff Elkner 23 January 2006
+"
+" Enable support for copy and paste from vim
+set mouse=a
+"
+" Turn on syntax highlighting and autoindenting
+syntax enable
+filetype indent on
+" set autoindent width to 4 spaces (see
+" http://www.vim.org/tips/tip.php?tip_id=83)
+set et
+set sw=4
+set smarttab
+set background=dark
+" Bind <f3> key to running the python interpreter on the currently active
+" file.  (curtesy of Steve Howell from email dated 1 Feb 2006).
+map <f3> :w\|!python3 % <cr>
