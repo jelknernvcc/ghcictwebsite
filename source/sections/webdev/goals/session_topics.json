@@ -3,7 +3,7 @@
   {"session": "02", "unit": 1, "topic": "Introduction to the Internet and How It Works"},
   {"session": "03", "unit": 1, "topic": "Exploring the Unix Terminal"},
   {"session": "04", "unit": 1, "topic": "Our first website! Github"},
-  {"session": "05", "unit": 1, "topic": "Introduction to Vim"},
+  {"session": "05", "unit": 1, "topic": "Git practice, and Vim intro"},
   {"session": "06", "unit": 1, "topic": "TCP/IP - Internet Applications"},
   {"session": "07", "unit": 1, "topic": "TCP/IP - Transport and Internet Layers"},
   {"session": "08", "unit": 1, "topic": "TCP/IP - Network Access Layer, Binary, ASCII"},

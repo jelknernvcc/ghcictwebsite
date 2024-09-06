@@ -21,7 +21,9 @@ There are a lot of steps to this process, so [I've made a helpful tutorial for y
 ## Homework
 
 ### Send me an Email
-If you haven't yet, please continue checking the myNVCC website. As soon as you see a gmail account appear, open it and send me an email. Follow the specific instructions from [Session 2](./session.html?num=02)
+If you haven't yet, please continue checking the myNVCC website. As soon as you see a gmail account appear, open it and send me an email. Follow the specific instructions from [Session 2](./session.html?num=02).
+
+If you're still working to get into your myVCCS account, follow the instructions from [Session 1](./session.html?num=01).
 
 ### Practice with git commits
 
