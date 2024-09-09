@@ -1,3 +1,24 @@
+<!--
+Instructor notes: class went well!
+- In class, we worked with the SuperStore dataset.
+- Two things that make a successful data analyst: organization and story telling
+- and we're practicing the story telling with the presentations at the beginning of class
+- Talked about how we'll formally define all this stuff later, for now, trying to develop a "spidey sense"
+- Looked at SuperStore dataset:
+    - Discussed / identified the PK
+        - should it be the surrogate ID column at the front?
+        - or orderid / product
+    - identified that customer name and id don't need to be repeated
+        - Discussed update anomalies
+        - in Excel - copy orderid, customer name, customerid into a new sheet, then used "remove duplicates"
+        - Used VLOOKUP to put it back
+- Introduced gradebook assignment to practice VLOOKUP
+    - Did the first few together, based on the APS grade tables:
+        - Given a letter grade, lookup the quality points
+        - given the numerical average, look up the letter grade (needs ranged lookup)
+        - Given the average QP, lookup the final letter grade
+-->
+
 ### What we'll do in class
 
 We'll start today by showing off the weather reports that we all made for our imaginary friends who are planning to move to Arlington. As before, we'll work hard to encourage and celebrate our peers' accomplishments.
