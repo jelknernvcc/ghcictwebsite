@@ -51,5 +51,4 @@ Next class, we'll continue working with this sheet to explore Excel's "What-if A
 
 If you felt very comfortable with today's Excel exercise, then feel free to skip today's assignment.
 
-If you need more practice with the functions we learned today, you'll find them in Chapter 3 section 2 of [Beginning Excel 2019](https://openoregon.pressbooks.pub/beginningexcel19/front-matter/introduction/). Here is a [direct link](https://openoregon.pressbooks.pub/beginningexcel19/chapter/3-2-logical-and-lookup-functions/).
-
+If you need more practice with the functions we learned today, you'll find VLOOKUP in Chapter 3 section 2 of [Beginning Excel 2019](https://openoregon.pressbooks.pub/beginningexcel19/front-matter/introduction/). Here is a [direct link](https://openoregon.pressbooks.pub/beginningexcel19/chapter/3-2-logical-and-lookup-functions/). XLOOKUP is not covered in that textbook, so here is [Microsoft's official documentation](https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929).
