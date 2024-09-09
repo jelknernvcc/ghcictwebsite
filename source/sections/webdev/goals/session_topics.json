@@ -1,9 +1,9 @@
 [
   {"session": "01", "unit": 0, "topic": "Orientation and Syllabus Review"},
-  {"session": "02", "unit": 1, "topic": "Introduction to the Internet and How It Works"},
-  {"session": "03", "unit": 1, "topic": "Exploring the Unix Terminal"},
-  {"session": "04", "unit": 1, "topic": "Our first website! Github"},
-  {"session": "05", "unit": 1, "topic": "Git practice, and Vim intro"},
+  {"session": "02", "unit": 0, "topic": "Introduction to the Internet and How It Works"},
+  {"session": "03", "unit": 0, "topic": "Exploring the Unix Terminal"},
+  {"session": "04", "unit": 0, "topic": "Our first website! Github"},
+  {"session": "05", "unit": 0, "topic": "Git practice, Vim intro, Github Journaling"},
   {"session": "06", "unit": 1, "topic": "TCP/IP - Internet Applications"},
   {"session": "07", "unit": 1, "topic": "TCP/IP - Transport and Internet Layers"},
   {"session": "08", "unit": 1, "topic": "TCP/IP - Network Access Layer, Binary, ASCII"},
@@ -11,7 +11,7 @@
   {"session": "10", "unit": 2, "topic": "Unit 1 Test, Introduction to Markdown"},
   {"session": "11", "unit": 2, "topic": "Advanced Markdown Features"},
   {"session": "12", "unit": 2, "topic": "LaTeX for Web Content"},
-  {"session": "13", "unit": 2, "topic": "Using WordPress for Website Creation"},
+  {"session": "13", "unit": 2, "topic": "Guest Speaker! Wordpress"},
   {"session": "14", "unit": 2, "topic": "Mini-project: Make a WordPress Website"},
   {"session": "15", "unit": 3, "topic": "Unit 2 Test, Introduction to HTML: Structure of a Web Page"},
   {"session": "16", "unit": 3, "topic": "Hosting HTML on GitHub Pages, and HTML Validation"},
@@ -40,4 +40,3 @@
   {"session": "39", "unit": "exam", "topic": "Unit 5 Test, Course Review and Reflection"},
   {"session": "40", "unit": "exam", "topic": "Final Exam"}
 ]
-  
