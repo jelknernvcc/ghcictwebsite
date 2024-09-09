@@ -1,3 +1,8 @@
+## Math Testing
+
+About half of our 1A class will be out today for manditory ACC testing. I don't want them to fall behind or to have too much catch-up work, so we'll take it easy today. If you're in testing, no worries! Please make sure that you have Github setup [and see  this tutorial if you need help](https://ict.gctaa.net/resources/git_on_github/index.html). And we'll continue from there next class.
+
+
 ## Quiz
 
 We will **NOT** start today's class with a quiz. I know that last class's git tutorial was a lot, so we'll spend some time today going through the important parts more slowly. 
