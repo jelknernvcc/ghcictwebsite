@@ -17,68 +17,57 @@ function addChapterDays(dayNum) {
     }
 }
 
-function loadSessionTopics(jsonUrl) {
+function loadSessionTopics(sessionJsonUrl, dateJsonUrl) {
   console.log('starting load session topics');
-  fetch(jsonUrl)
-      .then(response => response.json())
-      .then(data => {
-          data.forEach(session => {
-              // Find the list item corresponding to the session number
-              const listItemA = document.getElementById(`session-${session.session}A`);
-              if (listItemA) {
-                  //the goal is to build something that looks like this: 
-                  //<td class="end unit1" id="session-1A">27 A</br>
-                    //<a href="../goals/session.html?num=01">Session 1</a></br>
-                    //<p class="topic">Orientation and Syllabus Review</p>
-                  //</td>
-                  //so I'll populate the id and date, and then this function should insert the entire hyperlink and <p> tag
-                  //const htmlToAdd = `</br><a href="../goals/session.html?num=${session.session}">Session ${session.session}</a></br><p class="topic">${session.topic}</p>`;
-                  //console.log(htmlToAdd);
-                  //listItemA.innerHTML+=htmlToAdd;
-                  listItemA.classList.add(`unit${session.unit}`)
+
+  // Fetch both the session data and the date mapping data
+  Promise.all([
+      fetch(sessionJsonUrl).then(response => response.json()),
+      fetch(dateJsonUrl).then(response => response.json())
+  ])
+  .then(([sessionData, dateData]) => {
+      // Process the date-to-session mapping first
+      dateData.forEach(dateEntry => {
+          const dateElement = document.getElementById(dateEntry.date);
+          if (dateElement) {
+              // Find the corresponding session details from the sessionData
+              const sessionInfo = sessionData.find(session => session.session === dateEntry.session);
+              if (sessionInfo) {
+                  // Build the HTML content for the session
+                  dateElement.classList.add(`unit${sessionInfo.unit}`);
+                  
+                  // Create HTML elements
                   const br1 = document.createElement('br');
                   const a = document.createElement('a');
-                  a.href = `../goals/session.html?num=${session.session}`;
-                  a.textContent = `Session ${session.session}`;
+                  a.href = `../goals/session.html?num=${sessionInfo.session}`;
+                  a.textContent = `Session ${sessionInfo.session}`;
                   const br2 = document.createElement('br');
                   const p = document.createElement('p');
                   p.className = 'topic';
-                  p.textContent = session.topic;
+                  p.textContent = sessionInfo.topic;
 
-                  // Append the elements to listItemA
-                  listItemA.appendChild(br1);
-                  listItemA.appendChild(a);
-                  listItemA.appendChild(br2);
-                  listItemA.appendChild(p);
-              };
-              const listItemB = document.getElementById(`session-${session.session}B`);
-              if (listItemB) {
-                listItemB.classList.add(`unit${session.unit}`)  
-                const br1 = document.createElement('br');
-                  const a = document.createElement('a');
-                  a.href = `../goals/session.html?num=${session.session}`;
-                  a.textContent = `Session ${session.session}`;
-                  const br2 = document.createElement('br');
-                  const p = document.createElement('p');
-                  p.className = 'topic';
-                  p.textContent = session.topic;
-
-                  // Append the elements to listItemA
-                  listItemB.appendChild(br1);
-                  listItemB.appendChild(a);
-                  listItemB.appendChild(br2);
-                  listItemB.appendChild(p);
+                  // Append the elements to dateElement
+                  dateElement.appendChild(br1);
+                  dateElement.appendChild(a);
+                  dateElement.appendChild(br2);
+                  dateElement.appendChild(p);
               }
-          });
-      })
-      .catch(error => console.error('Error fetching session topics:', error));
-      console.log('done load session topics');
+          }
+      });
+  })
+  .catch(error => console.error('Error fetching session or date data:', error));
+
+  console.log('done load session topics');
 }
+
+// Example usage
+loadSessionTopics('path/to/sessions.json', 'path/to/dates.json');
+
 
 async function setUp() {
   console.log("setUp called");
   
-  await loadSessionTopics("../goals/session_topics.json");
+  await loadSessionTopics("../goals/session_topics.json", "../goals/session_dates.json");
   
   
   var loc = window.location.href;
