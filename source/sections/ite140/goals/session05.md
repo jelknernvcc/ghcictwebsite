@@ -27,7 +27,7 @@ Finish your grade calculator - I'll use it for your Week 3 Grade.
 By Monday, I'd like everyone to have:
 
 - A working github pages site that I can link to our course website
-- A functional, polished, professional looking grade calculator that is posted to your github website. In addition to whatever functions you need to calculate your course grade, The grade calculator should include:
+- A functional, polished, professional looking grade calculator that is posted to your github website. Your grade calculator must include whatever functions and organization you need to accurately calculate your course grades (including both numerical average and quality points). The grade calculator should also include:
     - A documentation tab
     - A scenario evaluation tab
 
