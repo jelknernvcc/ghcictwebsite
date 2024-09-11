@@ -3,7 +3,7 @@
     {"session": "02", "unit": 1,"topic": "Basic Excel Organization and Functions"},
     {"session": "03", "unit": 1,"topic": "Descriptive Statistics in Excel"},
     {"session": "04", "unit": 1,"topic": "VLookups"},
-    {"session": "05", "unit": "","topic": ""},
+    {"session": "05", "unit": 1,"topic": ""},
     {"session": "06", "unit": "","topic": ""},
     {"session": "07", "unit": "","topic": ""},
     {"session": "08", "unit": "","topic": ""},
@@ -39,6 +39,13 @@
     {"session": "38", "unit": "","topic": ""},
     {"session": "39", "unit": "","topic": ""},
     {"session": "40", "unit": "exam","topic": ""},
-    {"session": "41", "unit": "exam","topic": ""}
+    {"session": "41", "unit": "exam","topic": ""},
+    {"session": "NWEA Testing", "unit": "other_school", "topic": ""},
+    {"session": "HTML Pretest", "unit": "other_school", "topic": ""},
+    {"session": "School Holiday", "unit": "other_noschool", "topic": ""},
+    {"session": "Teacher Workday", "unit": "other_noschool", "topic": ""},
+    {"session": "PSAT Testing", "unit": "other_school", "topic": ""},
+    {"session": "TBD", "unit": "other_school", "topic": ""}
+    
   ]
   

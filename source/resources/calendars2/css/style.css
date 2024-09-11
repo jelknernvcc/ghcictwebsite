@@ -144,7 +144,10 @@ table#cal td span {
 .review {
   background-color: SkyBlue;
 }
-.unitexam {
+.unitother_school {
+  background-color: Silver;
+}
+.unitother_noschool {
   background-color: Silver;
 }
 .project {
