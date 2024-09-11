@@ -37,21 +37,31 @@ function loadSessionTopics(sessionJsonUrl, dateJsonUrl) {
                   dateElement.classList.add(`unit${sessionInfo.unit}`);
                   
                   // Create HTML elements
+                  const day = document.createElement('p');
                   const br1 = document.createElement('br');
                   const a = document.createElement('a');
                   a.href = `../goals/session.html?num=${sessionInfo.session}`;
                   a.textContent = `Session ${sessionInfo.session}`;
+                  
                   const br2 = document.createElement('br');
                   const p = document.createElement('p');
+                  day.textContent = `${dateEntry.day}`;
                   p.className = 'topic';
                   p.textContent = sessionInfo.topic;
 
                   // Append the elements to dateElement
+                  dateElement.append(`${dateEntry.day}`);
                   dateElement.appendChild(br1);
-                  dateElement.appendChild(a);
+                  if(!Number.isNaN(Number(sessionInfo.session))){
+                    dateElement.appendChild(a);
+                  }else{
+                    dateElement.append(sessionInfo.session)
+                  }
                   dateElement.appendChild(br2);
                   dateElement.appendChild(p);
-              }
+              }//else{
+              //  dateElement.append(sessionInfo.session);
+              //}
           }
       });
   })
@@ -60,8 +70,6 @@ function loadSessionTopics(sessionJsonUrl, dateJsonUrl) {
   console.log('done load session topics');
 }
 
-// Example usage
-loadSessionTopics('path/to/sessions.json', 'path/to/dates.json');
 
 
 async function setUp() {

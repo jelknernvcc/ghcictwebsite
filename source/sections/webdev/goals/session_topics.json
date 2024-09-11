@@ -38,5 +38,6 @@
   {"session": "37", "unit": 5, "topic": "Final Project Presentations"},
   {"session": "38", "unit": 5, "topic": "Project Showcase and Peer Review"},
   {"session": "39", "unit": "exam", "topic": "Unit 5 Test, Course Review and Reflection"},
-  {"session": "40", "unit": "exam", "topic": "Final Exam"}
+  {"session": "40", "unit": "exam", "topic": "Final Exam"},
+  {"session": "NWEA Testing", "unit": "", "topic": ""}
 ]
