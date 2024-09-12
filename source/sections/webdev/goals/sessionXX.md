@@ -16,3 +16,4 @@ If you're still working to get into your myVCCS account, follow the instructions
 
 ### Practice with Vim and Git
 
+## Useful Resources For Today's Class

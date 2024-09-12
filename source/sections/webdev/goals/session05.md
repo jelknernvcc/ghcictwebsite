@@ -31,7 +31,7 @@ We will **NOT** start today's class with a quiz. I know that last class's git tu
 
 ### Git Practice
 
-We'll start by reviewing git and making sure that everyone's git website is setup successfully [see  this tutorial if you need help](https://ict.gctaa.net/resources/git_on_github/index.html). I want to make sure that everyone is very comfortable committing your code to git. We'll have a lot of practice with this today!
+We'll start by reviewing git and making sure that everyone's git website is setup successfully. I want to make sure that everyone is very comfortable committing your code to git. We'll have a lot of practice with this today!
 
 ### VIM
 
@@ -41,24 +41,29 @@ We'll be using [vimtutor](https://vimschool.netlify.app/introduction/vimtutor/) 
 
 Vim requires dedicated practice. I have a few suggestions of fun ways to practice:
 - Install [Vimium](https://vimium.github.io/), a Chrome extension that lets you use vim keyboard commands while you are browsing the web. I highly recommend that you install Vimium and practice using it as much as possible.
-- As an alternative to Vim Tutor, you might consider trying [Open Vim](https://openvim.com/).
-- In class, we'll play with [Vim Racer](https://vim-racer.com/). Keep playing this on your own and try to beat your best score.
-- Check out another fun Vim game called [Vim Adventures](https://vim-adventures.com/).
+
 
 ## Homework
 
 ### Send me an Email
-If you haven't yet, please continue checking the myNVCC website. As soon as you see a gmail account appear, open it and send me an email. Follow the specific instructions from [Session 2](./session.html?num=02).
-
-If you're still working to get into your myVCCS account, follow the instructions from [Session 1](./session.html?num=01).
+If you haven't yet, please continue checking the myNVCC website. As soon as you see a gmail account appear, open it and send me an email. If you need help with this, see the links in the resources section below.
 
 ### Practice with Vim and Git
 
-Please complete the entire vimtutor course, and continue practicing with Vim on your own. You should be comfortable with:
+Please complete the entire vimtutor course, and continue practicing with Vim on your own. Check out some of vim links in the resources section below. You should be comfortable with:
 - Opening a new or existing file in Vim
 - Navigating through a file using the keyboard
 - Editing text, saving changes, and exiting Vim
 
-If you need a reminder of how to make a git commit, check out [this tutorial](https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/).
-
 Next class, we'll start with another practical quiz. For this quiz, I'll ask you to use vim to add something to your `index.html` file and then commit and push.
+
+## Useful Resources For Today's Class
+- [Git commit Tutorial](https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/)
+- [My Github Setup Tutorial](https://ict.gctaa.net/resources/git_on_github/index.html)
+- [Email Assignment Instructions](./session.html?num=02)
+- [MyVCCS Instructions](./session.html?num=01)
+- More Vim Practice:
+    - [Vimium](https://vimium.github.io/)
+    - [Open Vim](https://openvim.com/)
+    - [Vim Racer](https://vim-racer.com/)
+    - [Vim Adventures](https://vim-adventures.com/)

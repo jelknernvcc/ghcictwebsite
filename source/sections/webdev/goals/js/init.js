@@ -78,6 +78,7 @@ function md_to_html(file){
   document.getElementById('md_to_html').innerHTML = md_html;
   })
   .catch(error => {
+    console.log(error);
     document.getElementById('md_to_html').innerHTML = 'Hi - you\'re faster than I am! I have not published this lesson plan yet. Please check back later!';
   });
 }
