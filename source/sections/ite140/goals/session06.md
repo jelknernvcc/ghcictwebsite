@@ -12,6 +12,9 @@ Scenarios to Evaluate:
 
 ## What we'll do in class
 
+### Class Charter
+I have a draft! I'd love some feedback. [See the draft here](../../../people/jones/2024_charter.html)
+
 ### Grade Calculator Project
 We'll continue working on our grade calculators [See the project details here](../projects/project.html?id=01gradecalc). 
 

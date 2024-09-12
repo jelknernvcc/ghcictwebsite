@@ -12,6 +12,10 @@ As usual, we'll start with a quiz. I'll tell you something that I want you to ad
 
 While you're working today, I'll walk around and record everyone's github website URL. I'll go to your website to assign grades for this and the previous quiz.
 
+
+### Class Charter
+I have a draft! I'd love some feedback. [See the draft here](../../../people/jones/2024_charter.html)
+
 ### Markdown
 We'll discuss [Markdown formatting](https://www.markdownguide.org/getting-started/) - a friendly way to write text for the web. We'll setup a Markdown journal that you'll continue to use throughout this class. We'll write our first entry, a "Hello World!" entry, together.
 
