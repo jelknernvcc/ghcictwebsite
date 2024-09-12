@@ -2,9 +2,6 @@
     {"date": "August26", "session": "00", "day": ""},
 
     {"date": "August28", "session": "01", "day": "B"},
-
-    {"date": "August30", "session": "School Holiday", "day": ""},
-    {"date": "September02", "session": "School Holiday", "day": ""},
     {"date": "September03", "session": "02", "day": "B"},
 
     {"date": "September05", "session": "03", "day": "B"},
@@ -17,7 +14,7 @@
 
     {"date": "September17", "session": "07", "day": "B"},
 
-    {"date": "September19", "session": "HTML Pretest", "day": "B"},
+    {"date": "September19", "session": "SUB", "day": "B"},
 
     {"date": "September23", "session": "08", "day": "B"},
 
@@ -27,14 +24,9 @@
 
     {"date": "October01", "session": "11", "day": "B"},
 
-    {"date": "October03", "session": "School Holiday", "day": ""},
     {"date": "October04", "session": "12", "day": "B"},
 
     {"date": "October08", "session": "13", "day": "B"},
-    {"date": "October09", "session": "PSAT Testing", "day": ""},
-
-    {"date": "October11", "session": "Teacher Workday", "day": ""},
-    {"date": "October14", "session": "Teacher Workday", "day": ""},
     {"date": "October15", "session": "14", "day": "B"},
 
     {"date": "October17", "session": "15", "day": "B"},
@@ -48,13 +40,9 @@
     {"date": "October29", "session": "19", "day": "B"},
 
     {"date": "October31", "session": "20", "day": "B"},
-    {"date": "November01", "session": "School Holiday", "day": ""},
-    {"date": "November04", "session": "Teacher Workday", "day": ""},
-    {"date": "November05", "session": "Teacher Workday", "day": ""},
 
     {"date": "November07", "session": "21", "day": "B"},
 
-    {"date": "November11", "session": "School Holiday", "day": ""},
     {"date": "November12", "session": "22", "day": "B"},
 
     {"date": "November14", "session": "23", "day": "B"},
@@ -66,9 +54,6 @@
     {"date": "November22", "session": "26", "day": "B"},
 
     {"date": "November26", "session": "27", "day": "B"},
-    {"date": "November27", "session": "School Holiday", "day": ""},
-    {"date": "November28", "session": "School Holiday", "day": ""},
-    {"date": "November29", "session": "School Holiday", "day": ""},
 
     {"date": "December03", "session": "28", "day": "B"},
 
@@ -83,17 +68,6 @@
     {"date": "December17", "session": "33", "day": "B"},
 
     {"date": "December19", "session": "34", "day": "B"},
-
-    {"date": "December23", "session": "School Holiday", "day": ""},
-    {"date": "December24", "session": "School Holiday", "day": ""},
-    {"date": "December25", "session": "School Holiday", "day": ""},
-    {"date": "December26", "session": "School Holiday", "day": ""},
-    {"date": "December27", "session": "School Holiday", "day": ""},
-    {"date": "December30", "session": "School Holiday", "day": ""},
-    {"date": "December31", "session": "School Holiday", "day": ""},
-    {"date": "January01", "session": "School Holiday", "day": ""},
-    {"date": "January02", "session": "School Holiday", "day": ""},
-    {"date": "January03", "session": "School Holiday", "day": ""},
     {"date": "January06", "session": "35", "day": "B"},
 
     {"date": "January08", "session": "36", "day": "B"},
@@ -104,14 +78,11 @@
 
     {"date": "January16", "session": "39", "day": "B"},
 
-    {"date": "January20", "session": "School Holiday", "day": ""},
     {"date": "January21", "session": "40", "day": "B"},
 
     {"date": "January23", "session": "TBD", "day": "B"},
 
     {"date": "January27", "session": "TBD", "day": "B"},
 
-    {"date": "January29", "session": "TBD", "day": "B"},
-    {"date": "January30", "session": "Teacher Workday", "day": ""},
-    {"date": "January31", "session": "Teacher Workday", "day": ""}
+    {"date": "January29", "session": "TBD", "day": "B"}
     ]
