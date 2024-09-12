@@ -8,7 +8,7 @@ function loadCalendarHTML() {
       .catch(error => {
         console.error('Error loading HTML file:', error);
       });
-  }
+}
   function addElement(parentElem, childTag, childText) { 
      const childElem = document.createElement(childTag);
      const textNode = document.createTextNode(childText);
@@ -26,6 +26,22 @@ function loadCalendarHTML() {
         chapterDays[i].appendChild(s);
         //addElement(chapterDays[i], "span", label);
       }
+  }
+
+  function loadDayDescriptions(){
+    fetch("../../../resources/calendars2/school_dates.json")
+    .then(response => response.json())
+    .then(data =>{
+      data.forEach(dateEntry =>{
+        const dateElement = document.getElementById(dateEntry.date);
+            if (dateElement) {
+              if(!(dateEntry.day=="A" || dateEntry.day=="B")){
+                dateElement.appendChild(document.createElement('br'));
+              }
+              dateElement.append(dateEntry.day);
+            }
+      })
+    })
   }
   
   function loadSessionTopics(sessionJsonUrl, dateJsonUrl) {
@@ -61,7 +77,7 @@ function loadCalendarHTML() {
                     p.textContent = sessionInfo.topic;
   
                     // Append the elements to dateElement
-                    dateElement.append(`${dateEntry.day}`);
+                    //dateElement.append(`${dateEntry.day}`);
                     dateElement.appendChild(br1);
                     if(!Number.isNaN(Number(sessionInfo.session))){
                       dateElement.appendChild(a);
@@ -87,6 +103,8 @@ function loadCalendarHTML() {
     console.log("setUp called");
   
     loadCalendarHTML();
+
+    await loadDayDescriptions();
     
     await loadSessionTopics("../goals/session_topics.json", "../goals/session_dates.json");
     
