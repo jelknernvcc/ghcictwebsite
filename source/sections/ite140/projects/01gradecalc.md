@@ -57,10 +57,17 @@ table, th, td {
 
 
 ## Footnotes
-*as always, I'll use github commit timestamps to determine submission times
+1. as always, I'll use github commit timestamps to determine submission times
 
-Here are two tables to help you get started. You should be able to copy/paste them into Excel.
+2. "Quality Points" actually means two different things.    
+    - First, your final grade for the year is is a letter grade, not a numeric grade. If you look at your transcript, you only see a letter grade. To calculate your GPA, we use Table 2 below. This is where there is a difference in points between AP and IB classes. To avoid confusion, I've called these "GPA Points" instead of "Quality Points" in the table.
+    - To get to your final grade for the year, we calculate your average two different ways and keep whichever method gives a higher letter grade:
+        - First, we calculate a (weighted) numeric average of the numeric grades received each quarter.
+        - Second, We ignore the numeric grade for the quarter and consider only the letter grade. We use Table 1 below to map each letter grade to "Quality Points" and calculate a (weighted) average of using this new number. We look up that number in Table 2 to find the final letter grade for the year.
 
+3. Here are two tables to help you get started. You should be able to copy/paste them into Excel.
+
+Table 1: Quarter letter grades
 | Begin Grade | End Grade | Letter | Quality Points |
 |-------------|-----------|--------|----------------|
 | 0           | 59        | E      | 0              |
@@ -74,13 +81,14 @@ Here are two tables to help you get started. You should be able to copy/paste th
 
 <br>
 
-| QP Average | Letter Grade |
-|------------|--------------|
-| 0          | E            |
-| 0.75       | D            |
-| 1.25       | D+           |
-| 1.75       | C            |
-| 2.25       | C+           |
-| 2.75       | B            |
-| 3.25       | B+           |
-| 3.75       | A            |
+Table 2: Final Grade Calculation
+| QP Average | Letter Grade | GPA Points     | AP GPA     Points |
+|------------|--------------|----------------|-------------------|
+| 0          | E            | 0              | 0                 |
+| 0.75       | D            | 1              | 2                 |
+| 1.25       | D+           | 1.5            | 2.5               |
+| 1.75       | C            | 2              | 3                 |
+| 2.25       | C+           | 2.5            | 3.5               |
+| 2.75       | B            | 3              | 4                 |
+| 3.25       | B+           | 3.5            | 4.5               |
+| 3.75       | A            | 4              | 5                 |
