@@ -31,7 +31,7 @@ Your grade calculator must include:
 
 
 ## Sample Project
-In case it's helpful, [I've uploaded mine here](../goal/data/WebDev_Grade_Calculator.xlsx).
+In case it's helpful, [I've uploaded mine here](../goals/data/WebDev_Grade_Calculator.xlsx).
 
 ## Submission Instructions
 Submit your grade calculator by posting to your github repo and linking it from your website.
