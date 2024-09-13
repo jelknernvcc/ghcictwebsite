@@ -14,7 +14,7 @@ While you're working today, I'll walk around and record everyone's github websit
 
 
 ### Class Charter
-I have a draft! I'd love some feedback. [See the draft here](../../../people/jones/2024_charter.html)
+I have a draft! I'd love some feedback. [See the draft here](https://docs.google.com/document/d/1YJwfaeJMPwO4wveRAYpc40Xwx0RQHpeF-7e4urK-Ndg/edit?usp=sharing)
 
 ### Markdown
 We'll discuss [Markdown formatting](https://www.markdownguide.org/getting-started/) - a friendly way to write text for the web. We'll setup a Markdown journal that you'll continue to use throughout this class. We'll write our first entry, a "Hello World!" entry, together.
