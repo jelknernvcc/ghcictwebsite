@@ -7,7 +7,7 @@ function addHeader(jsonUrl) {
       .then(response => response.json())
       .then(data => {
           data.forEach(session => {
-            if (session.session.replace(/ /g,"_") == num){
+            if (session.session.replace(/ /g,"_").toLowerCase() == num){
 
               
               const headerToAdd = `Session ${session.session} | Unit ${session.unit}`

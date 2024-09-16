@@ -67,7 +67,7 @@ function loadCalendarHTML() {
                     const day = document.createElement('p');
                     const br1 = document.createElement('br');
                     const a = document.createElement('a');
-                    a.href = `../goals/session.html?num=${sessionInfo.session.replace(/ /g,"_")}`;
+                    a.href = `../goals/session.html?num=${sessionInfo.session.replace(/ /g,"_").toLowerCase()}`;
                     a.textContent = `Session ${sessionInfo.session}`;
                     
                     const br2 = document.createElement('br');
