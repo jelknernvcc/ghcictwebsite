@@ -1,3 +1,14 @@
+<!--
+Instructor notes: 
+
+To enable md syntax highlighting in vim
+:syntax on
+
+
+
+-->
+
+
 ## Lesson Objectives
 By the end of this lesson, you should:
 - Understand the importance of Markdown formatting
@@ -27,6 +38,11 @@ In your Markdown journal, write a journal entry. This entry should cover the ter
 
 This journal entry is due before the beginning of next class (and I'll use github commit timestamps to tell whether you submitted in time!). You will get a 100% if you use valid markdown to answer all 3 of these questions, a 90% if you answer two, an 80% if you answer one, a 70% if you post any valid Markdown, a 60% if you post anything, and a 0 otherwise.
 
+#### If you are in my 1A Class
+We didn't get to the full journal setup in this class. That's okay- everyone should have a README.md file, so I expect you to write your journal entry there. We'll finish setting up our journals later.
+
+Remember that we'll have the HTML pre-test on Wednesday, so I expect that the journal entry will be completed by the beginning of class on Friday!
+
 ## Homework
 
 ### Send me an Email
@@ -36,7 +52,7 @@ If you haven't yet, please continue checking the myNVCC website. As soon as you 
 I expect that most people will finish this in class. If you don't, finish it at home!
 
 ### Read about the TCP/IP model
-We'll officially start unit 1 next week! We're officially going to "flip the classroom" now, so you'll start reading ahead. We'll have a reading quiz at the beginning of next class.
+We'll officially start unit soon! We're officially going to "flip the classroom" now, so you'll start reading ahead. We'll have a reading quiz at the beginning of next class (for my 1A class, this will be on Friday, after the HTML pretest on Wednesday).
 
 There are two things that I want you to read for next class:
 - First, watch [This YouTube video](https://www.youtube.com/watch?v=AYdF7b3nMto&list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7). Specifically, I want you to understand the ideas of "packets" and "routing" that are introduced in this video.
