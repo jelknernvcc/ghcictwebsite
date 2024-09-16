@@ -67,7 +67,7 @@ function loadCalendarHTML() {
                     const day = document.createElement('p');
                     const br1 = document.createElement('br');
                     const a = document.createElement('a');
-                    a.href = `../goals/session.html?num=${sessionInfo.session}`;
+                    a.href = `../goals/session.html?num=${sessionInfo.session.replace(/ /g,"_")}`;
                     a.textContent = `Session ${sessionInfo.session}`;
                     
                     const br2 = document.createElement('br');
@@ -79,7 +79,7 @@ function loadCalendarHTML() {
                     // Append the elements to dateElement
                     //dateElement.append(`${dateEntry.day}`);
                     dateElement.appendChild(br1);
-                    if(!Number.isNaN(Number(sessionInfo.session))){
+                    if(!Number.isNaN(Number(sessionInfo.session)) || sessionInfo.session == "HTML Pretest"){
                       dateElement.appendChild(a);
                     }else{
                       dateElement.append(sessionInfo.session)
