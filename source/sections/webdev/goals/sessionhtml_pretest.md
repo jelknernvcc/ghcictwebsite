@@ -1,7 +1,9 @@
 
 ## What We'll Do In Class
 
-### HTML Pretest - Read this first
+### HTML Pretest
+
+#### Read this first
 
 At the end of the school year, you'll have the opportunity to take a certification test that covers everything we're going to learn this year. We'll talk more about this certification later - but for now you should know that it's a really cool opportunity! At the beginning of the year, we're asking you to take a **pretest**. This is an old test, so it looks very similar to the real test that you'll take at the end of the year. Of course, you haven't learned any of this material yet.
 
@@ -19,6 +21,9 @@ Here’s why this test matters:
 
 So, as you take this pre-test, don’t stress about the score. Think of it as a tool for growth. Give it your best effort, and remember that this is just the beginning of your journey. The real learning starts now, and we’ll get through this together!
 
+#### Test Instructions
+
+This test is timed for 80 minutes. Please fill out your answers on the bubble sheet. You may rip the bubble sheet off of the rest of the packet and may write on both, but I will only grade the bubble sheet. Please write your name on both the bubble sheet and the test packet and turn in both. 
 
 ### After you finish you pretest:
 
