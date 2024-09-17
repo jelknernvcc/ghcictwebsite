@@ -23,8 +23,11 @@ We'll spend some time in class setting up our Development Environments. As a fir
 After that, run this in the terminal:
 
 `PYENV_ROOT="${HOME}/.pyenv"`
+
 `echo "export PATH=\"${PYENV_ROOT}/bin:\$PATH\"" >> ~/.zshrc`
+
 `echo "eval \"\$(pyenv init -)\"" >> ~/.zshrc`
+
 `echo "eval \"\$(pyenv virtualenv-init -)\"" >> ~/.zshrc`
 
 I'm not positive that you'll have the right permissions to do this. If it works, we'll talk more about what it is and how to use it.
