@@ -20,6 +20,13 @@ We'll spend some time in class setting up our Development Environments. As a fir
 
 `curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash`
 
+After that, run this in the terminal:
+
+`PYENV_ROOT="${HOME}/.pyenv"`
+`echo "export PATH=\"${PYENV_ROOT}/bin:\$PATH\"" >> ~/.zshrc`
+`echo "eval \"\$(pyenv init -)\"" >> ~/.zshrc`
+`echo "eval \"\$(pyenv virtualenv-init -)\"" >> ~/.zshrc`
+
 I'm not positive that you'll have the right permissions to do this. If it works, we'll talk more about what it is and how to use it.
 
 We'll also learn about [Markdown](https://www.markdownguide.org/getting-started/) - a useful markup language for text editing that works well with Jupyter. Our goal will be to create and publish a simple Notebook that contains only Markdown. 
