@@ -6,6 +6,10 @@
 <style>
 @import url(style.css);
 </style>
+<script src="../js/init_with_api.js"></script>
+<script>
+window.onload = init;
+</script>
 </head>
 <body>
 <header>
@@ -33,12 +37,12 @@
 </div>
 
 <footer>
-<hr>
-<a href="http://validator.w3.org/check/referer">
-<strong> HTML </strong> Valid! </a> &nbsp; 
-<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
-<strong> CSS </strong> Valid! </a>
-</footer>
+  <p id="HTMLCSS"></p>
+  <p>
+  <a id="vLink1"><strong> HTML </strong> Valid! </a> |
+  <a id="vLink2"><strong> CSS </strong> Valid! </a>
+  </p>
+  </footer>
 
 </body>
 </html>
