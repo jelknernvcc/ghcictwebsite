@@ -1,88 +1,46 @@
 [
-    {"date": "August26", "session": "00", "day": ""},
-
-    {"date": "August28", "session": "01", "day": "B"},
-    {"date": "September03", "session": "02", "day": "B"},
-
-    {"date": "September05", "session": "03", "day": "B"},
-
-    {"date": "September09", "session": "04", "day": "B"},
-
-    {"date": "September11", "session": "05", "day": "B"},
-
-    {"date": "September13", "session": "06", "day": "B"},
-
-    {"date": "September17", "session": "07", "day": "B"},
-
-    {"date": "September19", "session": "SUB", "day": "B"},
-
-    {"date": "September23", "session": "08", "day": "B"},
-
-    {"date": "September25", "session": "09", "day": "B"},
-
-    {"date": "September27", "session": "10", "day": "B"},
-
-    {"date": "October01", "session": "11", "day": "B"},
-
-    {"date": "October04", "session": "12", "day": "B"},
-
-    {"date": "October08", "session": "13", "day": "B"},
-    {"date": "October15", "session": "14", "day": "B"},
-
-    {"date": "October17", "session": "15", "day": "B"},
-
-    {"date": "October21", "session": "16", "day": "B"},
-
-    {"date": "October23", "session": "17", "day": "B"},
-
-    {"date": "October25", "session": "18", "day": "B"},
-
-    {"date": "October29", "session": "19", "day": "B"},
-
-    {"date": "October31", "session": "20", "day": "B"},
-
-    {"date": "November07", "session": "21", "day": "B"},
-
-    {"date": "November12", "session": "22", "day": "B"},
-
-    {"date": "November14", "session": "23", "day": "B"},
-
-    {"date": "November18", "session": "24", "day": "B"},
-
-    {"date": "November20", "session": "25", "day": "B"},
-
-    {"date": "November22", "session": "26", "day": "B"},
-
-    {"date": "November26", "session": "27", "day": "B"},
-
-    {"date": "December03", "session": "28", "day": "B"},
-
-    {"date": "December05", "session": "29", "day": "B"},
-
-    {"date": "December09", "session": "30", "day": "B"},
-
-    {"date": "December11", "session": "31", "day": "B"},
-
-    {"date": "December13", "session": "32", "day": "B"},
-
-    {"date": "December17", "session": "33", "day": "B"},
-
-    {"date": "December19", "session": "34", "day": "B"},
-    {"date": "January06", "session": "35", "day": "B"},
-
-    {"date": "January08", "session": "36", "day": "B"},
-
-    {"date": "January10", "session": "37", "day": "B"},
-
-    {"date": "January14", "session": "38", "day": "B"},
-
-    {"date": "January16", "session": "39", "day": "B"},
-
-    {"date": "January21", "session": "40", "day": "B"},
-
-    {"date": "January23", "session": "TBD", "day": "B"},
-
-    {"date": "January27", "session": "TBD", "day": "B"},
-
-    {"date": "January29", "session": "TBD", "day": "B"}
+    {"date": "August28", "session": "01"},
+    {"date": "September03", "session": "02"},
+    {"date": "September05", "session": "03"},
+    {"date": "September09", "session": "04"},
+    {"date": "September11", "session": "05"},
+    {"date": "September13", "session": "06"},
+    {"date": "September17", "session": "07"},
+    {"date": "September19", "session": "08"},
+    {"date": "September23", "session": "09"},
+    {"date": "September25", "session": "10"},
+    {"date": "September27", "session": "11"},
+    {"date": "October01", "session": "12"},
+    {"date": "October04", "session": "13"},
+    {"date": "October08", "session": "14"},
+    {"date": "October15", "session": "15"},
+    {"date": "October17", "session": "16"},
+    {"date": "October21", "session": "17"},
+    {"date": "October23", "session": "18"},
+    {"date": "October25", "session": "19"},
+    {"date": "October29", "session": "20"},
+    {"date": "October31", "session": "21"},
+    {"date": "November07", "session": "22"},
+    {"date": "November12", "session": "23"},
+    {"date": "November14", "session": "24"},
+    {"date": "November18", "session": "25"},
+    {"date": "November20", "session": "26"},
+    {"date": "November22", "session": "27"},
+    {"date": "November26", "session": "28"},
+    {"date": "December03", "session": "29"},
+    {"date": "December05", "session": "30"},
+    {"date": "December09", "session": "31"},
+    {"date": "December11", "session": "32"},
+    {"date": "December13", "session": "33"},
+    {"date": "December17", "session": "34"},
+    {"date": "December19", "session": "35"},
+    {"date": "January06", "session": "36"},
+    {"date": "January08", "session": "37"},
+    {"date": "January10", "session": "38"},
+    {"date": "January14", "session": "39"},
+    {"date": "January16", "session": "40"},
+    {"date": "January21", "session": "41"},
+    {"date": "January23", "session": "TBD"},
+    {"date": "January27", "session": "TBD"},
+    {"date": "January29", "session": "TBD"}
     ]
