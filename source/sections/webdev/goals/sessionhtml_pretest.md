@@ -35,5 +35,5 @@ Regardless, send me a **new** email with a link to your github repository. I wan
 
 - The quiz from the beginning of [Session 6](./session.html?num=06) where you added an animal name to your website. 
 - Your Markdown journal entry about learning the Terminal from [Session 6](./session.html?num=06). 
-- Your Terminal quiz from [Session 5](./session.html?num=05) - you should have saved this quiz as a text file on your computer and then committed it to your repo.
+- Your Terminal quiz from [Session 4](./session.html?num=04) you should have saved this quiz as a text file on your computer and then committed it to your repo.
 
