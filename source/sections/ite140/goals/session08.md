@@ -30,7 +30,7 @@ Don't forget to `pip install pandas`
     - Descriptive Statistics
     - Grouping
 
-### For now, you can skip:
+#### For now, you can skip:
 - The sections about `MultiIndex`
 - Combining DataFrames
 - Pivoting and Melting
