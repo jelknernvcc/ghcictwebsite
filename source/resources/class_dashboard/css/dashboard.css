@@ -1,0 +1,31 @@
+/* /Users/christopher.jones/Documents/code/gctaa_website/source/resources/class_dashboard/css/dashboard.css */
+
+/* Ensure the body takes up the full viewport height */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Center the main content and make it responsive */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    font-size: calc(10px + 2vmin); /* Responsive font size */
+}
+
+/* Ensure the list items are also responsive */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: calc(10px + 2vmin); /* Responsive font size */
+    margin: 10px 0;
+}
