@@ -1,6 +1,12 @@
 <!--
 Instructor notes: 
 -->
+### Lesson Objectives
+By the end of this lesson, you should:
+- Understand the basics of NumPy and its efficiency in handling large datasets.
+- Know how to use Jupyter magic commands, specifically `%%timeit`, to measure code execution time.
+- Be able to compare the performance of traditional Python loops with NumPy ufuncs.
+- Be able to identify and investigate an open dataset
 
 ### What we'll do in class
 Thanks for doing the reading about Numpy and Pandas last week! We'll start class with a discussion of everything that you read and practiced with (we'll include Jupyter, Markdown, and Git in this conversation). After that,  we'll focus on practicing with these concepts. 
