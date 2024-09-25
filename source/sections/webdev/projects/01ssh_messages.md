@@ -15,10 +15,11 @@
 
       - Use the `curl` command to download the script:
          ```bash
-         curl -O https://ict.gctaa.net/sections/webdev/goals/resources/ssh_activity/encrypt_message.sh
+         curl -s -O https://ict.gctaa.net/sections/webdev/goals/resources/ssh_activity/encrypt_message.sh
          ```
 
       - Make the script executable:
+
          ```bash
          chmod +x encrypt_message.sh
          ```
@@ -63,7 +64,7 @@
 
       - Use the `curl` command to download the script:
          ```bash
-         curl -O https://ict.gctaa.net/sections/webdev/goals/resources/ssh_activity/decrypt_message.sh
+         curl -s -O https://ict.gctaa.net/sections/webdev/goals/resources/ssh_activity/decrypt_message.sh
          ```
 
       - Make the script executable:
@@ -79,7 +80,7 @@
    Execute the decryption script, which will:
       - Ask for the location of your private key (you should be able to accept the default: `~/.ssh/id_rsa`).
       - Decrypt the received message and save the decrypted file to the `receive` folder.
-      
+
       ```bash
       ./decrypt_message.sh
       ```

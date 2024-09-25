@@ -51,4 +51,4 @@ echo "Your message has been encrypted and saved to rsa_encryption_activity/send/
 
 rm rsa_encryption_activity/partner_keys.pub
 rm rsa_encryption_activity/partner_key.pub
-rm rsa_encryption_activity/secret_message.txt
+rm rsa_encryption_activity/send/secret_message.txt
