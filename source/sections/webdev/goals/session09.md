@@ -7,6 +7,10 @@ By the end of this lesson, you should:
 ### Quiz
 We'll start class with a short quiz on last class's homework.
 
+### Check on your repo and StudentVue
+- StudentVue was updated today. It shows everything I know. Do you have any assignments missing?
+- Your github repo should contain: One Markdown journal entry, the mkdir quiz from [Session 4](session.html?num=10), an animal name.
+
 ### How secure is your web traffic?
 We'll define what security means in terms of the internet, and we'll discuss some interesting implications. We'll watch a few youtube videos to help motivate this discussion:
 - [Your texts are open](https://www.youtube.com/watch?v=IsvhHEz7h2k)
@@ -41,12 +45,6 @@ You'll do this activity with a partner. Pair up with someone who sits next to yo
    curl https://github.com/partner_username.keys > partner_key.pub
    ```
 
-   Commit your partner’s public key to your Git repository:
-   ```bash
-   git add partner_key.pub
-   git commit -m "Added partner's original public key"
-   ```
-
 3. **Convert your partner’s public key to PEM format:**
    By default, GitHub SSH public keys are in OpenSSH format. To use this key with OpenSSL, you need to convert it to PEM format using `ssh-keygen`:
 
@@ -56,6 +54,7 @@ You'll do this activity with a partner. Pair up with someone who sits next to yo
 
    Commit the PEM-formatted public key to your Git repository:
    ```bash
+   git add partner_key.pub
    git add partner_key.pem
    git commit -m "Converted partner's public key to PEM format"
    ```
@@ -91,7 +90,7 @@ You'll do this activity with a partner. Pair up with someone who sits next to yo
    Commit the encrypted message to your repository:
    ```bash
    git add send/encrypted_message.b64
-   git commit -m "Added plaintext and encrypted message"
+   git commit -m "Added encrypted message for my partner"
    ```
 
    (don't commit the plaintext version yet - that would spoil the fun for your partner!)
@@ -105,7 +104,7 @@ You'll do this activity with a partner. Pair up with someone who sits next to yo
 #### Part 3: Decrypt the Received Message
 
 1. **Access your partner's repository and download their encrypted message:**
-   Visit your partner's github repo and download their file `send/encrypted_message.b64` into your `receive` folder.
+   Visit your partner's github repo and download their file `send/encrypted_message.b64` into your `receive` folder. You can do this with curl, or you can use the browser.
 
 
 2. **Decrypt the received message:**

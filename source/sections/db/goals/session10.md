@@ -39,12 +39,6 @@ Your group should practice with the same topics that we explored in our Pandas r
 
 ## Homework
 
-### Finish your Pandas exercise
-If you didn't complete the Pandas exercise today:
-- Make sure everyone in your group has access to the work you've done so far.
-- Divide up the remaining tasks among your group members.
-- Complete the assignment and be prepared to present your findings in the next class.
-
 ### Read about Seaborn
 There are lots of powerful data visualization libraries that work well with Pandas. The most popular (and the one that's introduced in our textbook) is called [Matplotlib](https://matplotlib.org/). That one is great but has a bit of a learning curve. Instead, we'll learn about Seaborn - which is built on top of Matplotlib, easier, and prettier. It integrates very well with Pandas DataFrames. For some inspiration, check out the [Seaborn gallery here](https://seaborn.pydata.org/examples/index.html).
 
