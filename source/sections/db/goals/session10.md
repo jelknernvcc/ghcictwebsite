@@ -51,5 +51,13 @@ There are lots of powerful data visualization libraries that work well with Pand
 Give [this tutorial](https://seaborn.pydata.org/tutorial.html) a skim. There's no need to write any code or submit anything for this reading—just familiarize yourself with Seaborn’s capabilities. Next class, we'll use Seaborn to make visualizations from our Pandas datasets.
 
 ### Prepare for the Arlington 2050 Project
-- Share your own vision of what Arlington will look like in 2050
+- Share your own vision of what Arlington will look like in 2050. Share your opinion here: [A Postcard from the Future!](https://publicinput.com/arlington2050). Here's the specific request from the organizer: 
+> "I’m also curious—have they identified any teen-specific pain points 
+> in their own lives in Arlington, that we might be able to address with 
+> them, for future generations? Thoughts on transit in Arlington, 
+> climate concerns, technology and AI, approaches to high school education, 
+> teen mental health/teen programs—or something on their radar that’s a 
+> big deal to them, but that we wouldn’t have even thought of? I want 
+> to capitalize on their expertise!"
+
 - Listen to this podcast - it's a fun, gentile introduction to the math behind some of the natural language concepts we'll be playing with in the next few classes: [< Two Heartbeats A Minute](https://www.npr.org/transcripts/809336135)
