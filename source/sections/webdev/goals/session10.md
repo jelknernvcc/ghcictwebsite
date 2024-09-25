@@ -35,10 +35,16 @@ You'll do this activity with a partner. Pair up with someone who sits next to yo
 ### Send me an Email
 Everyone has a NOVA email address now! I'll stop accepting emails at the end of this week, so go back to [Session 2](./session.html?num=02) and complete the email assignment if you haven't!
 
+### Journal
+Add a README.md file to your rsa_encryption_activity. In this file, use Markdown to answer these prompts:
+- What is the difference between symmetric and asymmetric encryption?
+- Explain the steps of the encryption and decryption process
+- Why is it important that you never share your secret key?
 
+This journal entry, and the files in your rsa_encryption_activity repo, are due by the beginning of next class. I'll count this as a quiz grade.
+
+### Reading
+Next class, we'll wrap up our unit on the internet by learning about internet applications. Read pages 73-80 in [our networking textbook](https://do1.dr-chuck.net/net-intro/EN_us/net-intro.pdf) and prepare for a reading quiz next class.
 
 ### Start preparing for our first test
 We'll have our first test next week. This will cover everything that we've done this year - the terminal tools and the internet. I'll have a better study guide for you next class. In the meantime, start going through the previous lessons to jog your memory.
-
-### We'll finish the ssh activity next time
-We didn't get through this activity today, so no new reading assignment. We'll continue with it next time!
