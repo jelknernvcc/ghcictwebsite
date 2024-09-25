@@ -49,3 +49,7 @@ If you didn't complete the Pandas exercise today:
 There are lots of powerful data visualization libraries that work well with Pandas. The most popular (and the one that's introduced in our textbook) is called [Matplotlib](https://matplotlib.org/). That one is great but has a bit of a learning curve. Instead, we'll learn about Seaborn - which is built on top of Matplotlib, easier, and prettier. It integrates very well with Pandas DataFrames. For some inspiration, check out the [Seaborn gallery here](https://seaborn.pydata.org/examples/index.html).
 
 Give [this tutorial](https://seaborn.pydata.org/tutorial.html) a skim. There's no need to write any code or submit anything for this reading—just familiarize yourself with Seaborn’s capabilities. Next class, we'll use Seaborn to make visualizations from our Pandas datasets.
+
+### Prepare for the Arlington 2050 Project
+- Share your own vision of what Arlington will look like in 2050
+- Listen to this podcast - it's a fun, gentile introduction to the math behind some of the natural language concepts we'll be playing with in the next few classes: [< Two Heartbeats A Minute](https://www.npr.org/transcripts/809336135)
