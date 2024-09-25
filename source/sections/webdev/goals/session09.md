@@ -40,3 +40,11 @@ Add a README.md file to your rsa_encryption_activity. In this file, use Markdown
 - What is the difference between symmetric and asymmetric encryption?
 - Explain the steps of the encryption and decryption process
 - Why is it important that you never share your secret key?
+
+This journal entry, and the files in your rsa_encryption_activity repo, are due by the beginning of next class. I'll count this as a quiz grade.
+
+### Reading
+Next class, we'll wrap up our unit on the internet by learning about internet applications. Read pages 73-80 in [our networking textbook](https://do1.dr-chuck.net/net-intro/EN_us/net-intro.pdf) and prepare for a reading quiz next class.
+
+### Start preparing for our first test
+We'll have our first test next week. This will cover everything that we've done this year - the terminal tools and the internet. I'll have a better study guide for you next class. In the meantime, start going through the previous lessons to jog your memory.
