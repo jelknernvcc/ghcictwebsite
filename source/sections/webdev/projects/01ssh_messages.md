@@ -6,35 +6,35 @@
    Start by making sure that you're in your GitHub repository where you'll store all the files for this activity.
 
    (You might need to change this line to match your GitHub repository folder name)
-
-   ```bash
-   cd ~/Desktop/website 
-   ```
+      ```bash
+      cd ~/Desktop/website 
+      ```
 
 2. **Download and run the encryption script:**
    I wrote a command line tool that will encrypt messages for you. To download it, there are two steps:
 
-   - Use the `curl` command to download the script:
-     ```bash
-     curl -O https://ict.gctaa.net/sections/webdev/goals/resources/ssh_activity/encrypt_message.sh
-     ```
+      - Use the `curl` command to download the script:
+         ```bash
+         curl -O https://ict.gctaa.net/sections/webdev/goals/resources/ssh_activity/encrypt_message.sh
+         ```
 
-   - Make the script executable:
-     ```bash
-     chmod +x encrypt_message.sh
-     ```
+      - Make the script executable:
+         ```bash
+         chmod +x encrypt_message.sh
+         ```
 
 3. **Run the encryption script:**
-   Execute the script, which will:
-   - Prompt for your partner’s GitHub username.
-   - Automatically download your partner's public key from GitHub.
-   - If your partner has multiple public keys, it will ask you to choose which one to use.
-   - Prompt you to enter a secret message.
-   - Encrypt the message and save the encrypted message to the `send` folder.
+   
+      Execute the script, which will:
+      - Prompt for your partner’s GitHub username.
+      - Automatically download your partner's public key from GitHub.
+      - If your partner has multiple public keys, it will ask you to choose which one to use.
+      - Prompt you to enter a secret message.
+      - Encrypt the message and save the encrypted message to the `send` folder.
 
-   ```bash
-   ./encrypt_message.sh
-   ```
+      ```bash
+      ./encrypt_message.sh
+      ```
 
 4. **Verify that the script ran successfully**
    When the script finishes, you should see a new folder called `rsa_encryption_activity`. Inside that folder, you should see:
@@ -44,43 +44,45 @@
 
 5. **Commit these files to your Git repository:**
    Once the message is encrypted, commit the encrypted message to your repository:
-   ```bash
-   git add .
-   git commit -m "Added public key and encrypted message"
-   ```
+      ```bash
+      git add .
+      git commit -m "Added public key and encrypted message"
+      ```
 
 6. **Push the changes to your Git repository:**
    Push the commits so your partner can access your encrypted message:
-   ```bash
-   git push
-   ```
+
+      ```bash
+      git push
+      ```
 
 ### Part 2: Decrypt the Received Message
 
 7. **Download and run the decryption script:**
    Download the provided `decrypt_message.sh` script, which will decrypt the message sent to you by your partner.
 
-   - Use the `curl` command to download the script:
-     ```bash
-     curl -O https://ict.gctaa.net/sections/webdev/goals/resources/ssh_activity/decrypt_message.sh
-     ```
+      - Use the `curl` command to download the script:
+         ```bash
+         curl -O https://ict.gctaa.net/sections/webdev/goals/resources/ssh_activity/decrypt_message.sh
+         ```
 
-   - Make the script executable:
-     ```bash
-     chmod +x decrypt_message.sh
-     ```
+      - Make the script executable:
+      
+         ```bash
+         chmod +x decrypt_message.sh
+         ```
 
 8. **Download your partner's encrypted message:**
    Visit your partner's GitHub repository and download their file `send/encrypted_message.b64` into your `receive` folder. You can use `curl` or download it manually through your browser.
 
 9. **Run the decryption script:**
    Execute the decryption script, which will:
-   - Ask for the location of your private key (you should be able to accept the default: `~/.ssh/id_rsa`).
-   - Decrypt the received message and save the decrypted file to the `receive` folder.
-
-   ```bash
-   ./decrypt_message.sh
-   ```
+      - Ask for the location of your private key (you should be able to accept the default: `~/.ssh/id_rsa`).
+      - Decrypt the received message and save the decrypted file to the `receive` folder.
+      
+      ```bash
+      ./decrypt_message.sh
+      ```
 
 10. **Verify the decrypted message**
    After running the script, it will output the decrypted message to your screen. It will also save the decrypted file `receive/decrypted_message.txt`.
@@ -88,24 +90,24 @@
 11. **Commit the decrypted message to your Git repository:**
    Once you have successfully decrypted your partner’s message, commit all the remaining files to your repository:
 
-   ```bash
-   git add .
-   git commit -m "Added decrypted message and plaintext secret message"
-   ```
+      ```bash
+      git add .
+      git commit -m "Added decrypted message and plaintext secret message"
+      ```
 
 12. **Push the changes to your Git repository:**
    Push the updated repository:
-   ```bash
-   git push
-   ```
+      ```bash
+      git push
+      ```
 
 ### Part 3: Reflection
 
 13. **Write a README**
 Add a README.md file to your rsa_encryption_activity folder. In this file, use Markdown to answer these prompts:
-- What is the difference between symmetric and asymmetric encryption?
-- Explain the steps of the encryption and decryption process
-- Why is it important that you never share your secret key?
+   - What is the difference between symmetric and asymmetric encryption?
+   - Explain the steps of the encryption and decryption process
+   - Why is it important that you never share your secret key?
 
 This journal entry, and the files in your rsa_encryption_activity repo, are due by the beginning of next class. I'll count this as a quiz grade.
 
@@ -113,10 +115,10 @@ This journal entry, and the files in your rsa_encryption_activity repo, are due 
 
 At the end of this activity, your `rsa_encryption_activity` folder in your GitHub repository should contain:
 
-- `partners_public_key.pub`: Your partner's original public key (downloaded from GitHub).
-- `README.md`: with answers to the journal prompts.
-- `send/encrypted_message.b64`: The encrypted message you sent to your partner.
-- `receive/encrypted_message.b64` (from partner): The encrypted message you received from your partner.
-- `receive/decrypted_message.txt`: The decrypted message you received from your partner.
+   - `partners_public_key.pub`: Your partner's original public key (downloaded from GitHub).
+   - `README.md`: with answers to the journal prompts.
+   - `send/encrypted_message.b64`: The encrypted message you sent to your partner.
+   - `receive/encrypted_message.b64` (from partner): The encrypted message you received from your partner.
+   - `receive/decrypted_message.txt`: The decrypted message you received from your partner.
 
 **Important:** **NEVER commit your private key (`~/.ssh/id_rsa`) to your repository!**
