@@ -63,8 +63,10 @@
    Download the provided `decrypt_message.sh` script, which will decrypt the message sent to you by your partner.
 
       - Use the `curl` command to download my decryption script, and then make it executable:
+
          ```bash
          curl -s -O https://ict.gctaa.net/sections/webdev/goals/resources/ssh_activity/decrypt_message.sh
+         
          chmod +x decrypt_message.sh
          ```
 
