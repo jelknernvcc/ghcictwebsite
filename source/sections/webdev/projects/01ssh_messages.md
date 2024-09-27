@@ -2,7 +2,7 @@
 
 ### Part 1: Encrypt a message
 
-1. **Create a new folder in your Git repository:**
+1. **Make sure you're working inside your git repository:**
    Start by making sure that you're in your GitHub repository where you'll store all the files for this activity.
 
    (You might need to change this line to match your GitHub repository folder name)
