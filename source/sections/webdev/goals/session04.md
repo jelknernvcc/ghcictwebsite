@@ -1,3 +1,14 @@
+## Lesson Objectives
+By the end of this lesson, you should:
+- Have github setup and installed on your computer
+- Be able to change files on your computer and have those changes appear on your Github account
+
+### Today's Vocabulary:
+- Git Repository ("repo")
+- Local / Remote
+- Add / Commit / Push
+- Staging
+
 ## Quiz
 
 We'll start class with a quiz that is very similar in format to the cd/ls quiz that we did last time. As before, I'll give specific instructions in class, and you'll save your terminal session to a text file for credit.

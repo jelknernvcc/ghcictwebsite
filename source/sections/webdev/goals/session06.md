@@ -14,6 +14,9 @@ By the end of this lesson, you should:
 - Understand the importance of Markdown formatting
 - Be able to write journal entries using Markdown for your website
 
+### Today's Vocabulary:
+- Markdown
+
 ## What We'll Do In Class
 
 ### Quiz

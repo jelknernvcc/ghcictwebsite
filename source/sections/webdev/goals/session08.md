@@ -7,6 +7,12 @@ By the end of this lesson, you should:
 - Be able to convert binary to decimal and vice versa
 - Create and interpret binary representations of letters
 
+### Today's Vocabulary:
+- TCP / UDP
+- Positional Number System
+- Binary ("base 2") / Decimal ("base 10")
+- ASCII
+
 ## What We'll Do In Class
 
 ### Quiz

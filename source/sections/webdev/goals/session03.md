@@ -1,3 +1,16 @@
+## Lesson Objectives
+By the end of this lesson, you should:
+- Understand the importance of the Terminal on your computer
+- Understand that files on your computer are organized in a way that can be represented as a tree
+- Be able to create, read, copy, move, and delete files using the Terminal
+
+### Today's Vocabulary:
+- Directory
+- Git Repository ("repo")
+- Local / Remote
+- Add / Commit / Push
+- Staging
+
 ## Reading Quiz
 
 As always, we'll start this class with a short, simple quiz. This one will be a bit different - instead of answering questions, I'll ask you to demonstrate your skills. Start by downloading [this file](./resources/cdls_quiz.zip) and extracting it on your desktop. I'll give the rest of the instructions in class.

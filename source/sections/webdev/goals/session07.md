@@ -24,6 +24,14 @@ By the end of this lesson, you should:
 - Understand some of the problems that can occur in packet-switched networks
 - Know some of the information that is contained in the TCP/IP header
 
+### Today's Vocabulary
+- TCP/IP Model
+- Protocol
+- Packet
+- Header
+- Payload
+- Router
+- Routing Table
 
 ## What We'll Do In Class
 

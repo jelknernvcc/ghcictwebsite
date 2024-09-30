@@ -23,6 +23,10 @@ By the end of this lesson, you should:
 - Be able to use vim to edit text files
 - Understand steps you can take to get more comfortable with advanced vim concepts
 
+### Today's Vocabulary:
+- Add / Commit / Push
+- Vim
+
 ## What We'll Do In Class
 
 ### No Quiz

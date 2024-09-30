@@ -4,6 +4,12 @@ By the end of this lesson, you should:
 - 🤫 Be able to encode and decode cryptographically secure secret messages using asymmetric encryption
 - 📖 Have a well-organized Github repo, and a journal linked from your homepage
 
+### Today's Vocabulary:
+- Encryption
+- Symmetric / Asymmetric
+- Public / Private Key
+- Encode / Decode
+
 ## What We'll Do In Class
 I'm using today as a bit of a reset. We'll catch up on some loose ends from the past few classes.
 

@@ -1,3 +1,13 @@
+## Lesson Objectives
+By the end of this lesson, you should:
+- Understand the importance of the Terminal on your computer
+- Be able to open the Terminal
+- Understand how to run programs in the Terminal
+- Be able to use the `cd` and `ls` commands to interact with directories in the terminal.
+
+### Today's Vocabulary:
+- Terminal (aka command line, command prompt, console, or shell)
+
 ## Today's Slides
 [Click Here](https://whscs.net/courses/Other/internet_day1.html)
 
