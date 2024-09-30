@@ -5,6 +5,9 @@
 <title>GCTAA CSC 221 Week 6</title>
 <style>
 @import url(../../css/goals.css);
+pre {
+    margin-left: 4vw;
+}
 </style>
 <script src="../../js/init.js"></script>
 <script>
@@ -43,12 +46,38 @@ Functions</a>, and begin planning for the
 <h3>Classwork</h3>
 <div>
 <p>
+After class on Monday, our co-teacher Chris mentioned to me that the solution
+I shared for <code>lots_of_letters</code>:
+</p>
+<pre>
+def lots_of_letters(word):
+    s = ''
+    for i in range(1, len(word) + 1):
+        s += i * word[i-1]
+    return s
+</pre>
+<p>
+Could be improved:
+</p>
+<pre>
+def lots_of_letters(word):
+    s = ''
+    for index, letter in enumerate(word):
+        s += (index + 1) * letter 
+    return s
+</pre>
+<p>
+Study this example. It is indeed a big improvement over the first solution,
+since it is clearly more
+<q><a href="https://www.lenovo.com/us/en/glossary/pythonic/">pythonic</a></q>.
+Python can be a beautiful language, especially in the hands of software
+developers who know how to use it.
+</p><p>
 We will start class today with presentations by
 Gizelle and Erij of the <code>replace</code> function from
 excercise set 2 exercise 7, and by Chris and Antoan of
 the <code>find_mode</code> function from exercise set 0 exercise 9.
-</p>
-<p>
+</p><p>
 Today I want to present a few short topics inspired by a conversation I had
 with Lucy in class last Thursday:
 </p>
