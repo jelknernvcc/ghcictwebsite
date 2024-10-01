@@ -26,7 +26,12 @@ These are all very deep topics, and your goal is to give us a general overview. 
 
 Your presentation should show us that you're knowledgeable about the topic, but it's very okay if you show examples, code, or visuals that are not your own. Just be sure to cite your sources and give credit to original authors when necessary!
 
-
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
 | Project Number | Project Title                    | Key Concepts                                                                                           |
 | -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | 1              | Traditional Qualitative Research | - This one does not involve Python. Explain how traditional qualitative coding works. Create an example in Excel |
