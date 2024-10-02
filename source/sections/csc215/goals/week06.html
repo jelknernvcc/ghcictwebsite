@@ -5,6 +5,12 @@
 <title>GCTAA CSC 215 Week 6</title>
 <style>
 @import url(../../css/goals.css);
+p.illustration {
+  margin-left: 4vw;
+}
+p.illustration>img {
+  width: 60%; 
+}
 </style>
 <script src="../../js/init.js"></script>
 <script>
@@ -39,23 +45,58 @@ CP/M Operating System & Assembly Language Programming</a>, diving into the
 details of the CP/M operating system.
 </p>
 
-<!--
 <section>
 <h2>Wednesday, October 2nd</h2>
 
 <h3>Classwork</h3>
 <div>
 <p>
+Today in class we will discuss <i>Chapter 3: The CP/M-Based Computer</i>. 
+This book thankfully only assumes a "minimum size microcomputer running some
+standard version of of the CP/M operating system."  We are running CP/M version
+2.2, the most recent of these "standard versions."
+</p><p>
+The author tells us that we will use the term <b>CRT</b> (which stands for
+<a href="https://en.wikipedia.org/wiki/Cathode-ray_tube">cathod-ray tube</a>)
+as the term we will use of the physical device we use to communicate with
+our computer.
+</p><p>
+In our specific case, our <b>CRT</b> will consist of our computer keyboard,
+together with a
+<a href="https://en.wikipedia.org/wiki/Terminal_emulator">terminal
+application</a> in which we run
+<a href="https://en.wikipedia.org/wiki/SIMH">SIMH</a> configured to
+<a href="https://en.wikipedia.org/wiki/Emulator">emulate</a> the
+<a href="https://en.wikipedia.org/wiki/Altair_8800">Altair 8800</a> running
+<a href="https://en.wikipedia.org/wiki/CP/M">CP/M</a>.
+</p><p>
+We will need to make reference to Figure 3-1 as we proceed with our study:
+</p><p class="illustration">
+<img src="resources/figure_3-1.png" alt="Figure 3-1">
+</p><p>
+Make note of the comment in the figure intro text that says <q>[w]hile the
+schematic representations of the device selectors indicate real switches,
+<i>the switching is actually accomplished by selectively accessing different
+device driver subroutines with the operating system in response to bit patterns
+stored in the IOBYT.</i></q>
+</p><p>
+Also take a moment to reflect on our entire setup here in light of the
+statement I made in class last time that
+<i style="color: red;">hardware and software are logically equivalent</i>.
 </p>
 </div>
 
-<h3>Homework / Evaluation</h3>
+<h3>Homework</h3>
 <div>
 <p>
+Let's choose pairs to present summaries of the next two chapters:
+<i>Chapter 4: What the Operating System Provides</i> and
+<i>Chapter 5: Organization of CP/M</i>. Everone should read both these
+chapters for homework with an eye towards understanding.  We won't be able to
+effectively use our systems if we don't understand how they work.
 </p>
 </div>
 </section>
--->
 
 <section>
 <h2>Monday, September 30th</h2>
