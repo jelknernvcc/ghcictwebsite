@@ -23,6 +23,9 @@ We'll start by reviewing the four layers of the TCP/IP model (see page 14 of [Ou
 
 We'll spend some time going in depth on how the Request/Response cycle works using [Chrome's network tools](https://developer.chrome.com/docs/devtools/network)
 
+## Activity: Journal Setup
+We'll spend some time organizing our journals. [See the detailed instructions here](../projects/project.html?id=02_journal_setup)
+
 ## Activity: Test Review
 After that, I'll give you some time to review for the upcoming unit test on your own. Here is some advice:
 - Format: The test will be timed for 45 minutes. It will be mostly multiple choice questions, with two free response questions.

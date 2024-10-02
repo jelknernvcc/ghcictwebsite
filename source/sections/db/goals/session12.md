@@ -32,15 +32,15 @@ table, th, td {
   border-collapse: collapse;
 }
 </style>
-| Project Number | Project Title                    | Key Concepts                                                                                           |
-| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| 1              | Traditional Qualitative Research | - This one does not involve Python. Explain how traditional qualitative coding works. Create an example in Excel |
-| 2              | Natural language cleaning        | - tokenization, stopword removal, lemmatization                                              |
-| 3              | Sentiment Analysis               | - What is sentiment analysis? Example with SpacyTextBlob                              |
-| 4              | Word Clouds and N-Gram Analysis  | - Word clouds for text visualization, Introduction to unigrams, bigrams, and trigrams            |
-| 5              | Text Embedding and Vectorization | - Come up with some nice examples using word2vec. How does vector embeddings work for phrases?         |
-| 6              | Clustering with K-Means          | - What is clustering?, example with kMeans and scikit-learn                  |
-| 7              | Dimensionality Reduction         | - Why dimensionality reduction is useful, example with PCA                                     |
+| Project Number | Who     | Project Title                    | Key Concepts                                                                                                     |
+| -------------- | ------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| 1              | Adam    | Traditional Qualitative Research | - This one does not involve Python. Explain how traditional qualitative coding works. Create an example in Excel |
+| 2              | Jack    | Natural language cleaning        | - tokenization, stopword removal, lemmatization                                                                  |
+| 3              | Miguel  | Sentiment Analysis               | - What is sentiment analysis? Example with SpacyTextBlob                                                         |
+| 4              | Rachel  | Word Clouds and N-Gram Analysis  | - Word clouds for text visualization, Introduction to unigrams, bigrams, and trigrams                            |
+| 5              | Blu     | Text Embedding and Vectorization | - Come up with some nice examples using word2vec. How does vector embeddings work for phrases?                   |
+| 6              | Lehiem  | Clustering with K-Means          | - What is clustering?, example with kMeans and scikit-learn                                                      |
+| 7              | Alex    | Dimensionality Reduction         | - Why dimensionality reduction is useful, example with PCA                                                       |
 
 
 ## Homework
