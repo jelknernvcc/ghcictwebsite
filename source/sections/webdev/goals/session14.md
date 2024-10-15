@@ -19,16 +19,22 @@ By the end of this lesson, you should:
     - Radicals: `\sqrt{x}`
     - Brackets: `\left( \frac{a}{b} \right)`
 
-### Homework
+## Homework
 
-### Part 1 - Markdown, LaTeX, and Images
+### Prepare for Guest Speaker
+We will have a guest speaker next class - Sara Daniel, the 'webmaster' who runs all of APS's websites (eg [Arlington Tech](https://arlingtontech.apsva.us/)). Ms. Daniel will tell us about what it means to be a webmaster, the most important features for any website to have, and why APS uses a tool called Wordpress to manage the content on our websites. To prepare for this presentation:
+- [Explore the Wordpress website to learn more about it](https://wordpress.org/)
+- Spend some time clicking around APS's websites (Arlington Tech, [the central APS website](https://www.apsva.us/), or any other APS school you feel connected to)
+- Write down three questions that you have for Ms. Daniel, and bring them with you to class. The questions can be about career, technical questions about websites, or anything else you think is relevant. I'll count this as a participation grade.
+
+### Add LaTeX to your journal
 
 - If you haven't yet, finish setting up your journal. See the instructions here: [See the detailed instructions here](../projects/project.html?id=02_journal_setup)
-- Add a new journal entry, where you'll summarize a lesson that you learned in a recent math or science class. In your journal entry:
+- Add LaTeX to the journal entry that you wrote last time. Here are the complete requirements:
     - Include at least one image
     - Include at least two LaTeX equations
     - Include at least one table with a heading. Center the text in this table
-- Grading: This assignment is due by the beginning of next class (for B day, that's October 15 at 11:32AM). To get credit for this assignment, I must be able to find your journal entry by following links from your website homepage. If you write this journal somewhere else or don't link it from your homepage, you will not get credit.
+- Grading: This assignment is due by the beginning of next class (for B day, that's October 17 at 11:32AM). To get credit for this assignment, I must be able to find your journal entry by following links from your website homepage. If you write this journal somewhere else or don't link it from your homepage, you will not get credit.
     - You will get an A if you write thoughtful, complete lesson notes and meet all of the above requirements
     - You will get a B if you write thoughtful, complete lesson notes and miss any one of the above requirements, or if you attempt all and have minimal syntax errors that prevent the output from displaying correctly
     - You will get a C if you complete all of the above requirements but do not write thoughtful, complete lesson notes
