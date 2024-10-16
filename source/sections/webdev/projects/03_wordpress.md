@@ -42,6 +42,12 @@ You will submit this project by adding an entry to your class journal. The journ
 This project will count as a summative assessment and will be equal to the unit 1 test.
 The grade will be assigned on a 12-point scale, using the rubric below.
 
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
 | Assessment Criteria        | Meets Expectations - 3 points                           | Partially Meets Expectations - 2 points                  | Does Not Meet Expectations - 1 point                      | Not Present - 0 points                                   |
 |----------------------------|---------------------------------------------------------|----------------------------------------------------------|-----------------------------------------------------------|----------------------------------------------------------|
 | Website theme and organization | Website applies a reasonable theme, and has consistent use of colors, fonts, and photos. | Website applies a reasonable theme, but some of the colors, fonts, or photos are inconsistent with the theme. | Theme is not reasonable for the business (eg a restaurant website has a header that says “Welcome to my blog!”), or colors, fonts, or photos are distractingly inconsistent. | No theme or styling is applied.                           |
