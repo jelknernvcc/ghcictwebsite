@@ -28,8 +28,8 @@ You will also write a two-paragraph reflection for this assignment. The first pa
 
 ## Submission Instructions
 This project is due by the beginning of class on:
-- A day: Monday, October 28
-- B day: Wednesday, October 23
+- A day: Wednesday, October 30
+- B day: Friday, October 25
 
 We will be presenting our websites in class that day, so late submissions cannot be accepted.
 
