@@ -34,7 +34,10 @@ We will have a guest speaker next class - Sara Daniel, the 'webmaster' who runs 
     - Include at least one image
     - Include at least two LaTeX equations
     - Include at least one table with a heading. Center the text in this table
-- Grading: This assignment is due by the beginning of next class (for B day, that's October 17 at 11:32AM). To get credit for this assignment, I must be able to find your journal entry by following links from your website homepage. If you write this journal somewhere else or don't link it from your homepage, you will not get credit.
+- Grading: This assignment is due by the beginning of next class, that's:
+    - B day: October 17 at 11:32AM
+    - A day: October 24 at 8:00AM
+    To get credit for this assignment, I must be able to find your journal entry by following links from your website homepage. If you write this journal somewhere else or don't link it from your homepage, you will not get credit.
     - You will get an A if you write thoughtful, complete lesson notes and meet all of the above requirements
     - You will get a B if you write thoughtful, complete lesson notes and miss any one of the above requirements, or if you attempt all and have minimal syntax errors that prevent the output from displaying correctly
     - You will get a C if you complete all of the above requirements but do not write thoughtful, complete lesson notes
