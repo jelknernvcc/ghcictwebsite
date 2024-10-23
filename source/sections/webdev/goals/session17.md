@@ -1,5 +1,9 @@
 ## Lesson Objectives
 By the end of this lesson, you should:
+- **Know**: 👩‍💻 That HTML is the language of web pages. 
+- **Know**: 🧠 The basic structure of an HTML document. 
+- **Understand**: 💡 The purpose of each part of the minimal HTML page. 
+- **Do**: 🖊️ Write a simple HTML page from memory. 
 
 
 ## What We'll Do In Class
