@@ -17,7 +17,7 @@
   {"session": "16", "unit": 2, "topic": "Guest: Arlington 2050"},
   {"session": "17", "unit": 2, "topic": "2050 Project: Word Clouds"},
   {"session": "18", "unit": 2, "topic": "2050 Project: SpaCy"},
-  {"session": "19", "unit": "", "topic": ""},
+  {"session": "19", "unit": 2, "topic": "2050 Project: SpaCy"},
   {"session": "20", "unit": "", "topic": ""},
   {"session": "21", "unit": "", "topic": ""},
   {"session": "22", "unit": "", "topic": ""},
