@@ -27,7 +27,7 @@ By the beginning of next class, I'd like everyone to have:
 
 ## Homework
 
-### Finish Unit 1
+### Finish your index.html page
 Finish your index.html page. This is due before the beginning of next class, and I'll count it as a formative grade.
 
 ### Read the first few pages in Module 2

@@ -1,0 +1,30 @@
+## Lesson Objectives
+By the end of this lesson, you should:
+
+- **Understand**: 👩‍💻 The importance of semantic HTML
+- **Understand**: 🌲 That the Document Object Model represents the structure of an HTML page
+
+## What We'll Do In Class
+
+### Quiz
+As promised, we'll start the class with a quiz where you'll demonstrate that you've learned about the HTML text tags from the reading.
+
+### Semantic HTML
+We'll continue our discussion about the difference between HTML content and CSS formatting. We'll discuss [Semantic HTML](https://en.wikipedia.org/wiki/Semantic_HTML) and Web Agents - computer programs that automatically read and compile information from the internet.
+
+### Document Object Model
+We'll discuss the [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model) - an important concept that we use to udnerstand and organize HTML pages. 
+
+### Practice
+Add your favorite quote to your index.html page! Make sure to use `<q>`, `<blockquote>`, and/or `<cite>` tags appropriately!
+
+## Homework
+
+### Read the next few pages in Module 2
+On our [edube.org](edube.org) class, read the next few pages in Module 2:
+
+- Paragraphs and Text Formatting - Part 3
+- Paragraphs and Text Formatting - Part 4
+- Lists
+
+There are a lot of new tags here, so I'd encourage you to make some HTML files on your own to play around with them. We'll start next class with a reading quiz where I'll expect that you're comfortable with everything introduced in these pages.
