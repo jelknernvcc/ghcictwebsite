@@ -12,14 +12,19 @@ As promised, we'll start the class with a quiz where you'll demonstrate that you
 ### Shoutouts
 Some of your peers did awesome projects! Check out some of them here:
 
-- [Nehe's Consulting](https://webcom967.wordpress.com/)
-- [Adam's Pencils](https://duckpencil3.wordpress.com/)
-- [Darin's Mars Tourism](https://metomars1.wordpress.com/)
-- [Eleanor's Cat Cafe](https://kittykingdom1.wordpress.com/)
-- [Rafael's Barber Shop](https://basketball3043.wordpress.com/)
-- [Paulas Bakery](https://sweetlyunsweetened.wordpress.com/#)
-- [Anania's Pizza Shop](https://cheezypizzacafe.wordpress.com/)
-- [Catey's Movie Theater](https://stardustcinema0.wordpress.com/)
+- 4B:
+    - [Nehe's Consulting](https://webcom967.wordpress.com/)
+    - [Adam's Pencils](https://duckpencil3.wordpress.com/)
+    - [Darin's Mars Tourism](https://metomars1.wordpress.com/)
+    - [Eleanor's Cat Cafe](https://kittykingdom1.wordpress.com/)
+    - [Rafael's Barber Shop](https://basketball3043.wordpress.com/)
+    - [Paulas Bakery](https://sweetlyunsweetened.wordpress.com/#)
+    - [Anania's Pizza Shop](https://cheezypizzacafe.wordpress.com/)
+    - [Catey's Movie Theater](https://stardustcinema0.wordpress.com/)
+- 1A:
+    - [Aya's Cat Cafe](https://ayaswebsite9.wordpress.com/)
+    - [Charlie's Energy Drink ... for kids?](https://voltenergy8.wordpress.com/volt-nation/)
+    
 
 ### Semantic HTML
 We'll continue our discussion about the difference between HTML content and CSS formatting. We'll discuss [Semantic HTML](https://en.wikipedia.org/wiki/Semantic_HTML) and Web Agents - computer programs that automatically read and compile information from the internet.
