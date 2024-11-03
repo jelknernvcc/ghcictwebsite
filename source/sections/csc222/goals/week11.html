@@ -33,9 +33,15 @@ window.onload = init;
 <h2>Overview</h2>
 <p>
 Welcome to 2nd Quarter! With the CPE now behind us, it's time for the promised
-<i>complete flip</i> in how we conduct class. Tests and quizzes are out,
-programs and presentations are in!  We are moving from learning to <i>read</i>
-C++ programs to learning to <i>write</i> them.
+<i>flip</i> in how we conduct class. Tests and quizzes are out, programs and
+presentations are in! We are moving from learning to <i>read</i> C++ programs
+to learning to <i>write</i> them.
+</p><p>
+Of the 31 students in our two sections of this class, 18 have now earned CPE
+certification, while 13 have not. Experience has taught me that it is <i>very
+difficult</i>, to write in a language you can't effectively read, and I will
+explain in class this week how I hope to mitigate this challenge to provide
+extra support for students still struggling to learn to effectively read C++.
 </p>
 
 <!--
@@ -62,12 +68,63 @@ C++ programs to learning to <i>write</i> them.
 <h3>Classwork</h3>
 <div>
 <p>
+After briefly discussing the results of our CPE testing and how I plan to
+use the results to plan your learning journey during 2nd quarter, we will
+dive right in to <i>writing</i> C++ programs.
+</p><p>
+Writing C++ programs effectively will require you to have the skills that
+enable you to:
 </p>
+<ol>
+<li>manage and edit files from the unix command line.</i>
+<li>use <a href="https://en.wikipedia.org/wiki/Git">git</a> and
+<a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> to submit and
+share your work.</li>
+</ol>
+<p>
+Today in class I will present a program I worked on over the break to choose
+random pairs of students for programming assignments. I'll use this
+opportunity to talk about
+<a href="https://en.wikipedia.org/wiki/Iterative_and_incremental_development">
+iterative and incremental development</a> and
+<a href="https://en.wikipedia.org/wiki/Unit_testing">unit testing</a>.
+</p><p>
+For my first iteration I knew the program would have to support choosing
+between the two sections we have of this course: periods 1B and 4B. I decided
+I wanted to store class lists for each section in a text file, and to be able
+to read in two groups of students from each section depending on their CPE
+status. I decided I wanted to choose the section on the command line, and that
+the <code>main</code> function should test for correct input and that the
+needed file exists befor calling other functions to do the processing of
+student pairs.  Here is my first iteration of <code>main</code>, which tests
+for correct cli input:
+</p><pre>
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;cstring&gt;
+using namespace std;
+
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        cerr &lt;&lt; "Too few arguments: enter 1B or 4B for 2nd argument." &lt;&lt; endl;
+        return 1;
+    }
+    if (strcmp(argv[1], "1B") &amp;&amp; strcmp(argv[1], "4B")) {
+        cerr &lt;&lt; "Second argument must be either 1B or 4B,";
+        cerr &lt;&lt; " not " &lt;&lt; argv[1] &lt;&lt; '.' &lt;&lt; endl;
+        return 2;
+    }
+    cout &lt;&lt; "You made it!" &lt;&lt; endl;
+    return 0;
+}
+</pre>
 </div>
 
 <h3>Homework</h3>
 <div>
 <p>
+Work with your partner to complete your assigned programming exercise and
+come to class Friday prepared to present it to the class.
 </p>
 </div>
 </section>
