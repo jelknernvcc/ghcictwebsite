@@ -5,6 +5,9 @@
 <title>GCTAA CSC 222 Week 11</title>
 <style>
 @import url(../../css/goals.css);
+pre {
+    margin-left: 4vw;
+}
 </style>
 <script src="../../js/init.js"></script>
 <script>
@@ -117,7 +120,36 @@ int main(int argc, char* argv[]) {
     cout &lt;&lt; "You made it!" &lt;&lt; endl;
     return 0;
 }
-</pre>
+</pre><p>
+Now that the command line input is processed, for my next iteration I'll open
+the proper classlist file. Remove the last two lines of the code above and
+insert:
+</p><pre>
+    char filename[16];
+    strcpy(filename, "classlist");
+    strcat(filename, argv[1]);
+    strcat(filename, ".dat");
+    ifstream infile(filename);
+    if (!infile.is_open()) {
+        cerr &lt;&lt; "Error openning file " &lt;&lt;  filename &lt;&lt; endl;
+        return 3;
+    }
+    return 0;
+</pre><p>
+Now it's time to process the input file data into a list of students from
+which random pairs can be chosen. I want to use a
+<a href="https://en.wikipedia.org/wiki/Test-driven_development">TDD</a>
+approach for this, so I'll start with three files that compile successfully
+with a failing test:
+</p>
+<ul>
+<li><a href="https://codeberg.org/ACC/csc222/raw/commit/3123b2e10dad74b14c2fc20b9b4b0abc8f357fde/choose_pairs/test_pairs_utils.cpp">
+test_pairs_utils.cpp</a></li>
+<li><a href="https://codeberg.org/ACC/csc222/raw/commit/3123b2e10dad74b14c2fc20b9b4b0abc8f357fde/choose_pairs/pairs_utils.h">
+pairs_utils.h</a></li>
+<li><a href="https://codeberg.org/ACC/csc222/raw/commit/3123b2e10dad74b14c2fc20b9b4b0abc8f357fde/choose_pairs/pairs_utils.cpp">
+pairs_utils.cpp</a></li>
+</ul>
 </div>
 
 <h3>Homework</h3>
