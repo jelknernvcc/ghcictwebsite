@@ -30,7 +30,7 @@ Some of your peers did awesome projects! Check out some of them here:
 We'll continue our discussion about the difference between HTML content and CSS formatting. We'll discuss [Semantic HTML](https://en.wikipedia.org/wiki/Semantic_HTML) and Web Agents - computer programs that automatically read and compile information from the internet.
 
 ### Document Object Model
-We'll discuss the [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model) - an important concept that we use to udnerstand and organize HTML pages. 
+We'll discuss the [Document Object Model](https://en.wikipedia.org/wiki/Document_Object_Model) - an important concept that we use to udnerstand and organize HTML pages. We'll play with [This DOM Visualizer](https://0xedward.github.io/dom-visualizer/).
 
 ### Practice
 Add your favorite quote to your index.html page! Make sure to use `<q>`, `<blockquote>`, and/or `<cite>` tags appropriately!
