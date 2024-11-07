@@ -33,3 +33,5 @@ I'll also use some class time today to introduce our new SQL unit. In this unit,
 - introduce PostgreSQL, the SQL variant that we'll use for most of this class
 - Learn to write SQL queries
 - Learn how to combine SQL with all of the other powerful Python tools we've learned so far this year
+
+To get started with SQL, we'll play with [SQLZoo](https://sqlzoo.net/wiki/SQL_Tutorial), and their [SQL Card Game](https://sqlzoo.net/40289347/)
