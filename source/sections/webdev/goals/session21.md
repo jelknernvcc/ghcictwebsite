@@ -30,7 +30,7 @@ Note: your goal is to produce "Table 2" below, but I recommend starting with "Ta
 ## Homework
 
 ### Read the next few pages in Module 2
-On our [edube.org](edube.org) class, tables are the last topic in Module 2. Review that page, and then start reading Module 3. So read through these three pages:
+On our [edube.org](https://edube.org/) class, tables are the last topic in Module 2. Review that page, and then start reading Module 3. So read through these three pages:
 
 - Tables
 - Images

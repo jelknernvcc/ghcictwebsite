@@ -23,3 +23,10 @@ I'll expect that your page has:
 - A few `<kbd>` / `<samp>` tags, used appropriately
 
 This will be **Due** at the beginning of next class, and will count as a quiz grade.
+
+### Read the next few pages in Module 2
+On our [edube.org](https://edube.org/) text, read the next pages in Module 2:
+
+- Tables
+
+There are a lot of new tags here, so I'd encourage you to make some HTML files on your own to play around with them. We will not have a reading quiz next class, instead we'll practice together.

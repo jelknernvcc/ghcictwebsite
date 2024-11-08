@@ -31,7 +31,7 @@ By the beginning of next class, I'd like everyone to have:
 Finish your index.html page. This is due before the beginning of next class, and I'll count it as a formative grade.
 
 ### Read the first few pages in Module 2
-On our [edube.org](edube.org) class, read the first three pages in Module 2:
+On our [edube.org](https://edube.org/) class, read the first three pages in Module 2:
 - Headings
 - Paragraphs and Text Formatting - Part 1
 - Paragraphs and Text Formatting - Part 2

@@ -38,7 +38,7 @@ Add your favorite quote to your index.html page! Make sure to use `<q>`, `<block
 ## Homework
 
 ### Read the next few pages in Module 2
-On our [edube.org](edube.org) class, read the next few pages in Module 2:
+On our [edube.org](https://edube.org/) class, read the next few pages in Module 2:
 
 - Paragraphs and Text Formatting - Part 3
 - Paragraphs and Text Formatting - Part 4
