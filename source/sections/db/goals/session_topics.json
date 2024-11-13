@@ -22,7 +22,7 @@
   {"session": "21", "unit": 2, "topic": "2050 Project: Spacy (4)"},
   {"session": "22", "unit": 2, "topic": "2050 Project Wrap-up/DB Intro"},
   {"session": "23", "unit": 3, "topic": "SQL: Single Table SELECT"},
-  {"session": "24", "unit": "", "topic": ""},
+  {"session": "24", "unit": 3, "topic": "SQL: Subqueries and Aggregation"},
   {"session": "25", "unit": "", "topic": ""},
   {"session": "26", "unit": "", "topic": ""},
   {"session": "27", "unit": "", "topic": ""},
