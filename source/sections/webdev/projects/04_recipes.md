@@ -30,8 +30,17 @@ Here's what I want the recipe book to have:
 
 # Submission Instructions
 
-Commit to your repo and add a link to your project from your homepage.
+Commit to your repo and add a link to your project from your homepage. Be sure to complete this before the deadline listed on the [Project Page](index.html)
 
 # Grading
 
-Rubric coming soon!
+## Grading Rubric
+
+This project is graded on a 12-point scale. In the gradebook, it will be weighted at 20 points.
+
+| Assessment Criteria               | Meets Expectations - 4 points                                                                                                                                               | Partially Meets Expectations - 3 points                                                                                                  | Does Not Meet Expectations - 2 points                                                                                                         | Not Present - 0 points                             |
+|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| **Homepage and Navigation**       | Homepage introduces the recipe book and includes working links to each recipe.                                                                                              | Homepage and links are present but may lack engagement or clarity.                                                                      | Homepage or links are missing, or links don’t work.                                                                                           | No homepage or links provided.                    |
+| **Recipe Format and Content**      | Each recipe page follows the format: photo, intro, family quote, tips, ingredients, instructions, prep time, and servings.                                                 | Recipe pages follow most of the format but are missing 1-2 elements.                                                                    | Recipe pages are missing multiple required elements or lack structure.                                                                        | Recipes don’t follow the format.                  |
+| **Use of Semantic HTML**           | Pages use appropriate Semantic HTML tags (e.g. `<image>`,`<a>`,`<ul>`, `<table>`) and are easy to read.                                                                 | Pages mostly use Semantic HTML, but some tags or styling may be incorrect.                                                              | Inconsistent use of Semantic HTML or too much inline styling, making content hard to read.                                                    | Semantic HTML not used, or readability is poor.   |
+
