@@ -16,7 +16,7 @@ Here's what I want the recipe book to have:
 
 - A "homepage" that introduces your recipe book and has links to each of the recipes.
 - At least two recipes, each on their own page. Each recipe should follow this format:
-    - Have a nice photo of the recipe at the top (no worries if you don't have your own photo of the recipe. You're welcome to re-use an image from the internet, as long as you respect the license provided by the image's author and cite the author. You might want to use [https://search.creativecommons.org/] to find reasonable images)
+    - Have a nice photo of the recipe at the top (no worries if you don't have your own photo of the recipe. You're welcome to re-use an image from the internet, as long as you respect the license provided by the image's author and cite the author. You might want to use [https://search.creativecommons.org/](https://search.creativecommons.org/) to find reasonable images)
     - Have an introduction at the top of the page that explains why you've selected this recipe, what significance the recipe has in your family
     - Somewhere in this introduction, include a quote from a family member
     - A sections with tips/tricks/substitutions that might make the recipe turn out well. Format these with an unordered list
