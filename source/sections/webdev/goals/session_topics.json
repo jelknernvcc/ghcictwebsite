@@ -22,7 +22,7 @@
   {"session": "21", "unit": 3, "topic": "Tables"},
   {"session": "22", "unit": 3, "topic": "Images"},
   {"session": "23", "unit": 3, "topic": "Links, Introduce Recipe Project"},
-  {"session": "24", "unit": 3, "topic": ""},
+  {"session": "24", "unit": 4, "topic": ""},
   {"session": "25", "unit": 4, "topic": ""},
   {"session": "26", "unit": 4, "topic": "Introduction to External CSS and Linking Stylesheets"},
   {"session": "27", "unit": 4, "topic": "HTML5 Semantic Elements"},
@@ -48,5 +48,5 @@
   {"session": "PSAT Testing", "unit": "other_school", "topic": ""},
   {"session": "TBD", "unit": "other_school", "topic": ""},
   {"session": "Unit3Test", "unit": 4, "topic": "Unit 3 Test"},
-  {"session": "TestPrep", "unit": "other_school", "topic": "Tesst Prep - See details in session 11"}
+  {"session": "TestPrep", "unit": "other_school", "topic": "Test Prep - See details in previous sessions"}
   ]
