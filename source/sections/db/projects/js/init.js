@@ -47,6 +47,7 @@ function md_to_html(file){
   })
   .then(mdContent => {
   showdown.setOption('tables','true');
+  showdown.setOption('openLinksInNewWindow','true');
   var conv = new showdown.Converter();
   var md_html = conv.makeHtml(mdContent);
   document.getElementById('md_to_html').innerHTML = md_html;

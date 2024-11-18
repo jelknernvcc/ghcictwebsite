@@ -107,6 +107,15 @@ code {
   border-radius: 5px;
 }
 
+table {
+  width: 100%;
+}
+
+table, tr, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
 /* Mobile style */
 @media screen and (max-width: 1080px) and (orientation: portrait) {
   .mobile {
