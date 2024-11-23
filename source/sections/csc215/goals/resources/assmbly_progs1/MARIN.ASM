@@ -1,39 +1,41 @@
+; Marin McCormack 2024-11-21
 ; Comparing two one digit numbers
 ; ASCII Characters
-CR      EQU     0DH     ; Carriage Return
-LF      EQU     0AH     ; Line Feed
-CTRLZ   EQU     1AH     ; Operator Interrupt
+CR      EQU     0DH      ; Carriage Return
+LF      EQU     0AH      ; Line Feed
+CTRLZ   EQU     1AH      ; Operator Interrupt
 
 ; CP/M BDOS Functions
-RCONIN  EQU     1       ; Read Console (into A)
-WCONOUT EQU     2       ; Write (A) to Console
-RBUF    EQU     10      ; Read Buffered Input
+RCONIN  EQU     1        ; Read Console (into A)
+WCONOUT EQU     2        ; Write (A) to Console
+RBUF    EQU     10       ; Read Buffered Input
 
 ; CP/M Addresses
-RBOOT   EQU     0       ; Reboot CP/M System
-BDOS    EQU     5       ; System Call Entry
-TPA     EQU     100H    ; Transient Program Area
+RBOOT   EQU     0        ; Reboot CP/M System
+BDOS    EQU     5        ; System Call Entry
+TPA     EQU     100H     ; Transient Program Area
 
-        ORG     TPA     ; Assemble program for TPA
+        ORG     TPA      ; Assemble program for TPA
 
 ; Main Program Start
-START:  LXI     SP,STAK ; Set up user's stack
-START1: CALL    CCRLF   ; Start a new line
+START:  LXI     SP,STAK  ; Set up user's stack
+START1: CALL    CCRLF    ; Start a new line
         LXI     H,SIGNON ; With sign-on message
         CALL    COMSG
-START2: LXI     H,MSG1  ; MSG1 propts for first number
+START2: LXI     H,MSG1   ; MSG1 prompts for first number
         CALL    COMSG   
-        CALL    GETNUM  ; GET FIRST NUMBER
-        MOV     B,A     ; STORE IN B REGISTER
+        CALL    GETNUM   ; Get first number
+        MOV     B,A      ; Store in b register
+        CAll    CCRLF
 
-START3: LXI     H,MSG2  ; MSG2 PROPTS FOR SECOND NUMBER
+START3: LXI     H,MSG2   ; MSG2 prompts for second number
         CALL    COMSG   
-        CALL    GETNUM  ; GETS THE SECOND NUMBER
-        MOV     C,A     ; STORE IN REGISTER C
+        CALL    GETNUM   ; Gets the second number
+        MOV     C,A      ; Store in register C
+        CALL    CCRLF
+        CALL    COMPARE  ; Compare numbers
 
-        CALL    COMPARE ; COMPARE NUMBERS
-
-        JMP     START   ; RESTARTS PROGRAM
+        JMP     START    ; Restarts program
         
 
 SIGNON: DB      'Number Comparison program',CR,LF,0
@@ -45,25 +47,25 @@ MSG5    DB      'The numbers are equal.', CR, LF, 0
 
 
 ; Console Character Input Routine
-CI:     PUSH    B       ; Save registers
+CI:     PUSH    B        ; Save registers
         PUSH    D
         PUSH    H
-        MVI     C,RCONIN ; Read function
+        MVI     C,RCONIN  ; Read function
         CALL    BDOS
-        ANI     7FH      ; Mask to 7 bits
-        POP     H        ; Restore registers
+        ANI     7FH       ; Mask to 7 bits
+        POP     H         ; Restore registers
         POP     D
         POP     B
         RET
 
 ; Console Output Character Routine
-CO:     PUSH    B       ; Save registers
+CO:     PUSH    B         ; Save registers
         PUSH    D
         PUSH    H
         MVI     C,WCONOUT ; Select function
-        MOV     E,A     ; Character to E
-        CALL    BDOS    ; Output by CP/M
-        POP     H       ; Restore registers
+        MOV     E,A       ; Character to E
+        CALL    BDOS      ; Output by CP/M
+        POP     H         ; Restore registers
         POP     D
         POP     B
         RET
@@ -75,46 +77,46 @@ CCRLF:  MVI     A,CR
         JMP     CO
 
 ; Print Message Pointed to by HL to Console
-COMSG:  MOV     A,M     ; Get A character
-        ORA     A       ; Check if zero
-        RZ              ; Return on zero
-        CALL    CO      ; Else output the character
-        INX     H       ; Point to the next character
-        JMP     COMSG   ; Repeat
+COMSG:  MOV     A,M       ; Get A character
+        ORA     A         ; Check if zero
+        RZ                ; Return on zero
+        CALL    CO        ; Else output the character
+        INX     H         ; Point to the next character
+        JMP     COMSG     ; Repeat
 
 
 ; compare routine
 COMPARE:
-        MOV A,B     ; Load first number
-        CMP C       ; compare with second number
-        JC  LESS    ; JUMP IF B < C
-        JZ  EQUAL   ; JUMP IF B == C
+        MOV A,B           ; Load first number
+        CMP C             ; compare with second number
+        JC  LESS          ; Jump if B < C
+        JZ  EQUAL         ; Jump if B == C
 
 GREATER:
-        LXI H,MSG3  ; MESSAGE THAT FIRST NUBER IS GREATER 
+        LXI H,MSG3        ; Message that first nuber is greater 
         CALL    COMSG
         JMP DONE
 LESS:
-        LXI H,MSG4  ; MESSAGE THAT SECOND NUMBER IS GREATER
+        LXI H,MSG4        ; Message that second number is greater
         CALL COMSG
         JMP DONE
 EQUAL:
-        LXI H,MSG5  ;MESSAGE THAT NUMBERS ARE EQUAL
+        LXI H,MSG5        ; Message that numbers are equal
         CALL COMSG
 
 DONE:
-        CALL    CCRLF   ;PRINT NEW LINES
+        CALL    CCRLF     ; Print new lines
         RET
 
-; GETTING A SINGLE DIGIT NUMBER (ASCII TO NUMBER)
-GETNUM: CALL    CI  ;READ CHARACTER FROM CONSOLE
-        SUI     '0' ;CONVERTING FROM ASCII TO NUMBER BY SUBTRACTING 0 WHICH IS 48 IN DECIMAL
+; Getting a single digit number (ASCII to number)
+GETNUM: CALL    CI        ; Read character from console
+        SUI     '0'       ; Converting from ASCII to number by subtracting 0
+                          ' which is 48 in decimal
         RET
 
-
-    
 ; Stack Setup
-        DS      64      ; 40H locations for stack
-STAK:   DB      0       ; Top of stack
+        DS      64        ; 40H locations for stack
+STAK:   DB      0         ; Top of stack
 
         END
+

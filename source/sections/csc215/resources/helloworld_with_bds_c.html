@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hello World with BDS C</title>
+<style>
+@import url(../../css/resources.css);
+</style>
+<script src="../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+
+</head>
+<body>
+<header>
+<a href="../index.html">
+<img src="../../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+<div>
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CS/IT Resources</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<h2>Hello World with BDS C</h2>
+<p>
+Follow these steps to compile your first
+<a href="https://www.bdsoft.com/resources/bdsc.html">BDS C</a> program on
+<a href="https://schorn.ch/altair.html">Altair Z80 SIMH</a>.
+</p>
+<ol>
+<li>Download the <a href="OldSchoolC.tgz">OldSchoolC.tgz</a> and extract the
+archive.</li>
+
+<li>Change to the <code>I</code> drive and use the <code>pip</code> to copy
+the following files from drive <code>C</code> to drive <code>I</code>:
+<pre>
+I&gt;PIP I:=C:CC.COM
+I&gt;PIP I:=C:CC2.COM
+I&gt;PIP I:=C:CLINK.COM
+I&gt;PIP I:=C:C.CCC
+I&gt;PIP I:=C:DEFF.CRL
+I&gt;PIP I:=C:DEFF2.CRL
+I&gt;PIP I:=C:STDIO.H
+</pre>
+</li>
+
+<li>Using your favorite text editor (<code>ED</code> of course! ;-) create
+a file named <code>HELLO.C</code> in the <code>I</code> drive with the
+following contents:
+<pre>
+#include &lt;stdio.h&gt;
+
+main()
+{
+    printf("hello, world\n");
+}
+</pre>
+</li>
+
+<li>Compile and link your program with:
+<pre>
+I&gt;CC HELLO
+I&gt;CLINK HELLO
+</pre>
+</li>
+
+<li><p>Finally, run your program with:</p>
+<pre>
+I&gt;CLINK HELLO
+</pre>
+<p>and you should see:</p>
+<pre>
+hello, world!
+</pre>
+</li>
+</ol>
+<p>
+Congratulations! You've just written and compiled your first BDS C program.
+Wasn't that easy?
+</p>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
