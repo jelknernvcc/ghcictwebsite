@@ -21,7 +21,7 @@ TPA             EQU     100H            ; TRANSIENT PROGRAM AREA
 START           LXI     SP,STAK         ; SET UP USER'S STACK
 START1:         CALL    TWOCR           ; DOUBLE SPACE LINES
                 CALL    SPMSG           ; DISPLAY SIGN-ON MESSAGE
-                DB      'WELCOME TO TROSTIN',SQT,'S MADLIB V1 PROGRAM',CR,LF,0
+                DB      'WELCOME TO TROSTIN',SQT,'S MADLIB V1 PROGRAM (NOTE: ONCE FINISHED USE C^Z TO QUIT)',CR,LF,0
 START2:         CALL    TWOCR           ; DOUBLE SPACE LINES
                 CALL    PERNEWPROMPT    ; PROMPT FOR A NEW PERSON
                 CALL    COMSG           ; ECHO PROMPT BACK TO USER
@@ -148,7 +148,7 @@ NOUNEWPROMPT:   CALL    CCRLF           ; NEW LINE
 
 ADJNEWPROMPT:   CALL    CCRLF           ; NEW LINE
                 CALL    SPMSG           ; START NEW MESSAGE
-                DB      'GIVE A ADJETIVE: ',0
+                DB      'GIVE A ADJECTIVE: ',0
                 CALL    CIMSG           ; GET THE INPUT LINE
                 LXI     H,INBUF+2       ; POINT TO ITS TEXT
                 RET                     ; ALL DONE
@@ -168,7 +168,7 @@ PERIOD:         CALL     SPMSG           ; DISPLAY RESPONSE MESSAGE
 INBUF:          DS      83              ; LINE INPUT BUFFER
 
 ; SET UP STACK SPACE
-                DS      128             ;
+                DS      64              ;
 STAK:           DB      0               ; TOP OF STACK
 
                 END
