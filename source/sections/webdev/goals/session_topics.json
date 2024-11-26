@@ -48,5 +48,6 @@
   {"session": "PSAT Testing", "unit": "other_school", "topic": ""},
   {"session": "TBD", "unit": "other_school", "topic": ""},
   {"session": "Unit3Test", "unit": 4, "topic": "Unit 3 Test"},
-  {"session": "TestPrep", "unit": "other_school", "topic": "Test Prep - See details in previous sessions"}
-  ]
+  {"session": "TestPrep", "unit": "other_school", "topic": "Test Prep - See details in previous sessions"},
+  {"session": "100", "unit": "other_school", "topic": "Bonus: Thanksgiving Activity"}
+]
