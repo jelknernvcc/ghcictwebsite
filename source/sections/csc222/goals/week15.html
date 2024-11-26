@@ -32,38 +32,69 @@ window.onload = init;
 
 <h2>Overview</h2>
 <p>
+This week we will take time to reinforce and deepen our understanding of
+how to create objects in C++.
 </p>
-
-<!--
-<section>
-<h2>Thursday, December 5th</h2>
-
-<h3>Classwork</h3>
-<div>
-<p>
-</p>
-</div>
-
-<h3>Homework</h3>
-<div>
-<p>
-</p>
-</div>
-</section>
--->
 
 <section>
-<h2>Tuesday, December 3rd</h2>
-
-<h3>Classwork</h3>
+<h2>Project: Have a Little Class!</h2>
 <div>
+<h3>Motivation</h3>
 <p>
+The learning objectives of this project are:
 </p>
-</div>
+<ol>
+<li>to gain practice separating C++ objects into their three parts: header
+file, source file, and testing program.</li>
 
-<h3>Homework</h3>
-<div>
+<li>to practice with the use of
+<a href="https://github.com/doctest/doctest">doctest</a> for the last of
+these parts.</li>
+</ol>
+
+<h3>Process</h3>
+<ol>
+<li>Meet your new partner.
+    
+This is a paired project, and the psuedorandomly selected pairs for it are for
+<b>1B</b>: Noah and Eleanor, Conrad and Alex, Gabriel and Dylan, Jake and 
+Donovan, Alessandra and Toby, Grant and Udval, Evan and Zach, Fatima and Sean,
+Nikita and Rockwell, with poor Luis having to work alone. For <b>4B</b> we
+have: Rohoboth and Alex, Blu and Gabe, Abi and Jack, Yuri and Anupama, and
+Colin and Hisham.</li>
+
+<li>Come up with an idea for an object you could implement in C++. Think of
+the two objects we've met thus far: <code>Point</code> and <code>Time</code>.
+Keep your object simple for this project.</li>
+
+<li>Assuming your object is <code>MyObject</code>, create three files:
+<code>MyObject.h</code>, <code>MyObject.cpp</code>, and
+<code>test_myobject.cpp</code>.  The first of these will hold your object
+definition and member function prototypes, and the second the member function
+definitions.</li>
+
+<li>
+<p>In the third file, start out with this:</p>
+<pre>
+#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+#include &lt;doctest.h&gt;
+#include "MyObject.h"
+using namespace std;
+
+TEST_CASE("Test can create and render MyObject") {
+    MyObject myobj();
+    CHECK(myobj.to_string() == "This is MyObject");
+}
+</pre>
+<p>Fill in the header and source files so that this first test passes.</p>
+</li>
+</ol>
 <p>
+I leave it open ended where you take it from here. Keeping the learning goals
+in mind, add more tests and then more features to your object.
+</p><p style="color: red;">
+This project is due by 11:59 pm on Saturday, December 7th so that I can have
+the day on Sunday to evaluate your work.
 </p>
 </div>
 </section>
