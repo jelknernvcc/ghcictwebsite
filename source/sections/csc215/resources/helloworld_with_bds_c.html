@@ -32,7 +32,14 @@ Follow these steps to compile your first
 </p>
 <ol>
 <li>Download the <a href="OldSchoolC.tgz">OldSchoolC.tgz</a> and extract the
-archive.</li>
+archive (<code>% tar xzvf OldSchoolC.tgz</code>.</li>
+
+<li>To get around the restriction on running a file downloaded with a 
+web browser, Turner has created a little Python script you will find in
+the <code>UTILS</code> subdirectory named <code>turnerfix.py</code>. Copy this
+to the <code>CPM2</code> directory and run <code>% python3 turnerfix.py</code>.
+This will copy <code>altair8800mac2</code> to <code>altair8800mac</code>.
+Remove <code>altair8800mac2</code> after this completes.
 
 <li>Change to the <code>I</code> drive and use the <code>pip</code> to copy
 the following files from drive <code>C</code> to drive <code>I</code>:
