@@ -63,6 +63,7 @@ project to start fresh!
 </p>
 </div>
 </section>
+-->
 
 <section>
 <h2>Wednesday, December 4th</h2>
@@ -70,6 +71,40 @@ project to start fresh!
 <h3>Classwork</h3>
 <div>
 <p>
+As I started experimenting with more and more C programs, I quickly ended up with a mess of files on my <code>I</code> drive.  I wanted to just run:
+</p><pre>
+I&gt;era *.*
+</pre><p>
+to start fresh, but then I realized that this would remove all the files needed
+to compile C programs.  And what if I wanted to work on drive <code>J</code> or
+drive <code>D</code>?
+</p><p>
+My familiarity with <a href="https://en.wikipedia.org/wiki/DOS">DOS</a> files
+called
+<a href="https://en.wikipedia.org/wiki/Batch_file">batch files</a>, which are
+similiar (if much less powerful) to Unix
+<a href="https://en.wikipedia.org/wiki/Shell_script">shell scripts</a> led me
+to wonder if <code>CP/M</code> had something similar. It turns out it does.
+They are less powerful still than batch files (not surprisingly), but they
+can help us out here. The work with the
+<a href="http://www.gaby.de/cpm/manuals/archive/cpm22htm/ch1.htm#Section_1.6.7">SUBMIT command</a>, and they use the file extention <code>.SUB</code>.
+Here is the source to <code>CSTUFF.SUB</code>:
+</p><pre>
+PIP $1:=C:CC.COM
+PIP $1:=C:CC2.COM
+PIP $1:=C:CLINK.COM
+PIP $1:=C:C.CCC
+PIP $1:=C:DEFF.CRL
+PIP $1:=C:DEFF2.CRL
+PIP $1:=C:STDIO.H
+</pre><p>
+Copy this file to your <code>C</code> drive.  Then, if you want to use say
+drive <code>J</code> for compiling C programs, you can just run:
+</p><pre>
+submit c:cstuff J
+</pre><p>
+and it will copy the 7 files you need from drive <code>C</code> to
+<code>J</code>.
 </p>
 </div>
 
@@ -79,7 +114,6 @@ project to start fresh!
 </p>
 </div>
 </section>
--->
 
 <section>
 <h2>Monday, December 2nd</h2>
