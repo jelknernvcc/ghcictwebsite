@@ -1,5 +1,8 @@
 ## Lesson Objectives
 By the end of this lesson, you should:
+- **Know**: 🎨 how to apply inline styles using the `style` attribute. 
+- **Understand**: 🌈 the RGB color model and how to use it to select colors. 
+- **Be Able To**: 🖥️ Style a website using external stylesheets. 
 
 
 ## What We'll Do In Class
@@ -30,4 +33,4 @@ In the new edube css course (enrollment link is in session 24), read these few p
 
 (note - I'm skipping the one called 'CSS Files and Directories' - we'll review that content later)
 
-We'll have a reading quiz on this content next time we're together (the next class after the test)
+We'll have a reading quiz on this content next time we're together.
