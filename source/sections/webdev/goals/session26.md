@@ -1,3 +1,11 @@
+## A day class - read this!
+I might be out for class today.
+
+If I'm out, Jeff Elkner (in room 511) will be in charge. He'll come by to say hi and will give the reading quiz. Jeff teaches all the other CS classes here at ACC, so feel free to ask him any questions about what to take next year!
+
+For the rest of class, work on the Library assignment described on this page. You may need to read ahead to the next CSS course page "Targeting HTML ELements with Selectors" for some of the information.
+
+
 ## Lesson Objectives
 By the end of this lesson, you should:
 - **Know**: Basic CSS syntax.
