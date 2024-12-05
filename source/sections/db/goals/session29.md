@@ -39,7 +39,7 @@ We'll start by looking for examples of each of these in the above example, and t
 | a2  | b1  | c2  | d1  | e1  |
 | a2  | b2  | c2  | d2  | e2  |
 | a3  | b1  | c3  | d3  | e3  |
-| a3  | b2  | c3  | d4  | e3  |
+| a3  | b2  | c3  | d4  | e4  |
 
 We'll work together to identify each of the types of dependencies in this example
 
