@@ -71,7 +71,7 @@ Please do this in a Markdown file in your repo, before next class. I'll give som
 I'll count this as a grade, and we'll start next class by sharing what we came up with.
 
 
-### Gardening Contractor
+### Gardening Contractor (Lehiem)
 ```
 | Project ID | Client Name | Contact Info       | Project Date | Services                       | Plants Used         | 
 | ---------- | ----------- | ------------------ | ------------ | ------------------------------ | ------------------- | 
@@ -83,7 +83,7 @@ I'll count this as a grade, and we'll start next class by sharing what we came u
 | P1006      | Emma Violet | 555-678-1234       | 2024-05-06   | Tree Pruning, Lawn Mowing      | Maple, Ferns        | 
 ```
 
-### Comic Book Store
+### Comic Book Store (Miguel)
 ```
 | Sale ID | Customer Name  | Contact Info         | Sale Date    | Comic Books Purchased                 | Accessories            | 
 | ------- | -------------- | -------------------- | ------------ | ------------------------------------- | ---------------------- | 
@@ -96,7 +96,7 @@ I'll count this as a grade, and we'll start next class by sharing what we came u
 ```
 
 
-### Pizza Restaurant
+### Pizza Restaurant (Jack and Alex)
 ```
 | Order Number | Customer Name | Contact Info          | Order Date   | Pizzas Ordered                              | Toppings                    | Delivery Address        | Delivery Driver |
 | ------------ | ------------- | --------------------- | ------------ | ------------------------------------------- | --------------------------- | ----------------------- | --------------- |
@@ -108,7 +108,7 @@ I'll count this as a grade, and we'll start next class by sharing what we came u
 | O3006        | Omar Khalid   | 555-789-0123          | 2024-07-06   | "BBQ Chicken", "Pepperoni"                  | Bacon, Olives               | 654 Cedar Blvd, Apt 9   | Gina            |
 ```
 
-### Pet Groomer
+### Pet Groomer (Adam and Blu)
 ```
 | Appointment ID | Pet Owner Name | Contact Info         | Appointment Date  | Services Requested                       | Products Used           | Total Cost | Tip Amount     | 
 | -------------- | -------------- | -------------------- | ----------------- | ---------------------------------------- | ----------------------- | ---------- | -------------- | 
