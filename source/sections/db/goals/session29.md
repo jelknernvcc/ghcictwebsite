@@ -50,8 +50,7 @@ For practice, we'll go all the way through the cake shop example.
 
 
 ## Homework, if needed
-Again, [this video is a great review for the normal forms](
-https://www.youtube.com/watch?v=GFQaEYEc8_8)
+Again, [this video is a great review for the normal forms](https://www.youtube.com/watch?v=GFQaEYEc8_8)
 
 And for a more formal explanation of the normal forms, relational algebra, and all of the axioms that we didn't cover, [see this online textbook](https://opentextbc.ca/dbdesign01/chapter/chapter-11-functional-dependencies/)
 
