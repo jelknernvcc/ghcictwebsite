@@ -5,6 +5,9 @@
 <title>GCTAA CSC 215 Week 16</title>
 <style>
 @import url(../../css/goals.css);
+pre {
+    margin-left: 3vw;
+}
 </style>
 <script src="../../js/init.js"></script>
 <script>
@@ -19,7 +22,7 @@ window.onload = init;
 </div>
 <div class="desktop">
 <h2>Governor's Career & Technical Academy Arlington</h2>
-<h1>CSC 215 Weekly Assignments: Week 16</h1>
+T<h1>CSC 215 Weekly Assignments: Week 16</h1>
 </div>
 <div class="mobile">
 <h1>CSC 215</h1>
@@ -28,25 +31,62 @@ window.onload = init;
 <hr>
 
 <main>
-<time datetime="2024-12-09">Week of Monday, December 9, 2024</time>
+<time datetime="2024-12-09">Two weeks beginning, December 9, 2024</time>
 
 <h2>Overview</h2>
 <p>
+In the two weeks we have until Winter break, we will begin a fairly large
+project which can use to transition from BDS C on CP/M to C++ on Unix.
+</p><p>
+The random pairs Python choose for this project are:
+</p><pre>
+Turner and Trostin
+Caleb and Anar
+Parker and Luis
+Marin and Adonis
+Anfal and Johan
+Ved and Cody
+Issac and Jamethiel
+Akshay and Jeff
+</pre><p>
+To motivate what we are going to do, I want you to download, compile and run
+<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/BIGGEST.C">
+BIGGEST.C</a> and
+<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/FIXEDPT.C">
+FIXEDPT.C</a>. Then download
+<a href="https://secure-media.collegeboard.org/apc/ap01.pdf.lr_7928.pdf">The
+Large Integer Case Study in C++</a>. To quote the problem statement on page one
+of the case study,
+</p><blockquote>
+Arithmetic operations are fundamental in computing and programming. In many
+programming environments the largest value of an integer variable is much too
+small to represent large quantities such as the population of the world, the
+U.S. national debt, the number of occurrences of the letter 'e' in Melville’s
+Moby Dick.
+</blockquote><p>
+This is <i>definitely true</i> in our Altair 8800 BSD C environment. As you
+can see from running the <code>BIGGEST.C</code> program, the largest signed
+integer we can store is <code>32767</code>. That's not even large enough to
+hold an APS teacher's yearly salary! ;-)
+</p><p>
+In this project we will use <i>The Large Integer Case Study in C++</i> as a
+guide to implement a <code>bigint</code> 
+<a href="https://en.wikipedia.org/wiki/Struct_(C_programming_language)">
+struct</a> in BSD C.
 </p>
 
 <!--
 <section>
 <h2>Thursday, December 12th</h2>
 
-<h3>Classwork</h3>
+<h3>Classwork / Homework / Evaluation</h3>
 <div>
 <p>
-</p>
-</div>
-
-<h3>Homework / Evaluation</h3>
-<div>
-<p>
+We'll start class today by getting a copy of
+<a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/CALC.C">
+CALC.C</a>, which implements a BDS C version of the calculator program from
+<i>Appendix A: The Calculator</i> in <i>The Large Integer Case Study in
+C++</i>.
 </p>
 </div>
 </section>
@@ -55,15 +95,24 @@ window.onload = init;
 <section>
 <h2>Tuesday, December 10th</h2>
 
-<h3>Classwork</h3>
+<h3>Classwork / Homework / Evaluation</h3>
 <div>
 <p>
-</p>
-</div>
-
-<h3>Homework / Evaluation</h3>
-<div>
-<p>
+The <code>day_of_year</code> and <code>month_day</code> functions are presented
+on page 104 of <i>The C Programming Language</i>. Study these functions until
+you understand how they work (i.e. write a small test program to experiment
+with them). 
+</p><p>
+Then complete <i>Exercise 5-6</i> on page 110, which asks you to rewrite these
+functions using pointers instead of indexing.
+</p><p style="color: red;">
+To earn an A on your next evaluation, <i>commits made both during class and
+between classes</i> must contain evidence of the effective use of the 3 hours
+of time you have allotted to work on this, even if you can't complete it.
+This and the previous assignment are both due tomorrow, Wednesday, December
+11 at 1 pm so I have time to evaluate them before we meet on Thursday. If
+you've been slacking, you need to put in more than 3 hours to make up for
+what you didn't do last class!
 </p>
 </div>
 </section>
