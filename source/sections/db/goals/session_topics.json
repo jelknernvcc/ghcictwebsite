@@ -28,7 +28,7 @@
   {"session": "27", "unit": 3, "topic": "SQL: Cosponsor Practice"},
   {"session": "28", "unit": 4, "topic": "Normalization Intro"},
   {"session": "29", "unit": 4, "topic": "Dependencies, 2NF, 3NF"},
-  {"session": "30", "unit": "", "topic": ""},
+  {"session": "30", "unit": 4, "topic": "Data modeling"},
   {"session": "31", "unit": "", "topic": ""},
   {"session": "32", "unit": "", "topic": ""},
   {"session": "33", "unit": "", "topic": ""},
