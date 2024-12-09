@@ -1,46 +1,36 @@
-## A day class - read this!
-I might be out for class today.
-
-If I'm out, Jeff Elkner (in room 511) will be in charge. He'll come by to say hi and will give the reading quiz. Jeff teaches all the other CS classes here at ACC, so feel free to ask him any questions about what to take next year!
-
-For the rest of class, work on the Library assignment described on this page. You may need to read ahead to the next CSS course page "Targeting HTML ELements with Selectors" for some of the information.
-
 
 ## Lesson Objectives
 By the end of this lesson, you should:
-- **Know**: Basic CSS syntax.
-- **Understand**: How CSS selectors work.
-- **Be Able To**: Apply CSS styles to an HTML document using element names, classes, and IDs
-- **Be Able To**: Describe colors using names, RGB, and Hex.
+- **Know**: How the CSS cascade rules work.
+- **Understand**: How to use different units for sizing elements.
+- **Be Able To**: Apply CSS styles to elements and fonts using percentage, px, em, and vw units.
 
 ## What We'll Do In Class
 
 ### Reading Quiz
-We'll start with a quiz that covers the last **2** reading assignments.
+I didn't write a reading quiz today. We'll include this in next class's reading quiz.
 
-### Another CSS Template Example
+Don't forget that the *library* assignment was due by the beginning of class today. I'll grade it soon!
 
-Today, we'll again work on adding CSS to an existing website. This time, our website is for a library, and [I've posted the starter code here](https://github.com/CJonesExample/CJonesExample.github.io/tree/main/library)
+### CSS Cascade Examples
 
-This time, we'll care a bit more about making our website look nice. We'll play with this color palette generator: [https://palettes.shecodes.io/](https://palettes.shecodes.io/) 
+We'll play with some examples that demonstrate how the CSS cascade rules work, and how user stylesheets work.
 
-We'll also discuss a new way to express colors, using Hexadecimal.
+### Divs, and sizing
+We'll play with adding divs to our website, and adjusting div sizes and font sizes using a few different notations:
+- percentage
+- px
+- em
+- vw
 
-### CSS Selectors
-I'll briefly introduce new CSS selectors that give us better ability to target individual HTML elements.
+For some of these, we'll follow examples from [MDN web docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
 
 ## Homework
 
-### Style the Library
-Commit this library example to your repo before next class. I'll grade this as a completion homework assignment. Your website should:
-- Have a reasonably-nice color pallette
-- Keep all styles in a single external stylesheet
-- Demonstrate selectors using element name, class, and id
-- Demonstrate colors using names, RGB, and Hex
-
 ### Reading
 Read the next few pages in the CSS course:
-- Targeting HTML ELements with Selectors
-- The CSS Cascade, Specificity, and Inheritance
+- CSS Text Styling Properties
+- Introduction to the Box Model
+- Box Model Essentials
 
-These pages are tricky. Make sure to go through them slowly, and be prepared for a reading quiz next class!
+The box model will unlock a lot of interesting style options. I'll look forward to playing with these in class next time!
