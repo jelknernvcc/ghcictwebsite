@@ -20,7 +20,8 @@ I want you to make a page with five different divs. Give each div an id,
 and use an internal stylesheet (in the `head` tag) to style each div.
 
 From there, try to recreate this image:
-![box model challenge](images/box_model_challenge.png)
+
+<img src="../images/box_model_challenge.png" alt="box model challenge" style="height:400px">
 
 A few hints:
 - The content of each box is 100px/100px
