@@ -23,6 +23,9 @@ The videos spent a lot of time talking about the importance of:
 
 Our goal for today will be to add some simple colors and styles to our webpages.
 
+### Colors
+As we're adding colors to our websites, we'll have a little discussion about the different ways to specify colors
+
 ## Homework
 ### Finish your HTML page
 If you didn't get this finished in class, make sure that you get your HTML page
