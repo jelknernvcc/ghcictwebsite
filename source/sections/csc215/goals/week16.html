@@ -81,7 +81,27 @@ struct</a> in BSD C.
 <h3>Classwork / Homework / Evaluation</h3>
 <div>
 <p>
-We'll start class today by getting a copy of
+A number of you emailed me about problems with the assignment I gave you
+(thanks!).  Parker figured it out first, and even identified the problem. On
+page 76 of the <i>BSD C Reference Manual</i> it states:
+</p><blockquote>
+The following is a section-by-section annotation to the <b>C Reference
+Manual</b>. For the sake of brevity, some of the items mentioned above will not
+be pointed out again; any references to floats, longs, statics,
+initializations, etc., found in the book should be ignored.
+</blockquote><p>
+On the previous page (75), it states that:
+</p><blockquote>
+There are no explicitly declarable storage classes. <b>Static</b> and
+<b>register</b> variables do not exist; all variables are either external or
+automatic, depending on the context in which they are declared.
+</blockquote><p>
+After recieving Parker's email, I put our friend José Ejemplo to work on this,
+and he came up with a work around,
+<a href="https://codeberg.org/ACC/csc215/src/branch/master/C/CPM_BDSC/Programs/DATES.C">
+DATES.C</a>. We will talk about this in class today.
+</p><p>
+Next we will get a copy of
 <a href="https://codeberg.org/ACC/csc215/raw/branch/master/C/CPM_BDSC/Programs/CALC.C">
 CALC.C</a>, which implements a BDS C version of the calculator program from
 <i>Appendix A: The Calculator</i> in <i>The Large Integer Case Study in
