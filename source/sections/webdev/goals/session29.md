@@ -2,9 +2,9 @@
 
 ## <span style="font-family: 'Comic Sans MS', Arial, sans-serif;text-shadow: 25px 20px 3px rgba(0, 0, 0, 0.5);">Lesson Objectives</span>
 <span style="font-family: 'Comic Sans MS', Arial, sans-serif;">By the end of this lesson, you should:</span>
-- **Know**: <span style="font-family: 'Comic Sans MS', Arial, sans-serif;">How the CSS cascade rules work.</span>
-- **Understand**: <span style="font-family: 'Comic Sans MS', Arial, sans-serif;">How to use different units for sizing elements.</span>
-- **Be Able To**: <span style="font-family: 'Comic Sans MS', Arial, sans-serif;">Apply CSS styles to elements and fonts using percentage, px, em, and vw units.</span>
+- **Know**: <span style="font-family: 'Comic Sans MS', Arial, sans-serif;">That there are a wide variety of fonts available on the web</span>
+- **Understand**: <span style="font-family: 'Comic Sans MS', Arial, sans-serif;">That font selection impacts readability, accessibility, and meaning.</span>
+- **Be Able To**: <span style="font-family: 'Comic Sans MS', Arial, sans-serif;">Select and apply an appropriate font for your website.</span>
 
 ## <span style="font-family: 'Comic Sans MS', Arial, sans-serif;text-shadow: 25px 20px 3px rgba(0, 0, 0, 0.5);"">What We'll Do In Class</span>
 
@@ -28,7 +28,7 @@ If you want to learn more rules and techniques for selecting the best font for y
 We'll review the details about fonts that I do want you to know:
 <ul>
 <li>Fonts vs Typefaces</li>
-<li>Serifs, x-heights, ascenders/decenders, spacing, and kerning</li>
+<li>Serifs, x-heights, ascenders/descenders, spacing, and kerning</li>
 <li>Web-safe fonts</li>
 <li>Font families</li>
 
@@ -41,9 +41,11 @@ We'll review the details about fonts that I do want you to know:
 <div style="font-family: 'Comic Sans MS', Arial, sans-serif;">
 To play around with fonts, return to either the zoo or the library websites that we worked on earlier this unit. Find reasonable places to apply each of these techniques:
 <ul>
-<li>Add a reasonable font, and be sure to provide a good backup font stack. <a href="https://www.dreamhost.com/blog/web-safe-fonts/">See this website for a nice list of web-safe fonts</a></li>
-<li>Use the text-align property</li>
-<li>Use the text-transform property</li>
+<li>Add at least two different reasonable fonts, and be sure to provide a good backup font stack for each. <a href="https://www.dreamhost.com/blog/web-safe-fonts/">See this website for a nice list of web-safe fonts</a></li>
+<li>Use the text-align property at least two times</li>
+<li>Use the text-transform property at least once</li>
+
+You may need to add some div/span elements to help apply these styles.
 </div>
 
 ## <span style="font-family: 'Comic Sans MS', Arial, sans-serif;text-shadow: 25px 20px 3px rgba(0, 0, 0, 0.5);"">Homework</span>
