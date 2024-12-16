@@ -31,5 +31,5 @@ As we're adding colors to our websites, we'll have a little discussion about the
 If you didn't get this finished in class, make sure that you get your HTML page
 completed, and use git to publish it to your `pages` repo.
 
-### CSS Reading
+### SQL Reading
 Go through the videos on [https://www.dj4e.com/lessons/dj4e_basic_sql](https://www.dj4e.com/lessons/dj4e_basic_sql). We'll start next class with a reading quiz about SQL.
