@@ -78,14 +78,65 @@ struct</a> in BSD C.
 <section>
 <h2>Week of Monday, December 16th</h2>
 
-<h3>Classwork / Homework / Evaluation</h3>
+<h3>Goal</h3>
 <div>
 <p>
 Nate Levin responded to my email with both detailed suggestions as to how to
-port his <a href="https://github.com/NateLevin1/ctest">ctest</a> to BSD C,
-and he offered to help guide the process as well, so Caleb and Akshay will be
-working on that, and Anar has been moved to pair with me.
+port his <a href="https://github.com/NateLevin1/ctest">ctest</a> to BSD C, and
+a kind offer to help guide the process, so Caleb and Akshay will be working on
+that, and Anar has been moved to pair with me.
 </p><p>
+Reading through your study question responses, it is clear that I have not
+made what we are tying to do explicit enough, so I'll attempt to do that
+now.
+</p><p>
+Our goal is to implement an
+<a href="https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic">
+arbitrary-precision</a> integer in BDS C running on CP/M 2.2.
+</p><p>
+I gave you the College Board's <i>Large Integer Case Study in C++</i> to use
+as a guide, but we will need to make <i>significant</i> adjustments and
+adaptations to the approach taken in that document to accomodate our much
+more limited computing environment.
+</p><p>
+In future evaluations, I will be explicitely looking for evidence in what you
+write that you understand this technical challenge and can reason effectively
+about it.
+</p>
+</div>
+
+<h3>Task / Evaluation</h3>
+<div>
+<p>
+Work with your partner to continue reading through the case study document.
+As you do, try to understand the approach being developed using C++ on a
+32 bit machine to solve the problem of creating an arbitrary-precision
+integer, and evaluate how that approach would have to be modified to work on
+our 8 bit machines using K&amp;R C.
+</p><p>
+To help stimulate your thinking and to provide me with evidence that you are
+<q>getting it</q>, take this sample interaction with our calculator program
+beginning on the bottom of page 2 of the case study:
+</p><pre>
+Enter value: 5000
+--&gt; 5000
+Enter operator (+ - * (= to quit)): *
+Enter value: 3
+--&gt; 15000
+Enter operator (+ - * (= to quit)): +
+Enter value: 17
+--&gt; 15017
+Enter operator (+ - * (= to quit)): *
+Enter value: 4
+--&gt; -5468
+Enter operator (+ - * (= to quit)): =
+</pre><p>
+and modify it so that it shows the limits of integer arithmetic in our 8 bit
+CP/M environment.
+</p><p>
+Continue to take notes as you read through the case study. Strive to
+<i>show me</i> by what you write that you are understanding both the problem
+we are trying to solve and the technical challenges we face to doing it.
 </p>
 </div>
 </section>
