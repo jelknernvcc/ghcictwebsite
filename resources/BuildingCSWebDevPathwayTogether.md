@@ -1,5 +1,11 @@
-# Building an Integrated Computer Science / Web Development Pathway
+## Session Title
+Building an Integrated Computer Science / Web Development Pathway
 
+## Format
+Conversation
+
+## Session Theme
+Specific Content/Discipline
 
 ## Short Description (50 words max)
 
@@ -61,29 +67,30 @@ developed by others, have made our own "remixes" of some, and have contributed
 our own content. We are excited about this space, proud to contribute, and
 eager to see our efforts used in the broader community.
 
-## Conversational Practice (How is this a conversation?)
+## Equipment / Accommodations
 
-Since all curriculum materials in this program use **FOSS** (free and
-open-source software) and are **OER** (open educational resources) the
-opportunity for collaboration and conversation is baked into the cake. We are
-inviting interested participants to join our curriculum development community
-to help us further develop these resources together.
+Just a projector!
 
-### Presenter(s) Name(s) 
+## Presenter Name(s) 
 
 - Chris Jones
 - Jeff Elkner
 
-### Website Link(s)
-
-- [https://ict.gctaa.net/](https://ict.gctaa.net/)
-
-### Presenter Affiliation(s)
-
-Chris and Jeff are instructors in the Arlington Tech program at the soon to be
-Grace Hopper Center.
-
-### Presenter Contact Email(s)
+## Presenter Emails
 
 - Chris Jones: cmj2310@email.vccs.edu 
 - Jeff Elkner: jde232@email.vccs.edu
+
+## Presenter Affiliations(s)
+
+Chris and Jeff are instructors in the Arlington Tech program at the soon-to-be
+Grace Hopper Center.
+
+## Presenter Website(s) or Linkedin
+
+- [https://ict.gctaa.net/](https://ict.gctaa.net/)
+
+
+## Additional Comments
+
+We're excited to see you there!
