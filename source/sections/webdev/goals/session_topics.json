@@ -28,7 +28,7 @@
   {"session": "27", "unit": 4, "topic": "CSS Cascade, and organization"},
   {"session": "28", "unit": 4, "topic": "Box Model"},
   {"session": "29", "unit": 4, "topic": "Fonts"},
-  {"session": "30", "unit": 4, "topic": "Box Model: Margins, Padding, and Borders"},
+  {"session": "30", "unit": 4, "topic": "CSS Grid"},
   {"session": "31", "unit": 4, "topic": "Layout Techniques: Display and Positioning"},
   {"session": "32", "unit": 4, "topic": "Flexbox Layout"},
   {"session": "33", "unit": 4, "topic": "Responsive Design with Media Queries"},
