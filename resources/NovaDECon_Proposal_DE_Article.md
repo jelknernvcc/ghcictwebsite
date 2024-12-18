@@ -9,14 +9,18 @@ Access to Underrepresented College Students
 
 ## Short Description (50 words max)
 
-We'll discuss an interesting recent article from New America Foundation: [Unpacking Dual Enrollment: Benefits, Barriers, and Opportunities for Expansion](https://www.newamerica.org/education-policy/edcentral/unpacking-dual-enrollment-benefits-barriers-and-opportunities-for-expansion/). The article discusses equity gaps and the importance of wraparound support for DE programs. We'll share our reactions and takeaways for our own programs.
+We'll discuss a recent article from New America: [Unpacking Dual Enrollment: Benefits, Barriers, and Opportunities for Expansion](https://www.newamerica.org/education-policy/edcentral/unpacking-dual-enrollment-benefits-barriers-and-opportunities-for-expansion/). The article discusses equity and the importance of thoughtfully-structured programs and support structures for DE students. We'll share our reactions and identify takeaways that we can bring back to our own programs.
 
 
 ## Extended Description (250 words max)
 
 Participants will be asked to read the article ahead of time: [Unpacking Dual Enrollment: Benefits, Barriers, and Opportunities for Expansion](https://www.newamerica.org/education-policy/edcentral/unpacking-dual-enrollment-benefits-barriers-and-opportunities-for-expansion/).
 
-We'll start with a quick summary of key takeaways from the article, and then will move into a roundtable discussion. The presenter will bring some open-ended questions that encourage participants to consider how the observations from this article match with their experience, and what goals our programs can set to better support our DE students.
+This article introduces statistics about the impact of DE experience on student success, explores the importance of **Intentional Dual Enrollment**, and reviews a few specific success stories. 
+
+We'll start with a quick summary of key facts and takeaways from the article, and then will move into a roundtable discussion that focuses on actionable strategies that we can bring back to our own programs.
+
+The presenter will prepare a list of open-ended questions that encourage participants to consider how the observations from this article match with their experience, and what goals our programs can set to ensure that our student populations get the most out of their DE opportunities and experiences.
 
 ## Equipment / Accommodations
 
