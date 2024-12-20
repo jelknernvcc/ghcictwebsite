@@ -5,15 +5,23 @@ Instructor notes:
 
 ### Postgres!
 
-Today, we'll work through creating databases, schema, and tables on Postgres. We'll briefly discuss permissions and data types as we encounter them.
+Today, we'll continue practicing with ER diagramming and Postgres database setup, this time for our real ACC application projects.
 
-We'll reference:
-- this handy [Postgres Cheat Sheet](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)
-- [Postgres Data Types](https://www.postgresql.org/docs/current/datatype.html)
+First, we'll have a brief discussion of **idempotency**, and easier ways to write our scripts outside of the command line.
 
-### Activity: Create some tables from your app schema
-In Sessions 31 and 32, you worked on creating a database schema. Now we'll make it real. The goal is for everyone to create tables in your own database.
+Our goal today is to work on database design for the `Django Girls` projects that Blu introduced us to last week.
+
+There are three projects here, so we'll break into groups, design ER diagrams, and then work on implementing them in Postgres.
+
+### Group Assignments
+
+We decided these in class, and started working on them:
+
+* Blu and Lehiem are working on the reservation database for cosmetology
+* Adam and Miguel are working on the reservation database for culinary
+* Rachael, Jack, and Alex will work on the forum for clean stoves
 
 ## Homework
-If you didn't get to it in class, please have at least two tables with a FK relationship made by the beginning of next class.
+
+Enjoy your break, but feel free to continue working on your database design. We'll finish this, with the goal of handing it over, shortly after we get back.
 
