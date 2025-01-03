@@ -32,6 +32,8 @@ window.onload = init;
 
 <h2>Overview</h2>
 <p>
+Happy New Year! For the final weeks of our course we will continue to develop
+an arbitrary precision integer in C on the Intel 8080 processor.
 </p>
 
 <!--
@@ -55,15 +57,98 @@ window.onload = init;
 <section>
 <h2>Tuesday, January 7th</h2>
 
-<h3>Classwork</h3>
+<h3>Intro</h3>
 <div>
 <p>
+I only had a few minutes over Winter break to work on this, but I did enough
+to reach an impass we can hopefully resolve together today. I split my
+previous start on <b>BigInt</b> into two files. <code>BIGINT.H</code>:
+</p><pre>
+struct bigint {
+    char negative;
+    char numdigits;
+    char* digits;
+};
+
+void set_bigint();
+char* get_bigint();
+</pre><p>
+and <code>BIGINT.C</code>:
+</p><pre>
+#include <stdio.h>
+#include "BIGINT.H"
+
+void set_bigint(numstr, num)
+char *numstr;
+struct bigint *num;
+{
+    char last_pos, i;
+    num-&gt;negative = (numstr[0] == '-');
+    num-&gt;numdigits = strlen(numstr) - num-&gt;negative;
+    num-&gt;digits = alloc(num-&gt;numdigits);
+    last_pos = num-&gt;numdigits + (num-&gt;negative ? 0 : -1);
+
+    for (i = 0; i < num->numdigits; i++) {
+        num-&gt;digits[i] = numstr[last_pos-i];
+        /* printf("numstr[%d] is %c\n", last_pos-i, numstr[last_pos-i]); */
+    }
+}
+
+char* get_bigint(num)
+struct bigint *num;
+{
+   char *numstr;
+   char start_pos, i;
+   numstr = alloc(num-&gt;numdigits + (num-&gt;negative ? 2 : 1));
+   start_pos = num-&gt;negative;
+   if (start_pos == 1) numstr[0] = '-';
+   for (i = 0; i < num->numdigits; i++) {
+       numstr[i+start_pos] = num-&gt;digits[num-&gt;numdigits-(i+1)];
+       /* printf("numstr[%d] is %c\n", i, numstr[i+start_pos]); */
+   }
+   numstr[num-&gt;numdigits+start_pos] = '\0';
+   return numstr;
+}
+</pre><p>
+The I wrote <code>BIGINTTD.C</code> to test it:
+</p><pre>
+#include "BIGINT.H"
+#include "BDSCTEST.H"
+
+main() {
+    START_TESTING("BIGINTTD.C");
+
+    TEST_CASE("Read and write bigint 1234567") {
+        struct bigint bi;
+        set_bigint("1234567", &amp;bi);
+        ASSERT_STR(get_bigint(bi, "1234567"));
+    }
+
+    END_TESTING();
+}
+</pre><p>
+I compiled and linked these with the following sequence of commands:
+</p><pre>
+I&gt;cc bigint
+I&gt;cc biginttd
+I&gt;clink biginttd bigint
+</pre><p>
+which generated <code>BIGINTTD.COM</code>. Running it, I got:
+</p><p>
+<img src="resources/biginttd_failing_test.png" alt="BigInt failing test">
+</p><p>
+Hopefully our classroom super stars, Caleb and Akshay (with welcome assistance
+from any aspiring classroom super stars), will be able to figure out why this
+is failing and get us on our way.
 </p>
 </div>
 
-<h3>Homework / Evaluation</h3>
+<h3>Classwork / Homework / Evaluation</h3>
 <div>
 <p>
+Get the first tests working to be able to read and write our
+<code>BigInt</code> values. <i>Each of us</i> should be making regular
+commits of our progress, since our evaluation will be based on these commits.
 </p>
 </div>
 </section>
