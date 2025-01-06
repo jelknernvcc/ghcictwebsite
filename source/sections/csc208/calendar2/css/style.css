@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1vw;
+}
+header {
+  text-align: center;
+}
+header>h1 {
+  color: #005E2C;
+  font-size: 2.6vw;
+}
+header>h2 {
+  font-size: 2vw;
+}
+
+table#key {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vw;
+}
+table#key td {
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  width: 7vw;
+  height: 4vw;
+  text-align: center;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+}
+table#cal, table#cal>tr {
+  width: 100%;
+}
+table#cal td {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  width: 13vw;
+  height: 12vw;
+  text-align: right;
+  padding-right: 1vw;
+  vertical-align: top;
+  padding-top: 1vw;
+  background-size: 10vw 10vw;
+  background-repeat:no-repeat;
+  background-position-x: 1.1vw;
+  background-position-y: 1vw;
+}
+p.topic {
+  text-align: left;
+  padding-left:1vw;
+  font-size:0.8vw;
+  padding-bottom:0;
+  margin-bottom:0;
+}
+
+table#cal th {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+table#cal tr#colheadings th {
+  height: 5vw;
+  background-color: #CCC;
+}
+table#cal th#blank {
+  width: 5vw;
+  height: 5vw;
+  background-color: white;
+  border-right: 1px solid #ccc;
+}
+[rowspan], .rotated {
+  margin: 0;
+  padding: 0;
+  width: 5vw;
+  background-color: #dda300;
+}
+[rowspan]>p, table#cal th.rotated>p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  transform: rotate(-90deg);
+  color: white;
+  white-space: nowrap;
+  overflow: visible;
+  font-weight: bold;
+  font-size: 1.4vw;
+}
+table#cal td.end {
+  border-bottom: 3px solid black;
+}
+table#cal td.last {
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+}
+table#cal td.start {
+  border-top: 3px solid black;
+}
+table#cal td span {
+  position: absolute;
+  color: #000;
+  background-color: #FFF;
+  margin-left: -9vw;
+  margin-top: 1vw;
+  padding: 1vw;
+  border-radius: 3vw;
+  opacity: 0.5;
+}
+.unit0 {
+  background-color: #c45335;
+}
+.unit1 {
+  background-color: #cc7a3d;
+}
+.unit2 {
+  background-color: #dda300;
+}
+.unit3 {
+  background-color: #fbf2c4;
+}
+.unit4 {
+  background-color: #74a892;
+}
+.unit5 {
+  background-color: #005E2C;
+}
+.unit6 {
+  background-color: Yellow;
+}
+.unit7 {
+  background-color: DarkOrchid;
+}
+.unit8 {
+  background-color: RoyalBlue;
+}
+.unit9 {
+  background-color: HotPink;
+}
+.unit10 {
+  background-color: Orange;
+}
+
+.review {
+  background-color: SkyBlue;
+}
+.unitother_school {
+  background-color: Silver;
+}
+.unitother_noschool {
+  background-color: Silver;
+}
+.project {
+  background-color: Green;
+}
+footer {
+  font-size: 1.6vw;
+  background: #DDD;
+  text-align: center;
+}
+footer>p {
+  margin: 0;
+  padding: 0.8vw;
+}
+footer>p>a, footer>p>a:visited {
+  text-decoration: none;
+  color: purple;
+}

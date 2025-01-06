@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA CSC 223 Week 4</title>
+<style>
+@import url(../css/goals.css);
+</style>
+<script src="../../js/init.js"></script>
+<script>
+window.onload = init;
+</script>
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>CSC 223 Weekly Goals and Tasks: Week 4</h1>
+</div>
+<div class="mobile">
+<h1>CSC 223</h1>
+</div>
+</header>
+<hr>
+
+<main>
+<time datetime="2024-02-20">Week of Tuesday, February 20, 2024</time>
+
+<h2>Overview</h2>
+<p>
+This week we will continue our study of <i>Chapter 6: Linked Lists</i>.
+</p>
+
+<section>
+<h2>Thursday, February 22nd</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+During class today we will begin sharing our implementations of the circular
+list functions assigned last class, starting with <code>print_clist</code> and
+<code>clist_insert_in_order</code>.  Since Nate's implementation of
+<code>clist_insert_in_order</code> creates a <i>descending</i> clist, let's
+work in our same groups to change it to <i>ascending</i> (thus making Joseph's
+<q>0 -&gt; 2 -&gt; 4</q> work the way he wants it to ;-)
+</p><p>
+With the remaining time in class, work to finish the clist functions you were
+assigned last class, using our now shared <code>print_clist</code> to simply
+writing your tests. Finish this for homework if you don't finish in class.
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Read <i>Section 6.4: Doubly Linked Lists</i> on pages 188 to 199 in our
+textbook. Come to class on Monday ready to implement doubly linked list
+functions with a new partner during class.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Tuesday, February 20th</h2>
+
+<h3>Classwork</h3>
+<div>
+<p>
+We will begin class with a presentation of the work I did over the weekend
+to complete implementations of <code>insert_in_order</code> and
+<code>remove_from_list</code>. This discussion will also focus on the
+<a href="https://en.wikipedia.org/wiki/Code_refactoring">refactoring</a> of
+both code and tests, and how using
+<a href="https://en.wikipedia.org/wiki/Test-driven_development">TDD</a> made
+refactoring so much easier to do.
+</p><p>
+After that presentation, we will discuss what to do about
+<code>insert_in_order</code>, since it currently assumes a descending list.
+Do we want to support both ascendind and descending lists? What about adding
+functions <code>insert_before</code> and/or <code>insert_after</code>?
+Also, are we happy with the way <code>remove_from_list</code> is currently
+implemented?  It returns a pointer to the deleted node, leaving the caller the
+responsibility of freeing memory if that is desired. Is this what we want?
+</p><p>
+Finally, we will summarize our homework reading on <i>circular linked lists</i>
+and decide on the names of the functions we want to implement them.
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
+<p>
+Working with your partner, use TDD to first design a test, then write code
+to make your test pass until you have robust implimentations of your
+assigned function. We will share our solutions and assembly them together
+in class on Thursday.
+</p><p>
+We will be creating three new files, <code>test_clists.c</code>,
+<code>clist.h</code> and <code>clist.c</code>, and then implementing the
+following functions:
+</p>
+<ul>
+<li><b>Julissa and Edward</b> will write <code>clist_length</code> and
+<code>find_in_clist</code>.</li>
+<li><b>Joseph and Sheel</b> will write <code>remove_from_clist</code> and
+<code>clist_insert_at_index</code>.</li>
+<li><b>Cyrus and Nate</b> will write <code>print_clist</code> and
+<code>clist_insert_in_order</code>.</li>
+</ul>
+
+</div>
+</section>
+</main>
+
+<footer class="desktop">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
