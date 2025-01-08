@@ -113,5 +113,10 @@
     {"date":"January28","day":"A"},
     {"date":"January29","day":"B"},
     {"date":"January30","day":"Teacher Workday"},
-    {"date":"January31","day":"Teacher Workday"}
+    {"date":"January31","day":"Teacher Workday"},
+    {"date":"February3","day":"A"},
+    {"date":"February4","day":"B"},
+    {"date":"February5","day":"A"},
+    {"date":"February6","day":"B"},
+    {"date":"February7","day":"A"}
 ]
