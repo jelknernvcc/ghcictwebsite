@@ -18,6 +18,7 @@ Summary:
 
 ----
 TODO:
+- The calendar is hard-coded for the Fall now, so I added the first week of February as a proof-of-concept for Spring courses. I suppose we should setup a way to designate that this is a Spring course so that you don’t have to scroll all the way to down to February.
 - `goals/js/init.js` is currently in the `course_template` folder, which means that each course has its own copy. There is no course-specific information in this script, so it can probably be shared.
 - The code that calls to the HTML validator API is copy/pasted across a bunch of different `init.js` files, and is outdated. This should be refactored to its own js file that is linked everywhere.
     - The latest version of that code is here: https://github.com/CJonesExample/CJonesExample.github.io/blob/main/js/init.js 
