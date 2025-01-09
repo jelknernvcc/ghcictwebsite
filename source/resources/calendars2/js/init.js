@@ -1,6 +1,10 @@
-async function loadCalendarHTML() {
+async function loadCalendarHTML(semester='') {
   try {
-      const response = await fetch("../../../resources/calendars2/calendar.html");
+      var calFileName ="calendar.html"; 
+      if(semester!=''){
+        calFileName = "calendar_"+semester+".html"; 
+      }
+      const response = await fetch("../../../resources/calendars2/"+calFileName);
       const html = await response.text();
       document.getElementById('cal').innerHTML = html;
   } catch (error) {
@@ -8,9 +12,13 @@ async function loadCalendarHTML() {
   }
 }
 
-async function loadDayDescriptions() {
+async function loadDayDescriptions(semester='') {
   try {
-      const response = await fetch("../../../resources/calendars2/school_dates.json");
+        var datesFileName ="school_dates.json"; 
+        if(semester!=''){
+            datesFileName = "school_dates_"+semester+".json"; 
+        }
+      const response = await fetch("../../../resources/calendars2/"+datesFileName);
       const data = await response.json();
       data.forEach(dateEntry => {
           const dateElement = document.getElementById(dateEntry.date);
@@ -90,11 +98,11 @@ function addChapterDays(dayNum) {
   }
 }
 
-async function setUp() {
+async function setUp(semester="") {
   console.log("setUp called");
 
-  await loadCalendarHTML();
-  await loadDayDescriptions();
+  await loadCalendarHTML(semester);
+  await loadDayDescriptions(semester);
   await loadSessionTopics("../goals/session_topics.json", "../goals/session_dates.json");
 
   var loc = window.location.href;

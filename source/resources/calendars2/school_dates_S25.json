@@ -1,0 +1,136 @@
+[
+    {"date":"February03","day":"A"},
+    {"date":"February04","day":"B"},
+    {"date":"February05","day":"A"},
+    {"date":"February06","day":"B"},
+    {"date":"February07","day":"A"},
+
+    {"date":"February10","day":"B"},
+    {"date":"February11","day":"A"},
+    {"date":"February12","day":"B"},
+    {"date":"February13","day":"A"},
+    {"date":"February14","day":"B"},
+
+    {"date":"February17","day":"School Holiday"},
+    {"date":"February18","day":"A"},
+    {"date":"February19","day":"B"},
+    {"date":"February20","day":"A"},
+    {"date":"February21","day":"B"},
+
+    {"date":"February24","day":"A"},
+    {"date":"February25","day":"B"},
+    {"date":"February26","day":"A"},
+    {"date":"February27","day":"B"},
+    {"date":"February28","day":"A"},
+    
+    {"date":"March03","day":"B"},
+    {"date":"March04","day":"A"},
+    {"date":"March05","day":"B"},
+    {"date":"March06","day":"A"},
+    {"date":"March07","day":"B"},
+    
+    {"date":"March10","day":"A"},
+    {"date":"March11","day":"B"},
+    {"date":"March12","day":"A"},
+    {"date":"March13","day":"B"},
+    {"date":"March14","day":"Teacher Workday"},
+    
+    {"date":"March17","day":"A"},
+    {"date":"March18","day":"B"},
+    {"date":"March19","day":"A"},
+    {"date":"March20","day":"B"},
+    {"date":"March21","day":"A"},
+    
+    {"date":"March24","day":"B"},
+    {"date":"March25","day":"A"},
+    {"date":"March26","day":"B"},
+    {"date":"March27","day":"A"},
+    {"date":"March28","day":"B"},
+    
+    {"date":"March31","day":"School Holiday"},
+    {"date":"April01","day":"A"},
+    {"date":"April02","day":"B"},
+    {"date":"April03","day":"A"},
+    {"date":"April04","day":"B"},
+    
+    {"date":"April07","day":"A"},
+    {"date":"April08","day":"B"},
+    {"date":"April09","day":"A"},
+    {"date":"April10","day":"B"},
+    {"date":"April11","day":"A"},
+
+    
+    {"date":"April14","day":"School Holiday"},
+    {"date":"April15","day":"School Holiday"},
+    {"date":"April16","day":"School Holiday"},
+    {"date":"April17","day":"School Holiday"},
+    {"date":"April18","day":"School Holiday"},
+
+    
+    {"date":"April21","day":"Teacher Workday"},
+    {"date":"April22","day":"B"},
+    {"date":"April23","day":"A"},
+    {"date":"April24","day":"B"},
+    {"date":"April25","day":"A"},
+
+    
+    {"date":"April28","day":"B"},
+    {"date":"April29","day":"A"},
+    {"date":"April30","day":"B"},
+    {"date":"May01","day":"A"},
+    {"date":"May02","day":"B"},
+
+    
+    {"date":"May05","day":"A"},
+    {"date":"May06","day":"B"},
+    {"date":"May07","day":"A"},
+    {"date":"May08","day":"B"},
+    {"date":"May09","day":"A"},
+
+    
+    {"date":"May12","day":"B"},
+    {"date":"May13","day":"A"},
+    {"date":"May14","day":"B"},
+    {"date":"May15","day":"A"},
+    {"date":"May16","day":"B"},
+
+    
+    {"date":"May19","day":"A"},
+    {"date":"May20","day":"B"},
+    {"date":"May21","day":"A"},
+    {"date":"May22","day":"B"},
+    {"date":"May13","day":"A"},
+    
+    {"date":"May26","day":"School Holiday"},
+    {"date":"May27","day":"B"},
+    {"date":"May28","day":"A"},
+    {"date":"May29","day":"B"},
+    {"date":"May30","day":"A"},
+
+    
+    {"date":"June02","day":"B"},
+    {"date":"June03","day":"A"},
+    {"date":"June04","day":"B"},
+    {"date":"June05","day":"A"},
+    {"date":"June06","day":"B"},
+
+    
+    {"date":"June09","day":"A"},
+    {"date":"June10","day":"B"},
+    {"date":"June11","day":"A"},
+    {"date":"June12","day":"B"},
+    {"date":"June13","day":"A"},
+
+    
+    {"date":"June16","day":"B"},
+    {"date":"June17","day":"A"},
+    {"date":"June18","day":"Last Day of School"},
+    {"date":"June19","day":"School Holiday"},
+    {"date":"June20","day":"Summer"},
+    {"date":"June23","day":"Summer"},
+    {"date":"June24","day":"Summer"},
+    {"date":"June25","day":"Summer"},
+    {"date":"June26","day":"Summer"},
+    {"date":"June27","day":"Summer"},
+    {"date":"June30","day":"Summer"}
+]
