@@ -5,13 +5,24 @@ Instructor notes:
 
 ### Postgres!
 
-Today, we'll continue practicing with ER diagramming and Postgres database setup.
+We're all a little rusty coming back from break, so we'll do a little review of 
+Postgres, and the idempotent SQL scripts that we were working on last time. 
 
-First, we'll have a brief discussion of **idempotency**, and easier ways to write our scripts outside of the command line.
+Then we'll continue our database creation activity that we were working on before break.
 
-Our goal today is to work on database design for the `Django Girls` projects that Blu introduced us to last week.
+As a reminder: We decided these groups in class, and started working on them:
 
-There are three projects here, so we'll break into groups, design ER diagrams, and then work on implementing them in Postgres.
+* Blu and Lehiem are working on the reservation database for cosmetology
+* Adam and Miguel are working on the reservation database for culinary
+* Rachael, Jack, and Alex will work on the forum for clean stoves
+
+Our goal will be for each group to have a complete idempotent sql script that creates all the relevant tables, and inserts some mock data (we'll use [https://www.mockaroo.com/](https://www.mockaroo.com/) for this).
+
+### Introduce End of Course Project
+Counting today, we'll have 7 total classes left in the semester. So it's time to
+start thinking about our **final exam**, which will be a project that combines
+SQL, Pandas, and Excel. I'll briefly introduce the project today so that you can
+start thinking about it, and I'll have the full write-up ready next time.
 
 ## Homework
 
