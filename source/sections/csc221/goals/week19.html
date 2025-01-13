@@ -8,6 +8,9 @@
 img {
     width: 80%;
 }
+pre {
+    margin-left: 2vw;
+}
 </style>
 <script src="../../js/init.js"></script>
 <script>
@@ -86,13 +89,16 @@ thank you in advance for doing it.
 
 <h3>Classwork</h3>
 <div>
-<p>
+<p style="color: red;">
+6 of the 9 of you have completed your NVCC course evaluation. The 3 of you who
+have yet to do this should do it now at the beginning of class.
+</p><p>
 Today we will begin looking at the <q>big picture</q> of the Django
 web appliation framework:
 </p><p>
 <img src="resources/DJ4E_BigPicture.png" alt="DJ4E Big Picture">
 </p><p>
-using a slightly tweaked version Dr. Chuck's
+using Dr. Chuck's
 <a href="https://github.com/csev/mini_django">mini_django</a>.
 </p>
 </div>
@@ -127,23 +133,59 @@ tweaked version by running:
 <h3>Homework</h3>
 <div>
 <p>
-Complete <a href="https://www.dj4e.com/lessons/dj4e_modules">Lesson 8: Django
-Data Models</a>. Watch these videos, taking notes:
-</p>
-<ul>
-<li>Django Data Models</li>
-<li>Data Model Migration in Django</li>
-<li>Demonstration: Django Single Table Models</li>
-</ul>
-<p>
-As you watch the videos, prepare to answer the following questions:
+Watch the 
+<i>Django Data Models</i> video from
+<a href="https://www.dj4e.com/lessons/dj4e_modules">Lesson 8: Django
+Data Models</a>, taking notes in a markdown file in your git repo.
+</p><p style="color: red;">
+You will have a quiz at the beginning of class on Wednesday. You can use
+one 8 1/2 by 11 inch sheet of paper, front and back, for notes that you can
+use during the quiz.
+</p><p>
+As you watch the videos, prepare to answer the following questions (
+<i>answers to these would be the best thing to put in your notes - hint, hint!
+</i>):
 </p>
 <ol>
+<li>Dr. Chuck makes a statement about the <q>learning curve</q> for SQL.
+What <i>exactly</i> does he say?</li>
+
 <li>In your own words, how would you define <i>Object-relational mapping</i>
 (ORM)?  How will we use it in Django and what specifically will it do?</li>
 
 <li>What does Dr. Chuck say are the advantages of the ORM?  What disadvantages
 (if any) does it have?</li>
+
+<li>Dr. Chucks that <i>most</i> (he mentions a percentage) of the things you
+want to do with SQL can be done effectively with an ORM. What <i>exactly</i>
+does he say?</li>
+
+<li>What is the name of the file in which the ORM data objects are defined?</li>
+
+<li>In the example of an ORM object:
+<pre>
+class User(models.Model):
+    name = models.CharField(max_length=128)
+    email = models.CharField(max_length=128)
+</pre>
+Dr. Chuck draws a line to <code>models.Model</code> and mentions what that is.
+What does he say? Of which 
+<a href="https://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>
+feature is this an example?</li>
+
+<li>What two commands do you need to run to go from an ORM to deployment in
+a database?</li>
+
+<li>What does running <code>python3 manage.py shell</code> do? <i>Be
+specific!</i></li>
+
+<li>In the example session Dr. Chuck talks about, he creates a new user named
+Kristen with email address kf@umich.edu. Where is this user created when:
+<pre>
+u = User(name='Kristen', email='kf@umich.edu')
+</pre>
+is run? What command needs to be used to add this new user to the database?</li>
+
 </ol>
 </div>
 </section>
