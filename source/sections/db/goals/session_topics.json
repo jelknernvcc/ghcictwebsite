@@ -34,7 +34,7 @@
   {"session": "33", "unit": 4, "topic": "Postgres Introduction"},
   {"session": "34", "unit": 4, "topic": "Django Girls Postgres Setup"},
   {"session": "35", "unit": 4, "topic": "Views, Mock Data, Introduce Project"},
-  {"session": "36", "unit": "", "topic": ""},
+  {"session": "36", "unit": 4, "topic": "Introduce Project"},
   {"session": "37", "unit": "", "topic": ""},
   {"session": "38", "unit": "", "topic": ""},
   {"session": "39", "unit": "", "topic": ""},
