@@ -28,7 +28,7 @@ should be linked from that one.
 
 ## Grading Rubric
 
-This project is graded on a 20-point scale.
+This project is graded on a 24-point scale.
 
 | **Assessment Criteria**         | **Meets Expectations - 4 points**                                                                                  | **Partially Meets Expectations - 3 points**                                     | **Does Not Meet Expectations - 2 points**                                                          | **Not Present - 0 points**                    |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
