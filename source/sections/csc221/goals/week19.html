@@ -65,6 +65,7 @@ thank you in advance for doing it.
 </p>
 </div>
 </section>
+-->
 
 <section>
 <h2>Wednesday, January 15th</h2>
@@ -72,6 +73,62 @@ thank you in advance for doing it.
 <h3>Classwork</h3>
 <div>
 <p>
+Today in class we will install and configure the
+<a href="https://git.gctaa.net/ACCICT/django_projects">django_projects</a>
+repo that we will use to learn Django.
+</p><p>
+Do each of the following:
+</p><ol>
+<li>
+Clone the
+<a href="https://git.gctaa.net/ACCICT/django_projects">django_projects</a> repo
+into a suitable place on your development machine.
+</li><li>
+Add <code>.venv</code> to your <code>.gitignore</code> in preperation for
+setting up a <a href="https://docs.python.org/3/library/venv.html">virtual
+environment</a>. A good <code>.gitignore</code> for our purposes here should
+include at least the following:
+<pre>
+*.swp
+__pycache__
+*.sqlite3
+*.db
+.DS_Store
+*.pyc
+.venv
+</pre>
+</li><li>
+Create your virtual environment inside your project directory by running:
+<pre>
+% python3 -m venv .venv
+</pre>
+</li><li>
+Activate it with:
+<pre>
+% source .venv/bin/activate
+</pre>
+</li><li>
+Now install all the Django modules we will need with:
+<pre>
+(.venv) % pip3 install -r requirements.txt
+</pre>
+</li><li>
+Finally, launch the Django webserver with:
+<pre>
+(.venv) % python manage.py runserver 0.0.0.0:8000 
+</pre>
+and point your browser at it.
+</li>
+</ol><p>
+At this point you should see a message in your terminal containing:
+<blockquote>
+You have 61 unapplied migration(s). Your project may not work properly until
+you apply the migrations for app(s): admin, auth, autos, bookmany, bookone,
+cats, chat, contenttypes, favs, favsql, form, forums, gview, many, myarts,
+pics, rest, sessions, social_django, taggit, tagme, tracks, users, well.  Run
+'python manage.py migrate' to apply them.
+</blockquote>
+After you last homework, you should know what this is about!
 </p>
 </div>
 
@@ -81,8 +138,6 @@ thank you in advance for doing it.
 </p>
 </div>
 </section>
--->
-
 
 <section>
 <h2>Monday, January 13th</h2>
@@ -185,7 +240,6 @@ Kristen with email address kf@umich.edu. Where is this user created when:
 u = User(name='Kristen', email='kf@umich.edu')
 </pre>
 is run? What command needs to be used to add this new user to the database?</li>
-
 </ol>
 </div>
 </section>
