@@ -156,17 +156,17 @@ Now that we've got Django installed - we can CRUD! For this activity, we want to
 </p>
 
 <ol>
-<li>First - take a look at the admin interface. After running the migrations and creating your superuser account, navigate to <pre> http://0.0.0.0:8000/admin/</pre>
+<li>First - take a look at the admin interface. After running the migrations and creating your superuser account, navigate to <code> http://0.0.0.0:8000/admin/</code>
     and login with your superuser account.
 
-    There are a lot of tables here for you to explore, but the simplest one that we'll focus on for now is called <pre>Posts</pre> all the way at the bottom.
+    There are a lot of tables here for you to explore, but the simplest one that we'll focus on for now is called <code>Posts</code> all the way at the bottom.
 
-    When you click on <pre>Posts</pre>, use the button at the top-right to <b>Add Post</b>. Note that the "owner" field is a dropdown that is pre-populated with only one option - your admin account.
+    When you click on <code>Posts</code>, use the button at the top-right to <b>Add Post</b>. Note that the "owner" field is a dropdown that is pre-populated with only one option - your admin account.
     </li>
 
 <li> Next, explore sqlite. In a new Terminal window, run this command to open sqlite:
 </br>
-<pre>sqlite3 db.sqlite3</pre>
+<code>sqlite3 db.sqlite3</code>
 In the prompt that opens, run these commands to inspect the posts table:
 <blockquote>
     <pre>
@@ -175,11 +175,11 @@ sqlite> .mode markdown
 sqlite> SELECT * from well_post;
     </pre>
 </blockquote>
-You should be able to see your post there! If you like, practice writing simple <pre>INSERT</pre> and <pre>DELETE</pre> queries here to directly manipulate the data in this table, and refresh the admin interface to see your changes.
+You should be able to see your post there! If you like, practice writing simple <code>INSERT</code> and <code>DELETE</code> queries here to directly manipulate the data in this table, and refresh the admin interface to see your changes.
 </li>
 
 <li>
-    In a third terminal window, start the Django shell with this command: <pre>python3 manage.py shell</pre>
+    In a third terminal window, start the Django shell with this command: <code>python3 manage.py shell</code>
 
     From there, practice creating and saving posts, like this:
     <blockquote>
@@ -195,7 +195,7 @@ You should be able to see your post there! If you like, practice writing simple 
 
 <li>
     Blow it all up and start over! Run this command at the terminal:
-    <pre>rm db.sqlite3</pre>
+    <code>rm db.sqlite3</code>
     Then re-run the migrations, re-create your superuser, and do it all again!
     Practice this a few times until you're sure you're comfortable with each of these steps.
 </li>
