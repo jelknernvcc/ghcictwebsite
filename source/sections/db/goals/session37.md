@@ -14,7 +14,8 @@ Everyone will share what they're thinking of doing for their project
 
 As we prepare for our final project, we'll want to be able to access our SQL data from Excel. Pandas is a great way to do this! We'll talk through this sample code, and we'll make sure that we get it to work on everyone's computers.
 
-```
+<blockquote>
+<pre>
 ###
 # Before running this, you'll need to set the password
 # as an environment variable:
@@ -46,7 +47,9 @@ df = pd.read_sql_query(query, engine)
 
 # Display or save the DataFrame
 df.to_excel("output.xlsx", index=False)
-```
+
+</pre>
+</blockquote>
 
 ## Homework
 - Continue working on your project, and be prepared for our second check in next time we meet. [See the full write-up for this project here](https://ict.gctaa.net/sections/db/projects/project.html?id=02final)
