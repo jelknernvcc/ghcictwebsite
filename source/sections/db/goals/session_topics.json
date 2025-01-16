@@ -35,7 +35,7 @@
   {"session": "34", "unit": 4, "topic": "Django Girls Postgres Setup"},
   {"session": "35", "unit": 4, "topic": "Views, Mock Data, Introduce Project"},
   {"session": "36", "unit": 4, "topic": "Introduce Project"},
-  {"session": "37", "unit": "", "topic": ""},
+  {"session": "37", "unit": 4, "topic": "Connecting SQL to Excel"},
   {"session": "38", "unit": "", "topic": ""},
   {"session": "39", "unit": "", "topic": ""},
   {"session": "40", "unit": "other_school", "topic": ""},
