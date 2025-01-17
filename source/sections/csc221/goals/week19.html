@@ -54,8 +54,62 @@ thank you in advance for doing it.
 
 <h3>Classwork</h3>
 <div>
-<p>
-</p>
+    <p>
+        Now that we've got Django installed - we can CRUD! For this activity, we want to get comfortable interacting with our database three different ways:
+        </p>
+        <ol>
+            <li>Directly interacting with sqlite</li>
+            <li>Via the django shell</li>
+            <li>Via the Django admin interface</li>
+        </ol>
+        <p> Follow these steps to practice each of these:
+        </p>
+        
+        <ol>
+        <li>First - take a look at the admin interface. After running the migrations and creating your superuser account, navigate to <code> http://0.0.0.0:8000/admin/</code>
+            and login with your superuser account.
+        
+            There are a lot of tables here for you to explore, but the simplest one that we'll focus on for now is called <code>Posts</code> all the way at the bottom.
+        
+            When you click on <code>Posts</code>, use the button at the top-right to <b>Add Post</b>. Note that the "owner" field is a dropdown that is pre-populated with only one option - your admin account.
+            </li>
+        
+        <li> Next, explore sqlite. In a new Terminal window, run this command to open sqlite:
+        </br>
+        <code>sqlite3 db.sqlite3</code>
+        In the prompt that opens, run these commands to inspect the posts table:
+        <blockquote>
+            <pre>
+        sqlite> .headers on
+        sqlite> .mode markdown
+        sqlite> SELECT * from well_post;
+            </pre>
+        </blockquote>
+        You should be able to see your post there! If you like, practice writing simple <code>INSERT</code> and <code>DELETE</code> queries here to directly manipulate the data in this table, and refresh the admin interface to see your changes.
+        </li>
+        
+        <li>
+            In a third terminal window, start the Django shell with this command: <code>python3 manage.py shell</code>
+        
+            From there, practice creating and saving posts, like this:
+            <blockquote>
+                <pre>
+        >>> from well.models import Post
+        >>> p = Post(title="asf",text="asf",owner_id=1)
+        >>> p.save()
+                </pre>
+            </blockquote>
+            (1 is the id of your superuser account)
+            Then compare with the sqlite interface and the admin interface to see your new post.
+        </li>
+        
+        <li>
+            Blow it all up and start over! Run this command at the terminal:
+            <code>rm db.sqlite3</code>
+            Then re-run the migrations, re-create your superuser, and do it all again!
+            Practice this a few times until you're sure you're comfortable with each of these steps.
+        </li>
+
 </div>
 
 <h3>Homework</h3>
@@ -151,62 +205,9 @@ homework time.
 
 <h3>Homework - CRUD</h3>
 <div>
+<p>We ran out of time as we were introducing this activity, so we've copied it
+to the classwork section for Friday.
 
-<p>
-Now that we've got Django installed - we can CRUD! For this activity, we want to get comfortable interacting with our database three different ways:
-</p>
-<ol>
-    <li>Directly interacting with sqlite</li>
-    <li>Via the django shell</li>
-    <li>Via the Django admin interface</li>
-</ol>
-<p> Follow these steps to practice each of these:
-</p>
-
-<ol>
-<li>First - take a look at the admin interface. After running the migrations and creating your superuser account, navigate to <code> http://0.0.0.0:8000/admin/</code>
-    and login with your superuser account.
-
-    There are a lot of tables here for you to explore, but the simplest one that we'll focus on for now is called <code>Posts</code> all the way at the bottom.
-
-    When you click on <code>Posts</code>, use the button at the top-right to <b>Add Post</b>. Note that the "owner" field is a dropdown that is pre-populated with only one option - your admin account.
-    </li>
-
-<li> Next, explore sqlite. In a new Terminal window, run this command to open sqlite:
-</br>
-<code>sqlite3 db.sqlite3</code>
-In the prompt that opens, run these commands to inspect the posts table:
-<blockquote>
-    <pre>
-sqlite> .headers on
-sqlite> .mode markdown
-sqlite> SELECT * from well_post;
-    </pre>
-</blockquote>
-You should be able to see your post there! If you like, practice writing simple <code>INSERT</code> and <code>DELETE</code> queries here to directly manipulate the data in this table, and refresh the admin interface to see your changes.
-</li>
-
-<li>
-    In a third terminal window, start the Django shell with this command: <code>python3 manage.py shell</code>
-
-    From there, practice creating and saving posts, like this:
-    <blockquote>
-        <pre>
->>> from well.models import Post
->>> p = Post(title="asf",text="asf",owner_id=1)
->>> p.save()
-        </pre>
-    </blockquote>
-    (1 is the id of your superuser account)
-    Then compare with the sqlite interface and the admin interface to see your new post.
-</li>
-
-<li>
-    Blow it all up and start over! Run this command at the terminal:
-    <code>rm db.sqlite3</code>
-    Then re-run the migrations, re-create your superuser, and do it all again!
-    Practice this a few times until you're sure you're comfortable with each of these steps.
-</li>
 
 
 </p>
