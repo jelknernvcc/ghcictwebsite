@@ -5,6 +5,15 @@
 <title>GCTAA CSC 222 Week 20</title>
 <style>
 @import url(../../css/goals.css);
+blockquote {
+    font-style: italic;
+}
+blockquote::before {
+    content: open-quote;
+}
+blockquote::after {
+    content: close-quote;
+}
 </style>
 <script src="../../js/init.js"></script>
 <script>
@@ -60,10 +69,40 @@ Colin, Hisham, Rehoboth and Yuri [Period 4B].
 <div>
 <p>
 I'll begin class by reflecting on the work I saw when I evaluated your git
-repos over the weekend.
+repos over the weekend. The grades were not as good as usual:
+<b>A</b>: 10, <b>B</b>: 2, <b>C</b>: 13, <b>D</b>: 1, <b>E</b>: 5.
+</p><p>
+I assert that you can only learn to program by programming, so putting in the
+time is essential if you want to learn to program. The reason for the high
+number of C grades is that you did not have any commits <i>between</i> class
+periods. With only two weeks remaining in the semester, you will hopefully fix
+that practice during these remaining weeks.
+</p><p>
+Our hardworking, overachieving friend
+<a href="https://codeberg.org/ACC/csc215">José Ejemplo</a> put in 5 hours
+working on <code>BigInt</code> this past weekend, and he got the
+overloaded <code>+</code> operator to work for positive <code>BigInt</code>s
+as well as helping me prepare today's lesson.
+</p><p>
+I'll take a few minutes to describe how he did it, including taking a
+look at his <a href="resources/JoseEjemploBigIntCommits.png">commit history</a>.
+I've mentioned in class several times now the quote 
+<a href="https://en.wikipedia.org/wiki/Robert_C._Martin">Uncle Bob</a> shares 
+in his book <i>Clean Code: A Handbook of Agile Software Craftsmanship</i> by
+UML creator <a href="https://en.wikipedia.org/wiki/Grady_Booch">Grady Booch</a>
+who said,
+</p><blockquote>
+Clean code is simple and direct. Clean code reads like well-written prose.
+Clean code never obscures the designer’s intent but rather is full of crisp
+abstractions and straightforward lines of control.
+</blockquote><p>
+For those of you who aspire to become highly skilled software engineers,
+I encourage you to read over the blog post by Brian Norlander,
+<a href="https://medium.com/@bpnorlander/stop-writing-code-comments-28fef5272752">Stop
+Writing Code Comments</a>.
 </p><p>
 We'll then talk briefly about any support you need for your projects, and
-we'll get back to work on them!
+let you get back to work on them!
 </p>
 </div>
 </section>
