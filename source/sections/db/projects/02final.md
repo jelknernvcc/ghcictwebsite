@@ -57,7 +57,7 @@ In this new Excel sheet, create some summary reports that might be helpful for s
 There is lots of professional software that automates this process of connecting to a database and generating reports. If anyone is interested in exploring one of these tools instead of the Excel part of this project, let me know! I've been exploring a tool called [Metabase](https://www.metabase.com/) with a capstone student this year and have some ideas!
 
 # Submission Instructions
-Your entire project should be summarized in a single Markdown file linked from your github homepage.
+Your entire project should be summarized in a single Markdown file linked from your github homepage. This should be completed before class time on Monday, and you will give a brief presentation to the rest of the class then.
 
 Your Markdown file should include a short write-up of each of these steps, and should link to:
 - A screenshot of your ER diagram
@@ -69,7 +69,27 @@ Your Markdown file should include a short write-up of each of these steps, and s
 There are a lot of steps to this project! To encourage everyone to keep making reasonable progress, we'll have a few group checkins:
 - On Wednesday, January 15 - be prepared to share the topic that you'll be using for your data model
 - On Tuesday, January 21 - everyone will present a first draft of your ER diagram
-- I'll post more check-in dates soon!
+- On Thursday, January 23 - I'll have one-on-one check-ins with each of you to make sure you're making good progress.
 
 # Grading
-Rubric coming soon!
+# ITE140 Final Project Grading Rubric
+
+This project will be graded on a 14-point scale. 
+Partial credit will be given in cases where these requirements are partially met.
+
+| Category                  | Criteria                                                                                        | Points |
+|---------------------------|-------------------------------------------------------------------------------------------------|--------|
+| **ER Diagram**            | Diagram includes at least 5 entities with appropriate attributes and data types                 | 1      |
+|                           | Primary Keys and Foreign Keys are correctly identified                                          | 1      |
+|                           | Cardinality is identified using crows-feet notation                                             | 1      |
+|                           | Includes at least one many-to-many relationship represented with a join table                   | 1      |
+| **Database Implementation** | SQL script is idempotent and runs without errors                                              | 1      |
+|                           | Script creates all required entities, relationships, and sample data                            | 1      |
+|                           | Includes at least one helpful view                                                              | 1      |
+| **Pandas Extraction**     | Python script connects to the database and extracts data from the view                          | 1      |
+|                           | Extracted data is written to an Excel file (`output.xlsx`)                                      | 1      |
+| **Excel Analysis**        | Excel reporting document connects to `output.xlsx` using PowerQuery                             | 1      |
+|                           | Excel document includes at least one pivot table with meaningful data                           | 1      |
+|                           | Excel document includes at least one pivot chart with slicers                                   | 1      |
+| **Documentation**         | Markdown file in git repo gives a project overview and includes brief discussions of each step  | 1      |
+| **Presentation**          | Presentation is clear, concise, and explains the project’s goals and outcomes                   | 1      |
