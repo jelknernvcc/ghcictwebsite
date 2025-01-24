@@ -1,4 +1,4 @@
-1. Find the folder: `source/calendars2/course_templates`, and copy the entire contents of that folder to your course. The rest of these instructions refer to this new copied folder.
+1. Find the folder: `source/resources/calendars2/course_templates`, and copy the entire contents of that folder to your course. The rest of these instructions refer to this new copied folder.
 2. Add a link to the course homepage to `calendar\index.html` 
 3. Update the course name in `calendar\index.html` and `goals/session.html`
 4. Update the `semester` javascript variable in `calendar\index.html`
