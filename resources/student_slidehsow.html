@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow Showcase</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // JavaScript slideshow implementation
+        const slides = [
+        { type: 'text', text: 'Check out some of our student projects!' },
+          { type: 'url', url: 'https://a-virginian.github.io/projects.html' },
+          { type: 'url', url: 'http://ssssssssttttttttuuuuuuuudddddddyyyyyyonline.space/prodjects.html'},
+          { type: 'url', url: 'https://sweetlyunsweetened.wordpress.com/'},
+          { type: 'url', url: 'https://catey-wrong.github.io/' },
+          { type: 'url', url: 'https://ananiatad.github.io/index.html' },
+          { type: 'url', url: 'https://apscs.org/index.html?school=acc'},
+          { type: 'url', url: 'https://toemio.github.io/'},
+          { type: 'url', url: 'https://cmj7gh.github.io/personal/'},
+          { type: 'url', url: 'https://ayaswebsite9.wordpress.com/'},
+          { type: 'text', text: 'Sign up for DE Web Design!' },
+        ];
+
+        const slideContainer = document.createElement('iframe'); // For URL slides
+        slideContainer.style.width = '100%';
+        slideContainer.style.height = '100vh';
+        slideContainer.style.border = 'none';
+        slideContainer.style.display = 'block';
+
+        document.body.appendChild(slideContainer);
+
+        const textContainer = document.createElement('div'); // For text slides
+        textContainer.style.width = '100%';
+        textContainer.style.height = '100vh';
+        textContainer.style.display = 'flex';
+        textContainer.style.justifyContent = 'center';
+        textContainer.style.alignItems = 'center';
+        textContainer.style.backgroundColor = 'black';
+        textContainer.style.color = 'white';
+        textContainer.style.fontSize = '3rem';
+        textContainer.style.fontFamily = 'Arial, sans-serif';
+        textContainer.style.display = 'none';
+
+        document.body.appendChild(textContainer);
+
+        let currentSlide = 0;
+
+        function showSlide(index) {
+          const slide = slides[index];
+
+          if (slide.type === 'url') {
+            textContainer.style.display = 'none';
+            slideContainer.style.display = 'block';
+            slideContainer.src = slide.url;
+          } else if (slide.type === 'text') {
+            slideContainer.style.display = 'none';
+            textContainer.style.display = 'flex';
+            textContainer.textContent = slide.text;
+          }
+        }
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        }
+
+        // Start slideshow
+        showSlide(currentSlide);
+        setInterval(nextSlide, 5000); // Change slide every 10 seconds
+    </script>
+</body>
+</html>
