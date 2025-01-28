@@ -13,7 +13,13 @@
 2. What learning outcomes are assessed in the NOVA computer science program?
 
    > We offer an A.S. Degree in Computer Science concurrent with a high school
-   > diploma.  Specifically, we offer the following sequence of courses:
+   > diploma that has been *intentionally* integrated in its first two years
+   > with a Web Design and Development IT pathway. Our goal is to provide
+   > enough flexibility to serve a broader range of student interests and
+   > and abilities, while at the same time creating a learning community
+   > with shared knowledge, tools, and skills.
+   >
+   > Specifically, we offer the following sequence of courses:
    >
    > * [ITD 110: Web Page Design I](https://courses.vccs.edu/courses/ITD110)
    > * [ITD 210: Web Page Design II](https://courses.vccs.edu/courses/ITD210)
@@ -28,9 +34,51 @@
    > * [CSC 215: Computer Systems](https://courses.vccs.edu/courses/CSC215)
    > * [CSC 223: Data Structures and Analysis of
    >   Algorithms](https://courses.vccs.edu/courses/CSC223)
+   >
+   > By the end of the 2nd year of the program, we want students to be able
+   > to legitimately list *full stack web developer* on their resumes, and
+   > to have solid skills managing a computer from the
+   > [Unix shell](https://en.wikipedia.org/wiki/Unix_shell), developing
+   > web applications using HTML, CSS, JavaScript, and the [Django web
+   > framework](https://en.wikipedia.org/wiki/Django_(web_framework),
+   > along with the requisit skill required as a Python programmer. We assess
+   > our student's Python skills by having them sit for the
+   > [PCEP](https://pythoninstitute.org/pcep) certification halfway through
+   > CSC 221. This tests their ability to *read* Python. During the 2nd
+   > half of the course, we focus on *writing* Python programs. We use 
+   > [Git](https://en.wikipedia.org/wiki/Git), which our students learn in
+   > the 1st year web design courses, to have each of them create a
+   > digital portfolio of their work. Git is a game changer for effective
+   > evaluation of student work, since it reveals the *process* of their
+   > software development as well as their product.
+   >
+   > The 3rd and 4th years of our sequence are focused on *demystifying the
+   > computer*. We want students to leave with a firm set of skills as C++
+   > programmers who can use [doctest](https://github.com/doctest/doctest) to
+   > develop programs with a
+   > [https://en.wikipedia.org/wiki/Test-driven\_development](https://en.wikipedia.org/wiki/Test-driven_development)
+   > process. We explose them to
+   > [Make](https://en.wikipedia.org/wiki/Make_(software). As we do with Python
+   > we assess student's ability to read C++ programs by having them take
+   > the [CPE](https://cppinstitute.org/cpe) certification half way through
+   > CSC 222.
 
 3. How do you understand course-level objectives and their alignment with
    learning activities and assessments in your courses?
+
+   > We are truly fortunate in having our students in a [learning
+   > cohort](https://en.wikipedia.org/wiki/Cohort_(educational_group)),
+   > travelling together as a group from course to course through our
+   > pathway. The importance of this fact for our program can not be
+   > overstated. Students taking the same sequence of courses on campus
+   > experience them as much more of a disjointed collection.
+   >  
+   > Since we have a small school program, with only two instructors, and
+   > a cohort learning community, we were able to use
+   > [backward design](https://en.wikipedia.org/wiki/Backward_design) to
+   > plan a pathway fully integrated from start to finish. We know what skills
+   > and experiences 2nd year students will bring from their first year with
+   > us, and we can then plan accordingly.
 
 4. What are some assessment methods you use in your classes?
 
