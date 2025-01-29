@@ -56,9 +56,9 @@
    > computer*. We want students to leave with a firm set of skills as C++
    > programmers who can use [doctest](https://github.com/doctest/doctest) to
    > develop programs with a
-   > [https://en.wikipedia.org/wiki/Test-driven\_development](https://en.wikipedia.org/wiki/Test-driven_development)
+   > [https://en.wikipedia.org/wiki/Test-driven\_development](https://en.wikipedia.org/wiki/Test-driven_development))
    > process. We explose them to
-   > [Make](https://en.wikipedia.org/wiki/Make_(software). As we do with Python
+   > [Make](https://en.wikipedia.org/wiki/Make_(software)). As we do with Python
    > we assess student's ability to read C++ programs by having them take
    > the [CPE](https://cppinstitute.org/cpe) certification half way through
    > CSC 222.
