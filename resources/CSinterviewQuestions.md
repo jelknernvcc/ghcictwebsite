@@ -57,7 +57,7 @@
    > programmers who can use [doctest](https://github.com/doctest/doctest) to
    > develop programs with a
    > [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)
-   > process. We explose them to
+   > (TDD) process. We explose them to
    > [Make](https://en.wikipedia.org/wiki/Make_(software)). As we do with Python
    > we assess student's ability to read C++ programs by having them take
    > the [CPE](https://cppinstitute.org/cpe) certification half way through
@@ -86,11 +86,9 @@
    > repositories, and class presentations are our three most commonly used
    > assesment tools for summative assessment. We use in class discussions and
    > short in class programming exercises for formative assessments. Our
-   > inclusion of
-   > [test-driven > development](https://en.wikipedia.org/wiki/Test-driven_development)
-   > (TDD) in our curriculum provides us with a powerful tool for writing
-   > formal assessments for programming, since a series of unit tests can
-   > be presented to students along with the instruction to "make the tests
+   > inclusion of (TDD) in our curriculum provides us with a powerful tool for
+   > writing formal assessments for programming, since a series of unit tests
+   > can be presented to students along with the instruction to "make the tests
    > pass". This provides a clear, consise, yet open ended form of assessment.
 
 5. How are you identifying at-risk students in your classes?
