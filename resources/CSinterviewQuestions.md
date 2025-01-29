@@ -66,8 +66,8 @@
 3. How do you understand course-level objectives and their alignment with
    learning activities and assessments in your courses?
 
-   > We are truly fortunate in having our students in a [learning
-   > cohort](https://en.wikipedia.org/wiki/Cohort_(educational_group)),
+   > We are truly fortunate in having our students in a
+   > [learning cohort](https://en.wikipedia.org/wiki/Cohort_(educational_group)),
    > travelling together as a group from course to course through our
    > pathway. The importance of this fact for our program can not be
    > overstated. Students taking the same sequence of courses on campus
@@ -82,17 +82,53 @@
 
 4. What are some assessment methods you use in your classes?
 
+   > In class paper quizzes and tests, portfolio evaluations using git
+   > repositories, and class presentations are our three most commonly used
+   > assesment tools for summative assessment. We use in class discussions and
+   > short in class programming exercises for formative assessments. Our
+   > inclusion of
+   > [test-driven > development](https://en.wikipedia.org/wiki/Test-driven_development)
+   > (TDD) in our curriculum provides us with a powerful tool for writing
+   > formal assessments for programming, since a series of unit tests can
+   > be presented to students along with the instruction to "make the tests
+   > pass". This provides a clear, consise, yet open ended form of assessment.
+
 5. How are you identifying at-risk students in your classes?
+
+   > Again, we are keenly aware that as a DE program we have a distict
+   > advantage here over our on campus colleagues. While we strive to
+   > differentiate learning to reach a broad range of skills and abilities,
+   > our students are all high school students who have qualified to be in
+   > college courses. Participation in DE courses is currently a privilege,
+   > not a right. Students who are not "college ready" are not permitted to
+   > remain in our classes. The two industry certifications we use are playing
+   > a very helpful role in establishing programming literacty in our students.
 
 6. What professional development activities do you consider necessary to
    improve assessment in computer science classes?
 
+
 7. How do you measure and improve students' motivation in your classes?
+
+   > Active engagement is the most effective tool for measuring student
+   > motivation. Informally this is done each day in class with classroom
+   > activies and discussions. Formally we can measure engagement by looking
+   > at the commit histories in student's git repositories.
 
 8. What are your thoughts about including artificial intelligence methods to
    improve assessment in computer science classes?
 
+   > AI scares the hell out of me!  Not sure what to say here :-(
+
 9. What is your interest in inspiring students to seek innovation?
+
+   > We want students to be active participants in a democratic society.
+   > Innovation is how we humans engage with and transform the world we line
+   > in. All people should have the right to participate in this tranformation
+   > and we want our students to have the tools they need to participate.
 
 10. How can the success rate be improved for students in computer science
     courses?
+
+    > How about connecting the CS program with opportunities for integrated, 
+    > real world, *paid* work experience?
