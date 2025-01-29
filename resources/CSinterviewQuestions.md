@@ -39,8 +39,8 @@
    > to legitimately list *full stack web developer* on their resumes, and
    > to have solid skills managing a computer from the
    > [Unix shell](https://en.wikipedia.org/wiki/Unix_shell), developing
-   > web applications using HTML, CSS, JavaScript, and the [Django web
-   > framework](https://en.wikipedia.org/wiki/Django_(web_framework),
+   > web applications using HTML, CSS, JavaScript, and the
+   > [Django web framework](https://en.wikipedia.org/wiki/Django_(web_framework)),
    > along with the requisit skill required as a Python programmer. We assess
    > our student's Python skills by having them sit for the
    > [PCEP](https://pythoninstitute.org/pcep) certification halfway through
