@@ -39,8 +39,8 @@
    > to legitimately list *full stack web developer* on their resumes, and
    > to have solid skills managing a computer from the
    > [Unix shell](https://en.wikipedia.org/wiki/Unix_shell), developing
-   > web applications using HTML, CSS, JavaScript, and the [Django web
-   > framework](https://en.wikipedia.org/wiki/Django_(web_framework),
+   > web applications using HTML, CSS, JavaScript, and the 
+   > [Django web framework](https://en.wikipedia.org/wiki/Django_(web_framework),
    > along with the requisite skill required as a Python programmer. We assess
    > our student's Python skills by having them sit for the
    > [PCEP](https://pythoninstitute.org/pcep) certification halfway through
@@ -56,9 +56,9 @@
    > computer*. We want students to leave with a firm set of skills as C++
    > programmers who can use [doctest](https://github.com/doctest/doctest) to
    > develop programs with a
-   > [Test-driven Development](https://en.wikipedia.org/wiki/Test-driven_development)
-   > process. We expose them to
-   > [Make](https://en.wikipedia.org/wiki/Make_(software). As we do with Python
+   > [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)
+   > (TDD) process. We explose them to
+   > [Make](https://en.wikipedia.org/wiki/Make_(software)). As we do with Python
    > we assess student's ability to read C++ programs by having them take
    > the [CPE](https://cppinstitute.org/cpe) certification half way through
    > CSC 222.
@@ -87,7 +87,7 @@
    > assessment tools for summative assessment. We use in class discussions and
    > short in class programming exercises for formative assessments. Our
    > inclusion of
-   > [TDD](https://en.wikipedia.org/wiki/Test-driven_development)
+   > TDD
    >  in our curriculum provides us with a powerful tool for writing
    > formal assessments for programming, since a series of unit tests can
    > be presented to students along with the instruction to "make the tests
