@@ -35,12 +35,13 @@
    > * [CSC 223: Data Structures and Analysis of
    >   Algorithms](https://courses.vccs.edu/courses/CSC223)
    >
+   >
    > By the end of the 2nd year of the program, we want students to be able
    > to legitimately list *full stack web developer* on their resumes, and
    > to have solid skills managing a computer from the
    > [Unix shell](https://en.wikipedia.org/wiki/Unix_shell), developing
    > web applications using HTML, CSS, JavaScript, and the 
-   > [Django web framework](https://en.wikipedia.org/wiki/Django_(web_framework),
+   > [Django web framework](https://en.wikipedia.org/wiki/Django_(web_framework)),
    > along with the requisite skill required as a Python programmer. We assess
    > our student's Python skills by having them sit for the
    > [PCEP](https://pythoninstitute.org/pcep) certification halfway through
