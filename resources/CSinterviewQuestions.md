@@ -113,7 +113,10 @@
    > use of git to track student work gives us a very frequent, granular 
    > update on how well students are doing in our classes. We don't feel that we
    > need any specific PD about assessment, but we would be very excited about 
-   > the opportunity to share tips/tricks/skills with other teachers.
+   > the opportunity to share tips/tricks/skills with other instructors.
+   > Actually, we think participation in reflective research like we are doing
+   > here with you now is just the kind of PD that most benefits our
+   > program.
 
 
 7. How do you measure and improve students' motivation in your classes?
