@@ -16,8 +16,9 @@
    > diploma that has been *intentionally* integrated in its first two years
    > with a Web Design and Development IT pathway. Our goal is to provide
    > enough flexibility to serve a broader range of student interests and
-   > and abilities, while at the same time creating a learning community
-   > with shared knowledge, tools, and skills.
+   > abilities, while at the same time creating a learning community with
+   > shared knowledge, tools, and skills (see
+   > https://apscs.org/index.html?school=acc).
    >
    > Specifically, we offer the following sequence of courses:
    >
