@@ -136,6 +136,17 @@
    > [farriers](https://en.wikipedia.org/wiki/Farrier). We certainly need to
    > watch the developments in this incredibly rapidly developing science, and 
    > prepare ourselves for the possibily profound changes it might bring.
+   >
+   > In the mean time, we tell our students that it is their duty as computer
+   > science students to pay attention to AI, and we encourage them to explore
+   > using it while they are developing software. Currently, none of the
+   > AI systems our students have access to can develop a git commit history
+   > showing evidence of an iterative development process using test-driven
+   > development, and they are an even longer way we assume from being able to
+   > control our student's bodies to guide them in standing in front of the
+   > class and presenting their software to an audience and answering questions
+   > in a way that indicates understanding.  When that happens, we should all
+   > practice learning to purr and hope the AIs will keep us around as pets ;-)
 
 9. What is your interest in inspiring students to seek innovation?
 
