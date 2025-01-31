@@ -133,7 +133,7 @@
    > reaches the point where it can effectively assess student learning,
    > it will soon render us as computer science instructors, and our students
    > as computer programmers about as relevant as
-   > [Farriers](https://en.wikipedia.org/wiki/Farrier). We certainly need to
+   > [farriers](https://en.wikipedia.org/wiki/Farrier). We certainly need to
    > watch the developments in this incredibly rapidly developing science, and 
    > prepare ourselves for the possibily profound changes it might bring.
 
