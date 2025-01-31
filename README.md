@@ -1,4 +1,4 @@
-# ICT@GCTAA Website
+# ICT @ Arlington Tech Governor's STEM Academy Website
 
-This is the *new* website for the
-[Governor's Career and Technical Academy Arlington](https://www.doe.virginia.gov/teaching-learning-assessment/k-12-standards-instruction/career-and-technical-education-cte/governor-s-stem-academies/established-stem-academies/governor-s-career-and-technical-academy-in-arlington).
+This is the website for the web development and computer science programs at
+the [Arlington Tech Governor's STEM Academy](https://arlingtontech.apsva.us/).
