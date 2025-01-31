@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ITD 256 Final Project Grading Rubric</title>
+<style>
+body {
+    margin: 60px;
+}
+h1 {
+    text-align: center;
+}
+th, td {
+    padding: 10px;
+    border: 1px dotted #000;
+}
+th {
+    background-color: #DBD0EB;
+}
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+footer>a, footer>a:visited {
+    text-decoration: none;
+    color: #777;
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<h1>ITD 256 Final Project Grading Rubric</h1>
+
+<table>
+<tr>
+  <th>Grade</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <th>A</th>
+  <td>
+  Demonstrates clear understanding of concepts learned in Curious Moon and
+  Postgres for Everybody. 
+  </td>
+</tr>
+<tr>
+  <th>B</th>
+  <td>
+  </td>
+</tr>
+<tr>
+  <th>C</th>
+  <td>
+  </td>
+</tr>
+<tr>
+  <th>D</th>
+  <td>
+  </td>
+</tr>
+<tr>
+  <th>E</th>
+  <td>
+  No evidence of work presented.
+  </td>
+</tr>
+</table>
+
+<footer id="vLinks">
+<hr>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>
