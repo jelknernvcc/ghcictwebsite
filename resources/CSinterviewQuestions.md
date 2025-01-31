@@ -129,7 +129,13 @@
 8. What are your thoughts about including artificial intelligence methods to
    improve assessment in computer science classes?
 
-   > AI scares the hell out of us!  Not sure what to say here :-(
+   > AI scares the hell out of us!  Not sure what to say here :-( When AI
+   > reaches the point where it can effectively assess student learning,
+   > it will soon render us as computer science instructors, and our students
+   > as computer programmers about as relevant as
+   > [Farriers](https://en.wikipedia.org/wiki/Farrier). We certainly need to
+   > watch the developments in this incredibly rapidly developing science, and 
+   > prepare ourselves for the possibily profound changes it might bring.
 
 9. What is your interest in inspiring students to seek innovation?
 
