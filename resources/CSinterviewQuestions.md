@@ -30,7 +30,7 @@
    >   Languages](https://courses.vccs.edu/courses/ITP225)
    > * [CSC 222: Object-Oriented
    >   Programming](https://courses.vccs.edu/courses/CSC222)
-   > * [Introduction to Discrete
+   > * [CSC 208: Introduction to Discrete
    >   Structures](https://courses.vccs.edu/courses/CSC208)
    > * [CSC 215: Computer Systems](https://courses.vccs.edu/courses/CSC215)
    > * [CSC 223: Data Structures and Analysis of
