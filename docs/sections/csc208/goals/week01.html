@@ -5,12 +5,8 @@
 <title>GCTAA CSC 208 Week 1</title>
 <style>
 @import url(../../css/goals.css);
-.twocol {
-    font-style: italic;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    margin: 1vw 3vw 1vw 3vw;
+li {
+    margin-top: 1vw;
 }
 </style>
 <script src="../../js/init.js"></script>
@@ -62,8 +58,11 @@ Introduction to Discrete Structures</i>!
 <div>
 <p>
 We'll begin with a hands-on activity to <i>git</i> us ready for the workflow we
-will use in here to submit homework, and end with a homework assignment that
+will use to submit work in this class, and end with a homework assignment that
 asks us to think about what we will doing in this course.
+</p><p>
+<i>The classwork is due at the end of the period, so don't waste time gitting
+to it! ;-)</i>
 </p>
 </div>
 
@@ -74,6 +73,34 @@ asks us to think about what we will doing in this course.
 Create a new git repo for this class on your favorite git host, and <i>email me
 its URL</i>. Name your repo <code>csc208</code>.
 </li><li>
+Add a <code>.gitignore</code> to your repo to assure that artifacts like
+<code>.DS_Store</code> don't end up in your repo. You will loose a letter
+grade this semester on repo evaluation assignments if I see such things.
+</li><li>
+Add a subdirectory to your repo named <code>ch0_preliminaries</code>.
+</li><li>
+Take a look at each of the following 
+<a href="https://www.markdownguide.org/">Markdown</a> files, viewing their
+source to see how they are written:
+  <ul>
+    <li><a href="https://codeberg.org/ACC/csc208/src/branch/master/ch0_preliminaries/README.md">Chapter 0: Introduction and Preliminaries</a></li>
+
+    <li><a href="https://codeberg.org/ACC/csc208/src/branch/master/ch0_preliminaries/LogicalStatementsAndProofs.md">
+    Logical Statements and Proofs</a></li>
+
+    <li><a href="https://codeberg.org/ACC/csc208/src/branch/master/ch0_preliminaries/SquareRootOfTwo.md">
+    The Square Root of 2 Is Irrational</a></li>
+
+    <li><a href="https://codeberg.org/ACC/csc208/src/branch/master/ch0_preliminaries/TruthTables.md">
+    Truth Tables with Python</a></li>
+  </ul>
+</li><li>
+Add a Markdown file in your <code>ch0_prelimaries</code> directory named
+<code>latex_experiments1.md</code>. Find interesting examples of
+<a href="https://www.upyesp.org/posts/makrdown-vscode-math-notation/">adding
+math notation to Markdown</a> from the list above (or other places, if you're
+feeling really ambitious), and add them to this document.
+</li>
 </ol>
 </div>
 
@@ -85,10 +112,11 @@ Read
 I'm not a real scientist, and that's okay</a>. Create a subdirectory named
 <code>Notes</code> in your git repo. In a
 <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> file named
-<code>WhatIsComputerScience.md</code> write a few paragraphs summarizing
-Steve Wartik's post and reflecting on why you were asked to read it.
-Look up John Hopcroft and Robert Tarjan and say a bit about who they are and
-what they did.
+<code>WhatIsComputerScience.md</code> inside the
+<code>ch0_preliminaries</code> subdirectory of your repo, write a few
+paragraphs summarizing Steve Wartik's post and reflecting on why you were asked
+to read it.  Look up John Hopcroft and Robert Tarjan and say a bit about who
+they are and what they did.
 </p>
 </div>
 </section>
