@@ -33,9 +33,19 @@ As always, it's a good idea to take notes on these videos, in your new repo!
 </p>
 </div>
 
+<h4>Template Practice</h4>
+We'll do some practice activities with templates:
+<ul>
+<li>We'll work together to add a new, simple template in the mysite django project. </li>
+<li>Individually, you'll write a simple calculator</li>
+</ul>
+
 <h3>Homework</h3>
 <div>
 <ol>
+<li>Login to MyNOVA and check your grades! Our transcript will
+stick with you for life, so it's your responsibility to make sure you can see it and it's correct!
+</li>
 <li>Watch <i>Using the Django Template Language (DTL)</i> (11:00)
 and 
 <i>Django Template Inheritance</i> (6:06) and
