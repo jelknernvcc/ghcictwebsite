@@ -34,11 +34,7 @@ As always, it's a good idea to take notes on these videos, in your new repo!
 </div>
 
 <h4>Template Practice</h4>
-We'll do some practice activities with templates:
-<ul>
-<li>We'll work together to add a new, simple template in the mysite django project. </li>
-<li>Individually, you'll write a simple calculator</li>
-</ul>
+Together, we'll work through 
 
 <h3>Homework</h3>
 <div>
@@ -48,8 +44,7 @@ stick with you for life, so it's your responsibility to make sure you can see it
 </li>
 <li>Watch <i>Using the Django Template Language (DTL)</i> (11:00)
 and 
-<i>Django Template Inheritance</i> (6:06) and
-<i>Reversing Django URLs</i> (12:52) from the
+<i>Django Template Inheritance</i> (6:06) from the
 <a href="https://www.dj4e.com/lessons/django_views">Django Views and
 Templates</a> lesson.</li>
 
