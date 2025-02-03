@@ -12,20 +12,33 @@ this new course will be its continuity with the previous one.
 <div>
 
 <h3>Classwork</h3>
+
+<h4> Make a new repo </h4>
+<p>
+Now that we're in a new class, we'd like to setup a new repo for our notes and activities. You're welcome to make this repo in whichever git host you prefer. We recommend that you name it <code>ITP225</code>.
+</p>
+<p>
+Once it's created, send a link to both cmj2310@email.vccs.edu and jde232@email.vccs.edu, so that we know where to find it
+</p>
+
+<h4>Templates Video</h4>
 <div>
 <p>
 We will start class today by watching <i>Using Templates in Django</i> (10:05)
-and <i>Using the Django Template Language (DTL)</i> (11:00) from the
+ from the
 <a href="https://www.dj4e.com/lessons/django_views">Django Views and
 Templates</a> lesson.
 </p><p>
+As always, it's a good idea to take notes on these videos, in your new repo!
 </p>
 </div>
 
 <h3>Homework</h3>
 <div>
 <ol>
-<li>Watch <i>Django Template Inheritance</i> (6:06) and
+<li>Watch <i>Using the Django Template Language (DTL)</i> (11:00)
+and 
+<i>Django Template Inheritance</i> (6:06) and
 <i>Reversing Django URLs</i> (12:52) from the
 <a href="https://www.dj4e.com/lessons/django_views">Django Views and
 Templates</a> lesson.</li>
