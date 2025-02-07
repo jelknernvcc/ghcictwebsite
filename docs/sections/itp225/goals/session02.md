@@ -12,7 +12,7 @@ As promised, we'll start with a simple reading quiz about templates.
 ### Practice making and rendering templates
 
 Last class, we worked through adding the simplest 
-template possible. It was a lot of steps. Today, I want you to go through the same process! You'll take it a bit further this time - we'll make our templates valid HTML and add some GET parameters.
+template possible. It was a lot of steps. Today, I want you to go through the same process!
 
 #### Steps Summary
 Here's a quick summary of the steps that you'll need to follow to create a new template and register it with your Django application. You don't necessarily need to go in this order, but this is my recommendation:
