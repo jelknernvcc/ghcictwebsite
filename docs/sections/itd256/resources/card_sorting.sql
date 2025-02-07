@@ -10,8 +10,13 @@ CREATE TYPE suit
 AS ENUM ('heart', 'diamond', 'club', 'spade');
 
 
+
+
+
+
+
 CREATE TYPE rank 
-AS ENUM ('A', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K');
+AS ENUM ('A',  '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K');
 
 
 
