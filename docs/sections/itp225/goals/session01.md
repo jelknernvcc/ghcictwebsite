@@ -34,7 +34,7 @@ As always, it's a good idea to take notes on these videos, in your new repo!
 </div>
 
 <h4>Template Practice</h4>
-Together, we'll work through 
+Together, we'll start to work through the process of building our own templates.
 
 <h3>Homework</h3>
 <div>
