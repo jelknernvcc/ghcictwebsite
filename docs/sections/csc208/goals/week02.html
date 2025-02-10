@@ -78,11 +78,61 @@ proofs</a>.
 <div>
 <p>
 Today in class we will discuss <i>Section 1.1: Mathematical Statements</i> in
-our text. We will also install <a
+our text. Since it will be so useful to us as we explore logical statements,
+we will start by installing <a
 href="https://pypi.org/project/truth-table-generator/">truth-table-generator</a>
-and use it to investigate the mathematical statements presented in the
-section.
+and learning how to use it to investigate the mathematical statements presented
+in the section.
+</p><p>
+Unfortunately, I do not have access to a student impaired Macbook on which to
+test how you will have to work around your restrictions, so I am hoping in the
+first 15 to 20 minutes of class one of the more adept of you will find a
+soluction to installing the library <i>and its cli</i> application, and then
+share it with the class.
+</p><p>
+That done, we will work through the following examples together.
+</p><ol>
+<li><code>ttg_cli.py "['p']"</code></li>
+<li><code>ttg_cli.py "['p', 'q']"</code></li>
+<li><code>ttg_cli.py "['p', 'q', 'r']"</code></li>
+<li><code>ttg_cli.py "['p']" -i False</code></li>
+<li><code>ttg_cli.py "['p', 'q']" -p "['~(p and q)', 'p or ~q']" -i False</code></li>
+<li><code>ttg_cli.py "['p', 'q', 'r', 's'] -i False"</code></li>
+<li>
+<code>ttg_cli.py "['p', 'q']" -p "['p and q', 'p or q', 'p =&gt; q']" -i False
+</code></li>
+</ol>
+</div>
+
+<h4>Challenge I</h4>
+<div>
+<p>
+Find a statement <i>logically equivalent</i> (i.e. having the same truth table)
+to <code>p =&gt; q</code> using <code>or</code> and <code>~</code> operators.
 </p>
+</div>
+
+<h4>Challenge II</h4>
+<div>
+<p>
+Given the following <b>propositional variables</b>:
+</p><ul>
+<li><b>p</b>: Troll 1 is a knave.</li>
+<li><b>q</b>: There are exactly two knights.</li>
+<li><b>r</b>: Troll 1 is lying.</li>
+<li><b>s</b>: All 3 Trolls are knaves.</li>
+<li><b>t</b>: At lease one Troll is a knight.</li>
+</ul><p>
+use <code>truth-table-generator</code> to explore the <i>Investigate!</i>
+activity in the <i>Section Preview</i> of <i>Section 1.1 Mathematical
+Statements</i>. See if you can determine which Trolls are knaves and which are
+knights.
+</p>
+</p>
+</div>
+
+<h3>Homework</h3>
+<div>
 <p>
 Take notes on section 1.1, and learn the following vocabularly and be prepared
 to use it correctly:
@@ -108,14 +158,7 @@ to use it correctly:
 <li>biconditional</li>
 <li>negation</li>
 <li>truth conditions</li>
-<li></li>
 </ul><p>
-</p>
-</div>
-
-<h3>Homework</h3>
-<div>
-<p>
 Complete the <i>Reading Questions</i>, <i>Practice Problems</i>, and
 three <i>Additional Exercises</i> at the end of the section. Come to our next
 class prepared to discuss these exercises.
