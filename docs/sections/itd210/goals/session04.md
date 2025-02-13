@@ -23,3 +23,14 @@ Divide up to decide who will work on which pages. For this project, let's each s
 ## Homework
 
 Continue working on the project - but we'll have more time in class next time.
+
+
+
+### Team Assignments
+- Jackson and Emelyn
+- Christian and Saad
+- Amir and Hikmatulah
+- Isaac and Kidus
+- Clara, Joshua, and Aya
+- Udval, Alex, and  Angel
+- Cara, Charlie, and Raphael
