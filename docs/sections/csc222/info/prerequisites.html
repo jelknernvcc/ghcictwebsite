@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>GCTAA CSC 222 Week NN</title>
+<title>GCTAA CSC 222 Prerequisites</title>
 <style>
 @import url(../../css/goals.css);
 </style>
@@ -52,11 +52,15 @@ aquiring them.
 <p>
 We will work in a Unix
 <a href="https://en.wikipedia.org/wiki/Command-line_interface">CLI</a>
-environment and use
+environment, using
 <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a> as our
-text editor.
+text editor, and saving (and <q>submitting</q>) our work in
+<a href="https://en.wikipedia.org/wiki/Git">git</a> repositories.
 </p><p>
-Use the following tutorials to learn what you need:
+You will need to be <i>comfortable</i>, not just <q>familiar</q> with these
+tools to keep up in this class.
+</p><p>
+Here are several resources to learn what you need:
 </p>
 <ul>
   <li><a href="http://www.ee.surrey.ac.uk/Teaching/Unix/">UNIX Tutorial for
@@ -67,119 +71,85 @@ Use the following tutorials to learn what you need:
   <a href="http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html">Two</a>, and
   <a href="http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html">Three</a>.</li>
 
+  <li><a href="https://www.mprat.org/Terminus/">Terminus</a> is a
+  <i>gamified</i> way to learn / practice Unix CLI skills.</li>
+
   <li><b>VIM Tutor</b>. At your linux terminal prompt, type:
   <code>vimtutor</code> and hit enter. This loads a script that copies
   a text file to the <code>/tmp</code> and load it into vim. File contains
   a tutorial on using this power, but somewhat difficult to get used to at
   first editor. Use it to learn vim.</li> 
+
+  <li><a href="https://vimschool.netlify.app/">Vim School</a> is a website
+  designed to help you learn Vim.</li>
+
+  <li><a href="https://vim-adventures.com/">Vim Adventures</a> helps you
+  learn Vim keybindings by playing a game.</li>
+
+  <li><a href="https://learngitbranching.js.org/">Learn Git Branching</a> is
+  an interactive, online tutorial for git.</li>
 </ul>
 </div>
 
 <h2>HelloCSC</h2>
 <p>
-Now that we have the tools we need, let's create our first Java program.
+Now that you have the tools you need, let's have you create your first C++
+program.
 </p>
 <ol>
-  <li>Use vim to create a text file named <code>HelloCSC.java</code> with
+  <li>Use vim to create a text file named <code>HelloCSC.cpp</code> with
   the following contents:
   <pre>
-  public class HelloCSC {
-      public static void main(String[] args) {
-          System.out.println("Hello, CSC 201, let's learn some Java!");
-      }
+  #include <iostream>
+  using namespace std;
+
+  int main()
+  {
+      cout &lt;&lt; "Hello World from C++!" &lt;&lt; endl;
+
+      return 0;
   }</pre>
-  Note that the name of the file is important. Java requires that the
-  name of the class, <code>HelloCSC</code> in this case, be the same as the name
-  of the file before the <code>.java</code> file extention.
   </li>
 
   <li>From the unix command prompt with the current working directory
-  containing your <code>HelloCSC.java</code> file, run the following command:
+  containing your <code>HelloCSC.cpp</code> file, run the following command:
   <pre>
-  $ javac HelloCSC.java</pre>
-  This will create a new file named <code>HelloCSC.class</code> that contains
-  <a href="https://en.wikipedia.org/wiki/Java_bytecode">Java bytecode</a> that
-  runs on a
-  <a href="https://en.wikipedia.org/wiki/Java_virtual_machine">Java virtual
-  machine</a>.
+  $ g++ HelloCSC.cpp</pre>
+  This will create a new file named <code>a.out</code> that contains the
+  <a href="https://en.wikipedia.org/wiki/Binary_file">binary file</a> that
+  runs on your computer.
   </li>
+
   <li>
-  To run the bytecode, use:
+  To run it, type:
   <pre>
-  $ java HelloCSC</pre>
-  and you should see the message inside the
-  <code>System.out.println(...)</code> appear on the screen.
+  $ ./a.out</pre>
+  You should see the hello message from your program displayed in the consol
+  (terminal) window.
   </li>
 </ol>
 
 <h2>A More Interesting Example</h2>
 <p>
-Here is another more interesting example, activity 1.3 from your curriculum.
+For a more interesting example, take a look at
+<a href="https://openbookproject.net/thinkcs/cpp/exercises/ch04/ch04s00.html">
+Exploring the bitwise operators</a> from one of our early exercise sets.
+</p><p>
+Compile it, run it, and study its output.
 </p>
-<ol>
-  <li>Use vim to create a text file named <code>Act1_3.java</code> with
-  the following contents:
-  <pre>
-  public class Act1_3 {
-      public static void main(String[] args) {
-          double a = 3.14159265;
-          double b;
 
-          int d = 3;
-
-          b = ((int)(a * Math.pow(10.0, d) + 0.5)) / Math.pow(10.0, d);
-
-          System.out.println(b);
-      }
-  }</pre>
-  </li>
-
-  <li>From the unix command prompt with the current working directory
-  containing your <code>Act1_3.java</code> file, run the following command:
-  <pre>
-  $ javac Act1_3.java</pre>
-  This will create a new file named <code>Act1_3.class</code> with 
-  Java bytecode.
-  </li>
-  <li>
-  Again, to run the bytecode, use:
-  <pre>
-  $ java Act1_3</pre>
-  This will display the value <code>3.142</code> on the screen, indicating your
-  algorithm works correctly.
-  </li>
-</ol>
-
-<h2>Making Vim a Lightweight Java IDE</h2>
+<h2>Making Vim a Lightweight C++ IDE</h2>
 <p>
 We can bind function keys in Vim so that we don't need to leave the editor to
-compile and run our Java code.
+compile and run our C++ code.
 </p>
 <p>Use vim to create a text file named <code>.vimrc</code> in your
-<a href="https://en.wikipedia.org/wiki/Home_directory">home directory</a> with
-the following contents:
-</p>
-<pre style="margin-left: 2em;">
-" .vimrc
-"
-" Created by Jeff Elkner and Marco Sirabella 24 September 2016
-"
-" Turn on systax highlighting and autoindenting
-syntax enable
-filetype indent on
-" set autoindent width to 4 spaces
-set et
-set sw=4
-set smarttab
-" Bind &lt;f9&gt; to compile current java source file.
-map &lt;f9&gt; :w\|!javac % &lt;cr&gt;
-" Bind &lt;f10&gt; to run compiled java file.
-map &lt;f10&gt; :w\|!java %:r &lt;cr&gt;
-</pre>
-<p>
-You will now be able to compile your Java source files by pressing the
-<code>&lt;F9&gt;</code> key and run them by pressing the
-<code>&lt;F10&gt;</code> key.
+<a href="https://en.wikipedia.org/wiki/Home_directory">home directory</a>.
+</p><p>
+Take a look at
+<a href="https://openbookproject.net/thinkcs/cpp/app_c.html">Appendix C: A
+development environment for unit testing</a> and set up the <code>.vimrc</code>
+you see there.
 </p>
 </section>
 </main>
