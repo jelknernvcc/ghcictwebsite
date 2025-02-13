@@ -4,5 +4,5 @@
   {"session": "03", "unit": 1, "topic": "Dynamic Templates"},
   {"session": "04", "unit": 1, "topic": "Including Python in our Views"},
   {"session": "05", "unit": 1, "topic": "Template Inheritance"},
-  {"session": "06", "unit": 1, "topic": "Generic Views"},
+  {"session": "06", "unit": 1, "topic": "Generic Views"}
 ]
