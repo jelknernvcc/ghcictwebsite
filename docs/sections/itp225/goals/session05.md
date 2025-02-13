@@ -32,7 +32,11 @@ these changes in your repo.
 Now that you have inheritance working - go back and update everything we've done so far
 to use our `base.html` template file.
 
+### Learn about Generic Views
+Watch Dr. Chuck's next video, [about generic views](https://www.dj4e.com/lessons/django_generic). Prepare some notes, and be ready for a reading quiz next class!
+
 ### Make it your own
 Now that all of our HTML and CSS is contained in a single, easy-to-modify file,
-you should start to make it your own! Feel free to start modifying the HTML
-and CSS to anything you want.
+you should start to make it your own! You should start modifying the HTML
+and CSS to make it your own.
+
