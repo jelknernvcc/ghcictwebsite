@@ -10,7 +10,7 @@ that activity, and [we'll look at the commit graph that we all made together](ht
 
 ## Project Write-up
 
-I'll formally review the project requirements, which are linked here [../projects/]
+I'll formally review the project requirements, which are [linked here](../projects/)
 
 After that, I'll let you continue working on your project!
 
