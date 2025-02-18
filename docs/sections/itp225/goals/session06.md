@@ -50,6 +50,22 @@ For now, our goal will be to setup the app and models, and to create a `ListView
 and a `DetailView`. Just like the polls app, we'll use the admin interface to
 add items for now. We'll tackle forms next =)
 
+
+#### Steps for Todo List
+1. Create a new app: `manage.py startapp`
+2. Register our app in `settings.py`
+3. Write our models in `todo/models.py`
+    - One model, called `item`, only a text description
+4. Register our model in `todo/admin.py`
+5. Migrate: `python3 manage.py makemigrations` `python3 manage.py migrate`
+5. Login as admin and create some todo items
+6. Make views (using genericviews: ListView and DetailView)
+7. Tell DJanngo about those views in `todo/urls.py`
+    - Tell the Django project about this urls file on project-level `urls.py`
+8. Make new templates
+    - Make templates folder
+    - Write HTML files
+
 ## Homework
 
 This todo app will take a while, and we want to make sure that we're very
