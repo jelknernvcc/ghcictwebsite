@@ -7,8 +7,11 @@
     {"date": "February10", "session": "03"},
     {"date": "February11", "session": "04"},
     {"date": "February13", "session": "05"},
+    {"date": "February14", "session": "05"},
 
     {"date": "February18", "session": "06"},
-    {"date": "February20", "session": "07"}
+    {"date": "February19", "session": "06"},
+    {"date": "February20", "session": "07"},
+    {"date": "February21", "session": "07"}
 
     ]

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GCTAA ITD 256 Activity Details</title>
+<style>
+@import url(../../css/goals.css);
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/init.js"></script>
+
+<script>
+window.onload = init;
+</script>
+
+</head>
+<body>
+<header>
+<div id="logo">
+<a href="index.html"><img src="../images/gctaa_nvcc.png" alt="GCTAA Logo"></a>
+</div>
+<div class="desktop">
+<h2>Governor's Career & Technical Academy Arlington</h2>
+<h1>ITD 256</h1>
+</div>
+<div class="mobile">
+<h1>ITD 256</h1>
+</div>
+</header>
+<hr>
+
+<p><a href="../calendar/">Back to Calendar</a></p>
+
+<div id="md_to_html"></div>
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const id = urlParams.get('id');
+    console.log(id);
+    md_to_html(id+'.md');
+</script>
+
+<footer class="desktop">
+<hr>
+<p id="HTMLCSS"></p>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> &nbsp; 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer>
+
+</body>
+</html>
