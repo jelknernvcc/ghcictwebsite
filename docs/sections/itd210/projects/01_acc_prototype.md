@@ -7,9 +7,15 @@ As we've discussed in class, the CS department here at ACC  is starting two exci
 ### Project 1: Off The Pike
 Off The Pike is a restaurant that is run by students in ACC's culinary program. They open a few days each year for full dinner service. Right now, they take reservations by email - and we've committed to build them a reservation website.
 
-- [Here's An old Off the Pike Flyer from 2019](https://careercenter.apsva.us/wp-content/uploads/sites/11/2019/10/Off-the-Pike-Flyer-Dates-11.pdf)
+#### Here are some sample flyers from these programs
+- [Off the Pike Flyer](../resources/off_the_pike_flyer.png)
+- [Off the Pike Menu](../resources/off_the_pike_menu.pdf)
 
 ### Project 2: Cosmetology
+ACC's cosmetology program has "spa days" where anyone from the community can come and get spa services. They do reservations by phone, and we're planning to build them a similar website
+
+#### Here's a sample flyer
+- [Cosmetology Spa Day](../resources/cosmetology_flyer.jpg)
 
 ## Requirements
 You will work in teams to design some pages for a sample website. This project 
