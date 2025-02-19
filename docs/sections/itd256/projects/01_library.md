@@ -13,8 +13,8 @@ We've done a ton of preparation for this project, which I'll summarize here:
 
 - We visited some libraries
 - We read selections from *Algorithms To Live By* that talked about libraries
-- Check out this interesting reddit thread where librarians discuss strategies for organizing fiction books: https://www.reddit.com/r/librarians/comments/93emx7/public_library_staff_how_do_you_organize_your/
-- Read this interesting article about a library that organizes books by size, not subject: https://qz.com/802744/the-legendary-new-york-public-library-shelves-books-in-its-underground-stacks-by-size-not-subject
+- [Check out this interesting reddit thread where librarians discuss strategies for organizing fiction books](https://www.reddit.com/r/librarians/comments/93emx7/public_library_staff_how_do_you_organize_your/)
+- [Read this article about a library that organizes books by size, not subject](https://qz.com/802744/the-legendary-new-york-public-library-shelves-books-in-its-underground-stacks-by-size-not-subject)
 
 ## Assignment Details
 Each group will select a library as their “client” and propose an optimal plan tailored to its needs. Your proposal should address:
