@@ -54,4 +54,5 @@ Remember - it's due at the end of next week.
 For homework, read these two lessons, both in the HTML course (these links will only work if you're already logged into edube):
 
 [Image Maps](https://edube.org/learn/web-dev-ess-html/image-maps-1?action=page#understanding-image-maps)
+
 [Media](https://edube.org/learn/web-dev-ess-html/media?action=page#video-and-audio-elements)
